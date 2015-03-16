@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<head>
+	<title>Faiz Malkani</title>
+	<meta name="description" content="Faiz Malkani, Designer and Developer for Android and the Web">
+	<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
+	<link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+	<link rel="import" href="bower_components/core-animated-pages/transitions/cross-fade-all.html">
+	<link href="bower_components/font-roboto/roboto.html" rel="import">
+	<link href="bower_components/core-menu/core-menu.html" rel="import">
+	<link href="bower_components/core-toolbar/core-toolbar.html" rel="import">
+	<link href="bower_components/core-icons/core-icons.html" rel="import">
+	<link href="bower_components/core-icons/social-icons.html" rel="import">
+	<link href="bower_components/core-icons/communication-icons.html" rel="import">
+	<link href="bower_components/paper-item/paper-item.html" rel="import">
+	<link href="bower_components/paper-ripple/paper-ripple.html" rel="import">
+	<link href="bower_components/paper-fab/paper-fab.html" rel="import">
+	<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="stylesheet" href="css/style.css?version=1.0">
+</head>
+<body>
+	<core-drawer-panel forceNarrow>
+		<div class="navigation-drawer" drawer>
+			<core-menu class="drawer-menu" selected="0">
+				<paper-item onclick="switchPage(0)">
+					<core-icon icon="home" class="menu-icon"></core-icon>
+					<span class="menu-label">Home</span>
+				</paper-item>
+				<paper-item onclick="switchPage(1)">
+					<core-icon icon="cloud" class="menu-icon"></core-icon>
+					<span class="menu-label">Page 2</span>
+				</paper-item>
+				<div class="divider-thin"></div>
+				<paper-item onclick="switchPage(2)">
+					<core-icon icon="folder" class="menu-icon"></core-icon>
+					<span class="menu-label">Page 3</span>
+				</paper-item>
+				<paper-item onclick="switchPage(3)">
+					<core-icon icon="extension" class="menu-icon"></core-icon>
+					<span class="menu-label">Page 4</span>
+				</paper-item>
+				<paper-item onclick="switchPage(4)">
+					<core-icon icon="question-answer" class="menu-icon"></core-icon>
+					<span class="menu-label">Page 5</span>
+				</paper-item>
+			</core-menu>
+		</div>
+		<div main>
+			<core-animated-pages selected="0" transitions="cross-fade-all">
+				
+				<!-- PAGE 1 -->
+				<section>
+					<core-toolbar class="main-toolbar medium-tall">
+						<paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+						<span flex>SlimROMs</span>
+						<div class="toolbar-bottom bottom">
+							<!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+							<paper-icon-button class="drawer-toggle"></paper-icon-button>
+							<span>Logged in as Cybojenix</span>
+						</div>	
+						<paper-icon-button icon="search"></paper-icon-button>
+					</core-toolbar>
+					
+					<div class="content-sidebar-flex">
+						
+						<div class="content-section">
+							<div class="card">
+								<div class="card-padding">
+									<span class="card-title">SlimRoms presents SlimLP Alpha 1.0</span><br>
+									<span class="card-subtitle">Saturday, December 6th 2014 by Abc</span><br>
+									<p class="card-content-text">We are proud to announce the first weekly for SlimLP. Please note not all devices are getting a weekly yet.This is the first alpha release more devices and features to come as we move forward.<br><br>Features: <br>- RRO Layers Support<br>- Doze (ambient display) timeout (selected devices only)<br>- Options for battery icon and text</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-padding">
+									<span class="card-title">SlimRoms presents SlimLP Alpha 1.0</span><br>
+									<p class="card-content-text">We are proud to announce the first weekly for SlimLP. Please note not all devices are getting a weekly yet.This is the first alpha release more devices and features to come as we move forward.<br><br>Features: <br>- RRO Layers Support<br>- Doze (ambient display) timeout (selected devices only)<br>- Options for battery icon and text</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-padding">
+									<span class="card-title">SlimRoms presents SlimLP Alpha 1.0</span><br>
+									<p class="card-content-text">We are proud to announce the first weekly for SlimLP. Please note not all devices are getting a weekly yet.This is the first alpha release more devices and features to come as we move forward.<br><br>Features: <br>- RRO Layers Support<br>- Doze (ambient display) timeout (selected devices only)<br>- Options for battery icon and text</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sidebar-section">
+							<div class="card">
+								<div class="card-padding-small">
+									<div class="social-buttons-container">
+										<paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39"></paper-fab>
+										<paper-fab mini src="icons/twitter.png" style="background-color: #55acee"></paper-fab>
+										<paper-fab mini src="icons/facebook.png" style="background-color: #3b5998"></paper-fab>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-padding-small">
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					
+					
+				</section>
+				
+				<!-- PAGE 2 -->
+				<section>
+					<core-toolbar class="main-toolbar medium-tall">
+						<paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+						<span flex>Page 2 Title</span>
+						<div class="toolbar-bottom bottom">
+							<!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+							<paper-icon-button class="drawer-toggle"></paper-icon-button>
+							<span>Logged in as Cybojenix</span>
+						</div>	
+						<paper-icon-button icon="search"></paper-icon-button>
+						<paper-icon-button icon="mail"></paper-icon-button>
+					</core-toolbar>
+					
+					<div class="content-sidebar-flex">
+						
+						<div class="content-section">
+							<div class="card">
+								<div class="card-padding">
+									<div class="download-card-main-flex">
+										<div>
+											<span class="card-title">Slim-mako-4.4.4.build.9.0-OFFICIAL-8304</span>
+											<span class="card-content-text small-margin">69f06d91792f9b89447f04021d3b1597b0e24616</span>
+										</div>
+										<div>
+											<core-icon icon="cloud-download"></core-icon>
+											<span class="card-content-text no-margin">152.37MB</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-padding">
+									<div class="download-card-main-flex">
+										<div>
+											<span class="card-title">Slim-mako-4.4.4.build.9.0-OFFICIAL-8304</span>
+											<span class="card-content-text small-margin">69f06d91792f9b89447f04021d3b1597b0e24616</span>
+										</div>
+										<div>
+											<core-icon icon="cloud-download"></core-icon>
+											<span class="card-content-text no-margin">152.37MB</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-padding">
+									<div class="download-card-main-flex">
+										<div>
+											<span class="card-title">Slim-mako-4.4.4.build.9.0-OFFICIAL-8304</span>
+											<span class="card-content-text small-margin">69f06d91792f9b89447f04021d3b1597b0e24616</span>
+										</div>
+										<div>
+											<core-icon icon="cloud-download"></core-icon>
+											<span class="card-content-text no-margin">152.37MB</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sidebar-section">
+							<div class="card">
+								<div class="card-padding-small">
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</section>
+				
+				<!-- PAGE 3 -->
+				<section>
+					<core-toolbar class="main-toolbar medium-tall">
+						<paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+						<span flex>Page 3 Title</span>
+						<div class="toolbar-bottom bottom">
+							<!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+							<paper-icon-button class="drawer-toggle"></paper-icon-button>
+							<span>Logged in as Cybojenix</span>
+						</div>	
+						<paper-icon-button icon="search"></paper-icon-button>
+					</core-toolbar>
+					
+					<div class="content-sidebar-flex">
+						
+						<div class="content-section content-responsive-grid">
+							<div class="responsive-grid-container">
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+								<div class="responsive-grid-item">
+									<div class="card">
+										<div class="card-padding-small">
+											<paper-item>
+												<span>Link</span>
+											</paper-item>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sidebar-section">
+							<div class="card">
+								<div class="card-padding-small">
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</section>
+				
+				<!-- PAGE 4 -->
+				<section>
+					<core-toolbar class="main-toolbar medium-tall">
+						<paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+						<span flex>Page 4 Title</span>
+						<paper-icon-button icon="search"></paper-icon-button>
+					</core-toolbar>
+					
+					<div class="content-sidebar-flex">
+						
+						<div class="content-section">
+							<div class="card">
+								<div class="card-padding">
+									<span class="card-title">SlimRoms presents SlimLP Alpha 1.0</span><br>
+									<p class="card-content-text">We are proud to announce the first weekly for SlimLP. Please note not all devices are getting a weekly yet.This is the first alpha release more devices and features to come as we move forward.<br><br>Features: <br>- RRO Layers Support<br>- Doze (ambient display) timeout (selected devices only)<br>- Options for battery icon and text</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sidebar-section">
+							<div class="card">
+								<div class="card-padding-small">
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+									<paper-item>
+										<span>Link</span>
+									</paper-item>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</section>
+				
+				<!-- PAGE 5 -->
+				<section>
+					<core-toolbar class="main-toolbar medium-tall">
+						<paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+						<span flex>Page 5 Title</span>
+						<div class="toolbar-bottom bottom">
+							<!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+							<paper-icon-button class="drawer-toggle"></paper-icon-button>
+							<span>Logged in as Cybojenix</span>
+						</div>	
+						<paper-icon-button icon="search"></paper-icon-button>
+					</core-toolbar>
+					
+					<div class="content-sidebar-flex">
+						
+						<div class="content-section">
+							<!-- CORE TEAM CARD -->
+							<div class="card">
+								<div class="card-padding">
+									<p class="card-title team-title">Core Team</p>
+									<div class="team-item">
+										<img src="http://placehold.it/150x150">
+										<div class="team-item-text-container">
+											<p class="card-content-text name">Josue Rivera</p>
+											<div class="team-icon-text">
+												<core-icon icon="communication:contacts"></core-icon>
+												<p class="card-content-text">prbassplayer</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="room"></core-icon>
+												<p class="card-content-text">Puerto Rico</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="work"></core-icon>
+												<p class="card-content-text">Development Co-ordinator</p>
+											</div>
+										</div>
+									</div>
+									<div class="team-item">
+										<img src="http://placehold.it/150x150">
+										<div class="team-item-text-container">
+											<p class="card-content-text name">Josue Rivera</p>
+											<div class="team-icon-text">
+												<core-icon icon="communication:contacts"></core-icon>
+												<p class="card-content-text">prbassplayer</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="room"></core-icon>
+												<p class="card-content-text">Puerto Rico</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="work"></core-icon>
+												<p class="card-content-text">Development Co-ordinator</p>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+							<!-- DEVICE MAINTAINERS AND CONTRIBUTORS CARD -->
+							<div class="card">
+								<div class="card-padding">
+									<p class="card-title team-title">Device Maintainers and Contributors</p>
+									<div class="team-item">
+										<img src="http://placehold.it/150x150">
+										<div class="team-item-text-container">
+											<p class="card-content-text name">Josue Rivera</p>
+											<div class="team-icon-text">
+												<core-icon icon="communication:contacts"></core-icon>
+												<p class="card-content-text">prbassplayer</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="room"></core-icon>
+												<p class="card-content-text">Puerto Rico</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="work"></core-icon>
+												<p class="card-content-text">Development Co-ordinator</p>
+											</div>
+										</div>
+									</div>
+									<div class="team-item">
+										<img src="http://placehold.it/150x150">
+										<div class="team-item-text-container">
+											<p class="card-content-text name">Josue Rivera</p>
+											<div class="team-icon-text">
+												<core-icon icon="communication:contacts"></core-icon>
+												<p class="card-content-text">prbassplayer</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="room"></core-icon>
+												<p class="card-content-text">Puerto Rico</p>
+											</div>
+											<div class="team-icon-text">
+												<core-icon icon="work"></core-icon>
+												<p class="card-content-text">Development Co-ordinator</p>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+						
+					
+					
+					<div class="sidebar-section">
+						<div class="card">
+							<div class="card-padding-small">
+								<paper-item>
+									<span>Link</span>
+								</paper-item>
+								<paper-item>
+								<span>Link</span>
+							</paper-item>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		
+	</core-animated-pages>
+</div>		
+
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+	function switchPage(pagenum)
+	{
+		var d = document.querySelector('core-drawer-panel');
+		d.closeDrawer();
+		var c = document.querySelector('core-animated-pages');
+		c.selected = pagenum;
+	}
+</script>
+
+</body>
+</html>
