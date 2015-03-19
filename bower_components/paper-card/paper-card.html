@@ -1,0 +1,138 @@
+<!--
+Copyright 2015 SlimRoms
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<link href="../polymer/polymer.html" rel="import">
+<link rel="import" type="css" href="../paper-shadow/paper-shadow.css">
+
+<polymer-element name="paper-card">
+  <template>
+    <style>
+      :host {
+        display: block;
+        position: relative;
+        background: white;
+        box-sizing: border-box;
+        margin: 16px;
+        border-radius: 2px;
+        padding: 50px;
+        font-size: 1em;
+	    color: #555555;
+	    font-weight: 400;
+	    margin-top: 2em;
+	    line-height: 1.3em;	
+      }
+
+      ::content .heading {
+        font-size: 1.4em;
+        padding-bottom: 0px;
+        font-weight: 500;
+      }
+
+      @media (min-width: 800px) and (max-width: 1100px) {
+        :host {
+          padding: 35px;
+        }
+      }
+      @media (max-width: 800px) {
+        :host {
+          padding: 25px;
+        }
+      }
+      @media (max-width: 480px) {
+        :host {
+          padding: 20px;
+        }
+      }
+
+      #shadow {
+        border-radius: inherit;
+        pointer-events: none;
+      }
+
+      .card-title {
+	    margin-bottom: 10px;
+      }
+      polyfill-next-selector { content: '.card-title .title'; }
+      .card-title ::content .title {
+        margin: 0;
+        font-size: 2.3em;
+	    color: #555555;
+	    font-weight: 300;
+      }
+
+      .card-subtitle {
+	    margin-bottom: 10px;
+      }
+      polyfill-next-selector { content: '.card-subtitle .subtitle'; }
+      .card-subtitle ::content .subtitle {
+        margin: 0;
+	    word-wrap: break-word;
+	    font-size: 1em;
+	    color: #777777;
+	    font-weight: 400;
+	    line-height: 2em;
+      }
+
+      .card-footer {
+        border-top: 1px solid rgba(160, 160, 160, 0.4);
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+      }
+      polyfill-next-selector { content: '.card-footer .footer'; }
+      .card-footer ::content .footer {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        color: #777777;
+      }
+      .card-footer ::content .footer :first-child {
+        margin-top: 0;
+      }
+      .card-footer ::content .footer :last-child {
+        margin-bottom: 0;
+      }
+
+    </style>
+    <div class="card-title" layout horizontal center>
+      <content select=".title"></content>
+    </div>
+    <div class="card-subtitle" layout horizontal center>
+      <content select=".subtitle"></content>
+    </div>
+    <content select=":not(.footer)"></content>
+    <div class="card-footer" layout horizontal center hidden>
+      <content select=".footer"></content>
+    </div>
+    <paper-shadow id="shadow" fit animated={{animated}} z="{{z}}"></paper-shadow>
+  </template>
+
+  <script>
+    Polymer({
+      publish: {
+        z: 1,
+        animated: false
+      },
+      ready: function () {
+        var card_action = this.shadowRoot.querySelector('.card-footer');
+        var content = card_action.getElementsByTagName('content')[0];
+        if (content.getDistributedNodes().length != 0) {
+          card_action.removeAttribute('hidden');
+        }
+      }
+    });
+  </script>
+</polymer-element>
+
