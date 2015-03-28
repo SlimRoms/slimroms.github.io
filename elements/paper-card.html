@@ -15,7 +15,7 @@ limitations under the License.
 -->
 
 <link href="../bower_components/polymer/polymer.html" rel="import">
-<link rel="import" type="css" href="../bower_components/paper-shadow/paper-shadow.css">
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
 
 <polymer-element name="paper-card">
   <template>
@@ -25,19 +25,17 @@ limitations under the License.
         position: relative;
         background: white;
         box-sizing: border-box;
-        margin: 16px;
         border-radius: 2px;
         padding: 50px;
         font-size: 1em;
-	    color: #555555;
-	    font-weight: 400;
-	    margin-top: 2em;
-	    line-height: 1.3em;	
+        color: #555555;
+        font-weight: 400;
+        margin: 2em 16px 16px;
       }
 
       ::content .heading {
         font-size: 1.4em;
-        padding-bottom: 0px;
+        padding-bottom: 0;
         font-weight: 500;
       }
 
@@ -63,34 +61,32 @@ limitations under the License.
       }
 
       .card-title {
-	    margin-bottom: 10px;
+        margin-bottom: 10px;
       }
       polyfill-next-selector { content: '.card-title .title'; }
       .card-title ::content .title {
-        margin: 0;
+        margin: 10px;
         font-size: 2.3em;
-	    color: #555555;
-	    font-weight: 300;
+        color: #555555;
+        font-weight: 300;
       }
 
       .card-subtitle {
-	    margin-bottom: 10px;
+        margin-bottom: 10px;
       }
       polyfill-next-selector { content: '.card-subtitle .subtitle'; }
       .card-subtitle ::content .subtitle {
         margin: 0;
-	    word-wrap: break-word;
-	    font-size: 1em;
-	    color: #777777;
-	    font-weight: 400;
-	    line-height: 2em;
+        word-wrap: break-word;
+        font-size: 1em;
+        color: #777777;
+        font-weight: 400;
+        line-height: 2em;
       }
 
       .card-footer {
         border-top: 1px solid rgba(160, 160, 160, 0.4);
-        padding: 10px;
-        padding-top: 20px;
-        padding-bottom: 0px;
+        padding: 20px 10px 0;
       }
       polyfill-next-selector { content: '.card-footer .footer'; }
       .card-footer ::content .footer {
