@@ -129,7 +129,7 @@ core-animated-pages
 	justify-content: center;
 }
 
-.social-buttons-container paper-fab
+.social-buttons-container paper-linked-fab
 {
 	margin: 0 1em;
 }
@@ -348,7 +348,7 @@ core-animated-pages
 		width: 35%;
 	}
 	
-	.social-buttons-container paper-fab
+	.social-buttons-container paper-linked-fab
 	{
 		margin: 0 0.5em;
 	}
@@ -393,7 +393,7 @@ core-animated-pages
 		margin-left: 2em;
 	}
 	
-	.social-buttons-container paper-fab
+	.social-buttons-container paper-linked-fab
 	{
 		margin: 0 0.3em;
 	}
@@ -449,7 +449,7 @@ core-animated-pages
 		margin-left: 1em;
 	}
 	
-	.social-buttons-container paper-fab
+	.social-buttons-container paper-linked-fab
 	{
 		margin: 0 0.8em;
 	}

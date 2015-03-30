@@ -1,0 +1,113 @@
+<!--
+Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+
+Modified by SlimRoms to allow the button to open links in new tabs.
+-->
+
+
+<link href="../bower_components/polymer/polymer.html" rel="import">
+<link href="../bower_components/core-icon/core-icon.html" rel="import">
+<link href="../bower_components/paper-button/paper-button-base.html" rel="import">
+<link href="../bower_components/paper-ripple/paper-ripple.html" rel="import">
+<link href="../bower_components/paper-shadow/paper-shadow.html" rel="import">
+
+<polymer-element name="paper-linked-fab" extends="paper-button-base" attributes="src icon mini href" role="button">
+
+    <template>
+
+        <style>
+            :host {
+                display: inline-block;
+                position: relative;
+                outline: none;
+                -webkit-user-select: none;
+                user-select: none;
+                cursor: pointer;
+                z-index: 0;
+
+                box-sizing: border-box;
+                width: 56px;
+                height: 56px;
+                background: #d23f31;
+                color: #fff;
+                border-radius: 50%;
+                padding: 16px;
+            }
+
+            :host([mini]) {
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+            }
+
+            :host([disabled]) {
+                color: #c9c9c9;
+                pointer-events: none;
+                cursor: auto;
+            }
+
+            #ripple {
+                pointer-events: none;
+                z-index: -1;
+            }
+
+            #shadow {
+                border-radius: inherit;
+                pointer-events: none;
+            }
+
+            #icon {
+                display: block;
+                pointer-events: none;
+            }
+        </style>
+
+        <template if="{{raised}}">
+            <paper-shadow id="shadow" fit animated></paper-shadow>
+        </template>
+
+        <!-- to position to ripple behind the icon -->
+        <a id="hidden_link">
+            <core-icon relative id="icon" src="{{src}}" icon="{{icon}}"></core-icon>
+        </a>
+
+    </template>
+
+    <script>
+        Polymer({
+
+            publish: {
+                src: '',
+                icon: '',
+                mini: false,
+                href: '',
+
+                raised: true,
+                recenteringTouch: true,
+                fill: false
+
+            },
+
+            iconChanged: function(oldIcon) {
+                var label = this.getAttribute('aria-label');
+                if (!label || label === oldIcon) {
+                    this.setAttribute('aria-label', this.icon);
+                }
+            },
+            ready: function () {
+                if (this.href) {
+                    var h = this.shadowRoot.querySelector('#hidden_link');
+                    h.setAttribute('href', this.href);
+                    h.setAttribute('target', '_blank');
+                }
+            }
+
+        });
+
+    </script>
+</polymer-element>
