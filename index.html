@@ -53,6 +53,10 @@
                     <core-icon icon="question-answer" class="menu-icon"></core-icon>
                     <span class="menu-label">Support</span>
                 </paper-item>
+                <paper-item onclick="switchPage(7)">
+                    <core-icon icon="extension" class="menu-icon"></core-icon>
+                    <span class="menu-label">About us</span>
+                </paper-item>
             </core-menu>
         </div>
         <div main>
@@ -175,12 +179,12 @@
                             <paper-card>
                                 <h2 class="title">Gerrit</h2>
                                 <a href="review.slimroms.eu" target="_blank">
-                                <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/SlimCodeReview_zpsgdcppqjb.png" alt="Slim Code Review">
+                                <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/SlimCodeReview2_zps00umiguv.png" alt="Slim Code Review">
                                 </a>
                             </paper-card>
                             <paper-card>
                                 <h2 class="title">Manual</h2>
-                                <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/Slimroms_C_zpsmthzpuq6.png" alt="Slim Code Review">
+                                <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/Slimroms_C2_zps0xrypxrp.png" alt="Slim Code Review">
                             </paper-card>
                         </div>
                     </div>
@@ -1096,6 +1100,46 @@
                         </div>
                     </div>
                 </section>
+                <!-- PAGE 8 -->
+               <section>
+                    <core-toolbar class="main-toolbar medium-tall">
+                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+                        <span flex>Support</span>
+                        <div class="toolbar-bottom bottom">
+                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
+                            <span>Designed By Faiz Malkani</span>
+                        </div>
+                        <paper-icon-button icon="search"></paper-icon-button>
+                        </core-toolbar>
+                    <div class="content-sidebar-flex">
+                        <div class="content-section">
+                            <paper-card>
+                               <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/Slimroms_zpssj4uknzy.png">
+                               <p align="center"><b>Slim is a custom android operating system.</b></p>
+                               <p>Our main goal is to offer users a slimmed down but still feature rich alternative to other android operating systems.
+                                  The entire team work together to bring you this tailor-made beauty straight from AOSP source code.</p>
+                               <p>All of the sources can be publicly viewed through GitHub. You can stop by the public Gerrit to submit patches of any type
+                                  or help translate Slim to your language through our Crodwin project</p>
+                            </paper-card>
+                        </div>
+                    <div class="sidebar-section">
+                            <div class="card">
+                                <div class="card-padding-small">
+                                    <paper-item>
+                                        <span>Github</span>
+                                    </paper-item>
+                                    <paper-item>
+                                        <span>Gerrit</span>
+                                    </paper-item>
+                                    <paper-item>
+                                        <span>Crowdin</span>
+                                    </paper-item>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </section>
             </core-animated-pages>
         </div>
     </core-drawer-panel>
