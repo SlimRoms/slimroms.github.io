@@ -29,23 +29,27 @@
                     <span class="menu-label">Home</span>
                 </paper-item>
                 <paper-item onclick="switchPage(1)">
-                    <core-icon icon="cloud" class="menu-icon"></core-icon>
-                    <span class="menu-label">Page 2</span>
+                    <core-icon icon="extension" class="menu-icon"></core-icon>
+                    <span class="menu-label">Changelog</span>
                 </paper-item>
                 <div class="divider-thin"></div>
                 <paper-item onclick="switchPage(2)">
-                    <core-icon icon="folder" class="menu-icon"></core-icon>
+                    <core-icon icon="cloud" class="menu-icon"></core-icon>
                     <span class="menu-label">Page 3</span>
                 </paper-item>
                 <paper-item onclick="switchPage(3)">
-                    <core-icon icon="extension" class="menu-icon"></core-icon>
+                    <core-icon icon="folder" class="menu-icon"></core-icon>
                     <span class="menu-label">Page 4</span>
                 </paper-item>
                 <paper-item onclick="switchPage(4)">
                     <core-icon icon="extension" class="menu-icon"></core-icon>
-                    <span class="menu-label">The Team</span>
+                    <span class="menu-label">Page 5</span>
                 </paper-item>
                 <paper-item onclick="switchPage(5)">
+                    <core-icon icon="extension" class="menu-icon"></core-icon>
+                    <span class="menu-label">The Team</span>
+                </paper-item>
+                <paper-item onclick="switchPage(6)">
                     <core-icon icon="question-answer" class="menu-icon"></core-icon>
                     <span class="menu-label">Support</span>
                 </paper-item>
@@ -153,12 +157,40 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- PAGE 2 -->
                 <section>
                     <core-toolbar class="main-toolbar medium-tall">
                         <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>Page 2 Title</span>
+                        <span flex>Changelog</span>
+                        <div class="toolbar-bottom bottom">
+                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
+                            <span>Designed By Faiz Malkani</span>
+                        </div>
+                        <paper-icon-button icon="search"></paper-icon-button>
+                    </core-toolbar>
+
+                    <div class="content-sidebar-flex">
+                        <div class="content-section">
+                            <paper-card>
+                                <h2 class="title">Gerrit</h2>
+                                <a href="review.slimroms.eu" target="_blank">
+                                <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/SlimCodeReview_zpsgdcppqjb.png" alt="Slim Code Review">
+                                </a>
+                            </paper-card>
+                            <paper-card>
+                                <h2 class="title">Manual</h2>
+                                <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/Slimroms_C_zpsmthzpuq6.png" alt="Slim Code Review">
+                                </a>
+                            </paper-card>
+                        </div>  
+                    </div>
+                </section>
+                <!-- PAGE 3 -->
+                <section>
+                    <core-toolbar class="main-toolbar medium-tall">
+                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+                        <span flex>Page 3 Title</span>
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
@@ -229,11 +261,11 @@
                         </div>
                     </div>
                 </section>
-                <!-- PAGE 3 -->
+                <!-- PAGE 4 -->
                 <section>
                     <core-toolbar class="main-toolbar medium-tall">
                         <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>Page 3 Title</span>
+                        <span flex>Page 4 Title</span>
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
@@ -362,11 +394,11 @@
                         </div>
                     </div>
                 </section>
-                <!-- PAGE 4 -->
+                <!-- PAGE 5 -->
                 <section>
                     <core-toolbar class="main-toolbar medium-tall">
                         <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>Page 4 Title</span>
+                        <span flex>Page 5 Title</span>
                         <paper-icon-button icon="search"></paper-icon-button>
                     </core-toolbar>
                     <div class="content-sidebar-flex">
@@ -395,7 +427,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- PAGE 5 -->
+                <!-- PAGE 6 -->
                 <section>
                     <core-toolbar class="main-toolbar medium-tall">
                         <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
@@ -976,7 +1008,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- PAGE 6 -->
+                <!-- PAGE 7 -->
                <section>
                     <core-toolbar class="main-toolbar medium-tall">
                         <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
