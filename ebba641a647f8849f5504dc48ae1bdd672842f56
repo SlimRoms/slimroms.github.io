@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da141535_3957cf04",
+        "filename": "index.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 679,
+      "author": {
+        "id": 1000016
+      },
+      "writtenOn": "2015-04-03T19:00:48Z",
+      "side": 1,
+      "message": "Android-Andi",
+      "range": {
+        "startLine": 679,
+        "startChar": 77,
+        "endLine": 679,
+        "endChar": 89
+      },
+      "revId": "ebba641a647f8849f5504dc48ae1bdd672842f56",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
