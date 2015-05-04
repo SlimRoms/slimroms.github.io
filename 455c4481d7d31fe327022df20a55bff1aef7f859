@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a202591_6d3b30ec",
+        "filename": "index.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 954,
+      "author": {
+        "id": 1000006
+      },
+      "writtenOn": "2015-05-04T15:08:25Z",
+      "side": 1,
+      "message": "maybe we should remove this (\"Forum Moderator\")?",
+      "revId": "455c4481d7d31fe327022df20a55bff1aef7f859",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
