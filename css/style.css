@@ -100,6 +100,30 @@ core-animated-pages
 	padding-bottom: 2em;
 }
 
+.widecontent-section
+{
+	width: 100%;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-left: 2em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+}
+
+.credits-item
+{
+	width: 90%;
+	background-color: white;
+	padding: 20px;
+        border: 1px solid rgba(160, 160, 160, 0.4);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+}
 .sidebar-section
 {
 	width: 25%;
