@@ -100,6 +100,54 @@ core-animated-pages
 	padding-bottom: 2em;
 }
 
+.widecontent-section
+{
+	width: 100%;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-left: 2em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+}
+
+.collection-card
+{
+	padding: 20px;
+}
+
+.collection-item
+{
+	width: 90%;
+	background-color: white;
+	padding: 20px;
+        border: 1px solid rgba(160, 160, 160, 0.4);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+}
+
+.collection-header
+{
+	padding: 20px;
+	width: 90%;
+	background-color: white;
+        border: 1px solid rgba(160, 160, 160, 0.4);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+}
+
+h1.header
+{
+	font-weight: 300;
+	font-size: 2.0em;
+	color: #555555;
+}
+
 .sidebar-section
 {
 	width: 25%;

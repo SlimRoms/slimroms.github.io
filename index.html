@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>SlimRoms</title>
     <meta name="description" content="SlimRoms' website, news, downloads.">
@@ -17,6 +18,7 @@
     <link href="bower_components/paper-item/paper-item.html" rel="import">
     <link href="bower_components/paper-ripple/paper-ripple.html" rel="import">
     <link href="bower_components/paper-fab/paper-fab.html" rel="import">
+    <link href="bower_components/paper-button/paper-button.html" rel="import">
     <link href="elements/paper-card.html" rel="import">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="stylesheet" href="css/style.css?version=1.0">
@@ -57,7 +59,6 @@
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                            <span>Designed By Faiz Malkani</span>
                         </div>
                         <paper-icon-button icon="search"></paper-icon-button>
                     </core-toolbar>
@@ -171,7 +172,6 @@
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                            <span>Designed By Faiz Malkani</span>
                         </div>
                         <paper-icon-button icon="search"></paper-icon-button>
                     </core-toolbar>
@@ -199,7 +199,6 @@
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                            <span>Designed By Faiz Malkani</span>
                         </div>
                         <paper-icon-button icon="search"></paper-icon-button>
                     </core-toolbar>
@@ -780,7 +779,6 @@
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                            <span>Designed By Faiz Malkani</span>
                         </div>
                         <paper-icon-button icon="search"></paper-icon-button>
                         <paper-icon-button icon="mail"></paper-icon-button>
@@ -862,30 +860,72 @@
                     </div>
                 </section>
                 <!-- PAGE 4 -->
-               <section>
+                <section>
                     <core-toolbar class="main-toolbar medium-tall">
                         <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
                         <span flex>About us</span>
                         <div class="toolbar-bottom bottom">
                             <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
                             <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                            <span>Designed By Faiz Malkani</span>
                         </div>
                         <paper-icon-button icon="search"></paper-icon-button>
                     </core-toolbar>
                     <div class="content-sidebar-flex">
                         <div class="widecontent-section">
                             <paper-card>
-                               <p style="text-align:center"><img src="images/slimroms.png"></p>
+                               <p align="center"><img src="images/slimroms.png" width="400"></p>
                                <p align="center"><b>Slim is a custom android operating system.</b></p>
                                <p>Our main goal is to offer users a slimmed down but still feature rich alternative to other android operating systems.
                                   The entire team work together to bring you this tailor-made beauty straight from AOSP source code.</p>
                                <p>All of the sources can be publicly viewed through GitHub. You can stop by the public Gerrit to submit patches of any type
-                                  or help translate Slim to your language through our Crodwin project</p>
+                                  or help translate Slim to your language through our Crowdin project</p>
                             </paper-card>
                         </div>
+                        <div class="content-section">
+                            <div class="collection-card">
+                                <div class="collection-header">
+                                    <h1 class="header">General Credits</h1>
+                                </div>
+                                <div class="collection-item"><p>Google - Providing source</p></div>
+                                <div class="collection-item"><p>Faiz Malkani - Website design</p></div>
+                                <div class="collection-item"><p>CyanogenMod - For device vendor and development work</p></div>
+                                <div class="collection-item"><p>TeamWin - For TWRP</div>
+                                <div class="collection-item"><p>iBotPeaches - Apktool</div>
+                                <div class="collection-item"><p>Nyt - Slim IRC app</p></div>
+                                <div class="collection-item"><p>Roman Nurik - Dash Clock</p></div>
+                            </div>
+                            <div class="collection-card">
+                                <div class="collection-header">
+                                    <h1 class="header">Disclaimer</h1>
+                                </div>
+                                <div class="collection-item"><p>We are not responsible for any bricked devices. Flash at your own risk!</p></div>
+                                <div class="collection-item"><p>All links were checked for ethical and legal use however links can't be checked regularly. If you notice an objectionable link contact us and we will check and - if necessary - delete it</p></div>
+                            </div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="card">
+                                <div class="card-padding-small">
+                                    <paper-item>
+                                        <a href="https://github.com/SlimRoms" style= "text-decoration: none" target="_blank">Github</a>
+                                    </paper-item>
+                                    <paper-item>
+                                        <a href="https://review.slimroms.eu" style= "text-decoration: none" target="_blank">Gerrit</a>
+                                    </paper-item>
+                                    <paper-item>
+                                        <a href="https://crowdin.com/project/slimroms" style= "text-decoration: none" target="_blank">Crowdin</a>
+                                    </paper-item>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-padding-small">
+                                    <div class="social-buttons-container">
+                                       <paper-button style="background-color: #0781aa; color: white; width: 15em;">Donate</paper-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-              </section>
+                </section>
             </core-animated-pages>
         </div>
     </core-drawer-panel>
