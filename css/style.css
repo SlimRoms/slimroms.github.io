@@ -205,6 +205,7 @@ core-animated-pages
 {
 	height: auto;
 	width: 6.5em;
+	min-width: 6.5em;
 	border-radius: 50%;
 }
 
@@ -385,6 +386,7 @@ core-animated-pages
 	.team-item img
 	{
 		width: 5em;
+		min-width: 5em;
 		height: auto;
 	}
 	
@@ -441,6 +443,7 @@ core-animated-pages
 	.team-item img
 	{
 		width: 5em;
+		min-width: 5em;
 		height: auto;
 	}
 	
