@@ -1,0 +1,20 @@
+{
+  "name": "slimroms.github.io",
+  "version": "0.0.1",
+  "homepage": "slimroms.eu",
+  "authors": [
+    "Anthony King <anthonydking@slimroms.net>"
+  ],
+  "description": "SlimRoms Website",
+  "keywords": [
+    "SlimRoms"
+  ],
+  "license": "Apache2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
