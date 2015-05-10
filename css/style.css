@@ -253,6 +253,7 @@ h1.header
 {
 	height: auto;
 	width: 6.5em;
+	min-width: 6.5em;
 	border-radius: 50%;
 }
 
@@ -433,6 +434,7 @@ h1.header
 	.team-item img
 	{
 		width: 5em;
+		min-width: 5em;
 		height: auto;
 	}
 	
@@ -489,6 +491,7 @@ h1.header
 	.team-item img
 	{
 		width: 5em;
+		min-width: 5em;
 		height: auto;
 	}
 	
