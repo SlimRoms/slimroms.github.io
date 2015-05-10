@@ -798,7 +798,7 @@
                                     <div class="card">
                                         <paper-item>
                                             <div class="card-padding-small">
-                                                <span>Report bugs</span>
+                                                <span onclick="switchPage(6)">Report bugs</span>
                                             </div>
                                         </paper-item>
                                     </div>
@@ -970,6 +970,43 @@
                                     </paper-item>
                                     <paper-item>
                                         <span>Install Gapps</span>
+                                    </paper-item>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- PAGE 6 -->
+                <section>
+                    <core-toolbar class="main-toolbar medium-tall">
+                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
+                        <span flex>Report bugs</span>
+                        <div class="toolbar-bottom bottom">
+                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
+                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
+                        </div>
+                        <paper-icon-button icon="search"></paper-icon-button>
+                    </core-toolbar>
+                    <div class="content-sidebar-flex">
+                        <div class="content-section">
+                            <div class="collection-card">
+                                <div class="collection-item"><p>Perform a full wipe (factory reset + wipe system)</p></div>
+                                <div class="collection-item"><p>If you're having a problem with a ROM function then flash ROM without GAPPS</p></div>
+                                <div class="collection-item"><p>If you're having a problem with a 3rd party app on slim then flash the ROM and Gapps</p></div>
+                                <div class="collection-item"><p>Reproduce the bug (if possible more than once)</div>
+                                <div class="collection-item"><p>Go to settings > SlimCenter and click on Bug report. A bugreport.zip will appear on your sdcard in a directory called Slim</div>
+                                <div class="collection-item"><p>Share the bugreport.zip file on our G+ community or on your device's xda thread</p></div>
+                                <div class="collection-item"><p>Restore your backup and wait for a fix (don't ask for ETAs)</p></div>
+                            </div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="card">
+                                <div class="card-padding-small">
+                                    <paper-item>
+                                        <a href="https://plus.google.com/u/0/communities/104509876514579429216" style= "text-decoration: none" target="_blank">G+ Community</a>
+                                    </paper-item>
+                                    <paper-item>
+                                         <a href="http://forum.xda-developers.com/" style= "text-decoration: none" target="_blank">XDA-Developers</a>
                                     </paper-item>
                                 </div>
                             </div>
