@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SlimRoms</title>
+    <meta name="description" content="SlimRoms' website, news, downloads.">
+    <meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
+    <link rel="import" href="bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html">
+    <link href="bower_components/paper-menu/paper-menu.html" rel="import">
+    <link href="bower_components/paper-toolbar/paper-toolbar.html" rel="import">
+    <link href="bower_components/iron-icons/iron-icons.html" rel="import">
+    <link href="bower_components/iron-icons/notification-icons.html" rel="import">
+    <link href="bower_components/paper-item/paper-item.html" rel="import">
+    <!--<link href="old_elements/paper-card.html" rel="import">-->
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+
+    <style is="custom-style">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #main_drawer,
+        #main_drawer [main], #main_drawer [drawer] {
+            height: 100%;
+        }
+
+        #main_drawer [drawer] {
+            background-color: #fff;
+        }
+
+        #main_drawer [main] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+
+            --paper-scroll-header-panel-full-header: {
+                background-image: url('images/toolbar.png');
+             };
+
+            --paper-scroll-header-panel-condensed-header: {
+                background-color: #000;
+            };
+        }
+
+        #main_drawer [main] .main-toolbar {
+            font-size: 18px;
+            padding: 0 10px;
+            transition: height 0.2s;
+            background-color: transparent;
+            box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.4);
+        }
+        #main_drawer [main] .main-toolbar .title {
+            font-size: 1.8rem;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+<body layout vertical>
+<paper-drawer-panel id="main_drawer" force-narrow>
+    <div drawer>
+        <paper-menu class="drawer-menu" selected="0">
+            <paper-item>
+                <iron-icon icon="home" class="menu-icon"></iron-icon>
+                <span class="menu-label">Home</span>
+            </paper-item>
+            <paper-item>
+                <iron-icon icon="notification:sync" class="menu-icon"></iron-icon>
+                <span class="menu-label">Changelog</span>
+            </paper-item>
+            <paper-item>
+                <iron-icon icon="account-circle" class="menu-icon"></iron-icon>
+                <span class="menu-label">The Team</span>
+            </paper-item>
+            <paper-item>
+                <iron-icon icon="question-answer" class="menu-icon"></iron-icon>
+                <span class="menu-label">Support</span>
+            </paper-item>
+            <paper-item>
+                <iron-icon icon="extension" class="menu-icon"></iron-icon>
+                <span class="menu-label">About us</span>
+            </paper-item>
+        </paper-menu>
+    </div>
+    <paper-scroll-header-panel main condenses keep-condensed-header>
+        <paper-toolbar class="main-toolbar tall">
+            <paper-icon-button class="drawer-toggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+            <div class="flex"></div>
+            <paper-icon-button icon="search"></paper-icon-button>
+            <div class="bottom title">SlimRoms</div>
+        </paper-toolbar>
+        <div style="height: 20000px; background: linear-gradient(rgb(214, 227, 231), lightblue); display: block;">hi</div>
+    </paper-scroll-header-panel>
+</paper-drawer-panel>
+
+</body>
+</html>

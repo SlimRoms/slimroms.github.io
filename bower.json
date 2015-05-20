@@ -18,19 +18,19 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#v0.9.0-rc.1",
-    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#v0.9.2",
+    "polymer": "Polymer/polymer#v0.9.0",
+    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#v0.9.4",
     "font-roboto": "Polymer/font-roboto#master",
-    "paper-menu": "PolymerElements/paper-menu#v0.9.0",
-    "paper-toolbar": "PolymerElements/paper-toolbar#v0.9.0",
-    "iron-icons": "PolymerElements/iron-icons#v0.9.1",
-    "paper-item": "PolymerElements/paper-item#v0.9.0",
-    "paper-ripple": "PolymerElements/paper-ripple#v0.9.0",
-    "paper-fab": "PolymerElements/paper-fab#v0.9.0",
-    "paper-button": "PolymerElements/paper-button#v0.9.0",
-    "paper-icon-button": "PolymerElements/paper-icon-button#v0.9.0"
-  },
-  "devDependencies": {
-    "neon-animated-pages": "PolymerElements/neon-animated-pages#initial-impl"
+    "paper-menu": "PolymerElements/paper-menu#v0.9.1",
+    "paper-toolbar": "PolymerElements/paper-toolbar#v0.9.1",
+    "iron-icons": "PolymerElements/iron-icons#v0.9.2",
+    "paper-item": "PolymerElements/paper-item#v0.9.1",
+    "paper-ripple": "PolymerElements/paper-ripple#v0.9.1",
+    "paper-fab": "PolymerElements/paper-fab#v0.9.1",
+    "paper-button": "PolymerElements/paper-button#v0.9.1",
+    "paper-icon-button": "PolymerElements/paper-icon-button#v0.9.1",
+    "paper-header-panel": "PolymerElements/paper-header-panel#v0.9.1",
+    "neon-animation": "PolymerElements/neon-animation#v0.9.0",
+    "paper-scroll-header-panel": "PolymerElements/paper-scroll-header-panel#0.9.0"
   }
 }
