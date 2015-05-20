@@ -102,10 +102,10 @@
             <paper-icon-button class="drawer-toggle" icon="menu" paper-drawer-toggle></paper-icon-button>
             <div class="flex"></div>
             <paper-icon-button icon="search"></paper-icon-button>
-            <div class="bottom title">SlimRoms</div>
+            <div class="bottom title">SlimRoms<span id="sub_title"></span></div>
         </paper-toolbar>
 
-        <app-router id="main_content">
+        <app-router id="main_content" init="manual">
             <app-route path="/" import="pages/home.html" template></app-route>
             <app-route path="/changelog" import="pages/home.html" template></app-route>
             <app-route path="/team" import="pages/home.html" template></app-route>
@@ -125,7 +125,34 @@
 <script>
     function switch_page(location) {
         document.querySelector('app-router').go(location);
+        document.querySelector('#main_drawer').closeDrawer();
     }
+
+    window.addEventListener('WebComponentsReady', function() {
+        var router = document.querySelector('app-router');
+        router.addEventListener('activate-route-end', function(event) {
+            var path = event.detail.path;
+            if (path === '/') path = '/home';
+            var words = path.slice(1).split('-');
+            var sub = '';
+            for (var i in words) {
+                var w = words[i];
+                if (sub != '') sub += ' ';
+                sub += w[0].toUpperCase();
+                sub += w.slice(1);
+            }
+            document.querySelector('#sub_title').innerHTML = ' - ' + sub;
+
+            var title;
+            if (document.title.indexOf(' - ') != -1) {
+                title = document.title.slice(0, document.title.indexOf(' - ') + 3);
+            } else {
+                title = document.title + ' - ';
+            }
+            document.title = title + sub;
+        });
+        router.init();
+    });
 </script>
 
 </body>
