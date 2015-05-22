@@ -10,8 +10,28 @@
             -webkit-flex-wrap: wrap;
             -moz-flex-wrap: wrap;
             flex-wrap: wrap;
-            justify-content: center;
             align-items: flex-start;
+            justify-content: center;
+        }
+        .flex-container paper-card {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 49%;
+        }
+        @media (max-width: 1100px) {
+            .flex-container paper-card {
+                flex-basis: 99%;
+            }
+        }
+        @media (min-width: 1700px) {
+            .flex-container paper-card {
+                flex-basis: 32%;
+            }
+        }
+        @media (min-width: 2300px) {
+            .flex-container paper-card {
+                flex-basis: 24%;
+            }
         }
         paper-card::shadow paper-material {
             margin: 0.6em !important;
