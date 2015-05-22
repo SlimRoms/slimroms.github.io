@@ -23,7 +23,7 @@ limitations under the License.
             background: white;
             box-sizing: border-box;
             border-radius: 2px;
-            padding: 50px;
+            padding: 2em;
             font-size: 1em;
             color: #555555;
             font-weight: 400;
@@ -31,17 +31,17 @@ limitations under the License.
         }
         @media (min-width: 800px) and (max-width: 1100px) {
             :host paper-material {
-                padding: 35px;
+                padding: 1.8em;
             }
         }
         @media (max-width: 800px) {
             :host paper-material {
-                padding: 25px;
+                padding: 1.5em;
             }
         }
         @media (max-width: 480px) {
             :host paper-material {
-                padding: 20px;
+                padding: 1.2em;
             }
         }
 
@@ -95,10 +95,10 @@ limitations under the License.
     </style>
     <template>
         <paper-material elevation="{{elevation}}" animated="{{animated}}">
-            <div class="paper-card-title" layout horizontal center>
+            <div class="paper-card-title" layout horizontal center hidden>
                 <content select=".title"></content>
             </div>
-            <div class="paper-card-subtitle" layout horizontal center>
+            <div class="paper-card-subtitle" layout horizontal center hidden>
                 <content select=".subtitle"></content>
             </div>
             <content select=":not(.footer)"></content>
@@ -123,9 +123,12 @@ limitations under the License.
                 }
             },
             ready: function () {
-                var card_action = Polymer.dom(this.root).querySelector('.paper-card-footer');
-                if (card_action.childElementCount != 0) {
-                    card_action.removeAttribute('hidden');
+                var classes = ['.paper-card-title', '.paper-card-subtitle', '.paper-card-footer'];
+                for (var i in classes) {
+                    var card_action = Polymer.dom(this.root).querySelector(classes[i]);
+                    if (card_action.childElementCount != 0) {
+                        card_action.removeAttribute('hidden');
+                    }
                 }
             }
         })
