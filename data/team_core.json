@@ -1,0 +1,79 @@
+[
+  {
+    "name":"Josue Rivera",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/prbassplayer_zpsvecdeodd.jpg",
+    "username":"prbassplayer",
+    "location":"Puerto Rico",
+    "position":"Development Coordinator"
+  },
+  {
+    "name":"Cordell",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/usethisone_zpspcrhbumb.jpg",
+    "username":"cordell12",
+    "location":"USA",
+    "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
+  },
+  {
+    "name":"Lars Greiss",
+    "img":"https://github.com/kufikugel.png",
+    "username":"kufikugel",
+    "location":"Germany",
+    "position":"Lead Developer"
+  },
+  {
+    "name":"Nicholas Flintham",
+    "img":"https://github.com/Flinny.png",
+    "username":"Flinny",
+    "location":"United Kingdom",
+    "position":"Google Nexus 9 and HTC One Family Maintainer"
+  },
+  {
+    "name":"Griffin Millender",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/griffin_zpsw0oeicwd.jpg",
+    "username":"gmillz",
+    "location":"USA",
+    "position":"Developer"
+  },
+  {
+    "name":"Nick Lovell",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/nicklovell_zpsqpyrrss4.png",
+    "username":"nicklovell23",
+    "location":"USA",
+    "position":"Release Manager, Samsung Galaxy S4 (jflte) and Samusung Galaxy Note 10.1 (i925) Maintainer"
+  },
+  {
+    "name":"Per Lycke",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/perlycke_zpsyibz2mdq.jpg",
+    "username":"pemell",
+    "location":"Sweden",
+    "position":"Public relations"
+  },
+  {
+    "name":"Ahmed Nabeel",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/Avatar_zpsirzrp00w.jpg",
+    "username":"Ahmed NabeelM",
+    "location":"Egypt",
+    "position":"Lead Support & Public relations"
+  },
+  {
+    "name":"Kit Tinhonovich",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/jubakuba_zpszjy8stxg.png",
+    "username":"Jubakuba",
+    "location":"USA",
+    "position":"Developer"
+  },
+  {
+    "name":"Tylog",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/ixbbnswa_zpsth5o1lji.jpg",
+    "username":"tylog",
+    "location":"Germany",
+    "position":"XDA Maintainer"
+  },
+  {
+    "name":"Daniel Koman",
+    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/dankoman_zpssqru58vz.png",
+    "username":"dankoman",
+    "location":"USA",
+    "position":"Gapps Maintainer, Themer and Developer"
+  }
+]
