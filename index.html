@@ -20,6 +20,7 @@
     <link rel="import" href="bower_components/app-router/app-router.html">
     <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
     <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 
     <style is="custom-style">
         html, body {
@@ -74,6 +75,22 @@
             padding: 8px;
             display: block;
         }
+        paper-item[bottom] {
+            bottom: 0;
+            position: absolute;
+        }
+        .social-buttons-container {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+        .social-buttons-container paper-fab {
+            margin: 0 1em;
+        }
+        .social-buttons-container > * {
+            margin: 0;
+        }
     </style>
 </head>
 <body layout vertical>
@@ -99,6 +116,17 @@
             <paper-item onclick="switch_page('/about');">
                 <iron-icon icon="extension" class="menu-icon"></iron-icon>
                 <span class="menu-label">About us</span>
+            </paper-item>
+            <paper-item bottom disabled class="social-buttons-container">
+                <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank">
+                    <paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39;"></paper-fab>
+                </a>
+                <a href="https://twitter.com/SlimRoms" target="_blank">
+                    <paper-fab mini src="icons/twitter.png" style="background-color: #55acee;"></paper-fab>
+                </a>
+                <a href="https://www.facebook.com/pages/Slim-Roms/340528706063511" target="_blank">
+                    <paper-fab mini src="icons/facebook.png" style="background-color: #3b5998;"></paper-fab>
+                </a>
             </paper-item>
         </paper-menu>
     </div>
