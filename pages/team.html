@@ -1,10 +1,352 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<template>
+    <style is="custom-style">
+        .flex-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        paper-card::shadow paper-material {
+            margin: 0.6em !important;
+        }
+        paper-card.heading .title {
+            text-align: center;
+        }
+        .team-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: flex-start;
+        }
+        .team-container img {
+            height: auto;
+            width: 6.5em;
+            min-width: 6.5em;
+            border-radius: 50%;
+        }
+        .team-container .text-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-left: 2em;
+        }
+        .team-container .text-container .icon-text {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .team-container .text-container .icon-text iron-icon {
+            color: #0781aa;
+            width: 1.3em;
+            height: 1.3em;
+        }
+        .team-container .text-container .icon-text p {
+            margin: 0 0 0 1em;
+            font-size: 1em;
+            color: #555555;
+            font-weight: 400;
+            line-height: 1.1em;
+        }
+    </style>
+    <paper-card class="heading">
+        <h1 class="title">Core Team</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind" id="team_core_card_template">
+            <template is="dom-repeat" items="{{details}}">
+                <paper-card>
+                    <h2 class="title">{{item.name}}</h2>
+                    <div class="team-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:contacts"></iron-icon>
+                                <p>{{item.username}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="room"></iron-icon>
+                                <p>{{item.location}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="work"></iron-icon>
+                                <p>{{item.position}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+        </template>
+    </div>
+    <paper-card class="heading">
+        <h1 class="title">Device Maintainers and Contributors</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind" id="team_contri_card_template">
+            <template is="dom-repeat" items="{{details}}">
+                <paper-card>
+                    <h2 class="title">{{item.name}}</h2>
+                    <div class="team-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:contacts"></iron-icon>
+                                <p>{{item.username}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="room"></iron-icon>
+                                <p>{{item.location}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="work"></iron-icon>
+                                <p>{{item.position}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+        </template>
+    </div>
 
-</body>
-</html>
+    <script>
+        (function() {
+            var core_template = document.querySelector('#team_core_card_template');
+            core_template.details = [
+                {
+                    name: 'Josue Rivera',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/prbassplayer_zpsvecdeodd.jpg',
+                    username: 'prbassplayer',
+                    location: 'Puerto Rico',
+                    position: 'Development Coordinator'
+                },
+                {
+                    name: 'Cordell',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/usethisone_zpspcrhbumb.jpg',
+                    username: 'cordell12',
+                    location: 'USA',
+                    position: 'Samsung Galaxy Note 3 and Google Nexus 6 Maintainer'
+                },
+                {
+                    name: 'Lars Greiss',
+                    img: 'https://github.com/kufikugel.png',
+                    username: 'kufikugel',
+                    location: 'Germany',
+                    position: 'Lead Developer'
+                },
+                {
+                    name: 'Nicholas Flintham',
+                    img: 'https://github.com/Flinny.png',
+                    username: 'Flinny',
+                    location: 'United Kingdom',
+                    position: 'Google Nexus 9 and HTC One Family Maintainer'
+                },
+                {
+                    name: 'Griffin Millender',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/griffin_zpsw0oeicwd.jpg',
+                    username: 'gmillz',
+                    location: 'USA',
+                    position: 'Developer'
+                },
+                {
+                    name: 'Nick Lovell',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/nicklovell_zpsqpyrrss4.png',
+                    username: 'nicklovell23',
+                    location: 'USA',
+                    position: 'Release Manager, Samsung Galaxy S4 (jflte) and Samusung Galaxy Note 10.1 (i925) Maintainer'
+                },
+                {
+                    name: 'Per Lycke',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/perlycke_zpsyibz2mdq.jpg',
+                    username: 'pemell',
+                    location: 'Sweden',
+                    position: 'Public relations'
+                },
+                {
+                    name: 'Ahmed Nabeel',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/Avatar_zpsirzrp00w.jpg',
+                    username: 'Ahmed NabeelM',
+                    location: 'Egypt',
+                    position: 'Lead Support & Public relations'
+                },
+                {
+                    name: 'Kit Tinhonovich',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/jubakuba_zpszjy8stxg.png',
+                    username: 'Jubakuba',
+                    location: 'USA',
+                    position: 'Developer'
+                },
+                {
+                    name: 'Tylog',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/ixbbnswa_zpsth5o1lji.jpg',
+                    username: 'tylog',
+                    location: 'Germany',
+                    position: 'XDA Maintainer'
+                },
+                {
+                    name: 'Daniel Koman',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/dankoman_zpssqru58vz.png',
+                    username: 'dankoman',
+                    location: 'USA',
+                    position: 'Gapps Maintainer, Themer and Developer'
+                }
+
+            ];
+
+            var contri_template = document.querySelector('#team_contri_card_template');
+            contri_template.details = [
+                {
+                    name: 'Robbie Lancaster',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/robbie_zpspjitxsad.png',
+                    username: 'RobbieL811',
+                    location: 'USA',
+                    position: 'OnePlus One and Google Nexus 7 (deb/flo) Maintainer'
+                },
+                {
+                    name: 'Andreas B.',
+                    img: 'https://github.com/andi34.png',
+                    username: 'Android-andi',
+                    location: 'Germany',
+                    position: 'Samsung Galaxy Tab 2 Maintainer, Crowdin Maintainer'
+                },
+                {
+                    name: 'Cristian Giordano',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/cristian_zpsevqvypd3.png',
+                    username: 'steel89',
+                    location: 'Italy',
+                    position: 'Designer'
+                },
+                {
+                    name: 'Perseus71',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/perseus71_zpsohunnopc.png',
+                    username: 'Perseus71',
+                    location: 'USA',
+                    position: 'Samsung Galaxy S III LTE (d2lte) Maintainer'
+                },
+                {
+                    name: 'Karan Srivastava',
+                    img: 'https://github.com/rebelos.png',
+                    username: 'rebelos',
+                    location: 'India',
+                    position: 'Xiaomi Redmi 1S (armani) maintainer, IRC support'
+                },
+                {
+                    name: 'Rawad Zahreddine',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/rirozizo_zpsnuaksuzg.png',
+                    username: 'rirozizo',
+                    location: 'Lebanon',
+                    position: 'IRC support'
+                },
+                {
+                    name: 'Sergey Karsakov',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/serg_zpslik9h2tp.png',
+                    username: 'gwindlord',
+                    location: 'Belarus',
+                    position: 'Russian support & translations'
+                },
+                {
+                    name: 'Andrew Cardinal',
+                    img: 'https://github.com/arcardinal.png',
+                    username: 'arcardinal',
+                    location: 'USA',
+                    position: 'LG Optimus G (geeb) and LG Optimus G2 Maintainer'
+                },
+                {
+                    name: 'Xiao-Long Chen',
+                    img: 'https://github.com/chenxiaolong.png',
+                    username: 'chenxiaolong',
+                    location: 'USA',
+                    position: 'Developer'
+                },
+                {
+                    name: 'Dan Cartier',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/nospamdan_zpsoee8wirr.png',
+                    username: 'nospamdan',
+                    location: 'USA',
+                    position: 'Samsung Galaxy S2 AT&T/T-Mobile (skyrocket/hercules) Maintainer'
+                },
+                {
+                    name: 'Omar Einea',
+                    img: 'https://github.com/OmarEinea.png',
+                    username: 'OmarEinea',
+                    location: 'Syria',
+                    position: 'Sony Xperia Z1 (honami), Z1c (amami) and Z ultra (togari) Maintainer'
+                },
+                {
+                    name: 'Olivier',
+                    img: 'https://github.com/olivieer.png',
+                    username: 'Olivier',
+                    location: 'Austria',
+                    position: 'Sony Xperia Z (yuga) Maintainer'
+                },
+                {
+                    name: 'Dimitris Mantzouranis',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/dexter93_zpsopsuqkf9.png',
+                    username: 'dexter93',
+                    location: 'Greece',
+                    position: 'Google Nexus 7 (grouper/tilapia) and Samsung Galaxy Note 2 (N7100) Maintainer'
+                },
+                {
+                    name: 'Tej Karani',
+                    img: 'https://github.com/tejkkarani.png',
+                    username: 'tejkarani',
+                    location: 'India',
+                    position: 'kona Family Maintainer'
+                },
+                {
+                    name: 'Arun Manohar',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/arun_zpszdpsyqj2.png',
+                    username: 'a2441918',
+                    location: 'Indea',
+                    position: 'Samsung Galaxy S4 (I9500) Co-Maintainer'
+                },
+                {
+                    name: 'Shawn Teoh',
+                    img: 'https://github.com/ryuinferno.png',
+                    username: 'ryuinferno',
+                    location: 'Australia',
+                    position: 'Samsung Galaxy S2 (I9100G) Maintainer'
+                },
+                {
+                    name: 'Bryne Gunde',
+                    img: 'https://github.com/BlaqueSouldroid.png',
+                    username: 'BlaqueDroid',
+                    location: 'South Africa',
+                    position: 'Samsung Galaxy S4 (I9500) Co-Maintainer'
+                },
+                {
+                    name: 'Kenny G',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/xceed_zpsxb8j5dbf.png',
+                    username: 'Xceed',
+                    location: 'United Kingdom',
+                    position: 'Support'
+                },
+                {
+                    name: 'Stuart Waller',
+                    img: 'http://i1380.photobucket.com/albums/ah192/ANabeel95/stuart_zpslyjurogs.png',
+                    username: 'KnightWolf',
+                    location: 'Canada',
+                    position: 'Support/Forum Moderator'
+                }
+            ];
+        })();
+    </script>
+
+</template>
