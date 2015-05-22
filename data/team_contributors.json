@@ -1,7 +1,7 @@
 [
   {
     "name": "Robbie Lancaster",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/robbie_zpspjitxsad.png",
+    "img": "images/team/robbiel811.png",
     "username": "RobbieL811",
     "location": "USA",
     "position": "OnePlus One and Google Nexus 7 (deb/flo) Maintainer"
@@ -15,14 +15,14 @@
   },
   {
     "name": "Cristian Giordano",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/cristian_zpsevqvypd3.png",
+    "img": "images/team/steel89.png",
     "username": "steel89",
     "location": "Italy",
     "position": "Designer"
   },
   {
     "name": "Perseus71",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/perseus71_zpsohunnopc.png",
+    "img": "https://github.com/Perseus71.png",
     "username": "Perseus71",
     "location": "USA",
     "position": "Samsung Galaxy S III LTE (d2lte) Maintainer"
@@ -36,14 +36,14 @@
   },
   {
     "name": "Rawad Zahreddine",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/rirozizo_zpsnuaksuzg.png",
+    "img": "images/team/rirozizo.png",
     "username": "rirozizo",
     "location": "Lebanon",
     "position": "IRC support"
   },
   {
     "name": "Sergey Karsakov",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/serg_zpslik9h2tp.png",
+    "img": "images/team/gwindlord.png",
     "username": "gwindlord",
     "location": "Belarus",
     "position": "Russian support & translations"
@@ -64,7 +64,7 @@
   },
   {
     "name": "Dan Cartier",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/nospamdan_zpsoee8wirr.png",
+    "img": "images/team/nospamdan.png",
     "username": "nospamdan",
     "location": "USA",
     "position": "Samsung Galaxy S2 AT&T/T-Mobile (skyrocket/hercules) Maintainer"
@@ -85,7 +85,7 @@
   },
   {
     "name": "Dimitris Mantzouranis",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/dexter93_zpsopsuqkf9.png",
+    "img": "images/team/dexter93.png",
     "username": "dexter93",
     "location": "Greece",
     "position": "Google Nexus 7 (grouper/tilapia) and Samsung Galaxy Note 2 (N7100) Maintainer"
@@ -99,7 +99,7 @@
   },
   {
     "name": "Arun Manohar",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/arun_zpszdpsyqj2.png",
+    "img": "https://github.com/a2441918.png",
     "username": "a2441918",
     "location": "Indea",
     "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
@@ -120,14 +120,14 @@
   },
   {
     "name": "Kenny G",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/xceed_zpsxb8j5dbf.png",
+    "img": "images/team/xceed.png",
     "username": "Xceed",
     "location": "United Kingdom",
     "position": "Support"
   },
   {
     "name": "Stuart Waller",
-    "img": "http://i1380.photobucket.com/albums/ah192/ANabeel95/stuart_zpslyjurogs.png",
+    "img": "images/team/knightwolf.png",
     "username": "KnightWolf",
     "location": "Canada",
     "position": "Support/Forum Moderator"

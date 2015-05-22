@@ -1,14 +1,14 @@
 [
   {
     "name":"Josue Rivera",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/prbassplayer_zpsvecdeodd.jpg",
+    "img":"images/team/prbassplayer.png",
     "username":"prbassplayer",
     "location":"Puerto Rico",
     "position":"Development Coordinator"
   },
   {
     "name":"Cordell",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/usethisone_zpspcrhbumb.jpg",
+    "img":"images/team/cordell12.png",
     "username":"cordell12",
     "location":"USA",
     "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
@@ -29,49 +29,49 @@
   },
   {
     "name":"Griffin Millender",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/griffin_zpsw0oeicwd.jpg",
+    "img":"images/team/gmillz.png",
     "username":"gmillz",
     "location":"USA",
     "position":"Developer"
   },
   {
     "name":"Nick Lovell",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/nicklovell_zpsqpyrrss4.png",
+    "img":"https://github.com/nicklovell23.png",
     "username":"nicklovell23",
     "location":"USA",
     "position":"Release Manager, Samsung Galaxy S4 (jflte) and Samusung Galaxy Note 10.1 (i925) Maintainer"
   },
   {
     "name":"Per Lycke",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/perlycke_zpsyibz2mdq.jpg",
+    "img":"https://github.com/perlycke.png",
     "username":"pemell",
     "location":"Sweden",
     "position":"Public relations"
   },
   {
     "name":"Ahmed Nabeel",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/Avatar_zpsirzrp00w.jpg",
+    "img":"images/team/nabeel.png",
     "username":"Ahmed NabeelM",
     "location":"Egypt",
     "position":"Lead Support & Public relations"
   },
   {
     "name":"Kit Tinhonovich",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/jubakuba_zpszjy8stxg.png",
+    "img":"images/team/jubakuba.png",
     "username":"Jubakuba",
     "location":"USA",
     "position":"Developer"
   },
   {
     "name":"Tylog",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/ixbbnswa_zpsth5o1lji.jpg",
+    "img":"images/team/tylog.png",
     "username":"tylog",
     "location":"Germany",
     "position":"XDA Maintainer"
   },
   {
     "name":"Daniel Koman",
-    "img":"http://i1380.photobucket.com/albums/ah192/ANabeel95/dankoman_zpssqru58vz.png",
+    "img":"images/team/dankoman.png",
     "username":"dankoman",
     "location":"USA",
     "position":"Gapps Maintainer, Themer and Developer"
