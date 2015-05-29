@@ -40,7 +40,7 @@
             @apply(--shadow-elevation-4dp);
         }
 
-        paper-item[onclick], paper-icon-item[onclick] {
+        .clickable-item {
             cursor: pointer;
         }
 
@@ -98,24 +98,24 @@
 <body layout vertical unresolved>
 <paper-drawer-panel id="main_drawer">
     <div drawer>
-        <paper-menu class="drawer-menu" selected="0">
-            <paper-icon-item onclick="switch_page('/');">
+        <paper-menu class="drawer-menu" attr-for-selected="url">
+            <paper-icon-item class="clickable-item" url="/">
                 <iron-icon icon="home" item-icon></iron-icon>
                 Home
             </paper-icon-item>
-            <paper-icon-item onclick="switch_page('/changelog');">
+            <paper-icon-item class="clickable-item" url="/changelog">
                 <iron-icon icon="notification:sync" item-icon></iron-icon>
                 Changelog
             </paper-icon-item>
-            <paper-icon-item onclick="switch_page('/team');">
+            <paper-icon-item class="clickable-item" url="/team">
                 <iron-icon icon="account-circle" item-icon></iron-icon>
                 The Team
             </paper-icon-item>
-            <paper-icon-item onclick="switch_page('/support');">
+            <paper-icon-item class="clickable-item" url="/support">
                 <iron-icon icon="question-answer" item-icon></iron-icon>
                 Support
             </paper-icon-item>
-            <paper-icon-item onclick="switch_page('/about');">
+            <paper-icon-item class="clickable-item" url="/about">
                 <iron-icon icon="extension" item-icon></iron-icon>
                 About us
             </paper-icon-item>
@@ -140,7 +140,7 @@
             <div class="bottom title">SlimRoms<span id="sub_title"></span></div>
         </paper-toolbar>
 
-        <app-router id="main_content" init="manual">
+        <app-router id="main_content" init="manual" trailingSlash="ignore">
             <app-route path="/" import="pages/home.html" template></app-route>
             <app-route path="/changelog" import="pages/changelog.html" template></app-route>
             <app-route path="/team" import="pages/team.html" template></app-route>
@@ -152,13 +152,25 @@
 </paper-drawer-panel>
 
 <script>
-    function switch_page(location) {
-        document.querySelector('app-router').go(location);
+    function switch_page() {
+        document.querySelector('app-router').go(this.getAttribute('url'));
         document.querySelector('#main_drawer').closeDrawer();
     }
 
+    (function () {
+        var items = document.querySelectorAll('.drawer-menu .clickable-item');
+        for (var i = 0, len=items.length; i < len; i++) {
+            items[i].addEventListener('click', switch_page, false);
+        }
+    })();
+
     window.addEventListener('WebComponentsReady', function() {
         var router = document.querySelector('app-router');
+
+        router.addEventListener('activate-route-start', function(event) {
+            document.querySelector('#main_drawer .drawer-menu').selected = event.detail.path;
+        });
+
         router.addEventListener('activate-route-end', function(event) {
             var path = event.detail.path;
             if (path === '/') path = '/home';
