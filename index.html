@@ -4,945 +4,183 @@
     <title>SlimRoms</title>
     <meta name="description" content="SlimRoms' website, news, downloads.">
     <meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
-    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-    <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
-    <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
-    <link rel="import" href="bower_components/core-animated-pages/transitions/cross-fade.html">
-    <link href="bower_components/font-roboto/roboto.html" rel="import">
-    <link href="bower_components/core-menu/core-menu.html" rel="import">
-    <link href="bower_components/core-toolbar/core-toolbar.html" rel="import">
-    <link href="bower_components/core-icons/core-icons.html" rel="import">
-    <link href="bower_components/core-icons/social-icons.html" rel="import">
-    <link href="bower_components/core-icons/communication-icons.html" rel="import">
-    <link href="bower_components/core-icons/notification-icons.html" rel="import">
-    <link href="bower_components/paper-item/paper-item.html" rel="import">
-    <link href="bower_components/paper-ripple/paper-ripple.html" rel="import">
-    <link href="bower_components/paper-fab/paper-fab.html" rel="import">
-    <link href="bower_components/paper-button/paper-button.html" rel="import">
-    <link href="elements/paper-card.html" rel="import">
-    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-    <link rel="stylesheet" href="css/style.css?version=1.0">
-</head>
-<body unresolved>
-    <core-drawer-panel forceNarrow>
-        <div class="navigation-drawer" drawer>
-            <core-menu class="drawer-menu" selected="0">
-                <paper-item onclick="switchPage(0)">
-                    <core-icon icon="home" class="menu-icon"></core-icon>
-                    <span class="menu-label">Home</span>
-                </paper-item>
-                <paper-item onclick="switchPage(1)">
-                    <core-icon icon="notification:sync" class="menu-icon"></core-icon>
-                    <span class="menu-label">Changelog</span>
-                </paper-item>
-                <paper-item onclick="switchPage(2)">
-                    <core-icon icon="account-circle" class="menu-icon"></core-icon>
-                    <span class="menu-label">The Team</span>
-                </paper-item>
-                 <paper-item onclick="switchPage(3)">
-                    <core-icon icon="question-answer" class="menu-icon"></core-icon>
-                    <span class="menu-label">Support</span>
-                </paper-item>
-                <paper-item onclick="switchPage(4)">
-                    <core-icon icon="extension" class="menu-icon"></core-icon>
-                    <span class="menu-label">About us</span>
-                </paper-item>
-            </core-menu>
-        </div>
-        <div main>
-            <core-animated-pages selected="0" transitions="cross-fade-all">
-                <!-- PAGE 1 -->
-                <section>
-                    <core-toolbar class="main-toolbar medium-tall">
-                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>SlimROMs</span>
-                        <div class="toolbar-bottom bottom">
-                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
-                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                        </div>
-                        <paper-icon-button icon="search"></paper-icon-button>
-                    </core-toolbar>
+    <meta name="theme-color" content="#0882a9">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <!--<link rel="import" href="elements.html">-->
+    <link rel="import" href="vulcanized.html">
 
-                    <div class="content-sidebar-flex">
-                        <div class="content-section">
-                        <paper-card>
-                              <h2 class="title">SlimROMs and SlimLP updates</h2>
-                              <h3 class="subtitle">Wednesday, 8 April 2015</h3>
-                              <p><b>Where is my fully featured SlimLP?</b></p>
-                              <p>We're working on Slim 5.1. You can follow the progress on Gerrit but it's taking a little bit longer than usual as our hands are full with our brand new open source website, internal changes, hosting..etc.</p>
-                              <p>You can check the website source <a href="https://github.com/SlimRoms/slimroms.github.io" target="_blank" style="color: #555555">here</a></p>
-                              <p>Did I mention that we've also got a new <a href="https://review.slimroms.eu" target="_blank" style="color: #555555">Gerrit</a>? Oh and it's blue!</p>
-                              <p><b>We demand a status update on the old website and infrastructure issues!</b></p>
-                              <p>Till we state otherwise or get into more details. Our last statement stands as it is. Don't download anything from the old website. If you want Slim gapps or build for you device then go to our gapps or your device thread on xda respectively.</p>
-                              <p>Change requires time but we can assure you that SlimROMs is not dead and we will come back better than ever! till then <b>keep it slim.</b></p>
-                            <div class="footer">
-                              <p>Keep in mind the website is still a WIP however you can always contribute by pushing commits to our Gerrit.</p>
-                            </div>
-                        </paper-card>
-                            <paper-card>
-                                <h2 class="title">TRPS!</h2>
-                                <h3 class="subtitle">Wednesday, 1st April 2015</h3>
-                                <p>We're back, and we're pink! After much research, we have realised that Material on Android isn't working so well.</p>
-                                <p>Over the past month, we have sent out different designs to some of our testers. The feedback that we got was the design is fine, it's just the colour scheme.</p>
-                                <p>We would like to officially announce TRPS! It's still in the works, but it will be coming to your devices soon.</p>
-                                <p>In support of this announcement, we have turned our <a href="https://review.slimroms.eu">Gerrit</a> pink.</p>
-                                <p>support us by turning something pink! Post pictures with #SlimPink. The best will be showcased on the new site.</p>
-                            </paper-card>
-                            <paper-card>
-                                <h2 class="title">SlimLP Alpha 1.0</h2>
-                                <h3 class="subtitle">Monday, 17 February 2015</h3>
-                                <p>We are proud to announce the first weekly for SlimLP. Please note not all devices are getting a weekly yet. This is the first alpha release more devices and features to come as we move forward.</p>
-                                <span class="heading">Features:</span>
-                                <ul>
-                                    <li>RRO Layers Support</li>
-                                    <li>Doze (ambient display) time-out (selected devices only)</li>
-                                    <li>Options for battery icon and text</li>
-                                    <li>Privacy guard</li>
-                                    <li>Slim Heads up</li>
-                                    <li>Slim Dialer</li>
-                                </ul>
-                                <div class="footer">
-                                    <p>Keep in mind Jenkins build order is random so we can't say when a specific build will be ready.</p>
-                                </div>
-                            </paper-card>
-
-                            <paper-card>
-                                <h2 class="title">Slim updates</h2>
-                                <h3 class="subtitle">Tuesday, 16 December 2014</h3>
-                                <p>As we mentioned couple weeks ago, we're working on SlimLP and already added some of our features e.g. Slim heads up, privacy guard, slim dialer, lockscreen shortcuts and much more. With the steady progress of SlimLP and current stability of Slimkat we decided to go for Slimkat 9.0 next week. With that being said we'll take the week off for testing purposes so no release this week, hope you have a great week and remember to <b>keep it slim.</b></p>
-                            </paper-card>
-                            <paper-card>
-                                <h2 class="title">SlimROMs meets lollipop</h2>
-                                <h3 class="subtitle">Saturday, 06 December 2014</h3>
-                                <p>As some of you already know we extended Slimkat weeklies to make them as stable as possible but that doesn't mean we're neglecting lollipop. We are already working on lollipop and pushed multiple alpha builds for both nexus 5 and 4 with some of our added features like privacy guard, sounds tweaks, status bar tweaks and much more. It's been decided that the new version of Slim + lollipop will be called SlimLP. We would like to thank +Cristian Giordano for the great work on the new boot animation. Stay tuned for more SlimLP news :)</p>
-                            </paper-card>
-                            <paper-card>
-                                <h2 class="title">SlimROMs moves to Crowdin</h2>
-                                <h3 class="subtitle">Friday, 21 November 2014</h3>
-                                <p>We have officially moved all translations back to crowdin. <b>What does that mean?</b></p>
-                                <ol type="1">
-                                    <li>Easier way for users to translate SlimRoms to their language with a slight to no learning curve.</li>
-                                    <li>We won't accept new translations on Gerrit. All the translations must be made through crowdin.</li>
-                                </ol>
-                                <span class="heading">Before users had to:</span>
-                                <ul>
-                                    <li>Have Git.</li>
-                                    <li>Clone the repo in question.</li>
-                                    <li>Do the changes, commit and push them to our Gerrit.</li>
-                                    <li>Add someone from the team to review and merge the translations.</li>
-                                </ul>
-                                <p><a href=" https://crowdin.com/project/slimroms" target="_blank"> Our Crowdin Project</a>
-                                <a href="https://crowdin.com/page/quick-start" target="_blank">Crowdin quick guide</a></p>
-                            </paper-card>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="card">
-                                <div class="card-padding-small">
-                                    <div class="social-buttons-container">
-                                       <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank"><paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39;"></paper-fab></a>
-                                       <a href="https://twitter.com/SlimRoms" target="_blank"><paper-fab mini src="icons/twitter.png" style="background-color: #55acee;"></paper-fab></a>
-                                       <a href="https://www.facebook.com/pages/Slim-Roms/340528706063511" target="_blank"> <paper-fab mini src="icons/facebook.png" style="background-color: #3b5998;"></paper-fab></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-padding-small">
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- PAGE 2 -->
-                <section>
-                    <core-toolbar class="main-toolbar medium-tall">
-                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>Changelog</span>
-                        <div class="toolbar-bottom bottom">
-                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
-                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                        </div>
-                        <paper-icon-button icon="search"></paper-icon-button>
-                    </core-toolbar>
-
-                    <div class="content-sidebar-flex">
-                        <div class="content-section">
-                            <paper-card>
-                                <h2 class="title">Gerrit</h2>
-                                <a href="https://review.slimroms.eu" target="_blank">
-                                <img src="images/slimcodereview.png" alt="Slim Code Review">
-                                </a>
-                            </paper-card>
-                            <paper-card>
-                                <h2 class="title">Manual</h2>
-                                <img src="images/slimchangelog.png" alt="Slim Code Review">
-                            </paper-card>
-                        </div>
-                    </div>
-                </section>
-                <!-- PAGE 3 -->
-                <section>
-                    <core-toolbar class="main-toolbar medium-tall">
-                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>The Team</span>
-                        <div class="toolbar-bottom bottom">
-                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
-                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                        </div>
-                        <paper-icon-button icon="search"></paper-icon-button>
-                    </core-toolbar>
-                    <div class="content-sidebar-flex">
-                        <div class="content-section">
-                            <!-- CORE TEAM CARD -->
-                            <div class="card">
-                                <div class="card-padding">
-                                    <p class="card-title team-title">Core Team</p>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/prbassplayer_zpsvecdeodd.jpg">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Josue Rivera</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">prbassplayer</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Puerto Rico</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Development Coordinator</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/usethisone_zpspcrhbumb.jpg">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Cordell</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">cordell12</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy Note 3 and Google Nexus 6 Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/kufikugel.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Lars Greiss</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">kufikugel</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Germany</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Lead Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/Flinny.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Nicholas Flintham</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Flinny</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">UK</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Google Nexus 9 and HTC One Family Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/griffin_zpsw0oeicwd.jpg">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Griffin Millender</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">gmillz</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/nicklovell_zpsqpyrrss4.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Nick Lovell</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">nicklovell23</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Release Manager, Samsung Galaxy S4 (jflte) and Samusung Galaxy Note 10.1 (i925) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/perlycke_zpsyibz2mdq.jpg">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Per Lycke</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">pemell</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Sweden</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Public relations</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/Avatar_zpsirzrp00w.jpg">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Ahmed Nabeel</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Ahmed NabeelM</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Egypt</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Lead Support & Public relations</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/jubakuba_zpszjy8stxg.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Kit Tinhonovich</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Jubakuba</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/ixbbnswa_zpsth5o1lji.jpg">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Tylog</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">tylog</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Germany</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">XDA Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/dankoman_zpssqru58vz.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Daniel Koman</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">dankoman</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Gapps Maintainer, Themer and Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- DEVICE MAINTAINERS AND CONTRIBUTORS CARD -->
-                            <div class="card">
-                                <div class="card-padding">
-                                    <p class="card-title team-title">Device Maintainers and Contributors</p>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/robbie_zpspjitxsad.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Robbie Lancaster</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">RobbieL811</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">OnePlus One and Google Nexus 7 (deb/flo) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/andi34.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Andreas B.</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Android-andi</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Germany</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy Tab 2 Maintainer, Crowdin Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/cristian_zpsevqvypd3.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Cristian Giordano</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">steel89</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Italy</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/perseus71_zpsohunnopc.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Perseus71</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Perseus71</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy S III LTE (d2lte) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/rebelos.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Karan Srivastava</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">rebelos</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">India</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Xiaomi Redmi 1S (armani) maintainer, IRC support</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/rirozizo_zpsnuaksuzg.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Rawad Zahreddine</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">rirozizo</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Lebanon</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">IRC support</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/serg_zpslik9h2tp.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Sergey Karsakov</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">gwindlord</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Belarus</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Russian support & translations</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/arcardinal.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Andrew Cardinal</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">arcardinal</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">LG Optimus G (geeb) and LG Optimus G2 Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/chenxiaolong.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Xiao-Long Chen</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">chenxiaolong</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/nospamdan_zpsoee8wirr.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Dan Cartier</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">nospamdan</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">USA</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy S2 AT&T/T-Mobile (skyrocket/hercules) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/OmarEinea.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Omar Einea</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">OmarEinea</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Syria</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Sony Xperia Z1 (honami), Z1c (amami) and Z ultra (togari) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/olivieer.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Olivier</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Olivier</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Austria</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Sony Xperia Z (yuga) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/dexter93_zpsopsuqkf9.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Dimitris Mantzouranis</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">dexter93</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Greece</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Google Nexus 7 (grouper/tilapia) and Samsung Galaxy Note 2 (N7100) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/tejkkarani.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Tej Karani</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">tejkarani</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">India</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">kona Family Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/arun_zpszdpsyqj2.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Arun Manohar</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">a2441918</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">India</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy S4 (I9500) Co-Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/ryuinferno.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Shawn Teoh</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">ryuinferno</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Australia</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy S2 (I9100G) Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="https://github.com/BlaqueSouldroid.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Bryne Gunde</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">BlaqueDroid</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">South Africa</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Samsung Galaxy S4 (I9500) Co-Maintainer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/xceed_zpsxb8j5dbf.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Kenny G</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">Xceed</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">UK</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Support</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <img src="http://i1380.photobucket.com/albums/ah192/ANabeel95/stuart_zpslyjurogs.png">
-                                        <div class="team-item-text-container">
-                                            <p class="card-content-text name">Stuart Waller</p>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="communication:contacts"></core-icon>
-                                                <p class="card-content-text">KnightWolf</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="room"></core-icon>
-                                                <p class="card-content-text">Canada</p>
-                                            </div>
-                                            <div class="team-icon-text">
-                                                <core-icon icon="work"></core-icon>
-                                                <p class="card-content-text">Support/Forum Moderator</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="card">
-                                <div class="card-padding-small">
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                 <!-- PAGE 4 -->
-               <section>
-                    <core-toolbar class="main-toolbar medium-tall">
-                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>Support</span>
-                        <div class="toolbar-bottom bottom">
-                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
-                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                        </div>
-                        <paper-icon-button icon="search"></paper-icon-button>
-                        <paper-icon-button icon="mail"></paper-icon-button>
-                    </core-toolbar>
-                    <div class="content-sidebar-flex">
-                        <div class="content-section content-responsive-grid">
-                            <div class="responsive-grid-container">
-                                <div class="responsive-grid-item">
-                                    <div class="card">
-                                        <paper-item>
-                                            <div class="card-padding-small">
-                                                <span>How to Install SlimROMs</span>
-                                            </div>
-                                        </paper-item>
-                                    </div>
-                                </div>
-                                <div class="responsive-grid-item">
-                                    <div class="card">
-                                        <paper-item>
-                                            <div class="card-padding-small">
-                                                <span>Report bugs</span>
-                                            </div>
-                                        </paper-item>
-                                    </div>
-                                </div>
-                                <div class="responsive-grid-item">
-                                    <div class="card">
-                                        <paper-item>
-                                            <div class="card-padding-small">
-                                                <span>Frequently asked questions</span>
-                                            </div>
-                                        </paper-item>
-                                    </div>
-                                </div>
-                                <div class="responsive-grid-item">
-                                    <div class="card">
-                                        <paper-item>
-                                            <div class="card-padding-small">
-                                                <span>SlimROMs Manual</span>
-                                            </div>
-                                        </paper-item>
-                                    </div>
-                                </div>
-                                <div class="responsive-grid-item">
-                                    <div class="card">
-                                        <paper-item>
-                                            <div class="card-padding-small">
-                                                <span>IRC Support</span>
-                                            </div>
-                                        </paper-item>
-                                    </div>
-                                </div>
-                                <div class="responsive-grid-item">
-                                    <div class="card">
-                                        <paper-item>
-                                            <div class="card-padding-small">
-                                                <span>Join the team</span>
-                                            </div>
-                                        </paper-item>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="card">
-                                <div class="card-padding-small">
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                    <paper-item>
-                                        <span>Link</span>
-                                    </paper-item>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- PAGE 4 -->
-                <section>
-                    <core-toolbar class="main-toolbar medium-tall">
-                        <paper-icon-button class="drawer-toggle" icon="menu" core-drawer-toggle></paper-icon-button>
-                        <span flex>About us</span>
-                        <div class="toolbar-bottom bottom">
-                            <!-- TRANSPARENT BUTTON FOR SAME INDENTATION -->
-                            <paper-icon-button class="drawer-toggle"></paper-icon-button>
-                        </div>
-                        <paper-icon-button icon="search"></paper-icon-button>
-                    </core-toolbar>
-                    <div class="content-sidebar-flex">
-                        <div class="widecontent-section">
-                            <paper-card>
-                               <p align="center"><img src="images/slimroms.png" width="400"></p>
-                               <p align="center"><b>Slim is a custom android operating system.</b></p>
-                               <p>Our main goal is to offer users a slimmed down but still feature rich alternative to other android operating systems.
-                                  The entire team work together to bring you this tailor-made beauty straight from AOSP source code.</p>
-                               <p>All of the sources can be publicly viewed through GitHub. You can stop by the public Gerrit to submit patches of any type
-                                  or help translate Slim to your language through our Crowdin project</p>
-                            </paper-card>
-                        </div>
-                        <div class="content-section">
-                            <div class="collection-card">
-                                <div class="collection-header">
-                                    <h1 class="header">General Credits</h1>
-                                </div>
-                                <div class="collection-item"><p>Google - Providing source</p></div>
-                                <div class="collection-item"><p>Faiz Malkani - Website design</p></div>
-                                <div class="collection-item"><p>CyanogenMod - For device vendor and development work</p></div>
-                                <div class="collection-item"><p>TeamWin - For TWRP</div>
-                                <div class="collection-item"><p>iBotPeaches - Apktool</div>
-                                <div class="collection-item"><p>Nyt - Slim IRC app</p></div>
-                                <div class="collection-item"><p>Roman Nurik - Dash Clock</p></div>
-                            </div>
-                            <div class="collection-card">
-                                <div class="collection-header">
-                                    <h1 class="header">Disclaimer</h1>
-                                </div>
-                                <div class="collection-item"><p>We are not responsible for any bricked devices. Flash at your own risk!</p></div>
-                                <div class="collection-item"><p>All links were checked for ethical and legal use however links can't be checked regularly. If you notice an objectionable link contact us and we will check and - if necessary - delete it</p></div>
-                            </div>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="card">
-                                <div class="card-padding-small">
-                                    <paper-item>
-                                        <a href="https://github.com/SlimRoms" style= "text-decoration: none" target="_blank">Github</a>
-                                    </paper-item>
-                                    <paper-item>
-                                        <a href="https://review.slimroms.eu" style= "text-decoration: none" target="_blank">Gerrit</a>
-                                    </paper-item>
-                                    <paper-item>
-                                        <a href="https://crowdin.com/project/slimroms" style= "text-decoration: none" target="_blank">Crowdin</a>
-                                    </paper-item>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-padding-small">
-                                    <div class="social-buttons-container">
-                                       <paper-button style="background-color: #0781aa; color: white; width: 15em;">Donate</paper-button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </core-animated-pages>
-        </div>
-    </core-drawer-panel>
-
-
-
-    <!-- JAVASCRIPT -->
-
-    <script>
-        function switchPage(pagenum)
-        {
-            var d = document.querySelector('core-drawer-panel');
-            d.closeDrawer();
-            var c = document.querySelector('core-animated-pages');
-            c.selected = pagenum;
+    <style is="custom-style">
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'RobotoDraft', 'Noto', sans-serif;
         }
-    </script>
+
+        #main_drawer,
+        #main_drawer [main], #main_drawer [drawer] {
+            height: 100%;
+        }
+
+        #main_drawer [drawer] {
+            background-color: #fff;
+            @apply(--shadow-elevation-4dp);
+        }
+
+        .clickable-item {
+            cursor: pointer;
+        }
+
+        #main_drawer [main] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(rgb(214, 227, 231), lightblue);
+
+            --paper-scroll-header-panel-full-header: {
+                background-image: url('images/toolbar.png');
+             };
+
+            --paper-scroll-header-panel-condensed-header: {
+                background-color: #000;
+            };
+        }
+
+        #main_drawer [main] .main-toolbar {
+            font-size: 18px;
+            padding: 0 10px;
+            transition: height 0.2s;
+            background-color: transparent;
+            box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.4);
+        }
+        #main_drawer [main] .main-toolbar .title {
+            font-size: 1.8rem;
+            margin-left: 60px;
+        }
+
+        #main_drawer [main] #main_content {
+            padding: 8px;
+            display: block;
+        }
+        paper-item[bottom] {
+            bottom: 0;
+            position: absolute;
+        }
+        .social-buttons-container {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+        .social-buttons-container paper-fab {
+            margin: 0 1em;
+        }
+        .social-buttons-container > * {
+            margin: 0;
+        }
+    </style>
+</head>
+<body layout vertical unresolved>
+<paper-drawer-panel id="main_drawer">
+    <div drawer>
+        <paper-menu class="drawer-menu" attr-for-selected="url">
+            <paper-icon-item class="clickable-item" url="/">
+                <iron-icon icon="home" item-icon></iron-icon>
+                Home
+            </paper-icon-item>
+            <paper-icon-item class="clickable-item" url="/changelog">
+                <iron-icon icon="notification:sync" item-icon></iron-icon>
+                Changelog
+            </paper-icon-item>
+            <paper-icon-item class="clickable-item" url="/team">
+                <iron-icon icon="account-circle" item-icon></iron-icon>
+                The Team
+            </paper-icon-item>
+            <paper-icon-item class="clickable-item" url="/support">
+                <iron-icon icon="question-answer" item-icon></iron-icon>
+                Support
+            </paper-icon-item>
+            <paper-icon-item class="clickable-item" url="/about">
+                <iron-icon icon="extension" item-icon></iron-icon>
+                About us
+            </paper-icon-item>
+            <paper-item bottom disabled class="social-buttons-container">
+                <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank">
+                    <paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39;"></paper-fab>
+                </a>
+                <a href="https://twitter.com/SlimRoms" target="_blank">
+                    <paper-fab mini src="icons/twitter.png" style="background-color: #55acee;"></paper-fab>
+                </a>
+                <a href="https://www.facebook.com/pages/Slim-Roms/340528706063511" target="_blank">
+                    <paper-fab mini src="icons/facebook.png" style="background-color: #3b5998;"></paper-fab>
+                </a>
+            </paper-item>
+        </paper-menu>
+    </div>
+    <paper-scroll-header-panel main condenses keep-condensed-header>
+        <paper-toolbar class="main-toolbar tall">
+            <paper-icon-button class="drawer-toggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+            <div class="flex"></div>
+            <paper-icon-button icon="search"></paper-icon-button>
+            <div class="bottom title">SlimRoms<span id="sub_title"></span></div>
+        </paper-toolbar>
+
+        <app-router id="main_content" init="manual" trailingSlash="ignore">
+            <app-route path="/" import="pages/home.html" template></app-route>
+            <app-route path="/changelog" import="pages/changelog.html" template></app-route>
+            <app-route path="/team" import="pages/team.html" template></app-route>
+            <app-route path="/support" import="pages/support.html" template></app-route>
+            <app-route path="/about" import="pages/about.html" template></app-route>
+            <app-route path="*" redirect="/"></app-route>
+        </app-router>
+    </paper-scroll-header-panel>
+</paper-drawer-panel>
+
+<script>
+    function switch_page() {
+        document.querySelector('app-router').go(this.getAttribute('url'));
+        document.querySelector('#main_drawer').closeDrawer();
+    }
+
+    (function () {
+        var items = document.querySelectorAll('.drawer-menu .clickable-item');
+        for (var i = 0, len=items.length; i < len; i++) {
+            items[i].addEventListener('click', switch_page, false);
+        }
+    })();
+
+    window.addEventListener('WebComponentsReady', function() {
+        var router = document.querySelector('app-router');
+
+        router.addEventListener('activate-route-start', function(event) {
+            document.querySelector('#main_drawer .drawer-menu').selected = event.detail.path;
+        });
+
+        router.addEventListener('activate-route-end', function(event) {
+            var path = event.detail.path;
+            if (path === '/') path = '/home';
+            var words = path.slice(1).split('-');
+            var sub = '';
+            for (var i in words) {
+                var w = words[i];
+                if (sub != '') sub += ' ';
+                sub += w[0].toUpperCase();
+                sub += w.slice(1);
+            }
+            document.querySelector('#sub_title').innerHTML = ' - ' + sub;
+
+            var title;
+            if (document.title.indexOf(' - ') != -1) {
+                title = document.title.slice(0, document.title.indexOf(' - ') + 3);
+            } else {
+                title = document.title + ' - ';
+            }
+            document.title = title + sub;
+        });
+        router.init();
+    });
+</script>
 
 </body>
 </html>

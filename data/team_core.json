@@ -1,0 +1,79 @@
+[
+  {
+    "name":"Josue Rivera",
+    "img":"images/team/prbassplayer.png",
+    "username":"prbassplayer",
+    "location":"Puerto Rico",
+    "position":"Development Coordinator"
+  },
+  {
+    "name":"Cordell",
+    "img":"images/team/cordell12.png",
+    "username":"cordell12",
+    "location":"USA",
+    "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
+  },
+  {
+    "name":"Lars Greiss",
+    "img":"https://github.com/kufikugel.png",
+    "username":"kufikugel",
+    "location":"Germany",
+    "position":"Lead Developer"
+  },
+  {
+    "name":"Nicholas Flintham",
+    "img":"https://github.com/Flinny.png",
+    "username":"Flinny",
+    "location":"United Kingdom",
+    "position":"Google Nexus 9 and HTC One Family Maintainer"
+  },
+  {
+    "name":"Griffin Millender",
+    "img":"images/team/gmillz.png",
+    "username":"gmillz",
+    "location":"USA",
+    "position":"Developer"
+  },
+  {
+    "name":"Nick Lovell",
+    "img":"https://github.com/nicklovell23.png",
+    "username":"nicklovell23",
+    "location":"USA",
+    "position":"Release Manager, Samsung Galaxy S4 (jflte) and Samusung Galaxy Note 10.1 (i925) Maintainer"
+  },
+  {
+    "name":"Per Lycke",
+    "img":"https://github.com/perlycke.png",
+    "username":"pemell",
+    "location":"Sweden",
+    "position":"Public relations"
+  },
+  {
+    "name":"Ahmed Nabeel",
+    "img":"images/team/nabeel.png",
+    "username":"Ahmed NabeelM",
+    "location":"Egypt",
+    "position":"Lead Support & Public relations"
+  },
+  {
+    "name":"Kit Tinhonovich",
+    "img":"images/team/jubakuba.png",
+    "username":"Jubakuba",
+    "location":"USA",
+    "position":"Developer"
+  },
+  {
+    "name":"Tylog",
+    "img":"images/team/tylog.png",
+    "username":"tylog",
+    "location":"Germany",
+    "position":"XDA Maintainer"
+  },
+  {
+    "name":"Daniel Koman",
+    "img":"images/team/dankoman.png",
+    "username":"dankoman",
+    "location":"USA",
+    "position":"Gapps Maintainer, Themer and Developer"
+  }
+]

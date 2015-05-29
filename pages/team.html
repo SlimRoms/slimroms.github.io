@@ -1,0 +1,154 @@
+<template>
+    <style is="custom-style">
+        .flex-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .flex-container paper-card {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 49%;
+        }
+        @media (max-width: 1100px) {
+            .flex-container paper-card {
+                flex-basis: 99%;
+            }
+        }
+        @media (min-width: 1700px) {
+            .flex-container paper-card {
+                flex-basis: 32%;
+            }
+        }
+        @media (min-width: 2300px) {
+            .flex-container paper-card {
+                flex-basis: 24%;
+            }
+        }
+        .flex-container paper-card .title {
+            margin-bottom: 0.3em;
+        }
+        paper-card::shadow paper-material {
+            margin: 0.6em !important;
+        }
+        paper-card.heading .title {
+            text-align: center;
+        }
+        .team-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: flex-start;
+        }
+        .team-container img {
+            height: auto;
+            width: 6.5em;
+            min-width: 6.5em;
+            border-radius: 50%;
+        }
+        .team-container .text-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-left: 2em;
+        }
+        .team-container .text-container .icon-text {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .team-container .text-container .icon-text iron-icon {
+            color: #0781aa;
+            width: 1.3em;
+            height: 1.3em;
+            flex-shrink: 0;
+        }
+        .team-container .text-container .icon-text p {
+            margin: 0 0 0 1em;
+            font-size: 1em;
+            color: #555555;
+            font-weight: 400;
+            line-height: 1.1em;
+        }
+    </style>
+    <paper-card class="heading">
+        <h1 class="title">Core Team</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind">
+            <iron-ajax auto url="data/team_core.json" last-response="{{data}}"></iron-ajax>
+            <template is="dom-repeat" items="{{data}}">
+                <paper-card>
+                    <h2 class="title">{{item.name}}</h2>
+                    <div class="team-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:contacts"></iron-icon>
+                                <p>{{item.username}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="room"></iron-icon>
+                                <p>{{item.location}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="work"></iron-icon>
+                                <p>{{item.position}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+        </template>
+    </div>
+    <paper-card class="heading">
+        <h1 class="title">Device Maintainers and Contributors</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind">
+            <iron-ajax auto url="data/team_contributors.json" last-response="{{data}}"></iron-ajax>
+            <template is="dom-repeat" items="{{data}}">
+                <paper-card>
+                    <h2 class="title">{{item.name}}</h2>
+                    <div class="team-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:contacts"></iron-icon>
+                                <p>{{item.username}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="room"></iron-icon>
+                                <p>{{item.location}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="work"></iron-icon>
+                                <p>{{item.position}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+        </template>
+    </div>
+</template>
