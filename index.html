@@ -15,6 +15,7 @@
     <link href="bower_components/iron-icons/communication-icons.html" rel="import">
     <link href="bower_components/iron-icons/notification-icons.html" rel="import">
     <link href="bower_components/paper-item/paper-item.html" rel="import">
+    <link href="bower_components/paper-item/paper-icon-item.html" rel="import">
     <link href="elements/paper-card.html" rel="import">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="bower_components/app-router/app-router.html">
@@ -39,7 +40,7 @@
             @apply(--shadow-elevation-4dp);
         }
 
-        paper-item[onclick] {
+        paper-item[onclick], paper-icon-item[onclick] {
             cursor: pointer;
         }
 
@@ -98,26 +99,26 @@
 <paper-drawer-panel id="main_drawer">
     <div drawer>
         <paper-menu class="drawer-menu" selected="0">
-            <paper-item onclick="switch_page('/');">
-                <iron-icon icon="home" class="menu-icon"></iron-icon>
-                <span class="menu-label">Home</span>
-            </paper-item>
-            <paper-item onclick="switch_page('/changelog');">
-                <iron-icon icon="notification:sync" class="menu-icon"></iron-icon>
-                <span class="menu-label">Changelog</span>
-            </paper-item>
-            <paper-item onclick="switch_page('/team');">
-                <iron-icon icon="account-circle" class="menu-icon"></iron-icon>
-                <span class="menu-label">The Team</span>
-            </paper-item>
-            <paper-item onclick="switch_page('/support');">
-                <iron-icon icon="question-answer" class="menu-icon"></iron-icon>
-                <span class="menu-label">Support</span>
-            </paper-item>
-            <paper-item onclick="switch_page('/about');">
-                <iron-icon icon="extension" class="menu-icon"></iron-icon>
-                <span class="menu-label">About us</span>
-            </paper-item>
+            <paper-icon-item onclick="switch_page('/');">
+                <iron-icon icon="home" item-icon></iron-icon>
+                Home
+            </paper-icon-item>
+            <paper-icon-item onclick="switch_page('/changelog');">
+                <iron-icon icon="notification:sync" item-icon></iron-icon>
+                Changelog
+            </paper-icon-item>
+            <paper-icon-item onclick="switch_page('/team');">
+                <iron-icon icon="account-circle" item-icon></iron-icon>
+                The Team
+            </paper-icon-item>
+            <paper-icon-item onclick="switch_page('/support');">
+                <iron-icon icon="question-answer" item-icon></iron-icon>
+                Support
+            </paper-icon-item>
+            <paper-icon-item onclick="switch_page('/about');">
+                <iron-icon icon="extension" item-icon></iron-icon>
+                About us
+            </paper-icon-item>
             <paper-item bottom disabled class="social-buttons-container">
                 <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank">
                     <paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39;"></paper-fab>
