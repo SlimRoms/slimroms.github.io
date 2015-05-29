@@ -146,13 +146,7 @@
             <app-route path="/team" import="pages/team.html" template></app-route>
             <app-route path="/support" import="pages/support.html" template></app-route>
             <app-route path="/about" import="pages/about.html" template></app-route>
-            <app-route path="*" template>
-                <template>
-                    <script>
-                        document.querySelector('app-router').go('/');
-                    </script>
-                </template>
-            </app-route>
+            <app-route path="*" redirect="/"></app-route>
         </app-router>
     </paper-scroll-header-panel>
 </paper-drawer-panel>
