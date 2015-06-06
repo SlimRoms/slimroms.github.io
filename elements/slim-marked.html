@@ -27,7 +27,7 @@ limitations under the License.
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/marked-element/marked-import.html">
 
-<dom-module id="marked-element">
+<dom-module id="slim-marked">
 
     <template>
         <div id="content"></div>
@@ -37,8 +37,39 @@ limitations under the License.
 
 <script>
     'use strict';
+
+    var slim_renderer = new marked.Renderer();
+    /**
+     * marked - a markdown parser
+     * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
+     * https://github.com/chjj/marked
+     */
+    slim_renderer.link = function(href, title, text) {
+        if (this.options.sanitize) {
+            try {
+                var prot = decodeURIComponent(unescape(href))
+                        .replace(/[^\w:]/g, '')
+                        .toLowerCase();
+            } catch (e) {
+                return '';
+            }
+            if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0) {
+                return '';
+            }
+        }
+        var out = '<a href="' + href + '"';
+        if (title) {
+            out += ' title="' + title + '"';
+        }
+        if (href.indexOf('//') != -1) {
+            out += ' target="_blank"';
+        }
+        out += '>' + text + '</a>';
+        return out;
+    };
+
     Polymer({
-        is: 'marked-element',
+        is: 'slim-marked',
         properties: {
             /** The markdown source that should be rendered by this element. */
             markdown: {
@@ -93,6 +124,7 @@ limitations under the License.
             }
             this.$.content.innerHTML = marked(this.markdown, {
                 highlight: this._highlight.bind(this),
+                renderer: slim_renderer
             });
         },
         _highlight: function(code, lang) {
