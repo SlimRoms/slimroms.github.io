@@ -5826,7 +5826,7 @@ if (!window.Promise) {
        * resolved.
        *
        * @attribute response
-       * @type Object
+       * @type {*}
        * @default null
        */
       response: {
@@ -5932,7 +5932,7 @@ if (!window.Promise) {
       var xhr = this.xhr;
 
       if (xhr.readyState > 0) {
-        return;
+        return null;
       }
 
       xhr.addEventListener('readystatechange', function () {
@@ -5994,7 +5994,7 @@ if (!window.Promise) {
      * the value returned will be deserialized based on the `responseType`
      * set on the XHR.
      *
-     * @return {Object|Array|Document|string|undefined} The parsed response,
+     * @return {*} The parsed response,
      * or undefined if there was an empty response or parsing failed.
      */
     parseResponse: function () {
@@ -6261,7 +6261,7 @@ if (!window.Promise) {
         notify: true,
         readOnly: true,
         value: function() {
-          this._setActiveRequests([]);
+          return [];
         }
       },
 
@@ -6354,7 +6354,14 @@ if (!window.Promise) {
      * Request options suitable for generating an `iron-request` instance based
      * on the current state of the `iron-ajax` instance's properties.
      *
-     * @return {Object}
+     * @return {{
+     *   url: string,
+     *   method: (string|undefined),
+     *   async: (boolean|undefined),
+     *   body: (ArrayBuffer|ArrayBufferView|Blob|Document|FormData|null|string|undefined),
+     *   headers: (Object|undefined),
+     *   handleAs: (string|undefined),
+     *   withCredentials: (boolean|undefined)}}
      */
     toRequestOptions: function() {
       return {
@@ -6371,10 +6378,10 @@ if (!window.Promise) {
     /**
      * Performs an AJAX request to the specified URL.
      *
-     * @return {iron-request}
+     * @return {!IronRequestElement}
      */
     generateRequest: function() {
-      var request = document.createElement('iron-request');
+      var request = /** @type {!IronRequestElement} */ (document.createElement('iron-request'));
       var requestOptions = this.toRequestOptions();
 
       this.activeRequests.push(request);
@@ -7050,13 +7057,6 @@ if (!window.Promise) {
 </style>
 
 
-<style is="custom-style">
-  :root {
-    --iron-icon-width: 24px;
-    --iron-icon-height: 24px;
-  }
-</style>
-
 <script>
   /**
    * The `iron-iconset-svg` element allows users to define their own icon sets
@@ -7090,6 +7090,7 @@ if (!window.Promise) {
    *     iconset.applyIcon(iconNode, 'car');
    *
    * @element iron-iconset-svg
+   * @demo demo/index.html
    */
   Polymer({
 
@@ -7186,7 +7187,7 @@ if (!window.Promise) {
     /**
      * Create a map of child SVG elements by id.
      *
-     * @return {Object} Map of id's to SVG elements.
+     * @return {!Object} Map of id's to SVG elements.
      */
     _createIconMap: function() {
       // Objects chained to Object.prototype (`{}`) have members. Specifically,
@@ -9077,6 +9078,7 @@ if (!window.Promise) {
      * The `keys-pressed` event will fire when one of the key combinations set with the
      * `keys` property is pressed.
      *
+     * @demo demo/index.html
      * @polymerBehavior IronA11yKeysBehavior
      */
     Polymer.IronA11yKeysBehavior = {
@@ -9092,6 +9094,7 @@ if (!window.Promise) {
         },
 
         _boundKeyHandlers: {
+          type: Array,
           value: function() {
             return [];
           }
@@ -9100,6 +9103,7 @@ if (!window.Promise) {
         // We use this due to a limitation in IE10 where instances will have
         // own properties of everything on the "prototype".
         _imperativeKeyBindings: {
+          type: Object,
           value: function() {
             return {};
           }
@@ -9257,18 +9261,16 @@ if (!window.Promise) {
 
 <script>
 
-  /** @polymerBehavior */
-
+  /**
+   * @demo demo/index.html
+   * @polymerBehavior
+   */
   Polymer.IronControlState = {
 
     properties: {
 
       /**
        * If true, the element currently has focus.
-       *
-       * @attribute focused
-       * @type boolean
-       * @default false
        */
       focused: {
         type: Boolean,
@@ -9280,10 +9282,6 @@ if (!window.Promise) {
 
       /**
        * If true, the user cannot interact with this element.
-       *
-       * @attribute disabled
-       * @type boolean
-       * @default false
        */
       disabled: {
         type: Boolean,
@@ -9295,17 +9293,20 @@ if (!window.Promise) {
 
       _oldTabIndex: {
         type: Number
+      },
+
+      _boundFocusBlurHandler: {
+        type: Function,
+        value: function() {
+          return this._focusBlurHandler.bind(this);
+        }
       }
+
     },
 
     observers: [
       '_changedControlState(focused, disabled)'
     ],
-
-    listeners: {
-      focus: '_focusHandler',
-      blur: '_blurHandler'
-    },
 
     ready: function() {
       // TODO(sjmiles): ensure read-only property is valued so the compound
@@ -9313,14 +9314,23 @@ if (!window.Promise) {
       if (this.focused === undefined) {
         this._setFocused(false);
       }
+      this.addEventListener('focus', this._boundFocusBlurHandler, true);
+      this.addEventListener('blur', this._boundFocusBlurHandler, true);
     },
 
-    _focusHandler: function() {
-      this._setFocused(true);
-    },
-
-    _blurHandler: function() {
-      this._setFocused(false);
+    _focusBlurHandler: function(event) {
+      var target = event.path ? event.path[0] : event.target;
+      if (target === this) {
+        var focused = event.type === 'focus';
+        this._setFocused(focused);
+      } else if (!this.shadowRoot) {
+        event.stopPropagation();
+        this.fire(event.type, {sourceEvent: event}, {
+          node: this,
+          bubbles: event.bubbles,
+          cancelable: event.cancelable
+        });
+      }
     },
 
     _disabledChanged: function(disabled, old) {
@@ -9347,17 +9357,16 @@ if (!window.Promise) {
 </script>
 <script>
 
-  /** @polymerBehavior Polymer.IronButtonState */
+  /**
+   * @demo demo/index.html
+   * @polymerBehavior
+   */
   Polymer.IronButtonStateImpl = {
 
     properties: {
 
       /**
        * If true, the user is currently holding down the button.
-       *
-       * @attribute pressed
-       * @type boolean
-       * @default false
        */
       pressed: {
         type: Boolean,
@@ -9370,10 +9379,6 @@ if (!window.Promise) {
       /**
        * If true, the button toggles the active state with each tap or press
        * of the spacebar.
-       *
-       * @attribute toggles
-       * @type boolean
-       * @default false
        */
       toggles: {
         type: Boolean,
@@ -9383,10 +9388,6 @@ if (!window.Promise) {
 
       /**
        * If true, the button is a toggle and is currently in the active state.
-       *
-       * @attribute active
-       * @type boolean
-       * @default false
        */
       active: {
         type: Boolean,
@@ -9561,6 +9562,7 @@ if (!window.Promise) {
     }
   };
 
+  /** @polymerBehavior */
   Polymer.PaperButtonBehavior = [
     Polymer.IronButtonState,
     Polymer.IronControlState,
@@ -9572,8 +9574,12 @@ if (!window.Promise) {
 
 <script>
 
-  /** @polymerBehavior */
-  Polymer.PaperRadioButtonInk = {
+  /**
+   * `Polymer.PaperInkyFocusBehavior` implements a ripple when the element has keyboard focus.
+   *
+   * @polymerBehavior Polymer.PaperInkyFocusBehavior
+   */
+  Polymer.PaperInkyFocusBehaviorImpl = {
 
     observers: [
       '_focusedChanged(receivedFocusFromKeyboard)'
@@ -9589,20 +9595,14 @@ if (!window.Promise) {
 
   };
 
-  /** @polymerBehavior */
-  Polymer.PaperRadioButtonBehavior = [
+  /** @polymerBehavior Polymer.PaperInkyFocusBehavior */
+  Polymer.PaperInkyFocusBehavior = [
     Polymer.IronButtonState,
     Polymer.IronControlState,
-    Polymer.PaperRadioButtonInk
+    Polymer.PaperInkyFocusBehaviorImpl
   ];
 
 </script>
-<style is="custom-style">
-  :root {
-    --paper-icon-button-disabled-text: var(--disabled-text-color);
-  }
-</style>
-
 
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
@@ -11455,8 +11455,8 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
 
       fill: currentcolor;
 
-      width: var(--iron-icon-width);
-      height: var(--iron-icon-height);
+      width: var(--iron-icon-width, 24px);
+      height: var(--iron-icon-height, 24px);
     }
   </style>
 
@@ -11545,7 +11545,6 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
   </script>
 
 </dom-module>
-
 <iron-iconset-svg name="communication" size="24">
 <svg><defs>
 <g id="business"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></g>
@@ -12155,7 +12154,9 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
          */
         dragging: {
           type: Boolean,
-          value: false
+          value: false,
+          readOnly: true,
+          notify: true
         },
 
         /**
@@ -12211,6 +12212,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
           reflectToAttribute: true,
           type: Boolean,
           value: false,
+          readOnly: true,
           notify: true
         },
 
@@ -12219,7 +12221,9 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
          */
         peeking: {
           type: Boolean,
-          value: false
+          value: false,
+          readOnly: true,
+          notify: true
         },
 
         /**
@@ -12244,6 +12248,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
          */
         selected: {
           reflectToAttribute: true,
+          notify: true,
           type: String,
           value: null
         },
@@ -12370,7 +12375,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       },
 
       _responsiveChange: function(narrow) {
-        this.narrow = narrow;
+        this._setNarrow(narrow);
 
         if (this.narrow) {
           this.selected = this.defaultSelected;
@@ -12401,12 +12406,12 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         this.width = this.$.drawer.offsetWidth;
         this._moveDrawer(this._translateXForDeltaX(this.rightDrawer ?
             -this.edgeSwipeSensitivity : this.edgeSwipeSensitivity));
-        this.peeking = true;
+        this._setPeeking(true);
       },
 
       _stopEdgePeek: function() {
         if (this.peeking) {
-          this.peeking = false;
+          this._setPeeking(false);
           this._moveDrawer(null);
         }
       },
@@ -12445,13 +12450,13 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
             x <= this.edgeSwipeSensitivity);
       },
 
-      _trackStart: function() {
+      _trackStart: function(event) {
         if (this._swipeAllowed()) {
           sharedPanel = this;
-          this.dragging = true;
+          this._setDragging(true);
 
           if (this._isMainSelected()) {
-            this.dragging = this.peeking || this._isEdgeTouch(event);
+            this._setDragging(this.peeking || this._isEdgeTouch(event));
           }
 
           if (this.dragging) {
@@ -12480,7 +12485,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
               // Ignore trackx until we move past the edge peek.
               return;
             }
-            this.peeking = false;
+            this._setPeeking(false);
           }
 
           this._moveDrawer(this._translateXForDeltaX(dx));
@@ -12491,7 +12496,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         if (this.dragging) {
           var xDirection = e.detail.dx > 0;
 
-          this.dragging = false;
+          this._setDragging(false);
           this.transition = true;
           sharedPanel = null;
           this._moveDrawer(null);
@@ -12916,6 +12921,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         this.wave.style.transform = 'scale3d(' + scale + ',' + scale + ',1)';
       },
 
+      /** @param {Event=} event */
       downAction: function(event) {
         var xCenter = this.containerMetrics.width / 2;
         var yCenter = this.containerMetrics.height / 2;
@@ -12960,6 +12966,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         this.waveContainer.style.height = this.containerMetrics.size + 'px';
       },
 
+      /** @param {Event=} event */
       upAction: function(event) {
         if (!this.isMouseDown) {
           return;
@@ -13083,11 +13090,9 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         var ownerRoot = Polymer.dom(this).getOwnerRoot();
         var target;
 
-        if (ownerRoot) {
+        if (this.parentNode.nodeType == 11) { // DOCUMENT_FRAGMENT_NODE
           target = ownerRoot.host;
-        }
-
-        if (!target) {
+        } else {
           target = this.parentNode;
         }
 
@@ -13101,8 +13106,8 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       },
 
       attached: function() {
-        this._listen(this.target, 'up', this.upAction.bind(this));
-        this._listen(this.target, 'down', this.downAction.bind(this));
+        this.listen(this.target, 'up', 'upAction');
+        this.listen(this.target, 'down', 'downAction');
 
         if (!this.target.hasAttribute('noink')) {
           this.keyEventTarget = this.target;
@@ -13128,6 +13133,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         }, 1);
       },
 
+      /** @param {Event=} event */
       downAction: function(event) {
         if (this.holdDown && this.ripples.length > 0) {
           return;
@@ -13142,6 +13148,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         }
       },
 
+      /** @param {Event=} event */
       upAction: function(event) {
         if (this.holdDown) {
           return;
@@ -13253,7 +13260,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       min-width: 0;
       width: 56px;
       height: 56px;
-      background: var(--paper-fab-background, --paper-indigo-500);
+      background: var(--paper-fab-background, --accent-color);
       color: var(--text-primary-color);
       border-radius: 50%;
       padding: 16px;
@@ -13279,11 +13286,18 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
 
     paper-material {
       border-radius: inherit;
+      @apply(--layout-fit);
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+    }
+
+    .keyboard-focus {
+      background: var(--paper-fab-keyboard-focus-background, --paper-pink-900);
     }
   </style>
   <template>
     <paper-ripple></paper-ripple>
-    <paper-material class="content fit flex layout vertical center-center" elevation="[[elevation]]" animated="">
+    <paper-material class$="[[_computeContentClass(receivedFocusFromKeyboard)]]" elevation="[[_elevation]]" animated="">
       <iron-icon id="icon" src="[[src]]" icon="[[icon]]"></iron-icon>
     </paper-material>
   </template>
@@ -13335,6 +13349,14 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         type: Boolean,
         value: false
       }
+    },
+
+    _computeContentClass: function(receivedFocusFromKeyboard) {
+      var className = 'content';
+      if (receivedFocusFromKeyboard) {
+        className += ' keyboard-focus';
+      }
+      return className;
     }
 
   });
@@ -13363,7 +13385,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
     }
 
     :host([disabled]) {
-      color: var(--paper-icon-button-disabled-text, #fff);
+      color: var(--paper-icon-button-disabled-text, --disabled-text-color);
       pointer-events: none;
       cursor: auto;
       @apply(--paper-icon-button-disabled);
@@ -13371,16 +13393,20 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
   </style>
   <template>
     <paper-ripple id="ink" class="circle" center=""></paper-ripple>
-    <iron-icon id="icon" src="[[src]]" icon="[[icon]]"></iron-icon>
+    <iron-icon id="icon" src="[[src]]" icon="[[icon]]" alt$="[[alt]]"></iron-icon>
   </template>
 </dom-module>
 <script>
   Polymer({
     is: 'paper-icon-button',
 
+    hostAttributes: {
+      role: 'button',
+      tabindex: '0'
+    },
+
     behaviors: [
-      Polymer.PaperButtonBehavior,
-      Polymer.PaperRadioButtonBehavior
+      Polymer.PaperInkyFocusBehavior
     ],
 
     properties: {
@@ -13399,6 +13425,23 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
        */
       icon: {
         type: String
+      },
+
+      /**
+       * Specifies the alternate text for the button, for accessibility.
+       */
+      alt: {
+        type: String,
+        observer: "_altChanged"
+      }
+    },
+
+    _altChanged: function(newValue, oldValue) {
+      var label = this.getAttribute('aria-label');
+
+      // Don't stomp over a user-set aria-label.
+      if (!label || oldValue == label) {
+        this.setAttribute('aria-label', newValue);
       }
     }
   });
@@ -13912,7 +13955,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
     _condenseHeader: function(y) {
       var reset = (y === null);
 
-      // adjust top bar in core-header so the top bar stays at the top
+      // adjust top bar in paper-header so the top bar stays at the top
       if (!this.scrollAwayTopbar && this.header.$ && this.header.$.topBar) {
         this._translateY(this.header.$.topBar.style,
             reset ? null : Math.min(y, this._headerMargin));
@@ -13940,6 +13983,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       setTransform(s, t);
     },
 
+    /** @param {Event=} event */
     _scroll: function(event) {
       if (!this.header) {
         return;
@@ -13966,7 +14010,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       this._y = y;
 
       if (event) {
-        this.fire('content-scroll', {target: this.scroller}, this, false);
+        this.fire('content-scroll', {target: this.scroller}, {cancelable: false});
       }
     }
 
@@ -14049,7 +14093,6 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
 
     #topBar {
       position: relative;
-      z-index: 1;
     }
 
     /* middle bar */
@@ -14058,7 +14101,6 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       top: 0;
       right: 0;
       left: 0;
-      z-index: 2;
     }
 
     :host(.tall) #middleBar,
@@ -14073,7 +14115,6 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       right: 0;
       bottom: 0;
       left: 0;
-      z-index: 1;
     }
 
     /*
@@ -14091,6 +14132,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       @apply(--paper-font-title);
       @apply(--layout-flex);
 
+      pointer-events: none;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -14110,12 +14152,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
      * Work in progress.
      */
     .toolbar-tools > ::content paper-icon-button[icon=menu] {
-      margin-left: -8px;
       margin-right: 24px;
-    }
-
-    .toolbar-tools > ::content paper-icon-button + paper-icon-button {
-      margin-right: -8px;
     }
 
     .toolbar-tools > ::content > .title,

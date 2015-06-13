@@ -1,33 +1,23 @@
 <template>
-    <paper-card>
-        <h2 class="title">SlimROMs and SlimLP updates</h2>
-        <h3 class="subtitle">Wednesday, 8 April 2015</h3>
-        <slim-marked>
-            <script type="text/markdown">
-**Where is my fully featured SlimLP?**
+    <template is="dom-bind" id="postBuilder">
+        <iron-ajax url="data/posts.json" last-response="{{data}}" id="ajaxPostBuilder"></iron-ajax>
+        <template is="dom-repeat" items="{{data}}">
+            <paper-card>
+                <h2 class="title">{{item.title}}</h2>
+                <h3 class="subtitle">{{item.date}}</h3>
+                <slim-marked markdown="{{buildContent(item.content)}}"></slim-marked>
+            </paper-card>
+        </template>
+        <script>
+            var t = document.querySelector('#postBuilder');
+            t.buildContent = function(content) {
+                if (typeof(content) == 'string') return content;
+                return content.join('\n')
+            };
+            document.querySelector('#ajaxPostBuilder').generateRequest();
+        </script>
+    </template>
 
-We're working on Slim 5.1. You can follow the progress on Gerrit but it's taking a little bit longer
-than usual as our hands are full with our brand new open source website, internal changes, hosting..etc.
-
-You can check the website source [here](https://github.com/SlimRoms/slimroms.github.io)
-
-Did I mention that we've also got a new [Gerrit](https://review.slimroms.eu)? Oh and it's blue!
-
-**We demand a status update on the old website and infrastructure issues!**
-
-Till we state otherwise or get into more details. Our last statement stands as it is. Don't download
-anything from the old website. If you want Slim gapps or build for you device then go to our gapps or
-your device thread on xda respectively.
-
-Change requires time but we can assure you that SlimROMs is not dead and we will come back better than
-ever! till then **keep it slim.**
-            </script>
-        </slim-marked>
-        <div class="footer">
-            <p>Keep in mind the website is still a WIP however you can always contribute by pushing commits to
-                our Gerrit.</p>
-        </div>
-    </paper-card>
     <paper-card>
         <h2 class="title">TRPS!</h2>
         <h3 class="subtitle">Wednesday, 1st April 2015</h3>
