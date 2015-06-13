@@ -25,5 +25,20 @@
       "",
       "keep in mind the website is still a WIP however you can always contribute by pushing commits to our Gerrit."
     ]
+  },
+  {
+    "title": "TRPS!",
+    "date": "Wednesday, 1st April 2015",
+    "content": [
+      "We're back, and we're pink! After much research, we have realised that Material on Android isn't working so well."
+      "",
+      "Over the past month, we have sent out different designs to some of our testers. The feedback that we got was the design is fine, it's just the colour scheme."
+      "",
+      "We would like to officially announce TRPS! It's still in the works, but it will be coming to your devices soon.",
+      "",
+      "In support of this announcement, we have turned our [Gerrit](https://review.slimroms.eu) pink.",
+      "",
+      "support us by turning something pink! Post pictures with #SlimPink. The best will be showcased on the new site."
+    ]
   }
 ]
