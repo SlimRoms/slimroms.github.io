@@ -25,5 +25,89 @@
       "",
       "keep in mind the website is still a WIP however you can always contribute by pushing commits to our Gerrit."
     ]
+  },
+  {
+    "title": "TRPS!",
+    "date": "Wednesday, 1st April 2015",
+    "content": [
+      "We're back, and we're pink! After much research, we have realised that Material on Android isn't",
+      "working so well.",
+      "",
+      "Over the past month, we have sent out different designs to some of our testers. The feedback that",
+      "we got was the design is fine, it's just the colour scheme.",
+      "",
+      "We would like to officially announce TRPS! It's still in the works, but it will be coming to your",
+      "devices soon.",
+      "",
+      "In support of this announcement, we have turned our [Gerrit](https://review.slimroms.eu) pink.",
+      "",
+      "support us by turning something pink! Post pictures with #SlimPink. The best will be showcased on",
+      "the new site."
+    ]
+  },
+  {
+    "title": "SlimLP Alpha 1.0",
+    "date": "Monday, 17 February 2015",
+    "content": [
+      "We are proud to announce the first weekly for SlimLP. Please note not all devices are getting a",
+      "weekly yet. This is the first alpha release more devices and features to come as we move forward.",
+      "#### Features:",
+      "",
+      "* RRO Layers Support",
+      "* Doze (ambient display) time-out (selected devices only)",
+      "* Options for battery icon and text",
+      "* Privacy guard",
+      "* Slim Heads up",
+      "* Slim Dialer",
+      "",
+      "***",
+      "",
+      "Keep in mind Jenkins build order is random so we can't say when a specific build will be ready."
+    ]
+  },
+  {
+    "title": "Slim updates",
+    "date": "Tuesday, 16 December 2014",
+    "content": [
+      "As we mentioned couple weeks ago, we're working on SlimLP and already added some of our features",
+      "e.g. Slim heads up, privacy guard, slim dialer, lockscreen shortcuts and much more.",
+      "",
+      "With the steady progress of SlimLP and current stability of Slimkat we decided to go for Slimkat",
+      "9.0 next week. With that being said we'll take the week off for testing purposes so no release this",
+      "week, hope you have a great week and remember to **keep it slim.**"
+    ]
+  },
+  {
+    "title": "SlimROMs meets lollipop",
+    "date": "Saturday, 06 December 2014",
+    "content": [
+      "As some of you already know we extended Slimkat weeklies to make them as stable as possible but that",
+      "doesn't mean we're neglecting lollipop. We are already working on lollipop and pushed multiple alpha",
+      "builds for both nexus 5 and 4 with some of our added features like privacy guard, sounds tweaks, status",
+      "bar tweaks and much more. It's been decided that the new version of Slim + lollipop will be called SlimLP.",
+      "We would like to thank +Cristian Giordano for the great work on the new boot animation. Stay tuned for more",
+      "SlimLP news :)"
+    ]
+  },
+  {
+    "title": "SlimROMs moves to Crowdin",
+    "date": "Friday, 21 November 2014",
+    "content": [
+      "We have officially moved all translations back to crowdin. **What does that mean?**",
+      "1. Easier way for users to translate SlimRoms to their language with a slight to no learning curve.",
+      "2. We won't accept new translations on Gerrit. All the translations must be made through crowdin.",
+      "",
+      "####Before users had to:",
+      "",
+      "* Have Git.",
+      "* Clone the repo in question.",
+      "* Do the changes, commit and push them to our Gerrit.",
+      "* Add someone from the team to review and merge the translations.",
+      "",
+      "***",
+      "",
+      "[Our Crowdin Project](https://crowdin.com/project/slimroms)",
+      "[Crowdin quick guide](https://crowdin.com/page/quick-start)"
+    ]
   }
 ]
