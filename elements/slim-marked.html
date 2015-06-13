@@ -28,7 +28,12 @@ limitations under the License.
 <link rel="import" href="../bower_components/marked-element/marked-import.html">
 
 <dom-module id="slim-marked">
-
+    <style>
+        :host ::content #content hr {
+            border: none;
+            border-top: 1px solid rgba(160, 160, 160, 0.4);
+        }
+    </style>
     <template>
         <div id="content"></div>
     </template>
