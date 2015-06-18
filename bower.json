@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "app-router": "~2.6.1",
-    "polymer": "Polymer/polymer#v1.0.3",
+    "polymer": "Polymer/polymer#v1.0.4",
     "iron-ajax": "PolymerElements/iron-ajax#v1.0.2",
     "iron-icons": "PolymerElements/iron-icons#v1.0.2",
     "marked-element": "PolymerElements/marked-element#v1.0.0",
