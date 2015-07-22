@@ -117,14 +117,7 @@
     "username": "BlaqueDroid",
     "location": "South Africa",
     "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
-  },
-  {
-    "name": "Kenny G",
-    "img": "images/team/xceed.png",
-    "username": "Xceed",
-    "location": "United Kingdom",
-    "position": "Support"
-  },
+  }
   {
     "name": "Stuart Waller",
     "img": "images/team/knightwolf.png",
