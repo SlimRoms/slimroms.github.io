@@ -97,7 +97,7 @@
       "1. Easier way for users to translate SlimRoms to their language with a slight to no learning curve.",
       "2. We won't accept new translations on Gerrit. All the translations must be made through crowdin.",
       "",
-      "####Before users had to:",
+      "#### Before users had to:",
       "",
       "* Have Git.",
       "* Clone the repo in question.",
