@@ -15254,4 +15254,33 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         }
     });
 </script>
-</div></body></html>
+<dom-module id="slim-post" assetpath="elements/">
+    <template>
+        <paper-card>
+            <h2 class="title">{{title}}</h2>
+            <h3 class="subtitle">{{subtitle}}</h3>
+            <slim-marked markdown="{{computedContent}}"></slim-marked>
+        </paper-card>
+    </template>
+    <script>
+        Polymer({
+            is: 'slim-post',
+            properties: {
+                content: Object,
+                title: String,
+                subtitle: String,
+                computedContent: {
+                    readOnly: true,
+                    type: String
+                }
+            },
+            observers: [
+                    'contentChanged(content)'
+            ],
+
+            contentChanged: function(content) {
+                this._setComputedContent(typeof(content) == 'string' ? content : content.join('\n'));
+            }
+        });
+    </script>
+</dom-module></div></body></html>

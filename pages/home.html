@@ -1,20 +1,8 @@
 <template>
-    <template is="dom-bind" id="postBuilder">
-        <iron-ajax url="data/posts.json" last-response="{{data}}" id="ajaxPostBuilder"></iron-ajax>
+    <template is="dom-bind">
+        <iron-ajax auto url="data/posts.json" last-response="{{data}}"></iron-ajax>
         <template is="dom-repeat" items="{{data}}">
-            <paper-card>
-                <h2 class="title">{{item.title}}</h2>
-                <h3 class="subtitle">{{item.date}}</h3>
-                <slim-marked markdown="{{buildContent(item.content)}}"></slim-marked>
-            </paper-card>
+            <slim-post content="{{item.content}}" title="{{item.title}}" subtitle="{{item.date}}"></slim-post>
         </template>
-        <script>
-            var t = document.querySelector('#postBuilder');
-            t.buildContent = function(content) {
-                if (typeof(content) == 'string') return content;
-                return content.join('\n')
-            };
-            document.querySelector('#ajaxPostBuilder').generateRequest();
-        </script>
     </template>
 </template>
