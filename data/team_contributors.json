@@ -138,5 +138,12 @@
     "username": "Abhinav2",
     "location": "India",
     "position": "Yu Yureka Maintainer"
+  },
+  {
+    "name": "Anas Karbila",
+    "img": "https://github.com/Thecrazyskull.png",
+    "username": "Thecrazyskull",
+    "location": "Netherlands",
+    "position": "Motorola Moto G 2014 Maintainer"
   }
 ]
