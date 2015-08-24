@@ -145,5 +145,12 @@
     "username": "Thecrazyskull",
     "location": "Netherlands",
     "position": "Motorola Moto G 2014 Maintainer"
+  },
+  {
+    "name": "Sean Hoyt",
+    "img": "https://github.com/deadman96385.png",
+    "username": "deadman96385",
+    "location": "USA",
+    "position": "Zenfone 2 (Z008/Z00A) Maintainer"
   }
 ]
