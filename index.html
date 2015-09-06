@@ -11,58 +11,44 @@
     <link rel="import" href="vulcanized.html">
 
     <style is="custom-style">
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'RobotoDraft', 'Noto', sans-serif;
+        :root {
+            --paper-drawer-panel-main-container: {
+                overflow: hidden;
+                background: var(--paper-grey-100);
+            };
+            --paper-drawer-panel-drawer-container: {
+                @apply(--shadow-elevation-4dp);
+            };
+            --paper-scroll-header-panel-full-header: {
+                background-image: url('images/toolbar.png');
+            };
+            --paper-scroll-header-panel-condensed-header: {
+                background-color: #000;
+                opacity: 1 !important;
+            };
+            --paper-toolbar: {
+                @apply(--paper-font-title);
+                padding: 0 10px;
+                transition: height 0.2s;
+                background-color: transparent;
+                @apply(--shadow-elevation-4dp);
+            };
         }
-
-        #main_drawer,
-        #main_drawer [main], #main_drawer [drawer] {
-            height: 100%;
-        }
-
-        #main_drawer [drawer] {
-            background-color: #fff;
-            @apply(--shadow-elevation-4dp);
+        body {
+            @apply(--paper-font-common-base);
+            @apply(--paper-font-common-expensive-kerning);
         }
 
         .clickable-item {
             cursor: pointer;
         }
 
-        #main_drawer [main] {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(rgb(214, 227, 231), lightblue);
-
-            --paper-scroll-header-panel-full-header: {
-                background-image: url('images/toolbar.png');
-             };
-
-            --paper-scroll-header-panel-condensed-header: {
-                background-color: #000;
-            };
-        }
-
-        #main_drawer [main] .main-toolbar {
-            font-size: 18px;
-            padding: 0 10px;
-            transition: height 0.2s;
-            background-color: transparent;
-            box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.4);
-        }
         #main_drawer [main] .main-toolbar .title {
-            font-size: 1.8rem;
-            margin-left: 0;
+            @apply(--paper-font-display1);
         }
 
         #main_drawer [main] #main_content {
             padding: 8px;
-            display: block;
         }
         paper-item[bottom] {
             bottom: 0;
@@ -82,7 +68,7 @@
         }
     </style>
 </head>
-<body layout vertical unresolved>
+<body unresolved>
 <paper-drawer-panel id="main_drawer">
     <div drawer>
         <paper-menu class="drawer-menu" attr-for-selected="url">
@@ -106,25 +92,29 @@
                 <iron-icon icon="extension" item-icon></iron-icon>
                 About us
             </paper-icon-item>
-            <paper-item bottom disabled class="social-buttons-container">
-                <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank">
-                    <paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39;"></paper-fab>
-                </a>
-                <a href="https://twitter.com/SlimRoms" target="_blank">
-                    <paper-fab mini src="icons/twitter.png" style="background-color: #55acee;"></paper-fab>
-                </a>
-                <a href="https://www.facebook.com/pages/Slim-Roms/340528706063511" target="_blank">
-                    <paper-fab mini src="icons/facebook.png" style="background-color: #3b5998;"></paper-fab>
-                </a>
+            <paper-item bottom disabled>
+                <paper-item-body>
+                    <div class="social-buttons-container">
+                        <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank">
+                            <paper-fab mini src="icons/gplus.png" style="background-color: #dd4b39;"></paper-fab>
+                        </a>
+                        <a href="https://twitter.com/SlimRoms" target="_blank">
+                            <paper-fab mini src="icons/twitter.png" style="background-color: #55acee;"></paper-fab>
+                        </a>
+                        <a href="https://www.facebook.com/pages/Slim-Roms/340528706063511" target="_blank">
+                            <paper-fab mini src="icons/facebook.png" style="background-color: #3b5998;"></paper-fab>
+                        </a>
+                    </div>
+                </paper-item-body>
             </paper-item>
         </paper-menu>
     </div>
     <paper-scroll-header-panel main condenses keep-condensed-header>
         <paper-toolbar class="main-toolbar tall">
-            <paper-icon-button class="drawer-toggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+            <paper-icon-button class="drawer-toggle" icon="menu" paper-drawer-toggle></paper-icon-button><div class="bottom title">SlimRoms<span id="sub_title"></span></div>
             <div class="flex"></div>
             <paper-icon-button icon="search"></paper-icon-button>
-            <div class="bottom title">SlimRoms<span id="sub_title"></span></div>
+
         </paper-toolbar>
 
         <app-router id="main_content" init="manual" trailingSlash="ignore">
