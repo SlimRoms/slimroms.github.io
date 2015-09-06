@@ -66,9 +66,17 @@
         .social-buttons-container > * {
             margin: 0;
         }
+
+        footer > paper-toolbar {
+            color: var(--paper-grey-700);
+            background-color: #fff;
+            font-size: 1rem;
+            word-wrap: normal;
+            margin: 1em;
+        }
     </style>
 </head>
-<body unresolved>
+<body class="fullbleed layout vertical" unresolved>
 <paper-drawer-panel id="main_drawer">
     <div drawer>
         <paper-menu class="drawer-menu" attr-for-selected="url">
@@ -125,6 +133,14 @@
             <app-route path="/about" import="pages/about.html" template></app-route>
             <app-route path="*" redirect="/"></app-route>
         </app-router>
+        <footer>
+            <paper-toolbar>
+                <div class="flex"></div>
+                <div>
+                    &copy; SlimRoms Ltd
+                </div>
+            </paper-toolbar>
+        </footer>
     </paper-scroll-header-panel>
 </paper-drawer-panel>
 
