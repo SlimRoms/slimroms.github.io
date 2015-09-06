@@ -35,13 +35,6 @@
     "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
   },
   {
-    "name": "Bryne Gunde",
-    "img": "https://github.com/BlaqueSouldroid.png",
-    "username": "BlaqueDroid",
-    "location": "South Africa",
-    "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
-  },
-  {
     "name": "Cristian Giordano",
     "img": "images/team/steel89.png",
     "username": "steel89",
@@ -68,13 +61,6 @@
     "username": "rebelos",
     "location": "India",
     "position": "Xiaomi Redmi 1S (armani) maintainer, IRC support"
-  },
-  {
-    "name": "Kenny G.",
-    "img": "images/team/xceed.png",
-    "username": "Xceed",
-    "location": "United Kingdom",
-    "position": "Support"
   },
   {
     "name": "Olivier K.",
@@ -124,33 +110,5 @@
     "username": "deadman96385",
     "location": "USA",
     "position": "Zenfone 2 (Z008/Z00A) Maintainer"
-  },
-  {
-    "name": "Shawn Teoh",
-    "img": "https://github.com/ryuinferno.png",
-    "username": "ryuinferno",
-    "location": "Australia",
-    "position": "Samsung Galaxy S2 (I9100G) Maintainer"
-  },
-  {
-    "name": "Stuart Waller",
-    "img": "images/team/knightwolf.png",
-    "username": "KnightWolf",
-    "location": "Canada",
-    "position": "Support"
-  },
-  {
-    "name": "Tej Karani",
-    "img": "https://github.com/tejkkarani.png",
-    "username": "tejkarani",
-    "location": "India",
-    "position": "kona Family Maintainer"
-  },
-  {
-    "name": "Xiao-Long Chen",
-    "img": "https://github.com/chenxiaolong.png",
-    "username": "chenxiaolong",
-    "location": "USA",
-    "position": "Developer"
   }
 ]
