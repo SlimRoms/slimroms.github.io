@@ -54,7 +54,7 @@ addEventListener('DOMContentLoaded', resolve);
 }
 }
 }());
-Polymer = {
+window.Polymer = {
 Settings: function () {
 var user = window.Polymer || {};
 location.search.slice(1).split('&').forEach(function (o) {
@@ -82,15 +82,21 @@ useNativeCustomElements: useNativeCustomElements
 (function () {
 var userPolymer = window.Polymer;
 window.Polymer = function (prototype) {
-var ctor = desugar(prototype);
-prototype = ctor.prototype;
+if (typeof prototype === 'function') {
+prototype = prototype.prototype;
+}
+if (!prototype) {
+prototype = {};
+}
+var factory = desugar(prototype);
+prototype = factory.prototype;
 var options = { prototype: prototype };
 if (prototype.extends) {
 options.extends = prototype.extends;
 }
 Polymer.telemetry._registrate(prototype);
 document.registerElement(prototype.is, options);
-return ctor;
+return factory;
 };
 var desugar = function (prototype) {
 var base = Polymer.Base;
@@ -167,6 +173,8 @@ _addFeature: function (feature) {
 this.extend(this, feature);
 },
 registerCallback: function () {
+this._desugarBehaviors();
+this._doBehavior('beforeRegister');
 this._registerFeatures();
 this._doBehavior('registered');
 },
@@ -272,6 +280,7 @@ lcModules[id.toLowerCase()] = this;
 }
 },
 import: function (id, selector) {
+if (id) {
 var m = findModule(id);
 if (!m) {
 forceDocumentUpgrade();
@@ -282,6 +291,7 @@ m = m.querySelector(selector);
 }
 return m;
 }
+}
 });
 var cePolyfill = window.CustomElements && !CustomElements.useNative;
 document.registerElement('dom-module', DomModule);
@@ -289,8 +299,7 @@ function forceDocumentUpgrade() {
 if (cePolyfill) {
 var script = document._currentScript || document.currentScript;
 var doc = script && script.ownerDocument;
-if (doc && !doc.__customElementsForceUpgraded) {
-doc.__customElementsForceUpgraded = true;
+if (doc) {
 CustomElements.upgradeAll(doc);
 }
 }
@@ -312,11 +321,17 @@ this.is = this.is.toLowerCase();
 });
 Polymer.Base._addFeature({
 behaviors: [],
-_prepBehaviors: function () {
+_desugarBehaviors: function () {
 if (this.behaviors.length) {
-this.behaviors = this._flattenBehaviorsList(this.behaviors);
+this.behaviors = this._desugarSomeBehaviors(this.behaviors);
 }
-this._prepAllBehaviors(this.behaviors);
+},
+_desugarSomeBehaviors: function (behaviors) {
+behaviors = this._flattenBehaviorsList(behaviors);
+for (var i = behaviors.length - 1; i >= 0; i--) {
+this._mixinBehavior(behaviors[i]);
+}
+return behaviors;
 },
 _flattenBehaviorsList: function (behaviors) {
 var flat = [];
@@ -330,15 +345,6 @@ this._warn(this._logf('_flattenBehaviorsList', 'behavior is null, check for miss
 }
 }, this);
 return flat;
-},
-_prepAllBehaviors: function (behaviors) {
-for (var i = behaviors.length - 1; i >= 0; i--) {
-this._mixinBehavior(behaviors[i]);
-}
-for (var i = 0, l = behaviors.length; i < l; i++) {
-this._prepBehavior(behaviors[i]);
-}
-this._prepBehavior(this);
 },
 _mixinBehavior: function (b) {
 Object.getOwnPropertyNames(b).forEach(function (n) {
@@ -362,6 +368,15 @@ this.copyOwnProperty(n, b, this);
 break;
 }
 }, this);
+},
+_prepBehaviors: function () {
+this._prepFlattenedBehaviors(this.behaviors);
+},
+_prepFlattenedBehaviors: function (behaviors) {
+for (var i = 0, l = behaviors.length; i < l; i++) {
+this._prepBehavior(behaviors[i]);
+}
+this._prepBehavior(this);
 },
 _doBehavior: function (name, args) {
 this.behaviors.forEach(function (b) {
@@ -595,7 +610,7 @@ debouncer.stop();
 }
 }
 });
-Polymer.version = '1.1.1';
+Polymer.version = '1.1.3';
 Polymer.Base._addFeature({
 _registerFeatures: function () {
 this._prepIs();
@@ -1187,8 +1202,9 @@ return added;
 },
 _tryRemoveUndistributedNode: function (node) {
 if (this.node.shadyRoot) {
-if (node._composedParent) {
-nativeRemoveChild.call(node._composedParent, node);
+var parent = getComposedParent(node);
+if (parent) {
+nativeRemoveChild.call(parent, node);
 }
 return true;
 }
@@ -1225,7 +1241,7 @@ if (root && hostNeedsDist) {
 this._updateInsertionPoints(root.host);
 this._lazyDistribute(root.host);
 } else if (ensureComposedRemoval) {
-removeFromComposedParent(node._composedParent, node);
+removeFromComposedParent(getComposedParent(node), node);
 }
 },
 _removeDistributedChildren: function (root, container) {
@@ -1449,7 +1465,7 @@ configurable: true
 },
 parentNode: {
 get: function () {
-return this.node._lightParent || (this.node.__patched ? this.node._composedParent : this.node.parentNode);
+return this.node._lightParent || getComposedParent(this.node);
 },
 configurable: true
 },
@@ -1571,6 +1587,18 @@ DomApi.prototype._getComposedInnerHTML = function () {
 return getInnerHTML(this.node, true);
 };
 } else {
+var forwardMethods = [
+'cloneNode',
+'appendChild',
+'insertBefore',
+'removeChild',
+'replaceChild'
+];
+forwardMethods.forEach(function (name) {
+DomApi.prototype[name] = function () {
+return this.node[name].apply(this.node, arguments);
+};
+});
 DomApi.prototype.querySelectorAll = function (selector) {
 return Array.prototype.slice.call(this.node.querySelectorAll(selector));
 };
@@ -1582,9 +1610,6 @@ return n;
 }
 n = n.parentNode;
 }
-};
-DomApi.prototype.cloneNode = function (deep) {
-return this.node.cloneNode(deep);
 };
 DomApi.prototype.importNode = function (externalNode, deep) {
 var doc = this.node instanceof Document ? this.node : this.node.ownerDocument;
@@ -1632,7 +1657,7 @@ return this.node.innerHTML = value;
 configurable: true
 }
 });
-var forwards = [
+var forwardProperties = [
 'parentNode',
 'firstChild',
 'lastChild',
@@ -1643,7 +1668,7 @@ var forwards = [
 'nextElementSibling',
 'previousElementSibling'
 ];
-forwards.forEach(function (name) {
+forwardProperties.forEach(function (name) {
 Object.defineProperty(DomApi.prototype, name, {
 get: function () {
 return this.node[name];
@@ -1727,6 +1752,9 @@ node._composedChildren = null;
 addNodeToComposedChildren(node, parent, children, i);
 }
 }
+function getComposedParent(node) {
+return node.__patched ? node._composedParent : node.parentNode;
+}
 function addNodeToComposedChildren(node, parent, children, i) {
 node._composedParent = parent;
 children.splice(i >= 0 ? i : children.length, 0, node);
@@ -1757,6 +1785,7 @@ var p = Element.prototype;
 var matchesSelector = p.matches || p.matchesSelector || p.mozMatchesSelector || p.msMatchesSelector || p.oMatchesSelector || p.webkitMatchesSelector;
 return {
 getLightChildren: getLightChildren,
+getComposedParent: getComposedParent,
 getComposedChildren: getComposedChildren,
 removeFromComposedParent: removeFromComposedParent,
 saveLightChildrenIfNeeded: saveLightChildrenIfNeeded,
@@ -1945,7 +1974,9 @@ var composed = getComposedChildren(container);
 var splices = Polymer.ArraySplice.calculateSplices(children, composed);
 for (var i = 0, d = 0, s; i < splices.length && (s = splices[i]); i++) {
 for (var j = 0, n; j < s.removed.length && (n = s.removed[j]); j++) {
+if (getComposedParent(n) === container) {
 remove(n);
+}
 composed.splice(s.index + d, 1);
 }
 d -= s.addedCount;
@@ -1958,6 +1989,7 @@ insertBefore(container, n, next);
 composed.splice(j, 0, n);
 }
 }
+ensureComposedParent(container, children);
 },
 _matchesContentSelect: function (node, contentElement) {
 var select = contentElement.getAttribute('select');
@@ -1987,6 +2019,7 @@ var getLightChildren = Polymer.DomApi.getLightChildren;
 var matchesSelector = Polymer.DomApi.matchesSelector;
 var hasInsertionPoint = Polymer.DomApi.hasInsertionPoint;
 var getComposedChildren = Polymer.DomApi.getComposedChildren;
+var getComposedParent = Polymer.DomApi.getComposedParent;
 var removeFromComposedParent = Polymer.DomApi.removeFromComposedParent;
 function distributeNodeInto(child, insertionPoint) {
 insertionPoint._distributedNodes.push(child);
@@ -2040,8 +2073,10 @@ node._composedParent = null;
 nativeRemoveChild.call(parentNode, node);
 }
 }
-function getComposedParent(node) {
-return node.__patched ? node._composedParent : node.parentNode;
+function ensureComposedParent(parent, children) {
+for (var i = 0, n; i < children.length; i++) {
+children[i]._composedParent = parent;
+}
 }
 function getTopDistributingHost(host) {
 while (host && hostNeedsRedistribution(host)) {
@@ -2333,7 +2368,11 @@ if (!this._template) {
 this._notes = [];
 } else {
 Polymer.Annotations.prepElement = this._prepElement.bind(this);
+if (this._template._content && this._template._content._notes) {
+this._notes = this._template._content._notes;
+} else {
 this._notes = Polymer.Annotations.parseAnnotations(this._template);
+}
 this._processAnnotations(this._notes);
 Polymer.Annotations.prepElement = null;
 }
@@ -2780,9 +2819,9 @@ gd = gobj[dep];
 if (gd && gd[name]) {
 gd[name] = (gd[name] || 1) - 1;
 gd._count = (gd._count || 1) - 1;
-}
 if (gd._count === 0) {
 node.removeEventListener(dep, this.handleNative);
+}
 }
 }
 }
@@ -4330,6 +4369,9 @@ clearStyleRules: function (style) {
 style.__cssRules = null;
 },
 forEachStyleRule: function (node, callback) {
+if (!node) {
+return;
+}
 var s = node.parsedSelector;
 var skipRules = false;
 if (node.type === this.ruleTypes.STYLE_RULE) {
@@ -4358,18 +4400,21 @@ afterNode = n$[n$.length - 1];
 target.insertBefore(style, afterNode && afterNode.nextSibling || target.firstChild);
 return style;
 },
-cssFromModules: function (moduleIds) {
+cssFromModules: function (moduleIds, warnIfNotFound) {
 var modules = moduleIds.trim().split(' ');
 var cssText = '';
 for (var i = 0; i < modules.length; i++) {
-cssText += this.cssFromModule(modules[i]);
+cssText += this.cssFromModule(modules[i], warnIfNotFound);
 }
 return cssText;
 },
-cssFromModule: function (moduleId) {
+cssFromModule: function (moduleId, warnIfNotFound) {
 var m = Polymer.DomModule.import(moduleId);
 if (m && !m._cssText) {
 m._cssText = this._cssFromElement(m);
+}
+if (!m && warnIfNotFound) {
+console.warn('Could not find style data in module named', moduleId);
 }
 return m && m._cssText || '';
 },
@@ -4384,12 +4429,12 @@ cssText += this._cssFromElement(e);
 } else {
 if (e.localName === 'style') {
 var include = e.getAttribute(this.INCLUDE_ATTR);
+if (include) {
+cssText += this.cssFromModules(include, true);
+}
 e = e.__appliedElement || e;
 e.parentNode.removeChild(e);
 cssText += this.resolveCss(e.textContent, element.ownerDocument);
-if (include) {
-cssText += this.cssFromModules(include);
-}
 } else if (e.import && e.import.body) {
 cssText += this.resolveCss(e.import.body.textContent, e.import);
 }
@@ -5326,15 +5371,20 @@ observer.observe(e, { childList: true });
 _apply: function () {
 var e = this.__appliedElement || this;
 if (this.include) {
-e.textContent += styleUtil.cssFromModules(this.include);
+e.textContent = styleUtil.cssFromModules(this.include, true) + e.textContent;
 }
-var rules = styleUtil.rulesForStyle(e);
-styleUtil.forEachStyleRule(rules, function (rule) {
+if (e.textContent) {
+styleUtil.forEachStyleRule(styleUtil.rulesForStyle(e), function (rule) {
 styleTransformer.documentRule(rule);
 });
+this._applyCustomProperties(e);
+}
+},
+_applyCustomProperties: function (element) {
 this._computeStyleProperties();
 var props = this._styleProperties;
-e.textContent = styleUtil.toCssText(rules, function (rule) {
+var rules = styleUtil.rulesForStyle(element);
+element.textContent = styleUtil.toCssText(rules, function (rule) {
 var css = rule.cssText = rule.parsedCssText;
 if (rule.propertyInfo && rule.propertyInfo.cssText) {
 css = cssParse.removeCustomPropAssignment(css);
@@ -10650,9 +10700,7 @@ if (!window.Promise) {
 
       /**
        * Returns the currently focused item.
-       *
-       * @attribute focusedItem
-       * @type Object
+       * @type {?Object}
        */
       focusedItem: {
         observer: '_focusedItemChanged',
@@ -10664,9 +10712,6 @@ if (!window.Promise) {
        * The attribute to use on menu items to look up the item title. Typing the first
        * letter of an item when the menu is open focuses that item. If unset, `textContent`
        * will be used.
-       *
-       * @attribute attrForItemTitle
-       * @type String
        */
       attrForItemTitle: {
         type: String
@@ -10743,6 +10788,7 @@ if (!window.Promise) {
         this._defaultFocusAsync = null;
       }
       var item = this._valueToItem(value);
+      if (item && item.hasAttribute('disabled')) return;
       this._setFocusedItem(item);
       Polymer.IronMultiSelectableBehaviorImpl.select.apply(this, arguments);
     },
@@ -12327,7 +12373,6 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
   </style>
 
   <template>
-    <iron-meta id="meta" type="iconset"></iron-meta>
   </template>
 
   <script>
@@ -12364,7 +12409,12 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
         src: {
           type: String,
           observer: '_srcChanged'
+        },
+        
+        _meta: {
+          value: Polymer.Base.create('iron-meta', {type: 'iconset'})
         }
+        
       },
 
       _DEFAULT_ICONSET: 'icons',
@@ -12388,7 +12438,7 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
       _updateIcon: function() {
         if (this._usesIconset()) {
           if (this._iconsetName) {
-            this._iconset = this.$.meta.byKey(this._iconsetName);
+            this._iconset = this._meta.byKey(this._iconsetName);
             if (this._iconset) {
               this._iconset.applyIcon(this, this._iconName, this.theme);
             } else {
@@ -13418,6 +13468,9 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
     :host {
       display: block;
       position: relative;
+    }
+
+    :host([animated]) {
       @apply(--shadow-transition);
     }
 
@@ -13485,73 +13538,73 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
 <dom-module id="paper-ripple" assetpath="bower_components/paper-ripple/">
 
   
-
-  <style>
-    :host {
-      display: block;
-      position: absolute;
-      border-radius: inherit;
-      overflow: hidden;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    :host([animating]) {
-      /* This resolves a rendering issue in Chrome (as of 40) where the
-         ripple is not properly clipped by its parent (which may have
-         rounded corners). See: http://jsbin.com/temexa/4
-
-         Note: We only apply this style conditionally. Otherwise, the browser
-         will create a new compositing layer for every ripple element on the
-         page, and that would be bad. */
-      -webkit-transform: translate(0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    :host([noink]) {
-      pointer-events: none;
-    }
-
-    #background,
-    #waves,
-    .wave-container,
-    .wave {
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    #background,
-    .wave {
-      opacity: 0;
-    }
-
-    #waves,
-    .wave {
-      overflow: hidden;
-    }
-
-    .wave-container,
-    .wave {
-      border-radius: 50%;
-    }
-
-    :host(.circle) #background,
-    :host(.circle) #waves {
-      border-radius: 50%;
-    }
-
-    :host(.circle) .wave-container {
-      overflow: hidden;
-    }
-
-  </style>
+  
   <template>
+    <style>
+      :host {
+        display: block;
+        position: absolute;
+        border-radius: inherit;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+  
+      :host([animating]) {
+        /* This resolves a rendering issue in Chrome (as of 40) where the
+           ripple is not properly clipped by its parent (which may have
+           rounded corners). See: http://jsbin.com/temexa/4
+  
+           Note: We only apply this style conditionally. Otherwise, the browser
+           will create a new compositing layer for every ripple element on the
+           page, and that would be bad. */
+        -webkit-transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+  
+      :host([noink]) {
+        pointer-events: none;
+      }
+  
+      #background,
+      #waves,
+      .wave-container,
+      .wave {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+  
+      #background,
+      .wave {
+        opacity: 0;
+      }
+  
+      #waves,
+      .wave {
+        overflow: hidden;
+      }
+  
+      .wave-container,
+      .wave {
+        border-radius: 50%;
+      }
+  
+      :host(.circle) #background,
+      :host(.circle) #waves {
+        border-radius: 50%;
+      }
+  
+      :host(.circle) .wave-container {
+        overflow: hidden;
+      }
+    </style>
+    
     <div id="background"></div>
     <div id="waves"></div>
   </template>
@@ -13559,20 +13612,6 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
 <script>
   (function() {
     var Utility = {
-      cssColorWithAlpha: function(cssColor, alpha) {
-        var parts = cssColor.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-
-        if (typeof alpha == 'undefined') {
-          alpha = 1;
-        }
-
-        if (!parts) {
-          return 'rgba(255, 255, 255, ' + alpha + ')';
-        }
-
-        return 'rgba(' + parts[1] + ', ' + parts[2] + ', ' + parts[3] + ', ' + alpha + ')';
-      },
-
       distance: function(x1, y1, x2, y2) {
         var xDelta = (x1 - x2);
         var yDelta = (y1 - y2);
@@ -13580,13 +13619,8 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
         return Math.sqrt(xDelta * xDelta + yDelta * yDelta);
       },
 
-      now: (function() {
-        if (window.performance && window.performance.now) {
-          return window.performance.now.bind(window.performance);
-        }
-
-        return Date.now;
-      })()
+      now: window.performance && window.performance.now ?
+          window.performance.now.bind(window.performance) : Date.now
     };
 
     /**
@@ -14133,6 +14167,7 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
       -moz-user-select: none;
       -ms-user-select: none;
       -webkit-user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
       user-select: none;
       cursor: pointer;
 
@@ -14227,7 +14262,8 @@ iron-selector:not(.narrow-layout) #main ::content [paper-drawer-toggle] {
        */
       mini: {
         type: Boolean,
-        value: false
+        value: false,
+        reflectToAttribute: true
       }
     },
 
