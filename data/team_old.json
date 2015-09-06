@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bryne Gunde",
+    "img": "https://github.com/BlaqueSouldroid.png",
+    "username": "BlaqueDroid",
+    "location": "South Africa",
+    "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
+  },
+  {
+    "name": "Kenny G.",
+    "img": "images/team/xceed.png",
+    "username": "Xceed",
+    "location": "United Kingdom",
+    "position": "Support"
+  },
+  {
+    "name":"Lars Greiss",
+    "img":"https://github.com/kufikugel.png",
+    "username":"kufikugel",
+    "location":"Germany",
+    "position":"Lead Developer"
+  },
+  {
+    "name": "Shawn Teoh",
+    "img": "https://github.com/ryuinferno.png",
+    "username": "ryuinferno",
+    "location": "Australia",
+    "position": "Samsung Galaxy S2 (I9100G) Maintainer"
+  },
+  {
+    "name": "Stuart Waller",
+    "img": "images/team/knightwolf.png",
+    "username": "KnightWolf",
+    "location": "Canada",
+    "position": "Support"
+  },
+  {
+    "name": "Tej Karani",
+    "img": "https://github.com/tejkkarani.png",
+    "username": "tejkarani",
+    "location": "India",
+    "position": "kona Family Maintainer"
+  },
+  {
+    "name":"Tylog",
+    "img":"images/team/tylog.png",
+    "username":"tylog",
+    "location":"Germany",
+    "position":"XDA Maintainer"
+  },
+  {
+    "name": "Xiao-Long Chen",
+    "img": "https://github.com/chenxiaolong.png",
+    "username": "chenxiaolong",
+    "location": "USA",
+    "position": "Developer"
+  },
+  {
+    "name":"Per Lycke",
+    "img":"https://github.com/perlycke.png",
+    "username":"pemell",
+    "location":"Sweden",
+    "position":"Public relations"
+  }
+]
