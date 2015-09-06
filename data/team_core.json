@@ -1,10 +1,17 @@
 [
   {
-    "name":"Josue Rivera",
-    "img":"images/team/prbassplayer.png",
-    "username":"prbassplayer",
-    "location":"Puerto Rico",
-    "position":"Development Coordinator"
+    "name":"Ahmed Nabeel",
+    "img":"images/team/nabeel.png",
+    "username":"Ahmed NabeelM",
+    "location":"Egypt",
+    "position":"Lead Support & Public relations"
+  },
+  {
+    "name":"Anthony King",
+    "img":"https://github.com/cybojenix.png",
+    "username":"cybojenix",
+    "location":"UK",
+    "position":"Developer"
   },
   {
     "name":"Cordell",
@@ -14,18 +21,11 @@
     "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
   },
   {
-    "name":"Lars Greiss",
-    "img":"https://github.com/kufikugel.png",
-    "username":"kufikugel",
-    "location":"Germany",
-    "position":"Lead Developer"
-  },
-  {
-    "name":"Nicholas Flintham",
-    "img":"https://github.com/Flinny.png",
-    "username":"Flinny",
-    "location":"United Kingdom",
-    "position":"Google Nexus 9 and HTC One Family Maintainer"
+    "name":"Daniel Koman",
+    "img":"images/team/dankoman.png",
+    "username":"dankoman",
+    "location":"USA",
+    "position":"Gapps Maintainer, Themer and Developer"
   },
   {
     "name":"Griffin Millender",
@@ -35,11 +35,40 @@
     "position":"Developer"
   },
   {
+    "name":"Kit Tinhonovich",
+    "img":"images/team/jubakuba.png",
+    "username":"Jubakuba",
+    "location":"USA",
+    "position":"Developer"
+  },
+  {
+    "name":"Lars Greiss",
+    "img":"https://github.com/kufikugel.png",
+    "username":"kufikugel",
+    "location":"Germany",
+    "position":"Lead Developer"
+  },
+  {
+    "name":"Josue Rivera",
+    "img":"images/team/prbassplayer.png",
+    "username":"prbassplayer",
+    "location":"Puerto Rico",
+    "position":"Development Coordinator"
+  },
+  {
+    "name":"Nicholas Flintham",
+    "img":"https://github.com/Flinny.png",
+    "username":"Flinny",
+    "location":"United Kingdom",
+    "position":"Google Nexus 9 and HTC One Family Maintainer"
+  },
+
+  {
     "name":"Nick Lovell",
     "img":"https://github.com/nicklovell23.png",
     "username":"nicklovell23",
     "location":"USA",
-    "position":"Release Manager, Samsung Galaxy S4 (jflte) and Samusung Galaxy Note 10.1 (i925) Maintainer"
+    "position":"Release Manager, Samsung Galaxy S4 (jflte) and Samsung Galaxy Note 10.1 (i925) Maintainer"
   },
   {
     "name":"Per Lycke",
@@ -49,31 +78,10 @@
     "position":"Public relations"
   },
   {
-    "name":"Ahmed Nabeel",
-    "img":"images/team/nabeel.png",
-    "username":"Ahmed NabeelM",
-    "location":"Egypt",
-    "position":"Lead Support & Public relations"
-  },
-  {
-    "name":"Kit Tinhonovich",
-    "img":"images/team/jubakuba.png",
-    "username":"Jubakuba",
-    "location":"USA",
-    "position":"Developer"
-  },
-  {
     "name":"Tylog",
     "img":"images/team/tylog.png",
     "username":"tylog",
     "location":"Germany",
     "position":"XDA Maintainer"
-  },
-  {
-    "name":"Daniel Koman",
-    "img":"images/team/dankoman.png",
-    "username":"dankoman",
-    "location":"USA",
-    "position":"Gapps Maintainer, Themer and Developer"
   }
 ]
