@@ -1,4 +1,4 @@
-<template>
+<dom-module id="slim-pages-about"><template>
     <style is="custom-style">
         paper-card .center {
             align-content: center;
@@ -62,7 +62,7 @@
         }
     </style>
     <paper-card>
-        <p class="center"><img src="images/slimroms.png" width="400"></p>
+        <p class="center"><img src="../images/slimroms.png" width="400"></p>
         <p class="center"><b>Slim is a custom android operating system.</b></p>
         <p>Our main goal is to offer users a slimmed down but still feature rich alternative to other android operating systems.
             The entire team work together to bring you this tailor-made beauty straight from AOSP source code.</p>
@@ -103,5 +103,10 @@
             </paper-card>
         </div>
     </paper-card>
-
 </template>
+<script>
+    Polymer({
+        is: 'slim-pages-about'
+    });
+</script>
+</dom-module>

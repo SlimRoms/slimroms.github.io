@@ -118,11 +118,11 @@
         </paper-toolbar>
 
         <app-router id="main_content" init="manual" trailingSlash="ignore">
-            <app-route path="/" import="pages/home.html" template></app-route>
-            <app-route path="/changelog" import="pages/changelog.html" template></app-route>
-            <app-route path="/team" import="pages/team.html" template></app-route>
-            <app-route path="/support" import="pages/support.html" template></app-route>
-            <app-route path="/about" import="pages/about.html" template></app-route>
+            <app-route path="/" import="pages/home.html" element="slim-pages-home"></app-route>
+            <app-route path="/changelog" import="pages/changelog.html" element="slim-pages-changelog"></app-route>
+            <app-route path="/team" import="pages/team.html" element="slim-pages-team"></app-route>
+            <app-route path="/support" import="pages/support.html" element="slim-pages-support"></app-route>
+            <app-route path="/about" import="pages/about.html" element="slim-pages-about"></app-route>
             <app-route path="*" redirect="/"></app-route>
         </app-router>
     </paper-scroll-header-panel>

@@ -1,8 +1,19 @@
-<template>
+<!--
+Due to the way these are currently imported, we can't add the component
+links in here, otherwise we get a load of errors, and polymer is re-fetched.
+-->
+
+<dom-module id="slim-pages-home"><template>
     <template is="dom-bind">
-        <iron-ajax auto url="data/posts.json" last-response="{{data}}"></iron-ajax>
+        <iron-ajax auto url="../data/posts.json" last-response="{{data}}"></iron-ajax>
         <template is="dom-repeat" items="{{data}}">
             <slim-post content="{{item.content}}" title="{{item.title}}" subtitle="{{item.date}}"></slim-post>
         </template>
     </template>
 </template>
+<script>
+    Polymer({
+        is: 'slim-pages-home'
+    });
+</script>
+</dom-module>

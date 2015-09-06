@@ -1,4 +1,4 @@
-<template>
+<dom-module id="slim-pages-team"><template>
     <style is="custom-style">
         .flex-container {
             display: -webkit-box;
@@ -96,7 +96,7 @@
     </paper-card>
     <div class="flex-container">
         <template is="dom-bind">
-            <iron-ajax auto url="data/team_core.json" last-response="{{data}}"></iron-ajax>
+            <iron-ajax auto url="../data/team_core.json" last-response="{{data}}"></iron-ajax>
             <template is="dom-repeat" items="{{data}}">
                 <paper-card>
                     <h2 class="title">{{item.name}}</h2>
@@ -126,7 +126,7 @@
     </paper-card>
     <div class="flex-container">
         <template is="dom-bind">
-            <iron-ajax auto url="data/team_contributors.json" last-response="{{data}}"></iron-ajax>
+            <iron-ajax auto url="../data/team_contributors.json" last-response="{{data}}"></iron-ajax>
             <template is="dom-repeat" items="{{data}}">
                 <paper-card>
                     <h2 class="title">{{item.name}}</h2>
@@ -152,3 +152,9 @@
         </template>
     </div>
 </template>
+<script>
+    Polymer({
+        is: 'slim-pages-team'
+    });
+</script>
+</dom-module>
