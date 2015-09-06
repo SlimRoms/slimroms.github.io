@@ -152,6 +152,37 @@
         </template>
     </div>
 </template>
+    <paper-card class="heading">
+        <h1 class="title">Old Team-Members (left or inactive)</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind">
+            <iron-ajax auto url="../data/team_old.json" last-response="{{data}}"></iron-ajax>
+            <template is="dom-repeat" items="{{data}}">
+                <paper-card>
+                    <h2 class="title">{{item.name}}</h2>
+                    <div class="team-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:contacts"></iron-icon>
+                                <p>{{item.username}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="room"></iron-icon>
+                                <p>{{item.location}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="work"></iron-icon>
+                                <p>{{item.position}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+        </template>
+    </div>
+
 <script>
     Polymer({
         is: 'slim-pages-team'
