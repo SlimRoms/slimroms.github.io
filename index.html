@@ -70,9 +70,16 @@
         p {
             line-height: 1.7em;
         }
+
+        footer > paper-toolbar {
+            color: var(--paper-grey-700);
+            background-color: var(--paper-grey-100);
+            font-size: 1rem;
+            word-wrap: normal;
+        }
     </style>
 </head>
-<body unresolved>
+<body class="fullbleed layout vertical" unresolved>
 <paper-drawer-panel id="main_drawer">
     <div drawer>
         <paper-menu class="drawer-menu" attr-for-selected="url">
@@ -129,6 +136,14 @@
             <app-route path="/about" import="pages/about.html" element="slim-pages-about"></app-route>
             <app-route path="*" redirect="/"></app-route>
         </app-router>
+        <footer>
+            <paper-toolbar>
+                <div class="flex"></div>
+                <div>
+                    &copy; SlimRoms Ltd
+                </div>
+            </paper-toolbar>
+        </footer>
     </paper-scroll-header-panel>
 </paper-drawer-panel>
 
