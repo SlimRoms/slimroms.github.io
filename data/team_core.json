@@ -42,13 +42,6 @@
     "position":"Developer"
   },
   {
-    "name":"Lars Greiss",
-    "img":"https://github.com/kufikugel.png",
-    "username":"kufikugel",
-    "location":"Germany",
-    "position":"Lead Developer"
-  },
-  {
     "name":"Josue Rivera",
     "img":"images/team/prbassplayer.png",
     "username":"prbassplayer",
@@ -76,12 +69,5 @@
     "username":"pemell",
     "location":"Sweden",
     "position":"Public relations"
-  },
-  {
-    "name":"Tylog",
-    "img":"images/team/tylog.png",
-    "username":"tylog",
-    "location":"Germany",
-    "position":"XDA Maintainer"
   }
 ]
