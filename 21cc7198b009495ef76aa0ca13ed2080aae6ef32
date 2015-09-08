@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a4e6583_332b6b32",
+        "filename": "data/team_contributors.json",
+        "patchSetId": 6
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2015-09-08T21:41:03Z",
+      "side": 1,
+      "message": "Should be removed",
+      "range": {
+        "startLine": 38,
+        "startChar": 1,
+        "endLine": 43,
+        "endChar": 4
+      },
+      "revId": "21cc7198b009495ef76aa0ca13ed2080aae6ef32",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a4e6583_13206f48",
+        "filename": "data/team_core.json",
+        "patchSetId": 6
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2015-09-08T21:41:03Z",
+      "side": 1,
+      "message": "Per is inactive now as well",
+      "range": {
+        "startLine": 66,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 33
+      },
+      "revId": "21cc7198b009495ef76aa0ca13ed2080aae6ef32",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
