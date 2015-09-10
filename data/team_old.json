@@ -14,6 +14,13 @@
     "position": "Support"
   },
   {
+    "name":"Kit Tinhonovich",
+    "img":"images/team/jubakuba.png",
+    "username":"Jubakuba",
+    "location":"USA",
+    "position":"Developer"
+  },
+  {
     "name":"Lars Greiss",
     "img":"https://github.com/kufikugel.png",
     "username":"kufikugel",
