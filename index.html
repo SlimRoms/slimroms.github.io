@@ -9,7 +9,7 @@
     <!--<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>-->
     <script src="webcomponents-lite.min.js"></script>
     <!--<link rel="import" href="elements.html">-->
-    <link rel="import" href="vulcanized.html">
+    <link rel="import" href="vulcanized.min.html">
 
     <style is="custom-style">
         :root {
@@ -46,6 +46,7 @@
 
         #main_drawer [main] .main-toolbar .title {
             @apply(--paper-font-display1);
+            font-size: 30px;
         }
 
         #main_drawer [main] #main_content {
@@ -70,9 +71,26 @@
         p {
             line-height: 1.7em;
         }
+
+        footer > paper-toolbar {
+            color: var(--paper-grey-700);
+            background-color: var(--paper-grey-100);
+            font-size: 1rem;
+            word-wrap: normal;
+        }
+        @media (max-width: 480px) {
+            #main_drawer [main] .main-toolbar .title {
+                font-size: 25px;
+            }
+        }
+        @media (max-width: 320px) {
+            #main_drawer [main] .main-toolbar .title {
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
-<body unresolved>
+<body class="fullbleed layout vertical" unresolved>
 <paper-drawer-panel id="main_drawer">
     <div drawer>
         <paper-menu class="drawer-menu" attr-for-selected="url">
@@ -93,7 +111,7 @@
                 Support
             </paper-icon-item>
             <paper-icon-item class="clickable-item" url="/about">
-                <iron-icon icon="extension" item-icon></iron-icon>
+                <iron-icon icon="info" item-icon></iron-icon>
                 About us
             </paper-icon-item>
             <paper-item bottom disabled>
@@ -129,6 +147,14 @@
             <app-route path="/about" import="pages/about.html" element="slim-pages-about"></app-route>
             <app-route path="*" redirect="/"></app-route>
         </app-router>
+        <footer>
+            <paper-toolbar>
+                <div class="flex"></div>
+                <div>
+                    &copy; SlimRoms Ltd
+                </div>
+            </paper-toolbar>
+        </footer>
     </paper-scroll-header-panel>
 </paper-drawer-panel>
 
