@@ -33,7 +33,7 @@
         }
         @media (max-width: 700px) {
             .flex-container paper-card {
-                flex-basis: 50%;
+                flex-basis: 70%;
             }
             img {
             width: 330px;
@@ -65,11 +65,19 @@
             margin: 1em;
         }
         .credit-list paper-card p {
-            font-size: 1.6em;
+            font-size: 1.2em;
         }
         .credit-list paper-card::shadow paper-material {
             margin: 0;
             padding: 0.2em;
+        }
+        
+        .credit-list .title {
+            padding-bottom: 0.5em;
+            text-align: center;
+        }
+        .flex-container paper-card:last-child {
+            padding-bottom: 1em;
         }
     </style>
     <paper-card>
@@ -91,25 +99,25 @@
     <paper-card class="credit-list">
         <h3 class="title">General Credits</h3>
         <div class="flex-container">
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>Google - Android Sources</p>
             </paper-card>
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>Faiz Malkani - Website Design</p>
             </paper-card>
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>CyanogenMod - Device vendor and Development work</p>
             </paper-card>
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>TeamWin - TWRP</p>
             </paper-card>
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>iBotPeaches - ApkTool</p>
             </paper-card>
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>Nyt - Slim IRC App</p>
             </paper-card>
-            <paper-card elevation="3">
+            <paper-card elevation="2">
                 <p>Roman Nurik - Dash Clock</p>
             </paper-card>
         </div>
