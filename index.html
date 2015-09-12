@@ -46,6 +46,7 @@
 
         #main_drawer [main] .main-toolbar .title {
             @apply(--paper-font-display1);
+            font-size: 30px;
         }
 
         #main_drawer [main] #main_content {
@@ -69,6 +70,19 @@
         }
         p {
             line-height: 1.7em;
+        }
+        @media (max-width: 480px) {
+            #main_drawer [main] .main-toolbar .title {
+                font-size: 25px;
+            }
+            #sub_title {
+                display: inline-block;
+            }
+        }
+        @media (max-width: 320px) {
+            #main_drawer [main] .main-toolbar .title {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
