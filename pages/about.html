@@ -4,6 +4,9 @@
             align-content: center;
             text-align: center;
         }
+        img {
+            width: 400px;
+        }
         .flex-container {
             display: -webkit-box;
             display: -moz-box;
@@ -31,6 +34,14 @@
         @media (max-width: 700px) {
             .flex-container paper-card {
                 flex-basis: 50%;
+            }
+            img {
+            width: 330px;
+            }
+        }
+        @media (max-width: 480px) {
+            img {
+                width: 250px;
             }
         }
         @media (min-width: 1700px) {
@@ -65,7 +76,7 @@
         }
     </style>
     <paper-card>
-        <p class="center"><img src="../images/slimroms.png" width="400"></p>
+        <p class="center"><img src="../images/slimroms.png"></p>
         <p class="center"><b>Slim is a custom android operating system.</b></p>
         <p>Our main goal is to offer users a slimmed down but still feature rich alternative to other android operating systems.
             The entire team work together to bring you this tailor-made beauty straight from AOSP source code.</p>
