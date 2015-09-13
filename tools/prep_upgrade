@@ -1,6 +1,0 @@
-#!/bin/bash
-
-[[ -f "$PWD/elements.html" ]] || echo "Must be run from the base Slim Site directory" || exit 1
-
-vulcanize --inline-scripts --inline-css --strip-comments "$PWD/elements.html" > "$PWD/vulcanized.html"
-cp "$PWD/bower_components/webcomponentsjs/webcomponents-lite.min.js" "$PWD/webcomponents-lite.min.js"
