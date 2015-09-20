@@ -110,5 +110,12 @@
     "username": "deadman96385",
     "location": "USA",
     "position": "Zenfone 2 (Z008/Z00A) Maintainer"
+  },
+  {
+    "name": "Sooraj Sizon",
+    "img": "https://github.com/sooorajjj.png",
+    "username": "sooorajjj",
+    "location": "India",
+    "position": "YU-Yuphoria (lettuce) Maintainer"
   }
 ]
