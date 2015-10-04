@@ -103,5 +103,12 @@
     "username": "sooorajjj",
     "location": "India",
     "position": "YU-Yuphoria (lettuce) Maintainer"
+  },
+  {
+    "name": "Jean-Pierre Rasquin",
+    "img": "https://github.com/Yank555-lu.png",
+    "username": "Yank555.lu",
+    "location": "Luxembourg, Europe",
+    "position": "Google Nexus 5 (hammerhead) Maintainer / Google Nexus 6 (shamu) Kernel Maintainer"
   }
 ]
