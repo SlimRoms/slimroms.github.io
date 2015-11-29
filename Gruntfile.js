@@ -11,6 +11,9 @@ module.exports = function(grunt) {
         }
       }
     },
+    'bower-install-simple': {
+      default: {}
+    },
     minifyPolymer: {
       default: {
         files: {
@@ -40,12 +43,14 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-bower-update');
+  grunt.loadNpmTasks('grunt-bower-install-simple');
   grunt.loadNpmTasks('grunt-minify-polymer');
   grunt.loadNpmTasks('grunt-vulcanize');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', [
     'bower-update',
+    'bower-install-simple',
     'vulcanize',
     'minifyPolymer',
     'copy'
