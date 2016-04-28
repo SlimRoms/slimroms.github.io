@@ -51,6 +51,7 @@
         #main_drawer [main] #main_content {
             padding: 8px;
         }
+
         paper-item[bottom] {
             bottom: 0;
             position: absolute;
@@ -67,6 +68,19 @@
         .social-buttons-container > * {
             margin: 0;
         }
+
+        paper-item[above-bottom] {
+            bottom: 20px;
+            position: absolute;
+        }
+        .paypal-button-container {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            padding:30px;
+        }
+
         p {
             line-height: 1.7em;
         }
@@ -77,6 +91,7 @@
             font-size: 1rem;
             word-wrap: normal;
         }
+
     </style>
 </head>
 <body class="fullbleed layout vertical" unresolved>
@@ -103,7 +118,24 @@
                 <iron-icon icon="info" item-icon></iron-icon>
                 About us
             </paper-icon-item>
-            <paper-item bottom disabled>
+            <paper-icon-item class="clickable-item" url="/about">
+                <iron-icon icon="info" item-icon></iron-icon>
+                About us
+            </paper-icon-item>
+
+            <paper-item above-bottom>
+                <paper-item-body>
+                    <div class="paypal-button-container">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" width=100% >
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="67B7572GNCNK6">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                    </div>
+                </paper-item-body>
+            </paper-item>
+            <paper-item bottom>
                 <paper-item-body>
                     <div class="social-buttons-container">
                         <a href="https://plus.google.com/+SlimromsNet/posts" target="_blank">
@@ -127,7 +159,6 @@
             <paper-icon-button icon="search"></paper-icon-button>
 
         </paper-toolbar>
-
         <app-router id="main_content" init="manual" trailingSlash="ignore">
             <app-route path="/" import="pages/home.html" element="slim-pages-home"></app-route>
             <app-route path="/changelog" import="pages/changelog.html" element="slim-pages-changelog"></app-route>
