@@ -4,6 +4,16 @@ links in here, otherwise we get a load of errors, and polymer is re-fetched.
 -->
 
 <dom-module id="slim-pages-home"><template>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Slimroms Main page add. -->
+    <div id="bannerad">
+        <ins class="adsbygoogle"
+    data-ad-client="ca-pub-5141102155518626"
+    data-ad-slot="8245849281"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
     <template is="dom-bind">
         <iron-ajax auto url="../data/posts.json" last-response="{{data}}"></iron-ajax>
         <template is="dom-repeat" items="{{data}}">
@@ -15,5 +25,9 @@ links in here, otherwise we get a load of errors, and polymer is re-fetched.
     Polymer({
         is: 'slim-pages-home'
     });
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </dom-module>
