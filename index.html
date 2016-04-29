@@ -10,7 +10,7 @@
     <script src="webcomponents-lite.min.js"></script>
     <!--<link rel="import" href="elements.html">-->
     <link rel="import" href="vulcanized.min.html">
-
+    <link rel="stylesheet" type="text/css" href="css/ads.css">
     <style is="custom-style">
         :root {
             --paper-drawer-panel-main-container: {
@@ -99,10 +99,20 @@
                 <iron-icon icon="question-answer" item-icon></iron-icon>
                 Support
             </paper-icon-item>
+            <paper-icon-item class="clickable-item" url="/donate">
+                <iron-icon icon="account-balance-wallet" item-icon></iron-icon>
+                Donate
+            </paper-icon-item>
             <paper-icon-item class="clickable-item" url="/about">
                 <iron-icon icon="info" item-icon></iron-icon>
                 About us
             </paper-icon-item>
+            <!--slimroms side ad-->
+            <div id="sidead">
+                <ins class="adsbygoogle"
+                data-ad-client="ca-pub-5141102155518626"
+                data-ad-slot="4798771281"></ins>
+            </div>
             <paper-item bottom disabled>
                 <paper-item-body>
                     <div class="social-buttons-container">
@@ -125,14 +135,19 @@
             <paper-icon-button class="drawer-toggle" icon="menu" paper-drawer-toggle></paper-icon-button><div class="bottom title">SlimRoms<span id="sub_title"></span></div>
             <div class="flex"></div>
             <paper-icon-button icon="search"></paper-icon-button>
-
         </paper-toolbar>
-
+    <!-- Slimroms Main page ad. -->
+        <div id="bannerad">
+            <ins class="adsbygoogle"
+        data-ad-client="ca-pub-5141102155518626"
+        data-ad-slot="8245849281"></ins>
+        </div>
         <app-router id="main_content" init="manual" trailingSlash="ignore">
             <app-route path="/" import="pages/home.html" element="slim-pages-home"></app-route>
             <app-route path="/changelog" import="pages/changelog.html" element="slim-pages-changelog"></app-route>
             <app-route path="/team" import="pages/team.html" element="slim-pages-team"></app-route>
             <app-route path="/support" import="pages/support.html" element="slim-pages-support"></app-route>
+            <app-route path="/donate" import="pages/donate.html" element="slim-pages-donate"></app-route>
             <app-route path="/about" import="pages/about.html" element="slim-pages-about"></app-route>
             <app-route path="*" redirect="/"></app-route>
         </app-router>
@@ -191,6 +206,9 @@
         router.init();
     });
 </script>
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </body>
 </html>
