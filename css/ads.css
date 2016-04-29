@@ -1,0 +1,48 @@
+#bannerad {
+    text-align: center;
+}
+
+#sidead {
+    text-align: center;
+}
+
+#bannerad .adsbygoogle {
+    display: inline-block;
+    width: 728px;
+    height: 90px;
+    padding: 10px;
+    margin-top: 2em;
+}
+
+#sidead .adsbygoogle {
+    display: inline-block;
+    width: 220px;
+    height: 230px;
+    margin: 30px auto;
+}
+
+@media (max-width: 1100px) {
+     #bannerad .adsbygoogle {
+        width: 600px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 800px) {
+    #bannerad .adsbygoogle {
+        width: 450px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+     #bannerad .adsbygoogle {
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+     #bannerad .adsbygoogle {
+        width: 300px;
+    }
+}
