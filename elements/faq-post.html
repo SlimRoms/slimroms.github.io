@@ -1,0 +1,65 @@
+<!--
+Copyright 2015 SlimRoms
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="collections.html">
+<link rel="import" href="slim-marked.html">
+
+<style>
+    collection {
+        margin: 0 16px;
+    }
+
+    collection h3 {
+        padding: 1em;
+        text-align: left;
+        margin: 0;
+    }
+
+    collection p {
+        padding: 1em;
+    }
+</style>
+<dom-module id="faq-post">
+    <template>
+        <collection>
+            <h3 class="title">{{title}}</h3>
+            <slim-marked markdown="{{computedContent}}"></slim-marked>
+        </collection>
+    </template>
+    <script>
+        Polymer({
+            is: 'faq-post',
+            properties: {
+                content: Object,
+
+                title: String,
+                subtitle: String,
+                computedContent: {
+                    readOnly: true,
+                    type: String
+                }
+            },
+            observers: [
+                    'contentChanged(content)'
+            ],
+
+            contentChanged: function(content) {
+                this._setComputedContent(typeof(content) == 'string' ? content : content.join('\n'));
+            }
+        });
+    </script>
+</dom-module>
