@@ -1,0 +1,28 @@
+[
+  {
+    "title":"Can you support device 'X'?",
+    "content": [
+    "We need the device in order to support it as well as device maintainer willing to maintain it.",
+    "If we don't support your device then check your device's thread on xda-developers to see if someone built unofficial builds for your device."
+    ]
+  },
+    {
+    "title":"Incompatible apps on Play Store",
+    "content": [
+    "SlimRoms use low DPI by default so either use Slim gapps or a multi DPI play store."
+    ]
+  },
+  {
+    "title":"I have a high battery drain with your Rom. What can I do?",
+    "content": ["In most cases, battery drain isn't caused by the Rom.",
+    "Occasionally, it can be caused by the first google sync just after configuring google account.",
+    "Generally, it is caused by a badly coded or old app installed by the user."
+    ]
+  },
+  {
+    "title":"Slim is not translated to my language, How can I help translating it?",
+    "content": [
+    "[Join our Crowdin Project](https://crowdin.com/project/slimroms)"
+    ]
+  }  
+ ]
