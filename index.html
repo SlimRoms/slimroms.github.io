@@ -87,10 +87,6 @@
                 <iron-icon icon="home" item-icon></iron-icon>
                 Home
             </paper-icon-item>
-            <paper-icon-item class="clickable-item" url="/changelog">
-                <iron-icon icon="notification:sync" item-icon></iron-icon>
-                Changelog
-            </paper-icon-item>
             <paper-icon-item class="clickable-item" url="/team">
                 <iron-icon icon="account-circle" item-icon></iron-icon>
                 The Team
@@ -130,7 +126,6 @@
 
         <app-router id="main_content" init="manual" trailingSlash="ignore">
             <app-route path="/" import="pages/home.html" element="slim-pages-home"></app-route>
-            <app-route path="/changelog" import="pages/changelog.html" element="slim-pages-changelog"></app-route>
             <app-route path="/team" import="pages/team.html" element="slim-pages-team"></app-route>
             <app-route path="/support" import="pages/support.html" element="slim-pages-support"></app-route>
             <app-route path="/about" import="pages/about.html" element="slim-pages-about"></app-route>
