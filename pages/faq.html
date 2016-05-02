@@ -1,0 +1,78 @@
+<dom-module id="slim-pages-faq"><template>
+    <style>
+        #content {
+            display: flex;
+            flex-direction: row;
+        }
+        #main-section {
+            width: 70%;
+        }
+        #side-section {
+            width: 30%;
+        }
+        
+        #side-section paper-card {
+            text-align: center;
+        }
+        
+        #side-section paper-card a {
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        collection {
+            margin: 0 16px;
+        }
+        
+        collection h3 {
+            padding: 1em;
+            text-align: left;
+            margin: 0;
+        }
+        
+        collection p {
+            padding: 1em;
+        }
+
+        @media (max-width: 800px) {
+            #content {
+            flex-direction: column;
+            }
+            #main-section {
+                width: 100%;
+            }
+            #side-section {
+                width: 100%;
+            }
+        }
+    </style>
+    <div id='content'>
+        <div id='main-section'>
+            <template is="dom-bind">
+                <iron-ajax auto url="../data/faq.json" last-response="{{data}}"></iron-ajax>
+                <template is="dom-repeat" items="{{data}}">
+                    <collection>
+                        <h3>{{item.title}}</h3>
+                            <p>{{item.content}}</p>
+                    </collection>
+                </template>
+            </template>
+        </div>
+        <div id='side-section'>
+            <paper-card>
+                <paper-ripple></paper-ripple>
+                <a href='#/support/report-bugs'>Report bugs</a>
+            </paper-card>
+        </div>
+    </div>
+</template>
+<script>
+    Polymer({
+        is: 'slim-pages-faq'
+    });
+</script>
+    
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</dom-module>
