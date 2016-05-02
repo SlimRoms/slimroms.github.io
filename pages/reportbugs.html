@@ -1,0 +1,23 @@
+<dom-module id="slim-pages-report-bugs"><template>
+    <paper-card>
+        <p>Flashing a custom ROM, especially a version of that ROM that hasn’t been thoroughly tested, might occasionally lead to some bugs. If you’re certain that the bug you’re experiencing is ROM related, you can submit us a bug report by doing the following steps:</p>
+        <div class="collection-list">
+            <h2>Report bugs using ADB</h2>
+            <p>Assuming ADB is properly installed on your system.</p>
+            <p>Plug your device to your Computer</p>
+            <p>Open up a command prompt on your Computer</p>
+            <p>Type the following (without the quotes): “adb logcat > bugreport.txt”</p>
+            <p>On your device, recreate the bug once or twice</p>
+            <p>Hit Ctrl+C on your Computer</p>
+            <p>Go to the path where your Command Prompt is pointing at and locate the bugreport.txt file</p>
+            <p>Upload it somewhere reliable (Dropbox and Google drive are preferable)</p>
+            <p>Send the link our way on our <a href="https://plus.google.com/communities/104509876514579429216" target='_blank'>G+ community</a></p>
+        </div>
+        </paper-card>
+</template>
+<script>
+    Polymer({
+        is: 'slim-pages-report-bugs'
+    });
+</script>
+</dom-module>
