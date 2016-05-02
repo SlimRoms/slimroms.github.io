@@ -1,0 +1,59 @@
+<dom-module id="slim-pages-install"><template>
+    <style>
+        collection {
+            background: white;
+            box-sizing: border-box;
+            display: block;
+            position: relative
+            border-radius: 2px;
+            font-size: 1em;
+            color: #555555;
+            font-weight: 400;
+            margin: 2em 16px 16px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+        }
+        collection h2 {
+            border-bottom: 1px solid rgba(160, 160, 160, 0.4);
+            padding: 1.5em;
+            text-align: center;
+            color: #0781aa;
+            font-weight: normal;
+            margin: 0;
+        }
+        collection p {
+            border-bottom: 1px solid rgba(160, 160, 160, 0.4);
+            padding: 1.5em;
+            margin: 0;
+        }
+
+        collection p:last-child {
+            border-bottom: none;
+        }
+    </style>
+    <collection>
+        <h2>Flash SlimRoms coming from another ROM or Android version</h2>
+        <p>Download ROM and Gapps</p>
+        <p>Put them on your sdcard</p>
+        <p>Boot to recovery</p>
+        <p>Wipe data, cache, and dalvik</p>
+        <p>Flash ROM</p>
+        <p>Flash Gapps</p>
+        <p>Reboot, setup and enjoy</p>
+    </collection>
+    <collection>
+        <h2>Update SlimRoms while on the same Android version</h2>
+        <p>Download ROM and Gapps</p>
+        <p>Put them on your sdcard</p>
+        <p>Boot to recovery</p>
+        <p>Wipe cache and dalvik</p>
+        <p>Flash ROM</p>
+        <p>Flash Gapps</p>
+        <p>Reboot</p>
+    </collection>
+</template>
+<script>
+    Polymer({
+        is: 'slim-pages-install'
+    });
+</script>
+</dom-module>
