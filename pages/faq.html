@@ -1,0 +1,57 @@
+<dom-module id="slim-pages-faq"><template>
+    <style>
+        #content {
+            display: flex;
+            flex-direction: row;
+        }
+        #main-section {
+            width: 70%;
+        }
+        #side-section {
+            width: 30%;
+        }
+
+        #side-section paper-card a {
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        #side-section paper-card {
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            #content {
+            flex-direction: column;
+            }
+            #main-section {
+                width: 100%;
+            }
+            #side-section {
+                width: 100%;
+            }
+        }
+    </style>
+    <div id='content'>
+        <div id='main-section'>
+            <template is="dom-bind">
+                <iron-ajax auto url="../data/faq.json" last-response="{{data}}"></iron-ajax>
+                <template is="dom-repeat" items="{{data}}">
+                        <faq-post content="{{item.content}}" title="{{item.title}}"></faq-post>
+                </template>
+            </template>
+        </div>
+        <div id='side-section'>
+            <paper-card>
+                <paper-ripple></paper-ripple>
+                <a href='#/support/report-bugs'>Report bugs</a>
+            </paper-card>
+        </div>
+    </div>
+</template>
+<script>
+    Polymer({
+        is: 'slim-pages-faq'
+    });
+</script>
+</dom-module>
