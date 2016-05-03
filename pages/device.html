@@ -1,4 +1,4 @@
-<dom-module id="slim-pages-download"><template>
+<dom-module id="slim-pages-device"><template>
     <style is="custom-style">
         .flex-container {
             display: -webkit-box;
@@ -42,7 +42,7 @@
         paper-card.heading .title {
             text-align: center;
         }
-        .download-container {
+        .device-container {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -50,13 +50,13 @@
             display: flex;
             align-items: flex-start;
         }
-        .download-container img {
+        .device-container img {
             height: auto;
             width: 6.5em;
             min-width: 6.5em;
             border-radius: 50%;
         }
-        .download-container .text-container {
+        .device-container .text-container {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -68,7 +68,7 @@
             flex-direction: column;
             margin-left: 2em;
         }
-        .download-container .text-container .icon-text {
+        .device-container .text-container .icon-text {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -77,13 +77,13 @@
             align-items: center;
             margin-bottom: 1em;
         }
-        .download-container .text-container .icon-text iron-icon {
+        .device-container .text-container .icon-text iron-icon {
             color: #0781aa;
             width: 1.3em;
             height: 1.3em;
             flex-shrink: 0;
         }
-        .download-container .text-container .icon-text p {
+        .device-container .text-container .icon-text p {
             margin: 0 0 0 1em;
             font-size: 1em;
             color: #555555;
@@ -92,26 +92,70 @@
         }
     </style>
     <paper-card class="heading">
-        <h1 class="title">Downloads</h1>
+        <h1 class="title">Release builds</h1>
     </paper-card>
     <div class="flex-container">
         <template is="dom-bind">
-            <iron-ajax auto url="../data/downloads.json" last-response="{{data}}"></iron-ajax>
+            <iron-ajax auto url="../data/"device"_release.json" last-response="{{data}}"></iron-ajax>
             <template is="dom-repeat" items="{{data}}">
                 <paper-card>
-                    <h2 class="title">{{item.devicename}}</h2>
-                    <div class="download-container">
-                        <a href="#/pages/device/{{item.devicename}}"><img src="{{item.img}}"> 
+                    <h2 class="title">"device"</h2>
+                    <div class="device-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
+                                <p>{{item.devicename}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="file-download"></iron-icon>
+                                <p> <a href="http://slim.flinny.org/new/download.php?download_file={{item.filename}}">{{item.filename}}</a></p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="label"></iron-icon>
+                                <p>{{item.md5}}</p>
+                            </div>
                         </div>
                     </div>
                 </paper-card>
             </template>
         </template>
     </div>
+    <paper-card class="heading">
+        <h1 class="title">Weekly Builds</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind">
+            <iron-ajax auto url="../data/<%device%>_weekly.json" last-response="{{data}}"></iron-ajax>
+            <template is="dom-repeat" items="{{data}}">
+                <paper-card>
+                    <h2 class="title">{{item.devicename}}</h2>
+                    <div class="device-container">
+                        <img src="{{item.img}}">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
+                                <p>{{item.devicename}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="file-download"></iron-icon>
+                                <p> <a href="http://slim.flinny.org/new/download.php?download_file={{item.filename}}">{{item.filename}}</a></p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="label"></iron-icon>
+                                <p>{{item.md5}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+        </template>
+    </div>
+
 </template>
 <script>
     Polymer({
-        is: 'slim-pages-download'
+        is: 'slim-pages-device'
     });
 </script>
 </dom-module>
