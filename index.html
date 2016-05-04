@@ -143,8 +143,7 @@
             <app-route path="/" import="pages/home.html" element="slim-pages-home"></app-route>
             <app-route path="/changelog" import="pages/changelog.html" element="slim-pages-changelog"></app-route>
             <app-route path="/download" import="pages/download.html" element="slim-pages-download"></app-route>
-            <app-route path="pages/device" import="pages/device.html" element="slim-pages-device"></app-route>
-            <app-route path="pages/device/?device={{item.devicename}}" import="/pages/device.html/?device={{item.devicename}}"</app-route>
+            <app-route path="/device/:deviceName" import="pages/device.html" element="slim-pages-device"></app-route>
             <app-route path="/team" import="pages/team.html" element="slim-pages-team"></app-route>
             <app-route path="/support" import="pages/support.html" element="slim-pages-support"></app-route>
             <app-route path="/about" import="pages/about.html" element="slim-pages-about"></app-route>

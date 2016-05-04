@@ -16,11 +16,13 @@
         .flex-container paper-card {
             flex-grow: 0;
             flex-shrink: 0;
-            flex-basis: 49%;
+            flex-basis: 20%;
+
         }
         @media (max-width: 1100px) {
             .flex-container paper-card {
                 flex-basis: 99%;
+
             }
         }
         @media (min-width: 1700px) {
@@ -54,41 +56,7 @@
             height: auto;
             width: 6.5em;
             min-width: 6.5em;
-            border-radius: 50%;
-        }
-        .download-container .text-container {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -moz-flex-direction: column;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            margin-left: 2em;
-        }
-        .download-container .text-container .icon-text {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            align-items: center;
-            margin-bottom: 1em;
-        }
-        .download-container .text-container .icon-text iron-icon {
-            color: #0781aa;
-            width: 1.3em;
-            height: 1.3em;
-            flex-shrink: 0;
-        }
-        .download-container .text-container .icon-text p {
-            margin: 0 0 0 1em;
-            font-size: 1em;
-            color: #555555;
-            font-weight: 400;
-            line-height: 1.1em;
+            border-radius: 10%;
         }
     </style>
     <paper-card class="heading">
@@ -96,12 +64,17 @@
     </paper-card>
     <div class="flex-container">
         <template is="dom-bind">
-            <iron-ajax auto url="../data/downloads.json" last-response="{{data}}"></iron-ajax>
+            <iron-ajax auto url="../data/devices.json" last-response="{{data}}"></iron-ajax>
             <template is="dom-repeat" items="{{data}}">
                 <paper-card>
-                    <h2 class="title">{{item.devicename}}</h2>
+                    <h2 class="title">{{item.manufacturer}} - {{item.devicename}}</h2>
                     <div class="download-container">
-                        <a href="#/pages/device/{{item.devicename}}"><img src="{{item.img}}"> 
+                    <a href="#/device/{{item.devicename}}"><img src="{{item.img}}"></a>
+                        </div>
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <p>{{item.description}}</p>
+                            </div>
                         </div>
                     </div>
                 </paper-card>

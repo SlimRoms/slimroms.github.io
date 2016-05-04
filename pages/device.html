@@ -54,7 +54,7 @@
             height: auto;
             width: 6.5em;
             min-width: 6.5em;
-            border-radius: 50%;
+            border-radius: 10%;
         }
         .device-container .text-container {
             display: -webkit-box;
@@ -92,24 +92,21 @@
         }
     </style>
     <paper-card class="heading">
-        <h1 class="title">Release builds</h1>
+        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Stable Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-        <template is="dom-bind">
-            <iron-ajax auto url="../data/"device"_release.json" last-response="{{data}}"></iron-ajax>
+            <iron-ajax auto url="../data/{{deviceName}}_stable.json" last-response="{{data}}"></iron-ajax>
             <template is="dom-repeat" items="{{data}}">
                 <paper-card>
-                    <h2 class="title">"device"</h2>
                     <div class="device-container">
-                        <img src="{{item.img}}">
                         <div class="text-container">
                             <div class="icon-text">
                                 <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
-                                <p>{{item.devicename}}</p>
+                                <p>{{item.build}}</p>
                             </div>
                             <div class="icon-text">
                                 <iron-icon icon="file-download"></iron-icon>
-                                <p> <a href="http://slim.flinny.org/new/download.php?download_file={{item.filename}}">{{item.filename}}</a></p>
+                                <p><a href="http://slim.flinny.org/new/download.php?download_file={{item.filename}}">{{item.filename}}</a></p>
                             </div>
                             <div class="icon-text">
                                 <iron-icon icon="label"></iron-icon>
@@ -119,23 +116,19 @@
                     </div>
                 </paper-card>
             </template>
-        </template>
     </div>
     <paper-card class="heading">
-        <h1 class="title">Weekly Builds</h1>
+        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Weekly Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-        <template is="dom-bind">
-            <iron-ajax auto url="../data/<%device%>_weekly.json" last-response="{{data}}"></iron-ajax>
-            <template is="dom-repeat" items="{{data}}">
-                <paper-card>
-                    <h2 class="title">{{item.devicename}}</h2>
+            <iron-ajax auto url="../data/{{deviceName}}_weekly.json" last-response="{{weeklyData}}"></iron-ajax>
+            <template is="dom-repeat" items="{{weeklyData}}">
+                <paper-card class="heading">
                     <div class="device-container">
-                        <img src="{{item.img}}">
                         <div class="text-container">
                             <div class="icon-text">
                                 <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
-                                <p>{{item.devicename}}</p>
+                                <p>{{item.build}}</p>
                             </div>
                             <div class="icon-text">
                                 <iron-icon icon="file-download"></iron-icon>
@@ -149,13 +142,15 @@
                     </div>
                 </paper-card>
             </template>
-        </template>
     </div>
 
 </template>
 <script>
     Polymer({
-        is: 'slim-pages-device'
+        is: 'slim-pages-device',
+        properties: {
+            deviceName: String
+        }
     });
 </script>
 </dom-module>
