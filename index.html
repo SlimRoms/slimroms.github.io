@@ -168,6 +168,10 @@
                 <iron-icon icon="home" item-icon></iron-icon>
                 Home
             </paper-icon-item>
+            <paper-icon-item class="clickable-item" url="/download">
+                <iron-icon icon="cloud-download" item-icon></iron-icon>
+               Downloads
+            </paper-icon-item>
             <paper-icon-item class="clickable-item" url="/team">
                 <iron-icon icon="account-circle" item-icon></iron-icon>
                 The Team
@@ -222,6 +226,8 @@
         </div>
         <app-router id="main_content" init="manual" trailingSlash="ignore">
             <app-route path="/" import="pages/home.html" element="slim-pages-home"></app-route>
+            <app-route path="/download" import="pages/download.html" element="slim-pages-download"></app-route>
+            <app-route path="/device/:deviceName" import="pages/device.html" element="slim-pages-device"></app-route>
             <app-route path="/team" import="pages/team.html" element="slim-pages-team"></app-route>
             <app-route path="/support" import="pages/support.html" element="slim-pages-support"></app-route>
             <app-route path="/donate" import="pages/donate.html" element="slim-pages-donate"></app-route>
