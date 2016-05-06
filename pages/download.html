@@ -1,0 +1,93 @@
+<dom-module id="slim-pages-download"><template>
+    <style is="custom-style">
+        .flex-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .flex-container paper-card {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 20%;
+
+        }
+        @media (max-width: 1100px) {
+            .flex-container paper-card {
+                flex-basis: 99%;
+
+            }
+        }
+        @media (min-width: 1700px) {
+            .flex-container paper-card {
+                flex-basis: 32%;
+            }
+        }
+        @media (min-width: 2300px) {
+            .flex-container paper-card {
+                flex-basis: 24%;
+            }
+        }
+        .flex-container paper-card .title {
+            margin-bottom: 0.3em;
+        }
+        paper-card::shadow paper-material {
+            margin: 0.6em !important;
+        }
+        paper-card.heading .title {
+            text-align: center;
+        }
+        .download-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .download-container img {
+            height: auto;
+            width: 6.5em;
+            min-width: 6.5em;
+            border-radius: 10%;
+        }
+    </style>
+    <paper-card class="heading">
+        <h1 class="title">Downloads</h1>
+    </paper-card>
+    <div class="flex-container">
+        <template is="dom-bind">
+            <iron-ajax auto url="../data/devices.json" last-response="{{data}}"></iron-ajax>
+            <template is="dom-repeat" items="{{data}}">
+                <a href="#/device/{{item.devicename}}">
+                    <paper-card>
+                    <paper-ripple></paper-ripple>
+                      <div">
+                        <h2 class="title">{{item.manufacturer}} - {{item.devicename}}</h2>
+                        <div class="download-container">
+                        <img src="{{item.img}}">
+                        </div>
+                        <div class="download-container">
+                        <p>{{item.description}}</p>
+                        </div>
+                      </div>
+                    </paper-card>
+                </a>
+            </template>
+        </template>
+    </div>
+</template>
+<script>
+    Polymer({
+        is: 'slim-pages-download'
+    });
+</script>
+</dom-module>

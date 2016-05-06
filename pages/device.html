@@ -1,0 +1,158 @@
+<dom-module id="slim-pages-device"><template>
+    <style is="custom-style">
+        .flex-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .flex-container paper-card {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 49%;
+        }
+        @media (max-width: 1100px) {
+            .flex-container paper-card {
+                flex-basis: 99%;
+            }
+        }
+        @media (min-width: 1700px) {
+            .flex-container paper-card {
+                flex-basis: 32%;
+            }
+        }
+        @media (min-width: 2300px) {
+            .flex-container paper-card {
+                flex-basis: 24%;
+            }
+        }
+        .flex-container paper-card .title {
+            margin-bottom: 0.3em;
+        }
+        paper-card::shadow paper-material {
+            margin: 0.6em !important;
+        }
+        paper-card.heading .title {
+            text-align: center;
+        }
+        .device-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: flex-start;
+            width: 95%;
+        }
+        .device-container img {
+            height: auto;
+            width: 6.5em;
+            min-width: 6.5em;
+            border-radius: 10%;
+        }
+        .device-container .text-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-left: 2em;
+        }
+        .device-container .text-container .icon-text {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .device-container .text-container .icon-text iron-icon {
+            color: #0781aa;
+            width: 1.3em;
+            height: 1.3em;
+            flex-shrink: 0;
+        }
+        .device-container .text-container .icon-text p {
+            margin: 0 0 0 1em;
+            font-size: 1em;
+            color: #555555;
+            font-weight: 400;
+            line-height: 1.1em;
+            font-size: 14px;
+        }
+    </style>
+    <paper-card class="heading">
+        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Stable Builds - <span>{{deviceName}}</span></p></h1>
+    </paper-card>
+    <div class="flex-container">
+            <iron-ajax auto url="data/{{deviceName}}_stable.json" last-response="{{data}}"></iron-ajax>
+            <template is="dom-repeat" items="{{data}}">
+                <paper-card>
+                    <div class="device-container">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
+                                <p>{{item.build}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="file-download"></iron-icon>
+                                <p><a href="http://slim.flinny.org/new/download.php?download_file={{item.filename}}">{{item.filename}}</a></p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="label"></iron-icon>
+                                <p>{{item.md5}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+    </div>
+    <paper-card class="heading">
+        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Weekly Builds - <span>{{deviceName}}</span></p></h1>
+    </paper-card>
+    <div class="flex-container">
+            <iron-ajax auto url="data/{{deviceName}}_weekly.json" last-response="{{weeklyData}}"></iron-ajax>
+            <template is="dom-repeat" items="{{weeklyData}}">
+                <paper-card class="heading">
+                    <div class="device-container">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
+                                <p>{{item.build}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="file-download"></iron-icon>
+                                <p> <a href="http://slim.flinny.org/new/download.php?download_file={{item.filename}}">{{item.filename}}</a></p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="label"></iron-icon>
+                                <p>{{item.md5}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+    </div>
+
+</template>
+<script>
+    Polymer({
+        is: 'slim-pages-device',
+        properties: {
+            deviceName: String
+        }
+    });
+</script>
+</dom-module>
