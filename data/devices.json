@@ -1,0 +1,14 @@
+[
+  {
+    "manufacturer":"HTC",
+    "devicename":"himaul",
+    "description":"One M9(GSM)",
+    "img":"images/phone/himaul.png"
+  },
+  {
+    "manufacturer":"Motorola",
+    "devicename":"clark",
+    "description":"Moto X Pure",
+    "img":"images/phone/clark.png"
+  }
+]
