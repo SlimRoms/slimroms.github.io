@@ -1,5 +1,41 @@
 [
   {
+    "manufacturer":"Huawei",
+    "devicename":"angler",
+    "description":"Nexus 6P",
+    "img":"images/phone/angler.png"
+  },
+  {
+    "manufacturer":"LG",
+    "devicename":"hammerhead",
+    "description":"Nexus 5",
+    "img":"images/phone/hammerhead.png"
+  },
+  {
+    "manufacturer":"LG",
+    "devicename":"bullhead",
+    "description":"Nexus 5X",
+    "img":"images/phone/bullhead.png"
+  },
+  {
+    "manufacturer":"LG",
+    "devicename":"mako",
+    "description":"Nexus 4",
+    "img":"images/phone/mako.png"
+  },
+  {
+    "manufacturer":"HTC",
+    "devicename":"flounder",
+    "description":"Nexus 9",
+    "img":"images/phone/flounder.png"
+  },
+  {
+    "manufacturer":"Asus",
+    "devicename":"flo",
+    "description":"Nexus 7(2013)",
+    "img":"images/phone/flo.png"
+  },
+  {
     "manufacturer":"HTC",
     "devicename":"himaul",
     "description":"One M9(GSM)",
@@ -10,5 +46,23 @@
     "devicename":"clark",
     "description":"Moto X Pure",
     "img":"images/phone/clark.png"
+  },
+  {
+    "manufacturer":"Motorola",
+    "devicename":"shamu",
+    "description":"Nexus 6",
+    "img":"images/phone/shamu.png"
+  },
+  {
+    "manufacturer":"Motorola",
+    "devicename":"surnia",
+    "description":"Moto E LTE second gen",
+    "img":"images/phone/surnia.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"mondrianwifi",
+    "description":"Galaxay Tab Pro 8.4",
+    "img":"images/phone/mondrianwifi.png"
   }
 ]
