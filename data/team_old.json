@@ -42,6 +42,13 @@
     "position":"Lead Developer"
   },
   {
+    "name": "Olivier K.",
+    "img": "https://github.com/olivieer.png",
+    "username": "Olivier",
+    "location": "Austria",
+    "position": "Sony Xperia Z (yuga) Maintainer"
+  },
+  {
     "name":"Per Lycke",
     "img":"https://github.com/perlycke.png",
     "username":"pemell",
