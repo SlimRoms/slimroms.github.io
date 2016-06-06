@@ -10,7 +10,6 @@
     <script src="webcomponents-lite.min.js"></script>
     <!--<link rel="import" href="elements.html">-->
     <link rel="import" href="vulcanized.min.html">
-    <link rel="stylesheet" type="text/css" href="css/ads.css">
     <style is="custom-style">
         :root {
             --paper-drawer-panel-main-container: {
@@ -96,6 +95,15 @@
         #bannerad {
             display: flex;
             justify-content: center;
+            width: 100%;
+        }
+        #bannerad .adsbygoogle {
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
         }
         #sidead {
             display: flex;
@@ -110,10 +118,7 @@
     </style>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
-            (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-5141102155518626",
-            enable_page_level_ads: true
-          });
+
         </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -181,7 +186,6 @@
         </paper-toolbar>
         <div id="bannerad">
             <ins class="adsbygoogle"
-            style="display:block"
             data-ad-client="ca-pub-4933975827955306"
             data-ad-slot="5334334478"
             data-ad-format="auto"></ins>
@@ -204,6 +208,19 @@
         </footer>
     </paper-scroll-header-panel>
 </paper-drawer-panel>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+   window.addEventListener('WebComponentsReady', function() {
+       [].forEach.call(document.querySelectorAll('.adsbygoogle'), function () {
+           (window.adsbygoogle = window.adsbygoogle || []).push({});
+       });
+       (window.adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5141102155518626",
+            enable_page_level_ads: true
+       });
+   });
+</script>
 
 <script>
     function switch_page() {
@@ -249,11 +266,7 @@
         router.init();
     });
 </script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-   [].forEach.call(document.querySelectorAll('.adsbygoogle'), function(){
-       (adsbygoogle = window.adsbygoogle || []).push({});
-   });
-</script>
+
+
 </body>
 </html>
