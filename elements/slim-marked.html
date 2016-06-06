@@ -1,4 +1,5 @@
 <!--
+<!--
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
@@ -28,13 +29,17 @@ limitations under the License.
 <link rel="import" href="../bower_components/marked-element/marked-import.html">
 
 <dom-module id="slim-marked">
-    <style>
-        :host ::content #content hr {
-            border: none;
-            border-top: 1px solid rgba(160, 160, 160, 0.4);
-        }
-    </style>
     <template>
+        <style>
+            #content hr {
+                border: none;
+                border-top: 1px solid rgba(160, 160, 160, 0.4);
+            }
+            /* Thanks IE 10. */
+            .hidden {
+                display: none !important;
+            }
+        </style>
         <div id="content"></div>
     </template>
 
@@ -76,11 +81,37 @@ limitations under the License.
     Polymer({
         is: 'slim-marked',
         properties: {
-            /** The markdown source that should be rendered by this element. */
+            /**
+             * The markdown source that should be rendered by this element.
+             */
             markdown: {
                 observer: 'render',
                 type: String,
                 value: null
+            },
+            /**
+             * Conform to obscure parts of markdown.pl as much as possible. Don't fix any of the original markdown bugs or poor behavior.
+             */
+            pedantic: {
+                observer: 'render',
+                type: Boolean,
+                value: false
+            },
+            /**
+             * Sanitize the output. Ignore any HTML that has been input.
+             */
+            sanitize: {
+                observer: 'render',
+                type: Boolean,
+                value: false
+            },
+            /**
+             * Use "smart" typographic punctuation for things like quotes and dashes.
+             */
+            smartypants: {
+                observer: 'render',
+                type: Boolean,
+                value: false
             }
         },
         ready: function() {
@@ -107,11 +138,28 @@ limitations under the License.
          */
         attached: function() {
             this._attached = true;
+            this._outputElement = this.outputElement;
             this.render();
         },
         detached: function() {
             this._attached = false;
         },
+        /**
+         * Unindents the markdown source that will be rendered.
+         */
+        unindent: function(text) {
+            return this._unindent(text);
+        },
+        get outputElement () {
+            var child = Polymer.dom(this).queryDistributedElements('.markdown-html')[0];
+
+            if (child)
+                return child;
+
+            this.toggleClass('hidden', false, this.$.content);
+            return this.$.content;
+        },
+
         /**
          * Renders `markdown` into this element's DOM.
          *
@@ -124,27 +172,35 @@ limitations under the License.
         render: function() {
             if (!this._attached) return;
             if (!this.markdown) {
-                this.$.content.innerHTML = '';
+                Polymer.dom(this._outputElement).innerHTML = '';
                 return;
             }
-            this.$.content.innerHTML = marked(this.markdown, {
+            var opts = {
                 highlight: this._highlight.bind(this),
+                sanitize: this.sanitize,
+                pedantic: this.pedantic,
+                smartypants: this.smartypants,
                 renderer: slim_renderer
-            });
+            };
+            Polymer.dom(this._outputElement).innerHTML = marked(this.markdown, opts);
+            this.fire('marked-render-complete');
         },
         _highlight: function(code, lang) {
             var event = this.fire('syntax-highlight', {code: code, lang: lang});
             return event.detail.code || code;
         },
+
         _unindent: function(text) {
             if (!text) return text;
             var lines  = text.replace(/\t/g, '  ').split('\n');
             var indent = lines.reduce(function(prev, line) {
                 if (/^\s*$/.test(line)) return prev;  // Completely ignore blank lines.
+
                 var lineIndent = line.match(/^(\s*)/)[0].length;
                 if (prev === null) return lineIndent;
                 return lineIndent < prev ? lineIndent : prev;
             }, null);
+
             return lines.map(function(l) { return l.substr(indent); }).join('\n');
         }
     });
