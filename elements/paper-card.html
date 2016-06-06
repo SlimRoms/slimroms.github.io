@@ -18,82 +18,83 @@ limitations under the License.
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 
 <dom-module id="paper-card">
-    <style>
-        :host paper-material {
-            background: white;
-            box-sizing: border-box;
-            border-radius: 2px;
-            padding: 2em;
-            font-size: 1em;
-            color: #555555;
-            font-weight: 400;
-            margin: 2em 16px 16px;
-        }
-        @media (min-width: 800px) and (max-width: 1100px) {
-            :host paper-material {
-                padding: 1.8em;
-            }
-        }
-        @media (max-width: 800px) {
-            :host paper-material {
-                padding: 1.5em;
-            }
-        }
-        @media (max-width: 480px) {
-            :host paper-material {
-                padding: 1.2em;
-            }
-        }
 
-        :host ::content .heading {
-            font-size: 1.4em;
-            padding-bottom: 0;
-            font-weight: 500;
-        }
-
-        :host .paper-card-title {
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        :host .paper-card-title ::content .title {
-            margin: 0;
-            padding-bottom: 0;
-            font-size: 2.3em;
-            color: #555555;
-            font-weight: 300;
-        }
-
-        :host .paper-card-subtitle {
-            padding-top: 0;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        :host .paper-card-subtitle ::content .subtitle {
-            margin: 0;
-            padding-top: 0;
-            word-wrap: break-word;
-            font-size: 1em;
-            color: #777777;
-            font-weight: 400;
-        }
-
-        :host .paper-card-footer {
-            border-top: 1px solid rgba(160, 160, 160, 0.4);
-            padding: 20px 10px 0;
-        }
-        :host .paper-card-footer ::content .footer {
-            padding-bottom: 0;
-            margin-bottom: 0;
-            color: #777777;
-        }
-        :host .paper-card-footer ::content .footer :first-child {
-            margin-top: 0;
-        }
-        :host .paper-card-footer ::content .footer :last-child {
-            margin-bottom: 0;
-        }
-    </style>
     <template>
+        <style>
+            :host paper-material {
+                background: white;
+                box-sizing: border-box;
+                border-radius: 2px;
+                padding: 2em;
+                font-size: 1em;
+                color: #555555;
+                font-weight: 400;
+                margin: 2em 16px 16px;
+            }
+            @media (min-width: 800px) and (max-width: 1100px) {
+                :host paper-material {
+                    padding: 1.8em;
+                }
+            }
+            @media (max-width: 800px) {
+                :host paper-material {
+                    padding: 1.5em;
+                }
+            }
+            @media (max-width: 480px) {
+                :host paper-material {
+                    padding: 1.2em;
+                }
+            }
+
+            :host ::content .heading {
+                font-size: 1.4em;
+                padding-bottom: 0;
+                font-weight: 500;
+            }
+
+            :host .paper-card-title {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            :host .paper-card-title ::content .title {
+                margin: 0;
+                padding-bottom: 0;
+                font-size: 2.3em;
+                color: #555555;
+                font-weight: 300;
+            }
+
+            :host .paper-card-subtitle {
+                padding-top: 0;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            :host .paper-card-subtitle ::content .subtitle {
+                margin: 0;
+                padding-top: 0;
+                word-wrap: break-word;
+                font-size: 1em;
+                color: #777777;
+                font-weight: 400;
+            }
+
+            :host .paper-card-footer {
+                border-top: 1px solid rgba(160, 160, 160, 0.4);
+                padding: 20px 10px 0;
+            }
+            :host .paper-card-footer ::content .footer {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                color: #777777;
+            }
+            :host .paper-card-footer ::content .footer :first-child {
+                margin-top: 0;
+            }
+            :host .paper-card-footer ::content .footer :last-child {
+                margin-bottom: 0;
+            }
+        </style>
         <paper-material elevation="{{elevation}}" animated="{{animated}}">
             <div class="paper-card-title" layout horizontal center hidden>
                 <content select=".title"></content>
