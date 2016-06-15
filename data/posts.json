@@ -1,5 +1,35 @@
 [
     {
+    "title": "The road to marshmallow",
+    "date": "Wednesday, 15 june 2016",
+    "content": [
+      "Slim6, based on marshmallow 6.0.1, is now available for download!",
+      "Slim6 is still in its early stages of development so if your favourite feature is not back yet, don’t worry more will be added with later releases along with additional devices.",
+      "",
+      "We are currently looking for device maintainers.",
+      "We expect you to know your way around android and be able to fix problems as they emerge not just a builder.",
+      "With that being said, you can contact us at slimroms@gmail.com.",
+      "In your email please link your work, sources, and specify why you think you’d be a good addition to our team.",
+      "Work related to slimroms is preferable but not mandatory.",
+      "#### Features",
+      "* DPI Changer",
+      "* SlimLauncher",
+      "* Root access",
+      "",
+      "#### Supported devices",
+      "* Nexus 6p (angler)",
+      "* Nexus 6 (shamu)",
+      "* Nexus 9 (flounder)",
+      "* Nexus 5 (hammerhead)",
+      "* Nexus 7 2nd gen (flo)",
+      "* Nexus 4 (mako)",
+      "* HTC one M9 GSM (himaul)",
+      "* HTC One M8",
+      "* Moto E LTE second gen (surnia)",
+      "* Samsung Galaxy Tab Pro 8.4 (mondrianwifi)"
+      ]
+    },
+    {
     "title": "Slim Zombie?",
     "date": "Tuesday, 8 September 2015",
     "content": [
