@@ -31,6 +31,12 @@
   },
   {
     "manufacturer":"LG",
+    "devicename":"bullhead",
+    "description":"Nexus 5X",
+    "img":"images/phone/bullhead.png"
+  },
+  {
+    "manufacturer":"LG",
     "devicename":"hammerhead",
     "description":"Nexus 5",
     "img":"images/phone/hammerhead.png"
@@ -52,6 +58,18 @@
     "devicename":"surnia",
     "description":"Moto E LTE second gen",
     "img":"images/phone/surnia.png"
+  },
+  {
+    "manufacturer":"OnePlus",
+    "devicename":"oneplus2",
+    "description":"OnePlus 2",
+    "img":"images/phone/oneplus2.png"
+  },
+  {
+    "manufacturer":"OnePlus",
+    "devicename":"onyx",
+    "description":"OnePlus X",
+    "img":"images/phone/onyx.png"
   },
   {
     "manufacturer":"Samsung",
