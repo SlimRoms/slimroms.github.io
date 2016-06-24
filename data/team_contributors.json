@@ -1,12 +1,5 @@
 [
   {
-    "name": "Anas Karbila",
-    "img": "https://github.com/Thecrazyskull.png",
-    "username": "Thecrazyskull",
-    "location": "Netherlands",
-    "position": "Motorola Moto G 2014 (Titan), Moto G 2013 (Falcon) and Moto G 2013 LTE (peregrine) Maintainer"
-  },
-  {
     "name": "Andreas B.",
     "img": "https://github.com/andi34.png",
     "username": "Android-Andi",
@@ -19,13 +12,6 @@
     "username": "arcardinal",
     "location": "USA",
     "position": "LG Optimus G (geeb) and LG Optimus G2 Maintainer"
-  },
-  {
-    "name": "Arun Manohar",
-    "img": "https://github.com/a2441918.png",
-    "username": "a2441918",
-    "location": "India",
-    "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
   },
   {
     "name": "Cristian Giordano",
@@ -42,13 +28,6 @@
     "position": "Samsung Galaxy S2 AT&T/T-Mobile (skyrocket/hercules) Maintainer"
   },
   {
-    "name": "Dimitris Mantzouranis",
-    "img": "images/team/dexter93.png",
-    "username": "dexter93",
-    "location": "Greece",
-    "position": "Google Nexus 7 (grouper/tilapia) and Samsung Galaxy Note 2 (N7100) Maintainer"
-  },
-  {
     "name": "Jean-Pierre Rasquin",
     "img": "https://github.com/Yank555-lu.png",
     "username": "Yank555.lu",
@@ -56,46 +35,11 @@
     "position": "Nexus 6P (angler), Nexus 6 (shamu), Nexus 5 (hammerhead), Nexus 7-2013 (flo) Maintainer"
   },
   {
-    "name": "Matt Jenkins",
-    "img": "https://github.com/jenkins-84.png",
-    "username": "jenkins-84",
-    "location": "United Kingdom",
-    "position": "Sony Xperia Z3 Compact (Aries)"
-  },
-  {
-    "name": "Omar Einea",
-    "img": "https://github.com/OmarEinea.png",
-    "username": "OmarEinea",
-    "location": "Syria",
-    "position": "Sony Xperia Z1 (honami), Z1c (amami) and Z ultra (togari) Maintainer"
-  },
-  {
     "name": "Perseus71",
     "img": "https://github.com/Perseus71.png",
     "username": "Perseus71",
     "location": "USA",
     "position": "Samsung Galaxy S III LTE (d2lte) Maintainer"
-  },
-  {
-    "name": "Rawad Zahreddine",
-    "img": "images/team/rirozizo.png",
-    "username": "rirozizo",
-    "location": "Lebanon",
-    "position": "IRC support"
-  },
-  {
-    "name": "Robbie Lancaster",
-    "img": "images/team/robbiel811.png",
-    "username": "RobbieL811",
-    "location": "USA",
-    "position": "OnePlus One and Google Nexus 7 (deb/flo) Maintainer"
-  },
-  {
-    "name": "Sergey Karsakov",
-    "img": "images/team/gwindlord.png",
-    "username": "gwindlord",
-    "location": "Belarus",
-    "position": "Russian support & translations"
   },
   {
     "name": "Sean Hoyt",
