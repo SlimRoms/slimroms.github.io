@@ -48,6 +48,12 @@
     "img":"images/phone/mako.png"
   },
   {
+    "manufacturer":"LG",
+    "devicename":"d801",
+    "description":"G2 (T-Mobile)",
+    "img":"images/phone/d800.png"
+  },
+  {
     "manufacturer":"Motorola",
     "devicename":"shamu",
     "description":"Nexus 6",
@@ -58,6 +64,12 @@
     "devicename":"surnia",
     "description":"Moto E LTE second gen",
     "img":"images/phone/surnia.png"
+  },
+  {
+    "manufacturer":"OnePlus",
+    "devicename":"bacon",
+    "description":"OnePlus One",
+    "img":"images/phone/bacon.png"
   },
   {
     "manufacturer":"OnePlus",
