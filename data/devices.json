@@ -35,6 +35,12 @@
     "description":"Nexus 5X",
     "img":"images/phone/bullhead.png"
   },
+    {
+    "manufacturer":"LG",
+    "devicename":"d801",
+    "description":"G2 (T-Mobile)",
+    "img":"images/phone/d800.png"
+  },
   {
     "manufacturer":"LG",
     "devicename":"hammerhead",
@@ -58,6 +64,12 @@
     "devicename":"surnia",
     "description":"Moto E LTE second gen",
     "img":"images/phone/surnia.png"
+  },
+  {
+    "manufacturer":"OnePlus",
+    "devicename":"bacon",
+    "description":"OnePlus One",
+    "img":"images/phone/bacon.png"
   },
   {
     "manufacturer":"OnePlus",
