@@ -48,6 +48,30 @@
     "img":"images/phone/mako.png"
   },
   {
+    "manufacturer":"LG",
+    "devicename":"d800",
+    "description":"G2 (AT&T)",
+    "img":"images/phone/d800.png"
+  },
+  {
+    "manufacturer":"LG",
+    "devicename":"d801",
+    "description":"G2 (T-Mobile)",
+    "img":"images/phone/d800.png"
+  },
+  {
+    "manufacturer":"LG",
+    "devicename":"d802",
+    "description":"G2 (International)",
+    "img":"images/phone/d800.png"
+  },
+  {
+    "manufacturer":"LG",
+    "devicename":"d803",
+    "description":"G2 (Canada)",
+    "img":"images/phone/d800.png"
+  },
+  {
     "manufacturer":"Motorola",
     "devicename":"shamu",
     "description":"Nexus 6",
