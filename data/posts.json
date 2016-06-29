@@ -17,7 +17,7 @@
       "* Updates to bionic",
       "* Updates to sepolicy",
       "* Updates to device/qcom/common",
-      "* Stagefright-plugins: call packet_queue_init earier",
+      "* Stagefright-plugins: call packet_queue_init earlier",
       "* Hide optimizing app dialog on first boot",
       "* Updates to frameworks/native",
       "* Updates to frameworks/opt/net/wifi,  hw/broadcom/wlan and hw/qcom/wlan-caf",
