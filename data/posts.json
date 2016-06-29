@@ -1,5 +1,37 @@
 [
     {
+    "title": "Slim6 Alpha 0.3",
+    "date": "Wednesday, 29 june 2016",
+    "content": [
+      "This weekly includes more bug fixes, features, and support for new devices. ",
+      "#### New features:",
+      "* Layers support",
+      "* Add dt2w on doze",
+      "* Show each app name being optimized during boot",
+      "",
+      "#### New devices",
+      "* OnePlus One (Bacon)",
+      "* LG G2 (d801)",
+      "",
+      "#### Changes",
+      "* Updates to bionic",
+      "* Updates to sepolicy",
+      "* Updates to device/qcom/common",
+      "* Stagefright-plugins: call packet_queue_init earier",
+      "* Hide optimizing app dialog on first boot",
+      "* Updates to frameworks/native and frameworks/opt/net/wifi",
+      "* Updates to system/bt, core, and vold",
+      "* Fix browser permissions",
+      "* Fix proximity check on non power key",
+      "* DeskClock: update translation plural formattings",
+      "* Updates to hardware/qcom/audio-caf/msm8960",
+      "",
+      "#### Device Specifics:",
+      "* Hima: remove hard-coded photo preview size",
+      "* Hima: fix headphone sound"
+      ]
+    },
+    {
     "title": "Slim6 Alpha 0.2",
     "date": "Wednesday, 22 june 2016",
     "content": [
