@@ -1,5 +1,39 @@
 [
     {
+    "title": "Slim6 Alpha 0.4",
+    "date": "Friday, 8 July 2016",
+    "content": [
+      "This weekly includes bug fixes, Hardware Key Rebinding, Advanced reboot menu, and much more!",
+      "#### New features:",
+      "* Slim’s Hardware key rebinding",
+      "* Advanced reboot menu",
+      "",
+      "#### Changes",
+      "* Updates to bionic",
+      "* Stagefright-plugins: Clean up warnings for invalid format strings and Stop using AVPicture",
+      "* frameworks/base:",
+      " 1. Wait until the Keyguard is drawn to dismiss the boot dialog",
+      " 2. aapt: allow setting custom id for slim framework",
+      " 3. androidfw: Declare and load slim framework resource package w/ id",
+      " 4. KeyguardSimPinView: don't send dummy request to get remaining pin",
+      "* frameworks/opt/slim:",
+      " 1. Add drawableToShortcutIconBitmap method",
+      " 2. SlimFramework: Updates for public resources",
+      " 3. Add colorpicker to slim framework",
+      "* Enable 3dot menu on Location settings",
+      "* packages/apps/SlimLauncher: fix a typo in strings",
+      "",
+      "#### Device Specifics:",
+      "* Hima: Add prox wake overlay settings",
+      "* Onyx: add boringssl to dependencies",
+      "* Oppo_common: add haptic feedback to V gesture and Disable DT2W",
+      "* Updates and fixes to kernel/motorola/msm8916",
+      "* Updates to kernel/samsung/momondrianwif",
+      "***",
+      "_Due to time constraints July security updates will be merged next weekly_"
+      ]
+    },
+    {
     "title": "Weekly Rescheduling",
     "date": "Wednesday, 6 July 2016",
     "content": [
