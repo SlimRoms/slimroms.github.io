@@ -1,5 +1,37 @@
 [
     {
+    "title": "Slim6 Alpha 0.5",
+    "date": "Friday, 15 July 2016",
+    "content": [
+      "This weekly includes new features, fixes, and July security update.",
+      "#### New features:",
+      "* Chamber of secrets",
+      "* SlimActions and shortcuts",
+      "",
+      "#### Changes",
+      "* Include July security update (android-6.0.1_r52)",
+      "* Device/qcom/sepolicy: Fix warning when ptt looks for its log dir",
+      "* External/sepolicy: Remove generic socket access from untrusted processes and Further restrict socket ioctls available to apps",
+      "* Updates to frameworks/av",
+      "* Frameworks/opt/slim: slim: symbolize slim drawable",
+      "* Updates to hardware/broadcom/wlan and hardware/qcom/wlan-caf",
+      "* Updates to hardware/qcom/audio-caf 8974 & 8916 ",
+      "* Packages/apps/Nfc: Verify setForegroundDispatch caller is in foreground.",
+      "* Updates to system/bt, system/core, and system/extras",
+      "",
+      "#### Device Specifics:",
+      "* Rebased kernel/huawei/angler to new AOSP",
+      "* Upstream update from CM to kernel/motorola/msm8916",
+      "* Update build fingerprint to flo, flounder, angler, hamerhead, and oneplus2",
+      "* Kernel/oneplus/onyx: Update Prima to LA.BF.1.1.3_rb1.13",
+      "* Kernel/oneplus/onyx: ARM: dts: 15055: Reduce panel power-on delay",
+      "",
+      "#### Known Bugs:",
+      "* Most layers themes for frameworks-res will cause systemui fc",
+      "* Angler & Flounder: BT stutter on media (audio/video)"
+      ]
+    },
+    {
     "title": "Slim6 Alpha 0.4",
     "date": "Friday, 8 July 2016",
     "content": [
