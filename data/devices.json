@@ -19,6 +19,12 @@
   },
   {
     "manufacturer":"HTC",
+    "devicename":"m7",
+    "description":"One M7",
+    "img":"images/phone/m7.png"
+  },
+  {
+    "manufacturer":"HTC",
     "devicename":"m8",
     "description":"One M8",
     "img":"images/phone/m8.png"
@@ -88,6 +94,18 @@
     "devicename":"onyx",
     "description":"OnePlus X",
     "img":"images/phone/onyx.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"espresso3g",
+    "description":"Galaxay Tab 2 unified (P3100, P5100))",
+    "img":"images/phone/espresso3g.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"espressowifi",
+    "description":"Galaxay Tab 2 unified (P3110,P3113,P5110,P5113)",
+    "img":"images/phone/espressowifi.png"
   },
   {
     "manufacturer":"Samsung",
