@@ -91,6 +91,18 @@
   },
   {
     "manufacturer":"Samsung",
+    "devicename":"espresso3g",
+    "description":"Galaxay Tab 2 unified (P3100, P5100))",
+    "img":"images/phone/espresso.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"espressowifi",
+    "description":"Galaxay Tab 2 unified (P3110,P3113,P5110,P5113)",
+    "img":"images/phone/espresso.png"
+  },
+  {
+    "manufacturer":"Samsung",
     "devicename":"mondrianwifi",
     "description":"Galaxay Tab Pro 8.4",
     "img":"images/phone/mondrianwifi.png"
