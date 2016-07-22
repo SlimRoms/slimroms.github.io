@@ -79,6 +79,12 @@
   },
   {
     "manufacturer":"OnePlus",
+    "devicename":"oneplus3",
+    "description":"OnePlus 3",
+    "img":"images/phone/oneplus3.png"
+  },
+  {
+    "manufacturer":"OnePlus",
     "devicename":"onyx",
     "description":"OnePlus X",
     "img":"images/phone/onyx.png"
