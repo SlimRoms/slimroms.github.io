@@ -1,5 +1,43 @@
 [
     {
+    "tittle": "Slim6 Alpha 0.6",
+    "date": "Friday, 22 July 2016",
+    "content": [
+      "This weekly includes new features, and bug fixes. We added support for Oneplus 3 and have also updated our Crowdin page.",
+      "You can now translate Slim6 to your language by heading to https://crowdin.com/project/slimroms",
+      "#### New features:",
+      "* AOSP Day Night theme (experimental)",
+      "",
+      "#### New devices:",
+      "* OnePlus 3",
+      "",
+      "#### Changes",
+      "* System/bt: Bluetooth: fix stuttering on broadcom bt devices (Thanks Cal Archer)",
+      "* Updates to device/qcom/common and device/qcom/sepolicy",
+      "* Ashmem updates from aosp to native and system/core",
+      "* Updates to frameworks/native",
+      "* Updates to frameworks/opt/net/ims, frameworks/opt/net/wifi and frameworks/opt/slim",
+      "* Rebased wpa_supplicant_8",
+      "* Remove smart pulldown and search from SlimActions",
+      "* Updates to caf msm8916 hardware/qcom/audio and hardware/qcom/media hals",
+      "* Slim DeviceHandler: Add device specific screen off gesture settings",
+      "* SlimLauncher: Remove launcher shortcut from update_workspace and fix settings not enabling/disabling properly",
+      "* Updates to system/core and system/extras",
+      "* SysUI: Guard against NPE in SignalClusterView",
+      "",
+      "#### Device specific",
+      "* m8: don't start rild until after boot completed",
+      "* hima-common: Add DeviceHandler to m9 and recovery: don't print current partition version",
+      "* Device/htc/m8-common: remove gps.conf hack and remove EasyAccessService, import variant rc scripts, and Address some new denials",
+      "* Updates to kernel/htc/msm8994 and kernel/htc/msm8974",
+      "* bacon: Revert “Switch to standalone libinit",
+      "* bacon: Suppress secure erase in TWRP, and allow 3GB dalvik",
+      "* oneplus2: Stop building libinit_msm",
+      "* Rebased bullhead kernel on latest aosp sources",
+      "* Rebase kernel/oneplus/onyx"
+      ]
+    },
+    {
     "title": "Slim6 Alpha 0.5",
     "date": "Friday, 15 July 2016",
     "content": [
