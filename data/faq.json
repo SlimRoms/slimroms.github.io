@@ -1,28 +1,59 @@
 [
   {
-    "title":"Can you support device 'X'?",
+    "title":"How can I install Slimroms on my device?",
     "content": [
-    "We need the device in order to support it as well as device maintainer willing to maintain it.",
-    "If we don't support your device then check your device's thread on xda-developers to see if someone built unofficial builds for your device."
+    "Assuming you have a custom recovery on your device e.g. twrp you can follow our guide [here](https://slimroms.org/#/download)"
     ]
   },
-    {
-    "title":"Incompatible apps on Play Store",
+  {
+    "title":"Which gapps should I use with Slim?",
     "content": [
-    "SlimRoms use low DPI by default so either use Slim gapps or a multi DPI play store."
+    "We recommend using nano opengapps. You can get the gapps from their [website](http://opengapps.org/)"
+    ]
+  },
+  {
+    "title":"Can you support device 'X'?",
+    "content": [
+    "We need the device in order to support it as well as a device maintainer willing to maintain it.",
+    "If you can't find your device in our [download section](https://slimroms.org/#/download) then it's not supported by us.",
+    "You can check your device's thread on xda-developers to see if someone built unofficial builds for your device."
     ]
   },
   {
     "title":"I have a high battery drain with your Rom. What can I do?",
     "content": ["In most cases, battery drain isn't caused by the Rom.",
-    "Occasionally, it can be caused by the first google sync just after configuring google account.",
-    "Generally, it is caused by a badly coded or old app installed by the user."
+    "Occasionally, it can be caused by the first google sync just after configuring google account. or",
+    "by a badly coded or old app installed by the user.",
+    "",
+    "Charge you device up to 100%, install better battery status (BBS) or similar app to closely monitor your device and check the reason for the drain."
     ]
   },
   {
     "title":"Slim is not translated to my language, How can I help translating it?",
     "content": [
-    "[Join our Crowdin Project](https://crowdin.com/project/slimroms)"
+    "You can help by Joining our [Crowdin Project.](https://crowdin.com/project/slimroms)",
+    "If you're unfamiliar with Crowdin check their [quick start guide](https://crowdin.com/page/quick-start) and choose I am a translator."
+    ]
+  },
+  {
+    "title":"I really like Slimroms, How can I contribute?",
+    "content": [
+    "We're an open source project so if you have any coding experience you can make changes, add features, fix bugs and submit them to our [gerrit.](http://review.slimroms.org/)",
+    "",
+    "If you don't have any coding experience, You can help by sharing the word or [donating](https://goo.gl/ZZA2AT) to our project.",
+    "The donated money covers our server costs and gets us new devices to develop for and add to our officially supported devices"
+    ]
+  },
+  {
+    "title":"How can I be a device maintainer 'X' device?",
+    "content": [
+    "You have to have the device as we don't allow blind maintenance.",
+    "We also expect you to know your way around android and be able to fix problems as they emerge not just a builder.",
+    "",
+    "If you meet the above requirement then you can contact us at slimroms@gmail.com.",
+    "In your email, specifiy which device you want to maintain, link your work, **sources**, and specify why you think you’d be a good addition to our team.",
+    "",
+    "*PS: Work related to slimroms is preferable but not mandatory.*"
     ]
   }
  ]
