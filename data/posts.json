@@ -1,5 +1,33 @@
 [
     {
+    "title": "Slim6 Alpha 0.7",
+    "date": "Friday, 29 July 2016",
+    "content": [
+      "This weekly includes bunch of new features, and device updates.",
+      "#### New features:",
+      "* In-call vibration features",
+      "* Statusbar clock and date customizations",
+      "* Battery icon and text",
+      "* SlimRecents",
+      "* Slim NavBar with double tap function",
+      "* Started to include Snap on devices",
+      "",
+      "#### Changes",
+      "* Updates to device/qcom/common",
+      "* Updates to frameworks/av",
+      "* Hardware/qcom/audio-caf/msm8960: Revert 'hal: Add support for AUDIO_DEVICE_OUT_LINE'",
+      "* System/netd: Don't build the QSAP SDK on Nexii",
+      "",
+      "#### Device specific",
+      "* Device/htc/flounder: Snap : Update device configs, and Build and Import Snap Camera",
+      "* Device/htc/m8: De-commonize gps blobs/configs",
+      "* Device/oneplus/bacon and device/oneplus/onyx: Build snap",
+      "* Updates to device/oneplus/oneplus3 and device/oneplus/onyx",
+      "* Updates to kernel/oneplus/msm8996",
+      "* Updates to kernel/oneplus/onyx"
+      ]
+    },
+    {
     "title": "Slim6 Alpha 0.6",
     "date": "Friday, 22 July 2016",
     "content": [
