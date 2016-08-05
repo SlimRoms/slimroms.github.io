@@ -1,5 +1,34 @@
 [
     {
+    "title": "Slim6 Alpha 0.8",
+    "date": "Friday, 5 August 2016",
+    "content": [
+      "This weekly includes July security update, bunch of bug fixes, and device specific updates. ",
+      "",
+      "Lately, We have noticed that more people started sharing their unofficial Slimroms builds in our G+ community.",
+      "As much as we love seeing more people get into building and android development, we decided to put some basic guidelines to prevent spam and potentially malicious builds.",
+      "So from now on don’t share direct download links on our G+ community.",
+      "If you want to share your work please link to a thread on xda developers or any other reputable forum that has details about your builds what they contain, if they have any additions on top of Slim..etc.",
+      "",
+      "We encourage you to have your own thread but If you don’t want to open one then check Android Builders Collective and post your builds with details there then link to your post with download links and details on our community.",
+      "We’re sure they’d be more than happy to have you [there](http://forum.xda-developers.com/custom-roms/android-builders-collective/rom-builders-collective-t2861778).",
+      "",
+      "#### New features:",
+      "* Initial addition for custom QS",
+      "",
+      "#### Changes",
+      "* Merge July security update (android-6.0.1_r61)",
+      "* Fix Gesture typing in aosp keyboard",
+      "* Fix some Navbar single and long press functions",
+      "* Fix navbar warning dialog not removing buttons",
+      "* Update APN list",
+      "",
+      "#### Device specific",
+      "* Updates to kernel/motorola/msm8916",
+      "* Device/samsung/mondrianwifi: mondrianwifi: use Snap camera app"
+      ]
+    },
+    {
     "title": "Slim6 Alpha 0.7",
     "date": "Friday, 29 July 2016",
     "content": [
