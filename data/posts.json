@@ -3,7 +3,7 @@
     "title": "Slim6 Alpha 0.8",
     "date": "Friday, 5 August 2016",
     "content": [
-      "This weekly includes July security update, bunch of bug fixes, and device specific updates. ",
+      "This weekly includes August security update, bunch of bug fixes, and device specific updates. ",
       "",
       "Lately, We have noticed that more people started sharing their unofficial Slimroms builds in our G+ community.",
       "As much as we love seeing more people get into building and android development, we decided to put some basic guidelines to prevent spam and potentially malicious builds.",
@@ -17,7 +17,7 @@
       "* Initial addition for custom QS",
       "",
       "#### Changes",
-      "* Merge July security update (android-6.0.1_r61)",
+      "* Merge August security update (android-6.0.1_r61)",
       "* Fix Gesture typing in aosp keyboard",
       "* Fix some Navbar single and long press functions",
       "* Fix navbar warning dialog not removing buttons",
