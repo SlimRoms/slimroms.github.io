@@ -20,6 +20,12 @@
     ]
   },
   {
+    "title":"Does Slim have Theme engine support?",
+    "content": [
+    "On Slim6, we partially support RRO/Layers. However due some backend changes, theming framework-res and systemUI might cause bootloop. We currently **don't support Substratum/OMS** and have no immediate plans to do so."
+    ]
+  },
+  {
     "title":"I have a high battery drain with your Rom. What can I do?",
     "content": ["In most cases, battery drain isn't caused by the Rom.",
     "Occasionally, it can be caused by the first google sync just after configuring google account. or",
