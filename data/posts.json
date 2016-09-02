@@ -1,7 +1,31 @@
 [
     {
+    "title": "Slim6 Weekly 1.1",
+    "date": "Friday, 2 September 2016",
+    "content": [
+      "This weekly includes new devices, bug fixes, and device specific updates.",
+      "#### New Devices:",
+      "* Verizon Galaxy S3 (d2vzw)",
+      "* AT&T Galaxy S3 (d2att)",
+      "* Sprint Galaxy S3 (d2spr)",
+      "",
+      "#### Changes",
+      "* Device/samsung/qcom-common: Remove CMHW Call",
+      "* Frameworks/av: libstagefright: mtk: Use vendor extensions to check if we should fixup cropping",
+      "* Hardware/qcom/audio-caf/msm8916: hal: Fix compilation with verbose debugging enabled and policy_hal: Fix build with Clang",
+      "* Hardware/qcom/audio-caf/msm8974: hal: Add support for Hearing Aid Compatibility (HAC) mode",
+      "* Hardware/qcom/display-caf/msm8916: display: Fix warnings on 64-bit clang",
+      "* Updates to hardware/qcom/media-caf/msm8916",
+      "",
+      "#### Device specific",
+      "* Updates to device/samsung/mondrianwifi",
+      "* Kernel/oneplus/onyx: slim_defconfig: enable SECURITY_PERF_EVENTS_RESTRICT",
+      "* Kernel/samsung/mondrianwifi: Fix kernel panic on USB tethering / USB RNDIS selection"
+      ]
+    },
+    {
     "title": "Slim6 Stable 1.0",
-    "date": "Friday, 29 August 2016",
+    "date": "Monday, 29 August 2016",
     "content": [
       "With Android Nougat knocking on our door and Slim6 source reaching a new milestone, We believe it’s about time we release a stable build.",
       "This release brings some of our favourite features to Marshmallow along with bug fixes, translations, and a ton of device specific changes.",
