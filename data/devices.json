@@ -96,6 +96,30 @@
     "img":"images/phone/onyx.png"
   },
   {
+    "manufacture":"Samsung",
+    "devicename":"d2att",
+    "description":"Galaxy S III AT&T variant",
+    "img":"images/phone/d2att"
+  },
+  {
+    "manufacture":"Samsung",
+    "devicename":"d2spr",
+    "description":"Galaxy S III Sprint variant",
+    "img":"images/phone/d2spr"
+  },
+  {
+    "manufacture":"Samsung",
+    "devicename":"d2tmo",
+    "description":"Galaxy S III T-Mobile variant",
+    "img":"images/phone/d2tmo"
+  },
+  {
+    "manufacture":"Samsung",
+    "devicename":"d2vzw",
+    "description":"Galaxy S III Verizon variant",
+    "img":"images/phone/d2vzw"
+  },
+  {
     "manufacturer":"Samsung",
     "devicename":"espresso3g",
     "description":"Galaxy Tab 2 unified (P3100, P5100)",
