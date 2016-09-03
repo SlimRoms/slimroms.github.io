@@ -14,6 +14,13 @@
     "position": "Motorola Moto G 2014 (Titan), Moto G 2013 (Falcon) and Moto G 2013 LTE (peregrine) Maintainer"
   },
   {
+    "name": "Andrew Cardinal",
+    "img": "https://github.com/arcardinal.png",
+    "username": "arcardinal",
+    "location": "USA",
+    "position": "LG Optimus G (geeb) and LG Optimus G2 Maintainer"
+  },
+  {
     "name": "Arun Manohar",
     "img": "https://github.com/a2441918.png",
     "username": "a2441918",
@@ -91,6 +98,13 @@
     "position":"Public relations"
   },
   {
+    "name": "Perseus71",
+    "img": "https://github.com/Perseus71.png",
+    "username": "Perseus71",
+    "location": "USA",
+    "position": "Samsung Galaxy S III LTE (d2lte) Maintainer"
+  },
+  {
     "name": "Rawad Zahreddine",
     "img": "images/team/rirozizo.png",
     "username": "rirozizo",
@@ -105,11 +119,11 @@
     "position": "OnePlus One and Google Nexus 7 (deb/flo) Maintainer"
   },
   {
-    "name": "Sergey Karsakov",
-    "img": "images/team/gwindlord.png",
-    "username": "gwindlord",
-    "location": "Belarus",
-    "position": "Russian support & translations"
+    "name": "Sean Hoyt",
+    "img": "https://github.com/deadman96385.png",
+    "username": "deadman96385",
+    "location": "USA",
+    "position": "Zenfone 2 (Z008/Z00A) Maintainer"
   },
   {
     "name": "Shawn Teoh",
@@ -117,6 +131,13 @@
     "username": "ryuinferno",
     "location": "Australia",
     "position": "Samsung Galaxy S2 (I9100G) Maintainer"
+  },
+  {
+    "name": "Sooraj Sizon",
+    "img": "https://github.com/sooorajjj.png",
+    "username": "sooorajjj",
+    "location": "India",
+    "position": "YU-Yuphoria (lettuce) Maintainer"
   },
   {
     "name": "Stuart Waller",
