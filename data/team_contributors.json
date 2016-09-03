@@ -7,13 +7,6 @@
     "position": "Samsung Galaxy Tab 2 Maintainer, Crowdin Maintainer"
   },
   {
-    "name": "Andrew Cardinal",
-    "img": "https://github.com/arcardinal.png",
-    "username": "arcardinal",
-    "location": "USA",
-    "position": "LG Optimus G (geeb) and LG Optimus G2 Maintainer"
-  },
-  {
     "name": "Cristian Giordano",
     "img": "images/team/steel89.png",
     "username": "steel89",
@@ -33,26 +26,5 @@
     "username": "Yank555.lu",
     "location": "Luxembourg, Europe",
     "position": "Nexus 6P (angler), Nexus 6 (shamu), Nexus 5 (hammerhead), Nexus 7-2013 (flo) Maintainer"
-  },
-  {
-    "name": "Perseus71",
-    "img": "https://github.com/Perseus71.png",
-    "username": "Perseus71",
-    "location": "USA",
-    "position": "Samsung Galaxy S III LTE (d2lte) Maintainer"
-  },
-  {
-    "name": "Sean Hoyt",
-    "img": "https://github.com/deadman96385.png",
-    "username": "deadman96385",
-    "location": "USA",
-    "position": "Zenfone 2 (Z008/Z00A) Maintainer"
-  },
-  {
-    "name": "Sooraj Sizon",
-    "img": "https://github.com/sooorajjj.png",
-    "username": "sooorajjj",
-    "location": "India",
-    "position": "YU-Yuphoria (lettuce) Maintainer"
   }
 ]
