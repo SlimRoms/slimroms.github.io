@@ -105,6 +105,13 @@
     "position": "OnePlus One and Google Nexus 7 (deb/flo) Maintainer"
   },
   {
+    "name": "Sean Hoyt",
+    "img": "https://github.com/deadman96385.png",
+    "username": "deadman96385",
+    "location": "USA",
+    "position": "Zenfone 2 (Z008/Z00A) Maintainer"
+  },
+  {
     "name": "Sergey Karsakov",
     "img": "images/team/gwindlord.png",
     "username": "gwindlord",
@@ -117,6 +124,13 @@
     "username": "ryuinferno",
     "location": "Australia",
     "position": "Samsung Galaxy S2 (I9100G) Maintainer"
+  },
+  {
+    "name": "Sooraj Sizon",
+    "img": "https://github.com/sooorajjj.png",
+    "username": "sooorajjj",
+    "location": "India",
+    "position": "YU-Yuphoria (lettuce) Maintainer"
   },
   {
     "name": "Stuart Waller",
