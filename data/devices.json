@@ -121,6 +121,30 @@
   },
   {
     "manufacturer":"Samsung",
+    "devicename":"jfltexx",
+    "description":"International (QCOM) LTE Galaxy S4",
+    "img":"images/phone/jfltexx.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"jfltespr",
+    "description":"Galaxy S4 Sprint variant",
+    "img":"images/phone/jfltespr.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"jfltetmo",
+    "description":"Galaxy S4 T-Mobile variant",
+    "img":"images/phone/jfltetmo.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"jfltevzw",
+    "description":"Galaxy S4 Verizon variant",
+    "img":"images/phone/jfltevzw.png"
+  },
+  {
+    "manufacturer":"Samsung",
     "devicename":"espresso3g",
     "description":"Galaxy Tab 2 unified (P3100, P5100)",
     "img":"images/phone/espresso3g.png"
