@@ -1,5 +1,39 @@
 [
     {
+    "title": "Slim6 Weekly 1.2",
+    "date": "Friday, 9 September 2016",
+    "content": [
+      "This weekly includes new devices, bug fixes, and device specific updates.",
+      "#### New Devices:",
+      "* T-Mobile Galaxy S3 (d2tmo)",
+      "* International (QCOM) LTE Galaxy S4 (jfltexx)",
+      "* Sprint Galaxy S4 (jfltespr)",
+      "* T-Mobile Galaxy S4 (jfltetmo)",
+      "* Verizon Galaxy S4 (jfltevzw)",
+      "",
+      "#### Changes",
+      "* Add bluetooth battery status when available",
+      "* Fix missing location tile on lockscreen",
+      "* Correct charging sounds string",
+      "* Fix possible NPE upon screen rotation",
+      "* DeviceKeyHandler: Fix suspend gesture not working",
+      "* System/core: libutils: fix deadlock in elapsedRealtimeNano",
+      "",
+      "#### Device specific",
+      "* Updates to device/htc/hima-common",
+      "* Updates to kernel/htc/msm8994",
+      "* Updates to device/samsung/qcom-common",
+      "* Kernel/oneplus/msm8974: Replace timeconst.pl with a bc script",
+      "* Updates to device/huawei/angler & kernel/huawei/angler",
+      "* Updates to device/lge/bullhead & kernel/lge/bullhead",
+      "* Device/oneplus/bacon: Fix dependencies path and update dependencies",
+      "* Device/oneplus/oneplus3: Fix data when libc crashes & force HAL1 for certain apps",
+      "",
+      "***",
+      "*September security update will be included in the next weekly.*"
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.1",
     "date": "Friday, 2 September 2016",
     "content": [
