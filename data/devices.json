@@ -163,6 +163,24 @@
   },
   {
     "manufacturer":"Samsung",
+    "devicename":"klte",
+    "description":"QCOM Galaxy S5(GSM)",
+    "img":"images/phone/klte.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"kltespr",
+    "description":"Galaxy S5 Sprint variant",
+    "img":"images/phone/kltespr.png"
+  },
+  {
+    "manufacturer":"Samsung",
+    "devicename":"kltevzw",
+    "description":"Galaxy S5 Verizon variant",
+    "img":"images/phone/kltevzw.png"
+  },
+  {
+    "manufacturer":"Samsung",
     "devicename":"mondrianwifi",
     "description":"Galaxy Tab Pro 8.4",
     "img":"images/phone/mondrianwifi.png"
