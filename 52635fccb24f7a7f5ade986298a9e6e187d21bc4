@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab9d9a7_51f843e5",
+        "filename": "data/devices.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-09-16T14:47:40Z",
+      "side": 1,
+      "message": ":p",
+      "range": {
+        "startLine": 169,
+        "startChar": 4,
+        "endLine": 169,
+        "endChar": 6
+      },
+      "revId": "52635fccb24f7a7f5ade986298a9e6e187d21bc4",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
