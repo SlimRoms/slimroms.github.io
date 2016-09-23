@@ -8,6 +8,34 @@
       ]
     },
     {
+    "title": "Slim6 Weekly 1.4",
+    "date": "Friday, 23 September 2016",
+    "content": [
+      "This weekly includes, bug fixes, and device specific updates.",
+      "#### Changes",
+      "* audio-caf/msm8960: hal: Stop log spam when COMPRESS_VOIP_ENABLED is not defined",
+      "* Frameworks/base: ambient display: Fix volume key music control",
+      "* LatinIME: Disable Hungarian spell checking",
+      "* LatinIME: Add Bulgarian, Georgian and Ukrainian wordlists",
+      "* LatinIME: Enable Greek spell checking",
+      "* LatinIME: Enable spellchecker for additional languages",
+      "* LatinIME: make default overlay for "show correction suggestion"",
+      "* Vendor/slim: Updated half-res bootanimations to output the correct colour depth",
+      "",
+      "#### Device specific",
+      "* HTC himaul: Updated msm_hotplug configuration for msm_hotplug 2.3 ",
+      "* HTC hima kernel: Update msm_hotplug to version 2.3",
+      "* Motorola shamu: Use kernel headers for and build librmnetctl from source",
+      "* Motorola shamu: Build libxml2 from source",
+      "* Samsung espresso10: mmc: core: Detect eMMC v4.5 ext_csd entries",
+      "* Samsung espressowifi: libsensors: commonize light sensor handlers, fix GP2A conversion ",
+      "* Samsung jf-common: rootdir: Remove useless IPv6 node writes",
+      "* Samsung jf-common: rootdir: Restore stock insthk and kickstart triggers",
+      "* Oppo-common: DeviceHandler: Fix back arrow",
+      "* Oppo-common: Screen off Gesture : Remove Up V Gesture."
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.3",
     "date": "Friday, 16 September 2016",
     "content": [
