@@ -1,5 +1,35 @@
 [
- {
+    {
+    "title": "Slim6 Weekly 1.5",
+    "date": "Friday, 30 September 2016",
+    "content": [
+      "This weekly includes bug fixes, device specific updates, and updates.",
+      "#### Changes",
+      "* Updates to skia",
+      "* Translations updates",
+      "* Base: Fix notification guts in dark mode",
+      "* Doze: Allow greyscale even if inverted bool is fasle",
+      "* Base: Fix notification action/overflow divider in dark mode",
+      "* Base: Long press on user expanded notification collapses it",
+      "* Settings: Fix superuser icon",
+      "* UnifiedEmail: Fix notification in dark mode",
+      "* Messenger (google): Fix notification on dark mode",
+      "* Google News & Weather: Fix notification on dark mode",
+      "* Gmail: Fix text color for undo notification in dark mode",
+      "",
+      "#### Device specific",
+      "* Espresso3g: Move libril-sec to vendor ",
+      "* Espressowifi: Updates to wpa_client, keylayout",
+      "* Espresso10: Updates to kernel (touch firmware, mmc and light sendor)",
+      "* jf-common: remove loc_launcher",
+      "* jf: Updates to kernel audio",
+      "* klte-common: Raise minimal brightness and updates to device init ",
+      "* klte: Updates to cyttsp4 driver",
+      "* Updates to hardware/qcom/audio-caf/msm8916 & msm8974",
+      "* Updates to hardware/qcom/media-caf/msm8916",
+      ]
+    },
+    {
     "title": "We're expanding!",
     "date": "Saturday, 24 September 2016",
     "content": [
