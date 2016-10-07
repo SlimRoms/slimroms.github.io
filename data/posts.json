@@ -1,5 +1,25 @@
 [
     {
+    "title": "Slim6 Weekly 1.6",
+    "date": "Friday, 7 October 2016",
+    "content": [
+      "This weekly includes Android security update, bug fixes and device-specific updates",
+      "#### Changes",
+      "* Update to android-6.0.1_r70",
+      "* Fix OTG notification in dark mode",
+      "* Remove old signal icons",
+      "* Messenger (Google): adjust reply action icon color",
+      "",
+      "#### Device-specific",
+      "* espressowifi: Updates and cleanup to liblights and libsensor ",
+      "* jflte: Update codecs and remove NITZ props",
+      "* qcom/common: Simplify display boost",
+      "* jf-kernel: Cleanup to perf",
+      "* d2-kernel: CLeanup and updates to perf ",
+      "* klte-kernel: Updates to perf, audio, usb and fingerprint"
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.5",
     "date": "Friday, 30 September 2016",
     "content": [
