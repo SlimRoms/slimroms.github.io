@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab9d9a7_2d920358",
+        "filename": "data/team_old.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-10-11T20:05:04Z",
+      "side": 1,
+      "message": "Alphabetical order, Sean then Shawn",
+      "range": {
+        "startLine": 142,
+        "startChar": 0,
+        "endLine": 148,
+        "endChar": 4
+      },
+      "revId": "687219b1dd91f17c6294fb782570b50762d6b868",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
