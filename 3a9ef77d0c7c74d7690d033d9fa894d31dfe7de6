@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab9d9a7_cdc7a763",
+        "filename": "data/team_contributors.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-10-11T19:26:02Z",
+      "side": 1,
+      "message": "Maintainer for shamu",
+      "range": {
+        "startLine": 69,
+        "startChar": 17,
+        "endLine": 69,
+        "endChar": 28
+      },
+      "revId": "3a9ef77d0c7c74d7690d033d9fa894d31dfe7de6",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab9d9a7_edc4eb60",
+        "filename": "data/team_core.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-10-11T19:26:02Z",
+      "side": 1,
+      "message": "Sys Admin as well",
+      "range": {
+        "startLine": 41,
+        "startChar": 16,
+        "endLine": 41,
+        "endChar": 41
+      },
+      "revId": "3a9ef77d0c7c74d7690d033d9fa894d31dfe7de6",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
