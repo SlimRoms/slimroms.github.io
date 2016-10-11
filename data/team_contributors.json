@@ -54,5 +54,19 @@
     "username": "sooorajjj",
     "location": "India",
     "position": "YU-Yuphoria (lettuce) Maintainer"
+  },
+  {
+    "name":"Dalton Wilson",
+    "img":"https://github.com/dwxvi.png",
+    "username":"dwxvi",
+    "location":"USA",
+    "position":"Public Relations"
+  },
+  {
+    "name":"Daniel Citrin",
+    "img":"https://github.com/newguydan.png",
+    "username":"newguydan",
+    "location":"USA",
+    "position":"Public Relations"
   }
 ]
