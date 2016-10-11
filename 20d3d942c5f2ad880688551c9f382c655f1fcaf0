@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "fab9d9a7_4db417f2",
+        "filename": "data/team_contributors.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000128
+      },
+      "writtenOn": "2016-10-11T19:19:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab9d9a7_cdf007cc",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 4
+      },
+      "revId": "20d3d942c5f2ad880688551c9f382c655f1fcaf0",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fab9d9a7_ededcbf0",
         "filename": "data/team_old.json",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-10-11T19:07:11Z",
       "side": 1,
       "message": "He isn\u0027t inactive",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 126,
+        "endChar": 61
+      },
+      "revId": "20d3d942c5f2ad880688551c9f382c655f1fcaf0",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab9d9a7_6db9dbe8",
+        "filename": "data/team_old.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1000128
+      },
+      "writtenOn": "2016-10-11T19:19:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab9d9a7_ededcbf0",
       "range": {
         "startLine": 121,
         "startChar": 0,
