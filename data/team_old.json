@@ -7,11 +7,25 @@
     "position": "Developer, YU Yureka Maintainer"
   },
   {
+    "name":"Ahmed Nabeel",
+    "img":"images/team/nabeel.png",
+    "username":"Ahmed NabeelM",
+    "location":"Egypt",
+    "position":"Lead Support & Public relations"
+  },
+  {
     "name": "Anas Karbila",
     "img": "https://github.com/Thecrazyskull.png",
     "username": "Thecrazyskull",
     "location": "Netherlands",
     "position": "Motorola Moto G 2014 (Titan), Moto G 2013 (Falcon) and Moto G 2013 LTE (peregrine) Maintainer"
+  },
+  {
+    "name": "Andrew Cardinal",
+    "img": "https://github.com/arcardinal.png",
+    "username": "arcardinal",
+    "location": "USA",
+    "position": "LG Optimus G (geeb) and LG Optimus G2 Maintainer"
   },
   {
     "name": "Arun Manohar",
@@ -28,11 +42,11 @@
     "position": "Samsung Galaxy S4 (I9500) Co-Maintainer"
   },
   {
-    "name": "Dimitris Mantzouranis",
-    "img": "images/team/dexter93.png",
-    "username": "dexter93",
-    "location": "Greece",
-    "position": "Google Nexus 7 (grouper/tilapia) and Samsung Galaxy Note 2 (N7100) Maintainer"
+    "name":"Cordell",
+    "img":"images/team/cordell12.png",
+    "username":"cordell12",
+    "location":"USA",
+    "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
   },
   {
     "name": "Karan Srivastava",
@@ -70,6 +84,13 @@
     "position": "Sony Xperia Z3 Compact (Aries)"
   },
   {
+    "name":"Nick Lovell",
+    "img":"https://github.com/nicklovell23.png",
+    "username":"nicklovell23",
+    "location":"USA",
+    "position":"Release Manager, Samsung Galaxy S4 (jflte) and Samsung Galaxy Note 10.1 (i925) Maintainer"
+  },
+  {
     "name": "Olivier K.",
     "img": "https://github.com/olivieer.png",
     "username": "Olivier",
@@ -105,6 +126,13 @@
     "position": "OnePlus One and Google Nexus 7 (deb/flo) Maintainer"
   },
   {
+    "name": "Sean Hoyt",
+    "img": "https://github.com/deadman96385.png",
+    "username": "deadman96385",
+    "location": "USA",
+    "position": "Zenfone 2 (Z008/Z00A) Maintainer"
+  },
+  {
     "name": "Sergey Karsakov",
     "img": "images/team/gwindlord.png",
     "username": "gwindlord",
@@ -118,6 +146,12 @@
     "location": "Australia",
     "position": "Samsung Galaxy S2 (I9100G) Maintainer"
   },
+  {
+    "name": "Sooraj Sizon",
+    "img": "https://github.com/sooorajjj.png",
+    "username": "sooorajjj",
+    "location": "India",
+    "position": "YU-Yuphoria (lettuce) Maintainer"
   {
     "name": "Stuart Waller",
     "img": "images/team/knightwolf.png",
