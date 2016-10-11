@@ -7,13 +7,6 @@
     "position": "Samsung Galaxy Tab 2 Maintainer, Crowdin Maintainer"
   },
   {
-    "name": "Andrew Cardinal",
-    "img": "https://github.com/arcardinal.png",
-    "username": "arcardinal",
-    "location": "USA",
-    "position": "LG Optimus G (geeb) and LG Optimus G2 Maintainer"
-  },
-  {
     "name": "Cristian Giordano",
     "img": "images/team/steel89.png",
     "username": "steel89",
@@ -28,6 +21,27 @@
     "position": "Developer, OnePlus One and Samsung Galaxy S2 AT&T/T-Mobile (skyrocket/hercules/celox) Maintainer"
   },
   {
+    "name": "Dalton Wilson",
+    "img": "https://github.com/dwxvi.png",
+    "username": "daltango",
+    "location": "USA",
+    "position": "Public Relations"
+  },
+  {
+    "name": "Daniel Citrin",
+    "img": "https://github.com/newguydan.png",
+    "username": "newguydan",
+    "location": "USA",
+    "position": "Public Relations"
+  },
+  {
+    "name": "Ethan Johnson",
+    "img": "https://github.com/ejjohnson1999.png",
+    "username": "ejjohnson1999",
+    "location": "USA",
+    "position": "LG G2 Maintainer"
+  },
+  {
     "name": "Jean-Pierre Rasquin",
     "img": "https://github.com/Yank555-lu.png",
     "username": "Yank555.lu",
@@ -35,24 +49,31 @@
     "position": "Nexus 6P (angler), Nexus 6 (shamu), Nexus 5 (hammerhead), Nexus 7-2013 (flo) Maintainer"
   },
   {
-    "name": "Perseus71",
-    "img": "https://github.com/Perseus71.png",
-    "username": "Perseus71",
-    "location": "USA",
-    "position": "Samsung Galaxy S III LTE (d2lte) Maintainer"
+    "name": "Martin Coulon",
+    "img": "https://github.com/Martinusbe.png",
+    "username": "Martinusbe",
+    "location": "Belgium",
+    "position": "OnePlus X and OnePlus 3 Maintainer"
   },
   {
-    "name": "Sean Hoyt",
-    "img": "https://github.com/deadman96385.png",
-    "username": "deadman96385",
+    "name": "Paul Keith",
+    "img": "https://github.com/javelinanddart.png",
+    "username": "javelinanddart",
     "location": "USA",
-    "position": "Zenfone 2 (Z008/Z00A) Maintainer"
+    "position": "Galaxy S3, S4, and S5 Qualcomm Maintainer"
   },
   {
-    "name": "Sooraj Sizon",
-    "img": "https://github.com/sooorajjj.png",
-    "username": "sooorajjj",
-    "location": "India",
-    "position": "YU-Yuphoria (lettuce) Maintainer"
+    "name": "Thomas Patry",
+    "img": "https://github.com/thompatry.png",
+    "username": "thompatry",
+    "location": "USA",
+    "position": "Moto X Pure/Style Maintainer"
+  },
+  {
+    "name": "Victor Lapin",
+    "img": "https://github.com/victorlapin.png",
+    "username": "victorlapin",
+    "location": "Russia",
+    "position": "Nexus 5X (bullhead) Maintainer"
   }
 ]
