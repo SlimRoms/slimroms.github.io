@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dabed58f_ec47231c",
+        "filename": "data/posts.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-10-14T15:02:46Z",
+      "side": 1,
+      "message": "New paragraph, We are now supporting Clark.\nNew paragraph, Note: Klte was skipped this week due to problem.",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 104
+      },
+      "revId": "093a78bfdd446f5f15145075e225b38ef9221ab7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_2c469b24",
+        "filename": "data/posts.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-10-14T15:02:46Z",
+      "side": 1,
+      "message": "Add the hw/qcom/display/msm8960 line here.\n\nLast line does not need \u0027,\u0027",
+      "range": {
+        "startLine": 10,
+        "startChar": 9,
+        "endLine": 10,
+        "endChar": 43
+      },
+      "revId": "093a78bfdd446f5f15145075e225b38ef9221ab7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_cc4a5f27",
+        "filename": "data/posts.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-10-14T15:02:46Z",
+      "side": 1,
+      "message": "Move this to under d2-common.\n\nAlso last line does not need \u0027,\u0027",
+      "range": {
+        "startLine": 21,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 49
+      },
+      "revId": "093a78bfdd446f5f15145075e225b38ef9221ab7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
