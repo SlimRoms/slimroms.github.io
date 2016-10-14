@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "dabed58f_ccc33f89",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_2949ad8b",
+      "range": {
+        "startLine": 8,
+        "startChar": 9,
+        "endLine": 8,
+        "endChar": 37
+      },
+      "revId": "aec75193dc92abb11d9bb85287b75c95312020f7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabed58f_e95ab54f",
         "filename": "data/posts.json",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-10-14T14:38:25Z",
       "side": 1,
       "message": "\"* device/htc/msm8960-common: Add max encoder input buffer\",\n\"* kernel/htc/msm8960: Updates to wlan driver\",",
+      "range": {
+        "startLine": 12,
+        "startChar": 9,
+        "endLine": 12,
+        "endChar": 83
+      },
+      "revId": "aec75193dc92abb11d9bb85287b75c95312020f7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_ecc0837e",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_e95ab54f",
       "range": {
         "startLine": 12,
         "startChar": 9,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "dabed58f_8cbd4705",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_89577926",
+      "range": {
+        "startLine": 13,
+        "startChar": 6,
+        "endLine": 13,
+        "endChar": 41
+      },
+      "revId": "aec75193dc92abb11d9bb85287b75c95312020f7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabed58f_a954bd21",
         "filename": "data/posts.json",
         "patchSetId": 1
@@ -82,6 +154,30 @@
       "writtenOn": "2016-10-14T14:38:25Z",
       "side": 1,
       "message": "\"* device/oppo/common: Fix gesture force close\",",
+      "range": {
+        "startLine": 14,
+        "startChar": 6,
+        "endLine": 14,
+        "endChar": 45
+      },
+      "revId": "aec75193dc92abb11d9bb85287b75c95312020f7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_acba8b08",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_a954bd21",
       "range": {
         "startLine": 14,
         "startChar": 6,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "dabed58f_4c374fb1",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_4931810a",
+      "range": {
+        "startLine": 17,
+        "startChar": 9,
+        "endLine": 18,
+        "endChar": 80
+      },
+      "revId": "aec75193dc92abb11d9bb85287b75c95312020f7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabed58f_6936c505",
         "filename": "data/posts.json",
         "patchSetId": 1
@@ -128,6 +248,30 @@
       "writtenOn": "2016-10-14T14:38:25Z",
       "side": 1,
       "message": "Put under d2-common, also trailing space at the end.",
+      "range": {
+        "startLine": 20,
+        "startChar": 6,
+        "endLine": 20,
+        "endChar": 42
+      },
+      "revId": "aec75193dc92abb11d9bb85287b75c95312020f7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_6c3c9394",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_6936c505",
       "range": {
         "startLine": 20,
         "startChar": 6,
