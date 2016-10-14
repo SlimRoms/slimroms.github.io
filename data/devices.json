@@ -61,6 +61,12 @@
   },
   {
     "manufacturer":"Motorola",
+    "devicename":"clark",
+    "description":"Moto X Style",
+    "img":"images/phone/clark.png"
+  },
+  {
+    "manufacturer":"Motorola",
     "devicename":"shamu",
     "description":"Nexus 6",
     "img":"images/phone/shamu.png"
