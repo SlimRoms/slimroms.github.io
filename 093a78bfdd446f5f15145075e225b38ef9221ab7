@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "dabed58f_2c2bfb31",
+        "filename": "data/posts.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_ec47231c",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 104
+      },
+      "revId": "093a78bfdd446f5f15145075e225b38ef9221ab7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabed58f_2c469b24",
         "filename": "data/posts.json",
         "patchSetId": 3
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "dabed58f_cc1fbf08",
+        "filename": "data/posts.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_2c469b24",
+      "range": {
+        "startLine": 10,
+        "startChar": 9,
+        "endLine": 10,
+        "endChar": 43
+      },
+      "revId": "093a78bfdd446f5f15145075e225b38ef9221ab7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabed58f_cc4a5f27",
         "filename": "data/posts.json",
         "patchSetId": 3
@@ -59,6 +107,30 @@
       "writtenOn": "2016-10-14T15:02:46Z",
       "side": 1,
       "message": "Move this to under d2-common.\n\nAlso last line does not need \u0027,\u0027",
+      "range": {
+        "startLine": 21,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 49
+      },
+      "revId": "093a78bfdd446f5f15145075e225b38ef9221ab7",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_ec1c0316",
+        "filename": "data/posts.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000348
+      },
+      "writtenOn": "2016-10-14T15:31:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_cc4a5f27",
       "range": {
         "startLine": 21,
         "startChar": 9,
