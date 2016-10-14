@@ -1,4 +1,25 @@
 [
+   {
+    "title": "Slim6 Weekly 1.7",
+    "date": "Friday, 14 October 2016",
+    "content": [
+      "Included in this weekly : Device-specific updates, language translation updates, and bug fixes!",
+      "#### Changes",
+      "* Updates to frameworks + more",
+      "",
+      "#### Device-specific",
+      "* m7: Speakerphone optimizations",
+      "* htc/msm8960: Add max encoder input buffer + kernel fixes for WLAN + more",
+      "* m8: Updates to bloblist + more",
+      "* oppo/common: Force close fix + more",
+      "* samsung/d2-common: Remove legacy mmap",
+      "* samsung/espressowifi: CVE Updates + more",
+      "* hardware/qcom/display-caf/msm8960: General fixes",
+      "* hardware/ti/omap4: Lots of camera fixes + removal of silliness + more",
+      "* kernel/motorola/msm8916: Updates to drivers, camera, + more",
+      "* kernel/samsung/d2: VoIP updates", 
+      ]
+    },
     {
     "title": "Slim6 Weekly 1.6",
     "date": "Friday, 7 October 2016",
