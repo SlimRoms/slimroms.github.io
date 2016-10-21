@@ -1,5 +1,27 @@
 [
-   {
+    {
+    "title": "Slim6 Weekly 1.8",
+    "date": "Friday, 21 October 2016",
+    "content": [
+      "This weekly includes bug fixes, device-specific updates, and other updates.",
+      "#### Changes",
+      "* Long press on a user avatar to open notification log",
+      "* Added xhdpi icon to SlimLauncher",
+      "",
+      "#### Device-specific",
+      "* device/motorola/clark: Update various configs from reteu 6.0.1 (MPH24.107-58)"
+      "* device/samsung/jf-common: Improvements to boot animation performance",
+      "* device/samsung/klte-common: Initial updates for thermal and power",
+      "* kernel/htc/msm8994: General fixes and improvements",
+      "* kernel/htc/msm8974: Audio-effects related fixes, and more",
+      "* kernel/motorola/msm8916: Lots of improvements and fixes for Surnia and others on the platform.",
+      "* kernel/samsung/d2: General fixes and improvements",
+      "* kernel/samsung/expresso10: General fixes and improvements",
+      "* kernel/samsung/jf: General fixes and improvements",
+      "* kernel/samsung/klte: Display flickering fixed and general fixes and improvements"
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.7",
     "date": "Friday, 14 October 2016",
     "content": [
