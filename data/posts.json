@@ -9,7 +9,7 @@
       "",
       "#### Device-specific",
       "* device/samsung/klte-common: Wifi calibration fixes and general improvements",
-      "* device/samsung/klte: Fix camera problem from weekly 1.8
+      "* device/samsung/klte: Fix camera problem from weekly 1.8",
       "* kernel/htc/flounder: Dirty cow patches (CVE-2016-5195)",
       "* kernel/lge/mako: Dirty cow patches (CVE-2016-5195)",
       "* kernel/motorola/msm8916: Dirty cow patches (CVE-2016-5195)",
