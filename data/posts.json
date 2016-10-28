@@ -1,5 +1,12 @@
 [
     {
+    "title": "Slim6 Weekly 1.9",
+    "date": "Friday, 28 October 2016",
+    "content": [
+      "This weekly includes dirty cow vulnerability patches, bug fixes, device-specific updates, and other updates.",
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.8",
     "date": "Friday, 21 October 2016",
     "content": [
