@@ -4,6 +4,20 @@
     "date": "Friday, 28 October 2016",
     "content": [
       "This weekly includes dirty cow vulnerability patches, bug fixes, device-specific updates, and other updates.",
+      "#### Changes",
+      "* Track msm8952 hals",
+      "",
+      "#### Device-specific",
+      "* device/samsung/klte-common: Wifi calibration fixes and general improvements",
+      "* kernel/htc/flounder: Dirty cow patches (CVE-2016-5195)",
+      "* kernel/lge/mako: Dirty cow patches (CVE-2016-5195)",
+      "* kernel/motorola/msm8916: Dirty cow patches (CVE-2016-5195)",
+      "* kernel/motorola/msm8992: Dirty cow patches (CVE-2016-5195)",
+      "* kernel/samsung/d2: Dirty cow patches (CVE-2016-5195) and general improvements",
+      "* kernel/samsung/expresso10: Dirty cow patches (CVE-2016-5195) and general improvements",
+      "* kernel/samsung/jf: F2FS updates, dirty cow patches (CVE-2016-5195) and general improvements",
+      "* kernel/samsung/klte: Upstream changes from kernek.org 3.4.12, Dirty cow patches (CVE-2016-5195) and general improvements",
+      "* kernel/samsung/mondrianwifi: Dirty cow patches (CVE-2016-5195)"
       ]
     },
     {
