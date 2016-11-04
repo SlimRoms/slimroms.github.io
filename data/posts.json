@@ -1,4 +1,23 @@
 [
+{
+    "title": "Slim6 Weekly 1.10",
+    "date": "Friday, 4 November 2016",
+    "content": [
+      "This weekly includes a few device-specific updates, as well as other general updates.",
+      "#### Changes",
+      "* Fix profile switching: Now notification log is moved to long press header",
+      "* hardware/libhardware: Memory leak fix during sensor HAL initialization",
+      "* vendor/slim: Update some apn",
+      "",
+      "#### Device-specific",
+      "* device/motorola/clark: Revert cmactions wakelocks, Improve on power.sh (from bullhead)",
+      "* device/samsung/espresso3g: Sync with AOSP, general fixes",
+      "* device/samsung/espressowifi: Some nitpicks & sync with AOSP",
+      "* kernel/htc/msm8994: Switch to a Slim defconfig, general fixes",
+      "* kernel/motorola/msm8992: Fixes for sdcardfs, general fixes",
+      "* kernel/samsung/jf: Squashed revert of VoIP patches, VoIP and other general fixes"
+      ]
+    },
     {
     "title": "Slim6 Weekly 1.9",
     "date": "Friday, 28 October 2016",
