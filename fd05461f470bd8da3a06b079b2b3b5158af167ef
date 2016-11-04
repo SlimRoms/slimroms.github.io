@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ab8dda7_d0c3d288",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-11-04T15:55:46Z",
+      "side": 1,
+      "message": "This can be one line.\nFix profile switching: Now notification log is moved to long press header",
+      "range": {
+        "startLine": 8,
+        "startChar": 1,
+        "endLine": 9,
+        "endChar": 53
+      },
+      "revId": "fd05461f470bd8da3a06b079b2b3b5158af167ef",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab8dda7_f0c0567e",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-11-04T15:55:46Z",
+      "side": 1,
+      "message": "vendor/slim: Update apns",
+      "range": {
+        "startLine": 11,
+        "startChar": 9,
+        "endLine": 11,
+        "endChar": 43
+      },
+      "revId": "fd05461f470bd8da3a06b079b2b3b5158af167ef",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab8dda7_90bd5a05",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-11-04T15:55:46Z",
+      "side": 1,
+      "message": "Improve init.qcom.power.sh based on Bullhead",
+      "range": {
+        "startLine": 14,
+        "startChar": 60,
+        "endLine": 14,
+        "endChar": 73
+      },
+      "revId": "fd05461f470bd8da3a06b079b2b3b5158af167ef",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
