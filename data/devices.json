@@ -61,6 +61,12 @@
   },
   {
     "manufacturer":"Motorola",
+    "devicename":"athene",
+    "description":"Moto G 4th Generation",
+    "img":"images/phone/clark.png"
+  },
+  {
+    "manufacturer":"Motorola",
     "devicename":"clark",
     "description":"Moto X Style",
     "img":"images/phone/clark.png"
@@ -69,13 +75,19 @@
     "manufacturer":"Motorola",
     "devicename":"shamu",
     "description":"Nexus 6",
-    "img":"images/phone/shamu.png"
+    "img":"images/phone/athene.png"
   },
   {
-    "manufacturer":"Motorola",
-    "devicename":"surnia",
-    "description":"Moto E LTE second gen",
-    "img":"images/phone/surnia.png"
+    "manufacturer":"Nextbit",
+    "devicename":"ether",
+    "description":"Nextbit Robin",
+    "img":"images/phone/ether.png"
+  },
+  {
+    "manufacturer":"OnePlus",
+    "devicename":"bacon",
+    "description":"OnePlus One",
+    "img":"images/phone/bacon.png"
   },
   {
     "manufacturer":"OnePlus",
