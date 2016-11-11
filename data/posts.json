@@ -1,5 +1,33 @@
 [
-{
+    {
+    "title": "Slim6 Weekly 1.11",
+    "date": "Friday, 11 November 2016",
+    "content": [
+      "This weekly includes the November security update, translation updates and many updates and fixes.",
+      "#### New Devices:",
+      "* Motorola G4 (Athene)",
+      "* Nextbit Robin (Ether)",
+      "",
+      "#### Changes",
+      "* Included November security patches",
+      "* Imported translations",
+      "* framework/av: Updates to stagefright",
+      "* framework/base: Disable fingerprint wake-and-unlock",
+      "* Other misc. fixes and improvements",
+      "",
+      "#### Device-specific",
+      "* device/huawei/angler: General fixes and improvements",
+      "* device/lge/hammerhead: General fixes and improvements",
+      "* device/motorola/clark: General fixes and improvements",
+      "* device/samsung/mondrianwifi: Camera related fixes (Fix 1080 recording and torch QS)",
+      "* kernel/huawei/angler: Hotplug update, general fixes and improvements",
+      "* kernel/lge/hammerhead: General fixes and improvements",
+      "* kernel/motorola/msm8916: General fixes and improvements",
+      "* kernel/motorola/msm8992: General fixes and improvements",
+      "* kernel/samsung/expresso10: USB audio related fixes, general fixes and improvements"
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.10",
     "date": "Friday, 4 November 2016",
     "content": [
