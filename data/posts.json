@@ -1,5 +1,31 @@
 [
     {
+    "title": "Slim6 Weekly 1.12",
+    "date": "Friday, 18 November 2016",
+    "content": [
+      "This weekly contains numerous device-specific updates, as well as a few other general fixes.",
+      "#### Changes",
+      "* frameworks/base: zygote: Add /proc/ged to the FD whitelist",
+      "* hardware/qcom/audio-caf/msm8916: Fix potential overflow in Visualizer effect",
+      "* hardware/qcom/audio-caf/msm8974: Fix potential overflow in Visualizer effect",
+      "* system/core: init: Fix possible open file pointer",
+      "* vendor/slim: Update for Weekly 1.12, Cleanup and fixes for APNs",
+      ""
+      "#### Device-Specific",
+      "* device/motorola/athene: General fixes and improvements",
+      "* device/motorola/clark: Fixes for in-call audio and doze, enable Bluetooth LE",
+      "* device/qcom/common: power: msm8937: General fixes and improvements",
+      "* device/qcom/sepolicy: msm8937: Add context to recovery block device and boot block device",
+      "* kernel/lge/mako: Take kernel back to CM base, numerous fixes and improvements",
+      "* kernel/motorola/msm8952: Hotplug updates, numerous fixes and improvements",
+      "* kernel/motorola/msm8992: ion: disable system contig heap",
+      "* kernel/samsung/d2: Fixes for USB audio, other improvements",
+      "* kernel/samsung/jf: General fixes and improvements",
+      "* kernel/samsung/klte: ion: disable system contig heap",
+      "* kernel/samsung/mondrianwifi: Numerous fixes and improvements"
+      ]
+    }, 
+    {
     "title": "Slim6 Weekly 1.11",
     "date": "Friday, 11 November 2016",
     "content": [
