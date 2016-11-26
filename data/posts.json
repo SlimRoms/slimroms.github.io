@@ -1,5 +1,24 @@
 [
     {
+    "title": "Slim6 Weekly 1.13",
+    "date": "Saturday, 26 November 2016",
+    "content": [
+      "This weekly contains numerous device-specific updates, as well as a few other general fixes.",
+      "#### Changes",
+      "* Add kill button to notification",
+      "* frameworks/base: General fixes and improvements",
+      "* frameworks/opt/slim: Fix FC with navbar warning message, general fixes and improvements",
+      "* vendor/slim Update Telfort Mobiel Internet APN",
+      "",
+      "#### Device-specific",
+      "* device/lge/mako: Removed enhanced NFC feature",
+      "* device/motorola/clark: In-call audio fixes",
+      "* kernel/huawei/angler: General fixes and improvements",
+      "* kernel/samsung/d2: Bug fixes and general improvements",
+      "* kernel/samsung/jf: Bug fixes and general improvements"
+      ]
+    },
+    {
     "title": "Thanksgiving 2016 Update!",
     "date": "Tuesday, 22 November 2016",
     "content": [
