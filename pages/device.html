@@ -94,6 +94,32 @@
         }
     </style>
     <paper-card class="heading">
+        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Alpha Builds - <span>{{deviceName}}</span></p></h1>
+    </paper-card>
+    <div class="flex-container">
+            <iron-ajax auto url="data/{{deviceName}}_alpha.json" last-response="{{Alphadata}}"></iron-ajax>
+            <template is="dom-repeat" items="{{Alphadata}}">
+                <paper-card>
+                    <div class="device-container">
+                        <div class="text-container">
+                            <div class="icon-text">
+                                <iron-icon icon="communication:stay-primary-portrait"></iron-icon>
+                                <p>{{item.build}}</p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="file-download"></iron-icon>
+                                <p><a href="https://dl.slimroms.org/downloads/{{item.filename}}">{{item.filename}}</a></p>
+                            </div>
+                            <div class="icon-text">
+                                <iron-icon icon="label"></iron-icon>
+                                <p>{{item.md5}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </template>
+    </div>
+    <paper-card class="heading">
         <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Stable Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
