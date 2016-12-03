@@ -1,4 +1,29 @@
 [
+{
+    "title": "Slim6 Weekly 1.14 and Slim7 Alpha 0.1!",
+    "date": "Saturday, 3 December 2016",
+    "content": [
+      "This weekly contains a few device specific updates. Also introducing Slim7 (which is still in alpha)!",
+      "#### Changes",
+      "* vendor/slim: Update for Weekly 1.14",
+      "",
+      "#### Device-specific",
+      "* device/motorola/clark: General fixes and improvements",
+      "* kernel/motorola/msm8916: BACKPORT: security: fix typo in security_task_prctl",
+      "* kernel/motorola/msm8992: Scheduler fixes and general improvements",
+      "",
+      "#### Slim7 Alpha 0.1",
+      "These devices will be the first to receive Slim7 Alpha builds:",
+      "* flounder",
+      "* oneplus2",
+      "* onyx",
+      "* m7",
+      "* mako",
+      "* surnia",
+      "",
+      "More devices will receive Slim7 Alpha builds in the future. Please take note that these builds are not fully-featured, and will have bugs."
+      ]
+    },
     {
     "title": "Builds postponed until Saturday",
     "date": "Friday, 2 December 2016 ",
