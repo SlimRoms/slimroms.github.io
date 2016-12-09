@@ -1,5 +1,48 @@
 [
-{
+    {
+    "title": "Slim6 Weekly 1.15 and Slim7 Alpha 0.2",
+    "date": "Friday, 9 December 2016",
+    "content": [
+      "Slim6 Weekly 1.15 contains a few minor device-specific updates, while Slim7 Alpha 0.2 introduces new devices and merges Android 7.1.1.",
+      "#### Changes (Slim6)",
+      "* vendor/slim: Update for Weekly 1.15 and fix Weekly 1.14",
+      "",
+      "#### Device-specific (Slim6)",
+      "* device/huawei/angler: hotplug updates and minor fixes",
+      "* kernel/huawei/angler: bump kernel version to 1.1e, scheduler and hotplug fixes",
+      "* kernel/motorola/msm8916: Upstream from CM, numerous updates and fixes",
+      "",
+      "#### New Devices (Slim7)",
+      "* angler",
+      "* flo",
+      "* bacon",
+      "* oneplus3",
+      "",
+      "#### Changes (Slim7)",
+      "* Merged android-7.1.1_r4",
+      "* Add Advanced Reboot menu",
+      "* Fix Navigation Settings FC
+      "* hardware/qcom/audio-caf/msm8916: updates to audio policy",
+      "* hardware/qcom/audio-caf/msm8960: updates to audio policy, other updates and fixes",
+      "* hardware/qcom/audio-caf/msm8974: updates to audio policy",
+      "* hardware/qcom/audio-caf/msm8994: updates to audio policy",
+      "* vendor/slim: update for Slim7 Alpha 0.2, fixes and merged android-7.1.1_r4",
+      "",
+      "#### Device-specific (Slim7)",
+      "* device/htc/flounder: merged android-7.1.1_r4",
+      "* device/htc/m7: Update radio access family list",
+      "* device/motorola/surnia: Remove charge_only_mode",
+      "* device/motorola/msm8916-common: Updates to sepolicy, VoLTE, and switch to Athene blobs"
+      "* device/oneplus/oneplus2: op2: 7.1 dependencies",
+      "* device/oneplus/onyx: onyx: 7.1 dependencies, general updates and fixes",
+      "* device/qcom/common: general updates and fixes",
+      "* kernel/htc/flounder: merged android-7.1.1_r4",
+      "* kernel/motorola/msm9816: Upstream from CM",
+      "* kernel/oneplus/msm8994: tri_state_key: allow more key codes for extra modes",
+      "* kernel/oneplus/onyx: general updates and fixes"
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.14 and Slim7 Alpha 0.1!",
     "date": "Saturday, 3 December 2016",
     "content": [
