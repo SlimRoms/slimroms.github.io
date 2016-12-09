@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aade967_ed6716e9",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-09T17:34:23Z",
+      "side": 1,
+      "message": "Didn\u0027t build, so not getting it this week.",
+      "range": {
+        "startLine": 20,
+        "startChar": 6,
+        "endLine": 20,
+        "endChar": 13
+      },
+      "revId": "20fb16238d4565924d1a2564a2356a7429ef0cc5",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_ad611ed5",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-09T17:34:23Z",
+      "side": 1,
+      "message": "Add Advance reboot menu",
+      "range": {
+        "startLine": 24,
+        "startChar": 9,
+        "endLine": 25,
+        "endChar": 43
+      },
+      "revId": "20fb16238d4565924d1a2564a2356a7429ef0cc5",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_cd5eda12",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-09T17:34:23Z",
+      "side": 1,
+      "message": "Add:\nFix navigation setting FC",
+      "revId": "20fb16238d4565924d1a2564a2356a7429ef0cc5",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_6d9b26ca",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-09T17:34:23Z",
+      "side": 1,
+      "message": "Remove this, tecnically it was just a rebase on CM\u0027s",
+      "range": {
+        "startLine": 40,
+        "startChar": 6,
+        "endLine": 40,
+        "endChar": 55
+      },
+      "revId": "20fb16238d4565924d1a2564a2356a7429ef0cc5",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
