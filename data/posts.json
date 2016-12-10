@@ -22,7 +22,7 @@
       "#### Changes (Slim7)",
       "* Merged android-7.1.1_r4",
       "* Add Advanced Reboot menu",
-      "* Fix Navigation Settings FC
+      "* Fix Navigation Settings FC",
       "* hardware/qcom/audio-caf/msm8916: updates to audio policy",
       "* hardware/qcom/audio-caf/msm8960: updates to audio policy, other updates and fixes",
       "* hardware/qcom/audio-caf/msm8974: updates to audio policy",
@@ -33,7 +33,7 @@
       "* device/htc/flounder: merged android-7.1.1_r4",
       "* device/htc/m7: Update radio access family list",
       "* device/motorola/surnia: Remove charge_only_mode",
-      "* device/motorola/msm8916-common: Updates to sepolicy, VoLTE, and switch to Athene blobs"
+      "* device/motorola/msm8916-common: Updates to sepolicy, VoLTE, and switch to Athene blobs",
       "* device/oneplus/oneplus2: op2: 7.1 dependencies",
       "* device/oneplus/onyx: onyx: 7.1 dependencies, general updates and fixes",
       "* device/qcom/common: general updates and fixes",
