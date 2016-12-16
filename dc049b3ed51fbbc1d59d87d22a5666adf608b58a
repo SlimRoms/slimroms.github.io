@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aade967_7060dd35",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-16T22:22:37Z",
+      "side": 1,
+      "message": "Rebased on current CM repo",
+      "range": {
+        "startLine": 19,
+        "startChar": 31,
+        "endLine": 19,
+        "endChar": 61
+      },
+      "revId": "dc049b3ed51fbbc1d59d87d22a5666adf608b58a",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_505fe172",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-16T22:22:37Z",
+      "side": 1,
+      "message": "General updates from CM for frameworks/native, system/core, hardware/libhardware, hw/qcom/audio-caf/msm8916 \u0026 msm8974",
+      "range": {
+        "startLine": 20,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 58
+      },
+      "revId": "dc049b3ed51fbbc1d59d87d22a5666adf608b58a",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_d073d113",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-16T22:22:37Z",
+      "side": 1,
+      "message": "Revert VoLTE support until workaround is found.",
+      "range": {
+        "startLine": 25,
+        "startChar": 40,
+        "endLine": 25,
+        "endChar": 59
+      },
+      "revId": "dc049b3ed51fbbc1d59d87d22a5666adf608b58a",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
