@@ -1,5 +1,42 @@
 [
     {
+    "title": "Slim6 Weekly 1.16 and Slim 7 Alpha 0.3",
+    "date": "Friday, 16 December 2016",
+    "content": [
+      "Slim6 Weekly 1.16 contains general fixes and a few device-specific improvements, Slim7 Alpha 0.3 contains a lot of general fixes and a few device-specific improvements",
+      "#### Changes (Slim6)",
+      "* frameworks/av: Bug fixes and improvements",
+      "* system/core: General fixes and improvements",
+      "* vendor/slim: Updated Reliance Jio India's APNs to add VoLTE",
+      "",
+      "#### Device-specific (Slim6)",
+      "* kernel/motorola/msm8916: General fixes and improvements",
+      "* kernel/motorola/msm8992: General fixes and improvements",
+      "",
+      "#### Changes (Slim7)",
+      "* Updated Italian translation",
+      "* vendor/slim: Updated Telfort Mobiel Internet and Reliance Jio India's APNs",
+      "* device/qcom/sepolicy: Rebased on current CM repo",
+      "* frameworks/native: General updates from CM",
+      "* system/core: General updates from CM",
+      "* hardware/libhardware: General updates from CM",
+      "* hardware/libhardware_legacy: General updates from CM",
+      "* hardware/qcom/audio-caf/msm8916: General updates from CM",
+      "* hardware/qcom/audio-caf/msm8974: General updates from CM",
+      "",
+      "#### Device-specific (Slim7)",
+      "* device/htc/m7-common: General fixes and improvements",
+      "* device/motorola/msm8916-common: Revert VoLTE until workaround is found",
+      "* device/oneplus/oneplus2: General fixes and improvements",
+      "* device/oneplus/oneplus3: General and Wifi improvements",
+      "* device/oneplus/onyx: Bluetooth and camera related improvements, general fixes and improvements",
+      "* device/htc/msm8960-common: General updates and fixes",
+      "* kernel/motorola/msm8916: General fixes and improvements",
+      "* kernel/oneplus/msm8994: OnePlus 2: General fixes and improvements",
+      "* kernel/oneplus/msm8996: OnePlus 3: General fixes and improvements"
+      ]
+    },
+    {
     "title": "Slim6 Weekly 1.15 and Slim7 Alpha 0.2",
     "date": "Friday, 9 December 2016",
     "content": [
