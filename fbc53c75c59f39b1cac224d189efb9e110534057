@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aade967_867e7fe3",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-23T17:29:59Z",
+      "side": 1,
+      "message": "Keep the update from caf",
+      "range": {
+        "startLine": 21,
+        "startChar": 31,
+        "endLine": 21,
+        "endChar": 52
+      },
+      "revId": "fbc53c75c59f39b1cac224d189efb9e110534057",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_468887e7",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-23T17:29:59Z",
+      "side": 1,
+      "message": "app",
+      "range": {
+        "startLine": 25,
+        "startChar": 101,
+        "endLine": 25,
+        "endChar": 105
+      },
+      "revId": "fbc53c75c59f39b1cac224d189efb9e110534057",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_26830bce",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-23T17:29:59Z",
+      "side": 1,
+      "message": "Call Video",
+      "range": {
+        "startLine": 25,
+        "startChar": 73,
+        "endLine": 25,
+        "endChar": 74
+      },
+      "revId": "fbc53c75c59f39b1cac224d189efb9e110534057",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
