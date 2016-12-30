@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aade967_61a48d57",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:49:33Z",
+      "side": 1,
+      "message": "This should be moved to replace \"device/asus/flo: overlay: Don\u0027t override powercontrol widget in Settings\",\"",
+      "range": {
+        "startLine": 10,
+        "startChar": 9,
+        "endLine": 10,
+        "endChar": 40
+      },
+      "revId": "3918fdea0e4ba847194579ab564d1912fe05ddd6",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_a19a8512",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:49:33Z",
+      "side": 1,
+      "message": "navbar buttons",
+      "range": {
+        "startLine": 11,
+        "startChar": 15,
+        "endLine": 11,
+        "endChar": 22
+      },
+      "revId": "3918fdea0e4ba847194579ab564d1912fe05ddd6",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_419f1104",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:49:33Z",
+      "side": 1,
+      "message": "this can be resumed as Updated based on LineageOS/CM",
+      "range": {
+        "startLine": 23,
+        "startChar": 27,
+        "endLine": 23,
+        "endChar": 140
+      },
+      "revId": "3918fdea0e4ba847194579ab564d1912fe05ddd6",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_018919ca",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:49:33Z",
+      "side": 1,
+      "message": "Replace this with the Fix setitngs fc thing for flo",
+      "range": {
+        "startLine": 30,
+        "startChar": 9,
+        "endLine": 30,
+        "endChar": 83
+      },
+      "revId": "3918fdea0e4ba847194579ab564d1912fe05ddd6",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
