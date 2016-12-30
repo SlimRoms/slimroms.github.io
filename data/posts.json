@@ -1,5 +1,40 @@
 [
-{
+   {
+    "title": "Slim7 Alpha 0.5",
+    "date": "Friday, 30 December 2016",
+    "content": [
+      "Slim7 Alpha 0.5 brings bug fixes and device-specific updates. Slim6 will not be updated this week, as there were no changes.",
+      "Some of the team members are currently on break for the holidays, after all. :)",
+      "",
+      "#### Changes (Slim7)",
+      "* Fixed Settings FC at boot (flo)
+      "* Fixed buttons strafing right when opening IME
+      "* Fixed platform_manifest readme
+      "* external/aac: enable mp2 encoding for WFD",
+      "* external/flac: Noise and sometimes tombstone crash observed while seeking FLAC content during playback",
+      "* external/icu: fix Kurdish Arabic locale detection and add Asturian ICU files",
+      "* external/tinyxml2: enable tinyxml2 shared library generation",
+      "* frameworks/av: libaudiopolicyservice: make legacy build with Werror",
+      "* frameworks/base: fwb: services: tests: Remove duplicated WrappedAvoidBadWifiTracker class, updates for webview_packages",
+      "* frameworks/native: sf: hw1: general updates",
+      "* hardware/qcom/audio-caf/msm8916: hal: Make HUAWEI_SOUND_PARAM_PATH a board flag",
+      "* hardware/qcom/audio-caf/msm8974: hal: Make HUAWEI_SOUND_PARAM_PATH a board flag",
+      "* hardware/qcom/audio-caf/msm8996: policy_hal: Fix mismerges",
+      "* hardware/ril-caf: General updates, Merge tag 'android-7.1.0_r4' of https://android.googlesource.com/platform/hardware/ril into HEAD",
+      "* vendor/slim: Update for Slim7 Alpha 0.5, update sepolicy to address new bluetooth denial",
+      "",
+      "#### New Devices (Slim7)",
+      "* bullhead",
+      "",
+      "#### Device-specific (Slim7)",
+      "* device/asus/flo: overlay: Don't override powercontrol widget in Settings",
+      "* device/htc/flounder: Update CM's vendor naming",
+      "* device/lge/mako: powerhal: dereference data pointer",
+      "* kernel/htc/flounder: defconfig: enable ip4 RPFILTER",
+      "* kernel/motorola/msm8916: ANDROID: trace: net: use %pK for kernel pointers"
+      ]
+    },
+   {
     "title": "Slim6 Weekly 1.17 and Slim 7 Alpha 0.4",
     "date": "Friday, 23 December 2016",
     "content": [
