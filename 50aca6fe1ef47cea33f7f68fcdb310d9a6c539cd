@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aade967_41b6318c",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:55:55Z",
+      "side": 1,
+      "message": "misisng \",",
+      "range": {
+        "startLine": 10,
+        "startChar": 58,
+        "endLine": 10,
+        "endChar": 61
+      },
+      "revId": "50aca6fe1ef47cea33f7f68fcdb310d9a6c539cd",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_61bb2d73",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:55:55Z",
+      "side": 1,
+      "message": "Missing \",",
+      "range": {
+        "startLine": 11,
+        "startChar": 33,
+        "endLine": 11,
+        "endChar": 39
+      },
+      "revId": "50aca6fe1ef47cea33f7f68fcdb310d9a6c539cd",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_a1c125e6",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2016-12-30T15:55:55Z",
+      "side": 1,
+      "message": "Move this to the top, sorry last one xD",
+      "range": {
+        "startLine": 25,
+        "startChar": 1,
+        "endLine": 27,
+        "endChar": 9
+      },
+      "revId": "50aca6fe1ef47cea33f7f68fcdb310d9a6c539cd",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
