@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aade967_d4ac1e8f",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-01-07T18:26:25Z",
+      "side": 1,
+      "message": "Upstream from LineageOS",
+      "range": {
+        "startLine": 23,
+        "startChar": 9,
+        "endLine": 23,
+        "endChar": 69
+      },
+      "revId": "5c5cbecc9a164f3ed2b3c61571f45c2c5876fe9e",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_54b02edd",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-01-07T18:26:25Z",
+      "side": 1,
+      "message": "Add each one update fingerprint to whatever each one is",
+      "range": {
+        "startLine": 29,
+        "startChar": 9,
+        "endLine": 31,
+        "endChar": 50
+      },
+      "revId": "5c5cbecc9a164f3ed2b3c61571f45c2c5876fe9e",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_f4a91a7c",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-01-07T18:26:25Z",
+      "side": 1,
+      "message": "Updates to LED handling and import oneplus3t changes (unified)",
+      "range": {
+        "startLine": 32,
+        "startChar": 9,
+        "endLine": 32,
+        "endChar": 48
+      },
+      "revId": "5c5cbecc9a164f3ed2b3c61571f45c2c5876fe9e",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_94b6a6db",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-01-07T18:26:25Z",
+      "side": 1,
+      "message": "Upstream from aosp",
+      "range": {
+        "startLine": 37,
+        "startChar": 30,
+        "endLine": 37,
+        "endChar": 56
+      },
+      "revId": "5c5cbecc9a164f3ed2b3c61571f45c2c5876fe9e",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aade967_b4bba2c3",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-01-07T18:26:25Z",
+      "side": 1,
+      "message": "Upstream from aosp also add kernel/lge/bullhead with the same thing",
+      "range": {
+        "startLine": 38,
+        "startChar": 31,
+        "endLine": 38,
+        "endChar": 58
+      },
+      "revId": "5c5cbecc9a164f3ed2b3c61571f45c2c5876fe9e",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
