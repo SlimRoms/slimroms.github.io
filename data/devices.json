@@ -202,5 +202,11 @@
     "devicename":"mondrianwifi",
     "description":"Galaxy Tab Pro 8.4",
     "img":"images/phone/mondrianwifi.png"
+  },
+  {
+    "manufacturer":"Xiaomi",
+    "devicename":"kenzo",
+    "description":"Redmi Note 3",
+    "img":"images/phone/kenzo.png"
   }
 ]
