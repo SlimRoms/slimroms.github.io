@@ -1,5 +1,47 @@
 [
-{
+    {
+    "title": "Slim6 Weekly 1.18 and Slim7 Alpha 0.7",
+    "date": "Friday, 13 January 2017",
+    "content": [
+      "Slim6 Weekly 1.18 is a small update with fixes for a few devices, while Slim7 Alpha 0.7 brings system and device-specific updates.",
+      "",
+      "#### Changes (Slim6)",
+      "* frameworks/base: Fix for notification lights when lockscreen is not active",
+      "* system/core: Add support for sdcardfs and fix sdcardfs check",
+      "* vendor/slim: Update for weekly 1.18, updates to sepolicy",
+      "",
+      "#### Device-specific (Slim6)",
+      "* device/motorola/athene: new trees",
+      "* kernel/motorola/msm8952: new trees",
+      "",
+      "### New features (Slim7)",
+      "* Added new SlimAction, Splits screen action",
+      "* Notification log (longpress statusbar header)",
+      "* Kill app from notification (long pres app notification)",
+      "",
+      "#### Changes and Fixes (Slim7)",
+      "* fix settings margins on tablets",
+      "* frameworks/av: Stagefright: Allow setting high-framerates in CameraSource",
+      "* frameworks/base: Numerous updates and fixes",
+      "* hardware/qcom/audio-caf/msm8916: hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH",
+      "* hardware/qcom/audio-caf/msm8974: hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH",
+      "* hardware/qcom/camera: remove is-vendor-board-platform,QCOM check for kernel deps",
+      "* hardware/qcom/keymaster: keymaster: add support for samsung 'skeymast'",
+      "* hardware/qcom/media: fix pathmap barrier and add symlinks to msm8974 (Fixes video recording for angler and bullhead)",
+      "* packages/apps/ContactsCommon: Upstream from LineageOS",
+      "* vendor/slim: Fixes and update for Alpha 0.7",
+      "",
+      "#### Device-specific (Slim7)",
+      "* device/oneplus/bacon: updates to sepolicy",
+      "* device/xiaomi/kenzo: add vulkan support",
+      "* device/xiaomi/msm8956-common: merge new VoLTE patch",
+      "* kernel/motorola/msm8916: Numerous updates to prima, wlan, sdcardfs, and others",
+      "* kernel/xiaomi/msm8956: general updates and fixes",
+      "",
+      "#### Keep it Slim!"
+      ]
+    },
+    {
     "title": "Slim7 Alpha 0.6",
     "date": "Saturday, 7 January 2017",
     "content": [
