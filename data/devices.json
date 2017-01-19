@@ -205,6 +205,24 @@
   },
   {
     "manufacturer":"Xiaomi",
+    "devicename":"armani",
+    "description":"Redmi 1S",
+    "img":"images/phone/armani.png"
+  },
+  {
+    "manufacturer":"Xiaomi",
+    "devicename":"cancro",
+    "description":"Mi 3",
+    "img":"images/phone/cancro.png"
+  },
+  {
+    "manufacturer":"Xiaomi",
+    "devicename":"gemini",
+    "description":"Mi 5",
+    "img":"images/phone/gemini.png"
+  },
+  {
+    "manufacturer":"Xiaomi",
     "devicename":"kenzo",
     "description":"Redmi Note 3",
     "img":"images/phone/kenzo.png"
