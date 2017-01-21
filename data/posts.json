@@ -1,5 +1,50 @@
 [
-{
+    {
+    "title": "Slim6 Stable 2.0 and Slim7 Beta 0.8",
+    "date": "Friday, 20 January 2017",
+    "content": [
+      "Slim6 has reached a semi-final stable state, while Slim7 has reached beta and has new supported devices"
+      "",
+      "#### Changes (Slim6)",
+      "* Imported translations",
+      "* Reached Stable 2.0",
+      "",
+      "#### Device-specific (Slim6)",
+      "* device/htc/m7: General fixes and improvements",
+      "* device/htc/m8: Removed enhanced NFC and general fixes",
+      "* device/htc/msm8960-common: General fixes and improvements",
+      "* device/htc/msm8974-common: Use half-res boot animation",
+      "* device/samsung/expressowifi: General fixes and improvements",
+      "* kernel/htc/msm8960: Lots of fixes and improvements",
+      "* kernel/htc/msm8974: General fixes and improvements",
+      "* kernel/htc/msm8994: Undo HTC changes to fix MTP mode",
+      "",
+      "#### New Devices (Slim7)",
+      "* Xiaomi RedMi 1S (Armani)"
+      "* Xiaomi Mi 3 (Cancro)",
+      "* Xiaomi Mi 5(Gemini)"
+      "",
+      "#### New features (Slim7)",
+      "* Imported translations"
+      "* frameworks/base: OMS updates"
+      "* frameworks/opt/slim: Add multiwindow vector icon and Materialize Recents button icons",
+      "* frameworks/opt/slim: Add Doze pulse to SlimActions",
+      "* frameworks/opt/slim: General Fixes and improvements ",
+      "* packages/apps/Snap: General fixes",
+      "* packages/apps/SlimLauncher: General updates",
+      "",
+      "#### device-specific (Slim7)",
+      "* device/oneplus/oneplus2: General fixes and improvements",
+      "* device/oppo/common: General fixes and improvements",
+      "* device/motorola/msm8916-common: General fixes and improvements",
+      "* device/motorola/shamu: Lots of fixes and improvements",
+      "* device/motorola/surnia: General fixes and improvements",
+      "* device/xiaomi/msm89956-common: General fixes and improvements",
+      "* kernel/oneplus/msm8994: General fixes and updates",
+      "* kernel/oneplus8956: Geberal fixes and updates"
+    ]
+    },
+    {
     "title": "Slim6 Stable 2.0 and Slim7 Beta 0.8",
     "date": "Friday, 20 January 2017",
     "content": [
@@ -8,7 +53,7 @@
       "",
       "#### Keep it Slim!"
       ]
-    }, 
+    },
     {
     "title": "Slim6 Weekly 1.18 and Slim7 Alpha 0.7",
     "date": "Friday, 13 January 2017",
