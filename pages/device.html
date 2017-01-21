@@ -123,7 +123,7 @@
         <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Beta 7.x Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-            <iron-ajax auto url="data/{{deviceName}}_beta.json" last-response="{{Betaadata}}"></iron-ajax>
+            <iron-ajax auto url="data/{{deviceName}}_beta.json" last-response="{{Betadata}}"></iron-ajax>
             <template is="dom-repeat" items="{{Betadata}}">
                 <paper-card>
                     <div class="device-container">
