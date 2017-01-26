@@ -223,6 +223,12 @@
   },
   {
     "manufacturer":"Xiaomi",
+    "devicename":"hydrogen",
+    "description":"Mi Max",
+    "img":"images/phone/hydrogen.png"
+  },
+  {
+    "manufacturer":"Xiaomi",
     "devicename":"kenzo",
     "description":"Redmi Note 3",
     "img":"images/phone/kenzo.png"
