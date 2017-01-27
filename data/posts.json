@@ -1,4 +1,34 @@
 [
+{
+    "title": "Slim7 Beta 0.9",
+    "date": "Friday, 27 January 2017",
+    "content": [
+      "Slim7 Beta 0.9 brings some minor changes and bugfixes, as well as device-specific fixes.",
+      "",
+      "#### Changes and Fixes",
+      "* Updated UI colors and various icons for Nougat",
+      "* frameworks/base: Updates to bootanimation, other fixes",
+      "* frameworks/native: General fixes and updates",
+      "* frameworks/opt/slim: Updates to Settings menu and multiuser",
+      "* frameworks/opt/telephony: Plmn name override",
+      "* hardware/qcom/audio-caf/msm8960: Security updates",
+      "* hardware/qcom/audio-caf/msm8974: Security updates",
+      "* external/ffmpeg: libavcodec: Revert sdclang workaround",
+      "* packages/apps/Snap: General fixes",
+      "* packages/services/Telecomm: Kill duplicate method definition",
+      "* platform_manifest: Fix Readme/Instructions",
+      "* vendor/slim: Update for Beta 0.9, other fixes and updates",
+      "",
+      "#### Device-specific (Slim7)",
+      "* device/motorola/msm8916-common: Numerous updates and fixes",
+      "* device/xiaomi/kenzo: General updates and fixes",
+      "* device/xiaomi/msm8956-common: General updates and fixes, specific fixes from MIUI",
+      "* kernel/motorola/msm8916: General updates and fixes",
+      "* kernel/xiaomi/msm8956: General updates and fixes",
+      "",
+      "#### Keep it Slim!"
+      ]
+    },
    {
     "title": "Slim6 Stable 2.0 and Slim7 Beta 0.8",
     "date": "Saturday, 21 January 2017",
