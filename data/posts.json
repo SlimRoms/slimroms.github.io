@@ -1,5 +1,41 @@
 [
-    {
+  {
+    "title": "Slim7 Beta 0.9",
+    "date": "Friday, 27 January 2017",
+    "content": [
+      "Slim7 Beta 0.9 brings some minor changes and bugfixes, as well as device-specific fixes.",
+      "",
+      "#### New devices",
+      "* Hydrogen (Xiaomi Mi Max)",
+      "* Lettuce (Yu Yureka)",
+      "",
+      "#### Changes and Fixes",
+      "* Updated UI colors for Nougat",
+      "* Update various icons",
+      "* Fix default values for SlimSettings",
+      "* Fix Navbar Settings theme support",
+      "* frameworks/base: Updates to bootanimation, SystemUITuner",
+      "* frameworks/native: Upstream from LineageOS",
+      "* frameworks/opt/telephony: Plmn name override",
+      "* hardware/qcom/audio-caf/msm8960: Upstream from LineageOS",
+      "* hardware/qcom/audio-caf/msm8974: Upstream from LineageOS",
+      "* external/ffmpeg: libavcodec: Revert sdclang workaround",
+      "* packages/apps/Snap: Upstream from LineageOS",
+      "* packages/services/Telecomm: Kill duplicate method definition",
+      "* platform_manifest: Fix Readme/Instructions",
+      "* vendor/slim: Update for Beta 0.9, other fixes and updates",
+      "",
+      "#### Device-specific (Slim7)",
+      "* device/motorola/msm8916-common: Add CMActions!",
+      "* device/xiaomi/kenzo: General updates and fixes",
+      "* device/xiaomi/msm8956-common: General updates and fixes, specific fixes from MIUI",
+      "* kernel/motorola/msm8916: Upstream from LineageOS",
+      "* kernel/xiaomi/msm8956: General updates and fixes",
+      "",
+      "#### Keep it Slim!"
+    ]
+  },
+  {
     "title": "Slim7 Beta 0.9 Delayed",
     "date": "Friday, 27 January 2017",
     "content": [
@@ -7,9 +43,9 @@
       "We apologize for the inconvenience, and thank you for your patience!",
       "",
       "#### Keep it Slim!"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Stable 2.0 and Slim7 Beta 0.8",
     "date": "Saturday, 21 January 2017",
     "content": [
@@ -68,9 +104,9 @@
       "* kernel/xiaomi/msm8956: Fix build error, upstream from LineageOS",
       "",
       "#### Keep it Slim!"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.18 and Slim7 Alpha 0.7",
     "date": "Friday, 13 January 2017",
     "content": [
@@ -110,9 +146,9 @@
       "* kernel/xiaomi/msm8956: general updates and fixes",
       "",
       "#### Keep it Slim!"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim7 Alpha 0.6",
     "date": "Saturday, 7 January 2017",
     "content": [
@@ -152,9 +188,9 @@
       "* kernel/lge/bullhead: Upstream from AOSP",
       "",
       "#### Keep it Slim!"
-      ]
-    },
-   {
+    ]
+  },
+  {
     "title": "Slim7 Alpha 0.5",
     "date": "Friday, 30 December 2016",
     "content": [
@@ -186,9 +222,9 @@
       "* device/lge/mako: powerhal: dereference data pointer",
       "* kernel/htc/flounder: defconfig: enable ip4 RPFILTER",
       "* kernel/motorola/msm8916: ANDROID: trace: net: use %pK for kernel pointers"
-      ]
-    },
-   {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.17 and Slim 7 Alpha 0.4",
     "date": "Friday, 23 December 2016",
     "content": [
@@ -229,9 +265,9 @@
       "* kernel/lge/mako: mako: defconfig: Enable NF_MATCH_RPFILTER (fixes tethering)",
       "* kernel/motorola/msm8916: General fixes and improvements",
       "* kernel/oneplus/msm8974: General fixes and improvements"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.16 and Slim 7 Alpha 0.3",
     "date": "Friday, 16 December 2016",
     "content": [
@@ -266,9 +302,9 @@
       "* kernel/motorola/msm8916: General fixes and improvements",
       "* kernel/oneplus/msm8994: OnePlus 2: General fixes and improvements",
       "* kernel/oneplus/msm8996: OnePlus 3: General fixes and improvements"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.15 and Slim7 Alpha 0.2",
     "date": "Friday, 9 December 2016",
     "content": [
@@ -310,9 +346,9 @@
       "* kernel/motorola/msm9816: Upstream from CM",
       "* kernel/oneplus/msm8994: tri_state_key: allow more key codes for extra modes",
       "* kernel/oneplus/onyx: general updates and fixes"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.14 and Slim7 Alpha 0.1!",
     "date": "Saturday, 3 December 2016",
     "content": [
@@ -335,16 +371,16 @@
       "* surnia",
       "",
       "More devices will receive Slim7 Alpha builds in the future. Please take note that these builds are not fully-featured, and could have bugs."
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Builds postponed until Saturday",
     "date": "Friday, 2 December 2016 ",
     "content": [
       "The 1.14 weekly builds will be unfortunately pushed to Saturday, December 3 due to technical difficulties. Sorry for the inconvenience and have a great day!"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.13",
     "date": "Saturday, 26 November 2016",
     "content": [
@@ -361,16 +397,16 @@
       "* kernel/huawei/angler: General fixes and improvements",
       "* kernel/samsung/d2: Bug fixes and general improvements",
       "* kernel/samsung/jf: Bug fixes and general improvements"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Thanksgiving 2016 Update!",
     "date": "Tuesday, 22 November 2016",
     "content": [
       "The Weekly build will be pushed to Saturday due to the Thanksgiving holiday taking place in the United States this week . Happy Thanksgiving from the SlimRoms team!"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.12",
     "date": "Friday, 18 November 2016",
     "content": [
@@ -394,9 +430,9 @@
       "* kernel/samsung/jf: General fixes and improvements",
       "* kernel/samsung/klte: Upstream from CyanogenMod",
       "* kernel/samsung/mondrianwifi: Upstream from CyanogenMod"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.11",
     "date": "Friday, 11 November 2016",
     "content": [
@@ -423,9 +459,9 @@
       "* kernel/motorola/msm8916: General fixes and improvements",
       "* kernel/motorola/msm8992: General fixes and improvements",
       "* kernel/samsung/expresso10: security updates (CVE-2016-7910, CVE-2016-7911, CVE-2015-8962, CVE-2015-8963, CVE-2015-8964, CVE-2016-7915, CVE-2016-6136, CVE-2016-2184)"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.10",
     "date": "Friday, 4 November 2016",
     "content": [
@@ -442,9 +478,9 @@
       "* kernel/htc/msm8994: Switch to a Slim defconfig, general fixes",
       "* kernel/motorola/msm8992: Fixes for sdcardfs, general fixes",
       "* kernel/samsung/jf: Squashed revert of VoIP patches, VoIP and other general fixes"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.9",
     "date": "Friday, 28 October 2016",
     "content": [
@@ -464,9 +500,9 @@
       "* kernel/samsung/jf: F2FS updates, dirty cow patches (CVE-2016-5195) and general improvements",
       "* kernel/samsung/klte: Upstream changes from kernel.org 3.4.12, Dirty cow patches (CVE-2016-5195) and general improvements",
       "* kernel/samsung/mondrianwifi: Dirty cow patches (CVE-2016-5195)"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.8",
     "date": "Friday, 21 October 2016",
     "content": [
@@ -487,9 +523,9 @@
       "* kernel/samsung/expresso10: General fixes and improvements",
       "* kernel/samsung/jf: General fixes and improvements",
       "* kernel/samsung/klte: Display flickering fixed and general fixes and improvements"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.7",
     "date": "Friday, 14 October 2016",
     "content": [
@@ -512,9 +548,9 @@
       "* kernel/samsung/d2: VoIP updates",
       "* samsung/espressowifi: CVE Updates + more",
       "* kernel/motorola/msm8916: Updates to drivers, camera, + more"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.6",
     "date": "Friday, 7 October 2016",
     "content": [
@@ -532,9 +568,9 @@
       "* jf-kernel: Cleanup to perf",
       "* d2-kernel: CLeanup and updates to perf ",
       "* klte-kernel: Updates to perf, audio, usb and fingerprint"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.5",
     "date": "Friday, 30 September 2016",
     "content": [
@@ -562,9 +598,9 @@
       "* klte: Updates to cyttsp4 driver",
       "* Updates to hardware/qcom/audio-caf/msm8916 & msm8974",
       "* Updates to hardware/qcom/media-caf/msm8916"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "We're expanding!",
     "date": "Saturday, 24 September 2016",
     "content": [
@@ -594,9 +630,9 @@
       "Thanks,",
       "",
       "The SlimRoms Team"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.4",
     "date": "Friday, 23 September 2016",
     "content": [
@@ -622,18 +658,18 @@
       "* Samsung jf-common: rootdir: Restore stock insthk and kickstart triggers",
       "* Oppo-common: DeviceHandler: Fix back arrow",
       "* Oppo-common: Screen off Gesture : Remove Up V Gesture."
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.4 - delayed",
     "date": "Friday, 23 September 2016",
     "content": [
       "A few problems outside of our control have conspired against us, resulting in us having to delay the weekly build.",
       "",
       "We anticipate normal service being resumed within the next 24 hours."
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.3",
     "date": "Friday, 16 September 2016",
     "content": [
@@ -671,9 +707,9 @@
       "* Kernel/lge/hammerhead: defconfig: update kernel version to 1.0e & update to android-6.0.1_r0.124",
       "* Kernel/motorola/shamu: defconfig: update kernel version to v1.0g & update to android-6.0.1_r0.125",
       "* Updates to kernel/samsung/espresso10"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.2",
     "date": "Friday, 9 September 2016",
     "content": [
@@ -705,9 +741,9 @@
       "",
       "***",
       "*September security update will be included in the next weekly.*"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Weekly 1.1",
     "date": "Friday, 2 September 2016",
     "content": [
@@ -730,9 +766,9 @@
       "* Updates to device/samsung/mondrianwifi",
       "* Kernel/oneplus/onyx: slim_defconfig: enable SECURITY_PERF_EVENTS_RESTRICT",
       "* Kernel/samsung/mondrianwifi: Fix kernel panic on USB tethering / USB RNDIS selection"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Stable 1.0",
     "date": "Monday, 29 August 2016",
     "content": [
@@ -772,9 +808,9 @@
       "* Updates to device/oneplus/oneplus3 and kernel rebase",
       "* Updates to kernel/motorola/msm8916",
       "* Updates to kernel/oneplus/onyx"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.10",
     "date": "Friday, 19 August 2016",
     "content": [
@@ -817,9 +853,9 @@
       "* Changes to device/oneplus/bacon and device/oneplus/oneplus3",
       "* Device/oppo/common: Revert 'Screen off gestures: use EXTRA_SETTINGS' * it's in Navigation now",
       "* Device/samsung/mondrianwifi: Remove camera wrapper"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.9",
     "date": "Friday, 12 August 2016",
     "content": [
@@ -865,9 +901,9 @@
       "* Kernel/motorola/shamu: defconfig: update kernel version to v1.0f, fix CVE-2016-2059, & CVE-2016-5340",
       "* Kernel/samsung/mondrianwifi: Fix CVE-2016- 2504, CVE-2016-2059, & CVE-2016-5340",
       "* Updates to kernel/motorola/msm8916 (includes quadroot fixes)"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.8",
     "date": "Friday, 5 August 2016",
     "content": [
@@ -894,9 +930,9 @@
       "#### Device specific",
       "* Updates to kernel/motorola/msm8916",
       "* Device/samsung/mondrianwifi: mondrianwifi: use Snap camera app"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.7",
     "date": "Friday, 29 July 2016",
     "content": [
@@ -925,9 +961,9 @@
       "* Updates to device/oneplus/oneplus3 and device/oneplus/onyx",
       "* Updates to kernel/oneplus/msm8996",
       "* Updates to kernel/oneplus/onyx"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.6",
     "date": "Friday, 22 July 2016",
     "content": [
@@ -963,9 +999,9 @@
       "* oneplus2: Stop building libinit_msm",
       "* Rebased bullhead kernel on latest aosp sources",
       "* Rebase kernel/oneplus/onyx"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.5",
     "date": "Friday, 15 July 2016",
     "content": [
@@ -995,9 +1031,9 @@
       "#### Known Bugs:",
       "* Most layers themes for frameworks-res will cause systemui fc",
       "* Angler & Flounder: BT stutter on media (audio/video)"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.4",
     "date": "Friday, 8 July 2016",
     "content": [
@@ -1029,18 +1065,18 @@
       "* Updates to kernel/samsung/momondrianwif",
       "***",
       "_Due to time constraints July security updates will be merged next weekly_"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Weekly Rescheduling",
     "date": "Wednesday, 6 July 2016",
     "content": [
       "Hey slimusers! We're rescheduling our weekly releases from Wednesdays to Fridays as it suits our schedule better.",
       "This means no release today but you can expect our builds on Friday.",
       "Till then #keepitslim"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.3",
     "date": "Wednesday, 29 june 2016",
     "content": [
@@ -1075,9 +1111,9 @@
       "* Onyx update to sepolicy",
       "* Onyx updates to mpdecision",
       "* Onyx add support for China ctcc variant"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim6 Alpha 0.2",
     "date": "Wednesday, 22 june 2016",
     "content": [
@@ -1116,9 +1152,9 @@
       "* Upstream updates to m8",
       "* Upstream updates to surnia device and kernel",
       "* Rebase kernel for mondrianwifi"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "The road to marshmallow",
     "date": "Wednesday, 15 june 2016",
     "content": [
@@ -1146,9 +1182,9 @@
       "* HTC One M8",
       "* Moto E LTE second gen (surnia)",
       "* Samsung Galaxy Tab Pro 8.4 (mondrianwifi)"
-      ]
-    },
-    {
+    ]
+  },
+  {
     "title": "Slim Zombie?",
     "date": "Tuesday, 8 September 2015",
     "content": [
