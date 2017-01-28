@@ -233,11 +233,10 @@
     "description":"Redmi Note 3",
     "img":"images/phone/kenzo.png"
   },
- {
+  {
     "manufacturer":"Yu",
     "devicename":"lettuce",
     "description":"Yuphoria",
     "img":"images/phone/lettuce.png"
   }
-]
 ]
