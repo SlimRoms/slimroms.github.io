@@ -22,7 +22,9 @@
   {
     "title":"Does Slim have Theme engine support?",
     "content": [
-    "On Slim6, we partially support RRO/Layers. However due some backend changes, theming framework-res and systemUI might cause bootloop. We currently **do not** support Substratum/OMS and have no immediate plans to do so."
+    "On Slim6, we partially support RRO/Layers. However due some backend changes, theming framework-res and systemUI might cause bootloop. We currently **do not** support Substratum/OMS and have no immediate plans to do so.",
+    "",
+    "On Slim7 we startet to merge OMS support without masquerade support. Substratum app will work as is. We have no immediate plans to add masquerade support"
     ]
   },
   {
