@@ -181,6 +181,18 @@
     },
     {
         "manufacturer":"Samsung",
+        "devicename":"herolte",
+        "description":"Exynos Galaxy S7",
+        "img":"images/phone/herolte.png"
+    },
+    {
+        "manufacturer":"Samsung",
+        "devicename":"hero2lte",
+        "description":"Exynos Galaxy S7 Edge",
+        "img":"images/phone/hero2lte.png"
+    },
+    {
+        "manufacturer":"Samsung",
         "devicename":"klte",
         "description":"QCOM Galaxy S5(GSM)",
         "img":"images/phone/klte.png"
@@ -238,5 +250,5 @@
         "devicename":"lettuce",
         "description":"Yuphoria",
         "img":"images/phone/lettuce.png"
-  }
+    }
 ]
