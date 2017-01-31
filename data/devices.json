@@ -179,6 +179,18 @@
     "description":"International (QCOM) LTE Galaxy S4",
     "img":"images/phone/jfltexx.png"
   },
+    {
+        "manufacturer":"Samsung",
+        "devicename":"herolte",
+        "description":"Exynos Galaxy S7",
+        "img":"images/phone/herolte.png"
+    },
+    {
+        "manufacturer":"Samsung",
+        "devicename":"herolte2",
+        "description":"Exynos Galaxy S7 Edge",
+        "img":"images/phone/herolte2.png"
+    },
   {
     "manufacturer":"Samsung",
     "devicename":"klte",
