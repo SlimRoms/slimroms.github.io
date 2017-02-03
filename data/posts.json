@@ -1,5 +1,37 @@
 [
   {
+    "title": "Slim7 Beta 0.10",
+    "date": "Friday, 3 February 2017",
+    "content": [
+      "Slim7 Beta 0.10 brings new features, some bug fixes, and some device-specific fixes.",
+      "",
+      "#### Changes and Fixes",
+      "* SlimDoze added and updated for 7.1.1",
+      "* Fix crash on WifiAdvancedSettings",
+      "* Fix double press power for camera settings",
+      "* external/ffmpeg: android: Regenerate configs",
+      "* frameworks/av: libstagefright: Restore AOSP's handling of 24/32-bit wav files (Fixes allow notifications)",
+      "* frameworks/base: Updates to status bar dimensions, OMS, and some others",
+      "* frameworks/native: General fixes and updates",
+      "* frameworks/opt/telephony: Fixes and cleanups after 7.1.1 merge",
+      "* hardware/samsung: Upstream updates from LineageOS",
+      "* packages/apps/Settings: More OMS updates",
+      "* packages/apps/Snap: General fixes and updates",
+      "* packages/services/Telecomm: General fixes and updates",
+      "* packages/services/Telephony: General fixes and updates",
+      "* vendor/slim: Update for Beta 0.10, updates and fixes to APNs",
+      "",
+      "#### Device-specific",
+      "* device/lge/mako: Switch to Camera2, fixes video recording for now",
+      "* device/oneplus/onyx: Audio fixes, add support for line-out device",
+      "* device/qcom/common: extractors: Set INITIAL_COPYRIGHT_YEAR",
+      "* kernel/lge/hammerhead: Enable RPFilter, fix mobile hotspots",
+      "* kernel/lge/mako: CM/Lineage fixes",
+      "",
+      "#### Keep it Slim!"
+    ]
+  },
+  {
     "title": "Slim7 Beta 0.9",
     "date": "Friday, 27 January 2017",
     "content": [
