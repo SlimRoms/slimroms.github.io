@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aaae553_3dd1dacd",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-03T16:04:30Z",
+      "side": 1,
+      "message": "Add bellow this\n\"* Fix crash on WifiAdvancedSettings\",\n\"* Fix double press power for camera settings\",",
+      "range": {
+        "startLine": 9,
+        "startChar": 6,
+        "endLine": 9,
+        "endChar": 47
+      },
+      "revId": "ed2c0a480c883b0e599cb80ad8a83d8988629b3c",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_bd4dcac6",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-03T16:04:30Z",
+      "side": 1,
+      "message": "(Fixes allo notification sound)",
+      "range": {
+        "startLine": 11,
+        "startChar": 9,
+        "endLine": 11,
+        "endChar": 86
+      },
+      "revId": "ed2c0a480c883b0e599cb80ad8a83d8988629b3c",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_dd4a06ac",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-03T16:04:30Z",
+      "side": 1,
+      "message": "can remove this line",
+      "range": {
+        "startLine": 14,
+        "startChar": 6,
+        "endLine": 14,
+        "endChar": 68
+      },
+      "revId": "ed2c0a480c883b0e599cb80ad8a83d8988629b3c",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_9dcc8e37",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-03T16:04:30Z",
+      "side": 1,
+      "message": "Change this to\n\nSome more OMS updates",
+      "range": {
+        "startLine": 16,
+        "startChar": 33,
+        "endLine": 16,
+        "endChar": 79
+      },
+      "revId": "ed2c0a480c883b0e599cb80ad8a83d8988629b3c",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_5dd616c7",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-03T16:04:30Z",
+      "side": 1,
+      "message": "Change to Camera2, fixes video recording",
+      "range": {
+        "startLine": 23,
+        "startChar": 26,
+        "endLine": 23,
+        "endChar": 64
+      },
+      "revId": "ed2c0a480c883b0e599cb80ad8a83d8988629b3c",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_fdda62e8",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-03T16:04:30Z",
+      "side": 1,
+      "message": "(fixes mobile hotspots)",
+      "range": {
+        "startLine": 26,
+        "startChar": 32,
+        "endLine": 26,
+        "endChar": 46
+      },
+      "revId": "ed2c0a480c883b0e599cb80ad8a83d8988629b3c",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
