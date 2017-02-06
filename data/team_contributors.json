@@ -7,6 +7,13 @@
     "position": "Samsung Galaxy Tab 2 Maintainer, Crowdin Maintainer"
   },
   {
+    "name": "Aniket Lamba",
+    "img": "https://github.com/mr-tweaker.png",
+    "username": "mr-tweaker",
+    "location": "India",
+    "position": "Xiaomi Redmi 1S and Mi3 Maintainer"
+  },
+  {
     "name": "Cristian Giordano",
     "img": "images/team/steel89.png",
     "username": "steel89",
@@ -28,13 +35,6 @@
     "position": "Developer, OnePlus One and Samsung Galaxy S2 AT&T/T-Mobile (skyrocket/hercules/celox) Maintainer"
   },
   {
-    "name": "Daniel Citrin",
-    "img": "https://github.com/newguydan.png",
-    "username": "newguydan",
-    "location": "USA",
-    "position": "Public Relations"
-  },
-  {
     "name": "Ethan Johnson",
     "img": "https://github.com/ejjohnson1999.png",
     "username": "ejjohnson1999",
@@ -42,11 +42,18 @@
     "position": "LG G2 Maintainer"
   },
   {
-    "name": "Jean-Pierre Rasquin",
-    "img": "https://github.com/Yank555-lu.png",
-    "username": "Yank555.lu",
-    "location": "Luxembourg, Europe",
-    "position": "Nexus 6P (angler), Nexus 6 (shamu), Nexus 5 (hammerhead), Nexus 7-2013 (flo) Maintainer"
+    "name": "Fernando Von Arx",
+    "img": "https://github.com/fevax.png",
+    "username": "fevax",
+    "location": "Argentina",
+    "position": "Exynos Galaxy S7 Co-Maintainer"
+  },
+  {
+    "name": "Jesse Chan",
+    "img": "https://github.com/jesec.png",
+    "username": "jessec",
+    "location": "USA",
+    "position": "Exynos Galaxy S7 Co-Maintainer"
   },
   {
     "name": "Martin Coulon",
@@ -70,11 +77,38 @@
     "position": "Nexus 6 Maintainer"
   },
   {
+    "name": "Rahul Patel",
+    "img": "https://github.com/whyorean.png",
+    "username": "whyorean",
+    "location": "India",
+    "position": "Xiaomi Mi5 Maintainer"
+  },
+  {
+    "name": "Sooraj Sizon",
+    "img": "https://github.com/sooorajjj.png",
+    "username": "sooorajjj",
+    "location": "India",
+    "position": "YU-Yuphoria (lettuce) Maintainer"
+  },
+  {
     "name": "Thomas Patry",
     "img": "https://github.com/thompatry.png",
     "username": "thompatry",
     "location": "USA",
     "position": "Moto X Pure/Style Maintainer"
+  },
+  {
+    "name": "Umang Leekha",
+    "img": "https://github.com/umang96.png",
+    "username": "umang96",
+    "location": "India",
+    "position": "Xiaomi Note 3 Maintainer"
+  },
+  {
+    "name": "Vatsal Koradia",
+    "img": "https://github.com/vatsal.png",
+    "location": "India",
+    "position": "Xiaomi Mi Max Maintainer"
   },
   {
     "name": "Victor Lapin",

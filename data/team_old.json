@@ -49,6 +49,13 @@
     "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
   },
   {
+    "name": "Daniel Citrin",
+    "img": "https://github.com/newguydan.png",
+    "username": "newguydan",
+    "location": "USA",
+    "position": "Public Relations"
+  },
+  {
     "name": "Karan Srivastava",
     "img": "https://github.com/rebelos.png",
     "username": "rebelos",
@@ -145,13 +152,6 @@
     "username": "ryuinferno",
     "location": "Australia",
     "position": "Samsung Galaxy S2 (I9100G) Maintainer"
-  },
-  {
-    "name": "Sooraj Sizon",
-    "img": "https://github.com/sooorajjj.png",
-    "username": "sooorajjj",
-    "location": "India",
-    "position": "YU-Yuphoria (lettuce) Maintainer"
   },
   {
     "name": "Stuart Waller",
