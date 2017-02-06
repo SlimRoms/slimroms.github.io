@@ -1,51 +1,51 @@
 [
-  {
-    "name":"Anthony King",
-    "img":"https://github.com/cybojenix.png",
-    "username":"cybojenix",
-    "location":"UK",
-    "position":"Developer"
-  },
-  {
-    "name":"Daniel Koman",
-    "img":"images/team/dankoman.png",
-    "username":"dankoman",
-    "location":"USA",
-    "position":"Developer & Themer"
-  },
-  {
-    "name": "Dimitris Mantzouranis",
-    "img": "https://github.com/dexter93.png",
-    "username": "dexter93",
-    "location": "Greece",
-    "position": "Developer"
-  },
-  {
-    "name":"Griffin Millender",
-    "img":"images/team/gmillz.png",
-    "username":"gmillz",
-    "location":"USA",
-    "position":"Developer"
-  },
-  {
-    "name": "Jean-Pierre Rasquin",
-    "img": "https://github.com/Yank555-lu.png",
-    "username": "Yank555.lu",
-    "location": "Luxembourg, Europe",
-    "position": "Nexus 6P (angler), Nexus 5 (hammerhead), Nexus 7-2013 (flo) Maintainer"
-  },
-  {
-    "name":"Josue Rivera",
-    "img":"images/team/prbassplayer.png",
-    "username":"prbassplayer",
-    "location":"Puerto Rico",
-    "position":"Development Coordinator and Maintainer for Various Devices"
-  },
-  {
-    "name":"Nicholas Flintham",
-    "img":"https://github.com/Flinny.png",
-    "username":"Flinny",
-    "location":"United Kingdom",
-    "position":"System Administrator and HTC One Family Maintainer"
-  }
+    {
+        "name":"Anthony King",
+        "img":"https://github.com/cybojenix.png",
+        "username":"cybojenix",
+        "location":"UK",
+        "position":"Developer"
+    },
+    {
+        "name":"Daniel Koman",
+        "img":"images/team/dankoman.png",
+        "username":"dankoman",
+        "location":"USA",
+        "position":"Developer & Themer"
+    },
+    {
+        "name": "Dimitris Mantzouranis",
+        "img": "https://github.com/dexter93.png",
+        "username": "dexter93",
+        "location": "Greece",
+        "position": "Developer"
+    },
+    {
+        "name":"Griffin Millender",
+        "img":"images/team/gmillz.png",
+        "username":"gmillz",
+        "location":"USA",
+        "position":"Developer"
+    },
+    {
+        "name": "Jean-Pierre Rasquin",
+        "img": "https://github.com/Yank555-lu.png",
+        "username": "Yank555.lu",
+        "location": "Luxembourg, Europe",
+        "position": "Nexus 6P (angler), Nexus 5 (hammerhead), Nexus 7-2013 (flo) Maintainer"
+    },
+    {
+        "name":"Josue Rivera",
+        "img":"images/team/prbassplayer.png",
+        "username":"prbassplayer",
+        "location":"Puerto Rico",
+        "position":"Development Coordinator and Maintainer for Various Devices"
+    },
+    {
+        "name":"Nicholas Flintham",
+        "img":"https://github.com/Flinny.png",
+        "username":"Flinny",
+        "location":"United Kingdom",
+        "position":"System Administrator and HTC One Family Maintainer"
+    }
 ]
