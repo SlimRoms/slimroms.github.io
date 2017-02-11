@@ -5,6 +5,9 @@
         "content": [
             "Slim7 Beta 0.11 brings mostly bug fixes, a few device-specific updates, and new Quick Settings Tiles!",
             "",
+            "#### Update!",
+            "* Angler was rebbuilt with aosp device/kernel updates. Requires latest vendor img (Use 20170211-0028)",
+            "",
             "#### Changes and Fixes",
             "* Merged android-7.1.1_r21 with February security patches",
             "* New Quick Settings tiles: NFC, USB Tethering, Screenshot, IME Selector, Sync, and Caffiene",
