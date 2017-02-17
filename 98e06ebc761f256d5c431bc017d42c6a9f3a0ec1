@@ -1,0 +1,124 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aaae553_795f6173",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-17T14:56:47Z",
+      "side": 1,
+      "message": "Updates to caffiene QS behavior, or something like that.",
+      "range": {
+        "startLine": 15,
+        "startChar": 15,
+        "endLine": 15,
+        "endChar": 42
+      },
+      "revId": "98e06ebc761f256d5c431bc017d42c6a9f3a0ec1",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_d9769506",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-17T14:56:47Z",
+      "side": 1,
+      "message": "This isn\u0027t specific enough, maybe \" Fix ColorPicker not sticking on SlimRecents\", ?",
+      "range": {
+        "startLine": 16,
+        "startChar": 14,
+        "endLine": 16,
+        "endChar": 43
+      },
+      "revId": "98e06ebc761f256d5c431bc017d42c6a9f3a0ec1",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_99601d37",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-17T14:56:47Z",
+      "side": 1,
+      "message": "Also add \"Fix advance settings fc\"",
+      "revId": "98e06ebc761f256d5c431bc017d42c6a9f3a0ec1",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_f9735113",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-17T14:56:47Z",
+      "side": 1,
+      "message": "Upstream to what? At least specify if qcom hals or libcore or app? Slim isn\u0027t a Lineage clone, saying generic lineage upstream gives a bad idea here.",
+      "range": {
+        "startLine": 18,
+        "startChar": 15,
+        "endLine": 18,
+        "endChar": 38
+      },
+      "revId": "98e06ebc761f256d5c431bc017d42c6a9f3a0ec1",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_b965d946",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-17T14:56:47Z",
+      "side": 1,
+      "message": "missing surnia/msm8916 upstream updates",
+      "revId": "98e06ebc761f256d5c431bc017d42c6a9f3a0ec1",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_595aa584",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-17T14:56:47Z",
+      "side": 1,
+      "message": "You are missing all kernel stuff, which fine upstream, but for example, oneplus3 got a new feature that you aren\u0027t mentioning",
+      "revId": "98e06ebc761f256d5c431bc017d42c6a9f3a0ec1",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
