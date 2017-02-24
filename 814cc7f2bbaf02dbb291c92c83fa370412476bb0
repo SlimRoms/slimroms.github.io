@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aaae553_2893cda4",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-24T18:45:50Z",
+      "side": 1,
+      "message": "(Possibly fix power button not working in specific circumstances.)",
+      "revId": "814cc7f2bbaf02dbb291c92c83fa370412476bb0",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_c88f9974",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-24T18:45:50Z",
+      "side": 1,
+      "message": "Not needed",
+      "range": {
+        "startLine": 16,
+        "startChar": 48,
+        "endLine": 16,
+        "endChar": 79
+      },
+      "revId": "814cc7f2bbaf02dbb291c92c83fa370412476bb0",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_e88cd581",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-24T18:45:50Z",
+      "side": 1,
+      "message": "Not needed",
+      "range": {
+        "startLine": 18,
+        "startChar": 50,
+        "endLine": 18,
+        "endChar": 125
+      },
+      "revId": "814cc7f2bbaf02dbb291c92c83fa370412476bb0",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_88e9a11c",
+        "filename": "data/posts.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-02-24T18:45:50Z",
+      "side": 1,
+      "message": "Upstream from LineageOS",
+      "range": {
+        "startLine": 20,
+        "startChar": 48,
+        "endLine": 20,
+        "endChar": 102
+      },
+      "revId": "814cc7f2bbaf02dbb291c92c83fa370412476bb0",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
