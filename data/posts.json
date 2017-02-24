@@ -1,5 +1,45 @@
 [
-    {
+   {
+        "title": "Slim7 Beta 0.13",
+        "date": "Friday, 24 February 2017",
+        "content": [
+            "Slim7 Beta 0.13 brings a new device, some bug fixes, and some device-specific updates.",
+            "",
+            "#### New Devices",
+            "* clark",
+            "",
+            "#### Changes and Fixes",
+            "* SlimRecents: Fix task order and dupe entries",
+            "* SlimRecents: Remove any tasks greater than our task limit",
+            "* SlimRecents: Minor cleanup",
+            "* art: Fix build on XCode 8 w/OSX 10.12 SDK, other fixes",
+            "* frameworks/base: PhoneWindowManager: add mTopFullscreenOpaqueWindowState null check to fix exception (Fixes power button not working on specific conditions)",
+            "* hardware/qcom/audio-caf/msm8916: Upstream from LineageOS",
+            "* hardware/qcom/audio-caf/msm8952: Upstream from LineageOS",
+            "* hardware/qcom/display-caf/msm8916: Upstream from LineageOS",
+            "* hardware/qcom/display-caf/msm8952: Upstream from LineageOS",
+            "* hardware/qcom/media: add missing 8952 symlink",
+            "* hardware/qcom/media-caf/msm8974: Upstream from LineageOS",
+            "* libcore: Revert some old changes, Modify j.t.DateFormat.set24HourTimePref() to take a Boolean",
+            "* packages/apps/Snap: Several fixes and updates",
+            "* system/extras: Revert 'Add back aosp SU' (fixes Safetynet)",
+            "* vendor/slim: Update for Slim7 Beta 0.13",
+            "",
+            "#### Device-specific",
+            "* device/oneplus/oneplus3: Add aptX codec support, other changes and updates",
+            "* device/motorola/msm8916-common: sepolicy: Fix denials after CAF rebase, disable factory reset protection",
+            "* device/xiaomi/cancro: fix sepolicy after caf rebase, use miui global stable build fingerprint",
+            "* device/xiaomi/hydrogen: Update blobs list, Use SW alac/ape decoder",
+            "* device/xiaomi/msm8956-common: Revert 'enable sdcardfs', other changes and updates",
+            "* kernel/oneplus/msm8996: Several changes and updates",
+            "* kernel/samsung/universal8890: Fix compilation error, several other changes and updates",
+            "* kernel/xiaomi/msm8956: prima: Update to LA.BR.1.3.6_rb1.13, update defconfigs, upstream from LineageOS, and Merge latest branch 'f2fs-stable/linux-3.10.y'",
+            "* kernel/xiaomi/msm8996: Rebase kernel",
+            "",
+            "#### Keep it Slim!"
+        ]
+   },
+   {
         "title": "Slim7 Beta 0.12",
         "date": "Friday, 17 February 2017",
         "content": [
