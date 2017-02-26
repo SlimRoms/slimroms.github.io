@@ -73,6 +73,12 @@
     },
     {
         "manufacturer":"Motorola",
+        "devicename":"osprey",
+        "description":"Moto G third gen",
+        "img":"images/phone/osprey.png"
+    },
+    {
+        "manufacturer":"Motorola",
         "devicename":"shamu",
         "description":"Nexus 6",
         "img":"images/phone/shamu.png"
