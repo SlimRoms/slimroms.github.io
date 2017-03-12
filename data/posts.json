@@ -1,47 +1,5 @@
 [
-    {
-        "title": "Slim7 Beta 0.15",
-        "date": "Saturday, 11 March 2017",
-        "content": [
-            "Slim7 Beta 0.15 brings a rewriten SlimRecents, AOSP security update and many other changes",
-            "",
-            "### Changes and Fixes",
-            "* SlimRecents: Rewritten to use AOSP cardview vs old (and problematic) cardlib",
-            "* SlimRecents: More robust handling of multiwindow",
-            "* SlimRecents: Fixed list not updating when using last app or opening quickly after switching app",
-            "* SlimRecents: Properly handle app drawables with a ImageHelper",
-            "* SlimRecents: Code cleanup",
-            "* Merged AOSP march security update (android-7.1.1_r26)",
-            "* frameworks/opt/slim: Fix battery icon on lockscreen (You tell us?)",
-            "* frameworks/av: allow multiple custom omxplugins",
-            "* frameworks/base: General updates and optimizations",
-            "* hw/samsung: Upstream from LineageOS",
-            "* hw/qcom/*-caf/*: Upstream from LineageOS",
-            "* hw/libhardware: Updates for BT, Keymaster, Power",
-            "* hw/libhardware_legacy: Updates to wifi and nan",
-            "* Rebase for hw/qcom/bt-caf, hw/qcom/fm, apps/Bluetooth, apps/Camera2, system/bt, system/keymaster from LineageOS",
-            "* vendor/slim: Various updates to APNs, sepolicy and build",
-            "",
-            "### Device specific",
-            "* flounder: Update AOSP March security update",
-            "* m7: Upstream from LineageOS",
-            "* m8: Upstream from Lineage",
-            "* angler: Update AOSP March security update",
-            "* bullhead: Update AOSP March security update",
-            "* bacon: Switch to LineageOS touchscreen gesture implementation",
-            "* oneplus2: Update to system props",
-            "* oneplus3: Switch to stock 7.1.1 blobs, Don't vibrate for T2w",
-            "* onyx: Rebase",
-            "* moto-8916: Upstream from LineageOS",
-            "* armani: Update overlays",
-            "* cancro: fix derp",
-            "* gemini: Upstream from LineageOS",
-            "* shamu: Fix boot failure",
-            "",
-            "#### Keep it Slim!"
-        ]
-    },
-    {
+{
         "title": "Slim7 Beta 0.14",
         "date": "Friday, 3 March 2017",
         "content": [
