@@ -1,5 +1,29 @@
 [
     {
+        "tittle": "ThemeManager announce",
+        "date": "Saturday, 18 March 2017",
+        "content": [
+            "### Announcement",
+            "",
+            "Slim Theme Manager’s roots date back to when Layers was first released.",
+            "Victor had an idea for an app to bridge the gap between layers, cmte and the upcoming substratum.",
+            "But like many ideas it got shelved due to lack of time and interest.",
+            "",
+            "Fast forward to start of 2017, Slim was starting to work on supporting OMS/Substratum and we didn’t feel it completely fulfilled our needs.",
+            "Victor’s idea was resurrected and we started to work again on our own app, currently it is capable of using OMS/substratum themes but has been designed so that it can be expanded upon with additional back ends to support multiple theme engines going forward.",
+            "Rather than fragment the theme community even further with another theme engine entirely of our own making our primary aim was quite the opposite.",
+            "",
+            "A major concern being voiced is that we removed anti-piracy checks from substratum, that we somehow did so to become a theme pirate heaven. Let us reiterate that our app is newly written,",
+            "it's hard to remove something that wasn't there to begin with. We have taken note and will be addressing this as a matter of urgency for our next release.",
+            "This is our version 1.0, our initial release, our foundation to move forward, not the finished and final product.  We are open to suggestions for improvement, so by all means voice them.",
+            "",
+            "We released the app with source as we strongly believe in Open-Source Software (OSS) and whilst we continue to believe we were free to release this under the Apache v2.0 licence, in good faith,",
+            "we will release this project under the GPLv3 license, to encourage more openness in the community. Anyone has any concern about stolen code, they are more than welcome to audit our sources and see for themselves.",
+            "",
+            "SlimRoms Team"
+        ]
+    },
+    {
         "title": "Slim7 Beta 0.16",
         "date": "Friday, 17 March 2017",
         "content": [
