@@ -222,6 +222,12 @@
         "img":"images/phone/mondrianwifi.png"
     },
     {
+        "manufacturer":"Samsung",
+        "devicename":"tuna",
+        "description":"Galaxy Nexus unified (maguro,toro,toroplus)",
+        "img":"images/phone/tuna.png"
+    },
+    {
         "manufacturer":"Xiaomi",
         "devicename":"armani",
         "description":"Redmi 1S",
