@@ -1,5 +1,37 @@
 [
     {
+        "tittle": "Slim7 Beta 0.17",
+        "date": "Friday, 24 March 2017",
+        "content": [
+            "Slim7 Beta 0.17 brings all othe rom updates from 0.16 ontop fo that includes other updates, fixes",
+            "",
+            "The theme manager is absent from this build, while we work with the Substratum team to resolve issues and better both implementations, we will be releasing an update on progress soon.",
+            "",
+            "### Changes and Fixes",
+            "* SlimRecents: Don't show panel if pinning is enabled - SpiritCroc & Ezio",
+            "* bionic: Allow devices to force shim libs",
+            "* build: upstream from LineageOS",
+            "* fw/native: commonize WORKAROUND_BUG_10194508 flag",
+            "* hw/samsung: Upstream from LineageOS",
+            "* hw/audio-caf/msm8974: Upstream from LineageOS",
+            "* Camera2, Snap, Gallery2: Translation updates",
+            "* Gallery2: Make location perm truly optional",
+            "* Settings: Fix Misc/Overcounted battery stats and add Slim version to about phone",
+            "* system/core: Upstream from LineageOS",
+            "* vendor/slim: Updates to buld, apns and extract utils",
+            "",
+            "### Device Specific",
+            "* bacon: kang find7 libAKM8963",
+            "* oneplus2: Fix dev options fc",
+            "* oneplus3: Remove aptx support, Clean up camera shims, update binaries and kernel to OOS 4.1.0",
+            "* onyx: Update audio backends and acdb ids",
+            "* xiaomi/msm8956: Fix dev options fc, Upstream from LineageOS",
+            "* kenzo: Update to camera props, Upstream from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "tittle": "ThemeManager announce",
         "date": "Saturday, 18 March 2017",
         "content": [
