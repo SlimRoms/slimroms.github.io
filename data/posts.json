@@ -1,5 +1,26 @@
 [
     {
+        "title": "Slim6 Stable 2.1",
+        "date": "Thursday, 30 March 2017",
+        "content": [
+            "Slim6 has been updated to Stable build 2.1 with the latest AOSP security patches and a new device.",
+            "",
+            "This build only apply to those devices that received Stable 2.0, a Weekly for the rest will come next week",
+            "",
+            "### New devices",
+            "* Tuna (unified build for maguro, toro and toro+)",
+            "",
+            "### Changes and Fixes",
+            "* Update to android-6.0.1_r79",
+            "",
+            "### Device Specific",
+            "* espressowifi: Update device variant sysfs location, move cbd to /system/vendor/bin, several kernel updates",
+            "* espresso3g: move cbd to /system/vendor/bin, several kernel updates",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "tittle": "Slim7 Beta 0.17",
         "date": "Friday, 24 March 2017",
         "content": [
