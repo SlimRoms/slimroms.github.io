@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aa4ed85_e392d29e",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-03-31T16:04:55Z",
+      "side": 1,
+      "message": "This bit not needed",
+      "range": {
+        "startLine": 9,
+        "startChar": 58,
+        "endLine": 9,
+        "endChar": 98
+      },
+      "revId": "463f80b81283257ffee8ed0e684e5edf980d39bd",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aa4ed85_c3955689",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-03-31T16:04:55Z",
+      "side": 1,
+      "message": "Reduce BSOD by removing some power modes and switching to interactive",
+      "range": {
+        "startLine": 19,
+        "startChar": 21,
+        "endLine": 19,
+        "endChar": 112
+      },
+      "revId": "463f80b81283257ffee8ed0e684e5edf980d39bd",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aa4ed85_037cce71",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-03-31T16:04:55Z",
+      "side": 1,
+      "message": "Specify it\u0027s kernel/oneplus-8974 or moto or w/e\nAlso for the sake of sanity oneplus kernels can be named by device name as one kernel per device.\n\nexample kernel/bacon, kernel/oneplus3 etc",
+      "range": {
+        "startLine": 25,
+        "startChar": 15,
+        "endLine": 25,
+        "endChar": 24
+      },
+      "revId": "463f80b81283257ffee8ed0e684e5edf980d39bd",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
