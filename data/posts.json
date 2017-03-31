@@ -1,4 +1,32 @@
 [
+ {
+        "title": "Slim7 Beta 0.18",
+        "date": "Friday, 31 March 2017",
+        "content": [
+            "Slim7 Beta 0.18 includes mostly minor fixes.",
+            "",
+            "### Changes and Fixes",
+            "* Frameworks_opt_slim is now frameworks_slim (overlay for devices with hardware keys)",
+            "* build: Unbreak verity/FEC generation",
+            "* frameworks/base: QS Tile fixes, other fixes",
+            "* frameworks/opt/net/wifi: fix possible NPE, WifiStateMachine: Probe neighbours only when roaming, Revert IpReachabilityMonitor handling changes",
+            "* frameworks/slim: SlimRecents: Make multiwindow more robust",
+            "* hardware/samsung: audio: Split BT SCO media/incall paths",
+            "* vendor/slim: Update for Slim7 Beta 0.18, APN fixes",
+            "",
+            "### Device Specific",
+            "* hammerhead: update build fingerprint to M4B30Z",
+            "* mako: Remove additional power modes added when kernel was mako/flo unified, Switch to interactive",
+            "* oneplus2: Don't vibrate for T2W",
+            "* moto-8916: camera: Force ZSL to always be on",
+            "* armani: force dex2oat not to use swap file, overlay: Set types for tethering",
+            "* oneplus-8974: CVE updates",
+            "* oneplus-8996: Security/general kernel updates",
+            "* moto-8916: Several updates to sdcardfs, other updates",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
     {
         "title": "Slim6 Stable 2.1",
         "date": "Thursday, 30 March 2017",
@@ -21,7 +49,7 @@
         ]
     },
     {
-        "tittle": "Slim7 Beta 0.17",
+        "title": "Slim7 Beta 0.17",
         "date": "Friday, 24 March 2017",
         "content": [
             "Slim7 Beta 0.17 brings all othe rom updates from 0.16 ontop fo that includes other updates, fixes",
