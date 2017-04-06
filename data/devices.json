@@ -13,6 +13,12 @@
     },
     {
         "manufacturer":"HTC",
+        "devicename":"flounder_lte",
+        "description":"Nexus 9 LTE",
+        "img":"images/phone/flounder.png"
+    },
+    {
+        "manufacturer":"HTC",
         "devicename":"himaul",
         "description":"One M9(GSM)",
         "img":"images/phone/himaul.png"
