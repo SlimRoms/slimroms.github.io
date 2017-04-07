@@ -1,5 +1,39 @@
 [
- {
+    {
+        "title": "Slim7 Beta 0.19",
+        "date": "Friday, 7 April 2017",
+        "content": [
+            "Slim7 Beta 0.19 is an overall minor update, with bug fixes and device-specific updates.",
+            "",
+            "### New Devices",
+            "* flounder_lte",
+            "",
+            "### Changes and Fixes",
+            "* Implement Proximity Wake, DM's need to enable per device",
+            "* Replace Gallery2 with SnapdragonGallery",
+            "* frameworks/av: mediacodec: minijail: Enable exporting of policy files, camera: Ensure native handle isn't null before closing it",
+            "* frameworks/base: Revert Emergency call button on Swipe lock Screen, KeyguardSimPinView: don't send dummy request to get remaining pin, keyguard: Allow disabling fingerprint wake-and-unlock",
+            "* frameworks/native: SF: HWC1: Propagate the OMAP_ENHANCEMENT flag, HWComposer: Use native FB format for HWC 1.1, Prevent FB de-allocation with HWC 1.1+",
+            "* vendor/slim: Update for Slim7 Beta 0.19, other fixes and updates",
+            "",
+            "### Device Specific",
+            "* flo: disable touchboost",
+            "* hima-common: enable proximity check on wake overlay', build libpnp547_fw from source",
+            "* m7-common: enable doze",
+            "* angler: enable Proximity Wake",
+            "* bullhead: enable Proximity Wake",
+            "* hammerhead: enable Proximity Wake",
+            "* mako: more changes to attempt to solve BSOD, add proximity wake overlay",
+            "* bacon: enable Proximity check on wake",
+            "* moto-8916-common (surnia & osprey): enable Proximity Wake overlay",
+            "* kernel/hima: Disable building of msm_core_ctl.ko",
+            "* kernel/mako: disable partial resume",
+            "* kernel/armani: numerous scheduler changes",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Beta 0.18",
         "date": "Friday, 31 March 2017",
         "content": [
