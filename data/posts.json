@@ -5,6 +5,8 @@
         "content": [
             "This week includes Android-7.1.2_r2 merge, new color picker, some fixes and more",
             "",
+            "Note: Users should download latest gapps packages or Setup Wizard will fail",
+            "",
             "### Changes and fixes",
             "* Merge android-7.1.2_r2",
             "* New color picker",
