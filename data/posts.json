@@ -17,7 +17,7 @@
             "* bionic: Update from LineageOS",
             "* frameworks/av: Upstream from LineageOS",
             "* frameworks/native: Upstream from LineageOS",
-            "* frameworks/base: Updates to fingerping, zygote",
+            "* frameworks/base: Updates to fingerprint, zygote",
             "* hw/samsung: Upstream from LineageOS",
             "* hw/qcom/audio-caf/msm8916: Upstream from LineageOS",
             "* hw/ril & ril-caf: Fix crash when enabling RILC_LOG",
