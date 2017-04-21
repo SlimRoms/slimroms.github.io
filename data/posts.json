@@ -1,5 +1,44 @@
 [
-{
+    {
+        "tittle": "Slim7 Beta 0.20",
+        "date": "Friday, 21 April 2017",
+        "content": [
+            "This week includes Android-7.1.2_r2 merge, new color picker, some fixes and more",
+            "",
+            "### Changes and fixes",
+            "* Merge android-7.1.2_r2",
+            "* New color picker",
+            "* Enable aosp Night mode (blue light filder)",
+            "* Disable full screen keyboard",
+            "* Fix battery alignment",
+            "* Cleanup SlimSettings for tablets",
+            "* bionic: Update from LineageOS",
+            "* frameworks/av: Upstream from LineageOS",
+            "* frameworks/native: Upstream from LineageOS",
+            "* frameworks/base: Updates to fingerping, zygote",
+            "* hw/samsung: Upstream from LineageOS",
+            "* hw/qcom/audio-caf/msm8916: Upstream from LineageOS",
+            "* hw/ril & ril-caf: Fix crash when enabling RILC_LOG",
+            "* apps/Bluetooth: Upstream from LineageOS",
+            "* apps/Snap: Upstream from LineageOS",
+            "* system/extras: Updates to verity_verifyer (lineageOS)",
+            "* vendor/slim: Import CM charger, minor fixes for darwin building",
+            "",
+            "### Device Specific",
+            "* flounder: Update device and kernel to N4F26X",
+            "* hima-common: Disable starting perd, updates to sepolicy",
+            "* angler: Update device and kernel to N2G47H",
+            "* mako: Revert powerhal: dereference data pointer",
+            "* oppo-common: New gesture handling",
+            "* oneplus3: Updates to perf, mdss, kgsl, input, tcp and posix_acl",
+            "* onyx: Updates to audio configs and ril props",
+            "* kernel surnia/osprey: Upstream from LineageOS",
+            "* kernel cancro: Upstream from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "No Slim7 Weekly This Week",
         "date": "Friday, 14 April 2017",
         "content": [
