@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aa4ed85_f8227500",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000131
+      },
+      "writtenOn": "2017-04-21T17:30:13Z",
+      "side": 1,
+      "message": "fingerping?",
+      "revId": "1d3519c12de86e682ba8b789f70bb00afeccb863",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
