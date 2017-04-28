@@ -268,5 +268,11 @@
         "devicename":"lettuce",
         "description":"Yuphoria",
         "img":"images/phone/lettuce.png"
+    },
+    {
+        "manufacturer":"Yu",
+        "devicename":"tomato",
+        "description":"Yureka",
+        "img":"images/phone/tomato.png"
     }
 ]
