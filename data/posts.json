@@ -1,5 +1,37 @@
 [
     {
+        "tittle": "Slim7 BETA 0.22",
+        "date": "Friday, 5 May 2017",
+        "content": [
+            "Beta 0.22 brings aosp security update (android-7.1.2_r8) and misc fixes and optimizations",
+            "",
+            "### Changes and fixes",
+            "* May security update (android-7.1.2_r8)",
+            "* Fix dialer crash when entering calling accounts (Dialer and codeaurora/telephony",
+            "* fw/av: Fix policy for ffmpeg",
+            "* fw/base: Various fixes from Xiaomi (LineageOS)",
+            "* hw/libhardware_legacy: wifi: Add firmware loader support for the non-LKM cases",
+            "* hw/samsung: Translations updates",
+            "* libcore: Fix 7.1.2 merge conflict",
+            "* apps/Bluetooth: Revert handle opening incoming apk files and update translations",
+            "* vendor/slim: Cleanup repo, removing obsolete calls and overlays",
+            "",
+            "### Device specific",
+            "* flo: re enable userspace interaction hint, aka touchboost, disable logcat spam",
+            "* lettuce & tomato: Revert 2.4ghz channel bonding and enable SDClang and Fix reboot when turning off WIFI",
+            "* flounder & flounder_lte: Update fingerprint to N4F27B and Rebase kernel on android-tegra-flounder-3.10-nougat-mr1.1",
+            "* angler: Update trees to N2G47O",
+            "* bullhead: Update trees to N2G47O",
+            "* oneplus2: Fix sepolicy denials, Notify client when fp cancelling succeeded and sync kernel to OxygenOS 3.5.8",
+            "* clark: Updates to audio, Enable CMActions and Enable proximity wake",
+            "* kenzo & hydrogen: Enable wifi calling, Use Snapdragon LLVM toolchain and Various updates to camera",
+            "* lettuce: Updates to init, netmgrd, WCNSS, Adreno, others. Add f2fs support",
+            "* tomato: Add fs_config support for custom binaries, Updates to IMS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Beta 0.21",
         "date": "Friday, 28 April 2017",
         "content": [
