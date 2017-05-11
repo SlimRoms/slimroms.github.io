@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cfdeaa7f_9a78966d",
+        "filename": "pages/reportbugs.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-05-11T14:34:52Z",
+      "side": 1,
+      "message": "newline\n\u003c/div\u003e",
+      "revId": "db2efada666a5629cabc229d216c668609d66122",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": true
+    }
+  ]
+}
