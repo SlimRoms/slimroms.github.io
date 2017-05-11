@@ -1,31 +1,27 @@
 <dom-module id="slim-pages-report-bugs"><template>
     <paper-card>
-        <p>Flashing a custom ROM, especially a version of that ROM that hasn’t been thoroughly tested, might occasionally lead to some bugs. If you’re certain that the bug you’re experiencing is ROM related, you can submit us a bug report by doing the following steps:</p>
+        <p>Flashing a custom ROM, especially a version of that ROM that hasn’t been thoroughly tested, might occasionally lead to some bugs. If you’re certain that the bug you’re experiencing is ROM related and isn't caused by dirty flashing, you can submit us a bug report by doing the following steps:</p>
     </paper-card>
     <div class="collection-list">
-        <h2>Report bugs using ADB</h2>
-        <p>Assuming ADB is properly installed on your system</p>
+        <h2>Collect logs from PC</h2>
+        <p>Make sure you have properly <a href="https://wiki.lineageos.org/adb_fastboot_guide.html#installing-adb-and-fastboot" target='_blank'>installed ADB</a></p>
         <p>Plug your device to your Computer</p>
         <p>Open up a command prompt on your Computer</p>
-        <p>Type the following (without the quotes): “adb logcat > bugreport.txt”</p>
-        <p>On your device, recreate the bug once or twice</p>
-        <p>Hit Ctrl+C on your Computer</p>
-        <p>Go to the path where your Command Prompt is pointing at and locate the bugreport.txt file</p>
-        <p>Upload it somewhere reliable (Dropbox and Google drive are preferable)</p>
-        <p>Send the link our way on our <a href="https://plus.google.com/communities/104509876514579429216" target='_blank'>G+ community</a> with description of the problem and any details that might be helpful</p>
+        <p>Type the following (without the quotes): “adb logcat -d > logcat.txt”</p>
     </div>
     <div class="collection-list">
-        <h2>Report bugs using Catlog app</h2>
-        <p>Install <a href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&hl=en" target='_blank'>Catlog</a> app</p>
-        <p>Open the app and grant it superuser access</p>
-        <p>Press the menu button then 'Record'</p>
-        <p>Give the log a name that describes the problem then click 'OK'</p>
-        <p>Now, recreate the bug once or twice</p>
-        <p>Press menu button then click on 'stop recording'</p>
-        <p>You'll find the log in internal memory > catlog > saved_logs</p>
-        <p>Upload the log somewhere reliable (Dropbox and Google drive are preferable)</p>
-        <p>Send the link our way on our <a href="https://plus.google.com/communities/104509876514579429216" target='_blank'>G+ community</a> with description of the problem and any details that might be helpful</p>
+        <h2>Collect logs from device</h2>
+        <p>Install a terminal emulator app</p>
+        <p>Open the app and type su and grant it superuser access</p>
+        <p>Type the following (without the quotes): "logcat -d -f /sdcard/logcat.txt"</p>
     </div>
+    <div class="collection-list">
+        <h2>Report bugs</h2>
+        <p>On your device, recreate the bug once or twice</p>
+        <p>Collect logs from previous methods</p>
+        <p>Upload the log somewhere reliable (Dropbox and Google drive are preferable)</p>
+        <p>Send the link our way on our <a href="link-to-form-here" target='_blank'>bugreport form</a> with description of the problem and any details that might be helpful</p>
+        <p>Warning: Any and all logs will be publicly available on <a href="https://bugs.slimroms.org/" target='_blank'>Bug Tracker</a>
 </template>
 <script>
     Polymer({
