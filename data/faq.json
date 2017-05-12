@@ -2,7 +2,7 @@
     {
         "title":"How can I install Slimroms on my device?",
         "content": [
-            "Assuming you have a custom recovery on your device e.g. twrp you can follow our guide [here](https://slimroms.org/#/download)"
+            "Assuming you have a custom recovery on your device e.g. twrp you can follow our guide [here](https://slimroms.org/#/support/install)"
         ]
     },
     {
@@ -55,13 +55,7 @@
     {
         "title":"How can I be a device maintainer for 'X' device?",
         "content": [
-            "You have to have the device as we don't allow blind maintenance.",
-            "We also expect you to know your way around android and be able to fix problems as they emerge not just a builder.",
-            "",
-            "If you meet the above requirement then you can contact us at opportunities@slimroms.org.",
-            "In your email, specifiy which device you want to maintain, link your work, link to the sources, link to XDA thread and specify why you think you’d be a good addition to our team.",
-            "",
-            "*PS: Work related to slimroms is preferable but not mandatory.*"
+            "You can check out our [join team page](http://localhost/#/support/join-team)"
         ]
     }
  ]
