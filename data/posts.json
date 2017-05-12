@@ -1,5 +1,32 @@
 [
     {
+        "tittle": "Slim7 BETA 0.23",
+        "date": "Friday, 12 May 2017",
+        "content": [
+            "This weekly brings minor updates and fixes to rom and devices",
+            "",
+            "Note:",
+            "* kenzo: both Goodfix and FPC fingerprint sensors are supported.",
+            "* kenzo & hydrogen: You need to update bootloader and modem to latest from marshmallow",
+            "",
+            "### Changes and fixes",
+            "* fw/base: Allow override battery capacity using props, Telecom: Fix order of arguments when creating details object",
+            "* hw/samsung: Allow power_hint_low_power to disable power save mode",
+            "* Update translations for device settings",
+            "",
+            "### Device changes",
+            "* Oneplus3: Update decoder profiling result, Updates to kernel",
+            "* hydrogen: Add aptx support, Remove QTI telephony, Update fingerpint",
+            "* kenzo: Cleanup fp firmware, Add goodfix fp, Use stock ACDB id's",
+            "* xiaomi/msm8956-common: Fix qc-qmi logsmap, Use OSS consumerir, Update power configs",
+            "* kernel/xiaomi/msm8956: Upstream from LineageOS",
+            "* kernel/motorola/msm8916: Upstream from LineageOS",
+            "* kernel/cancro: Upstream from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "tittle": "Slim7 BETA 0.22",
         "date": "Friday, 5 May 2017",
         "content": [
