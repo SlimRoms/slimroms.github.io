@@ -270,6 +270,12 @@
         "img":"images/phone/kenzo.png"
     },
     {
+        "manufacturer":"Xiaomi",
+        "devicename":"mido",
+        "description":"Redmi Note 4",
+        "img":"images/phone/mido.png"
+    },
+    {
         "manufacturer":"Yu",
         "devicename":"lettuce",
         "description":"Yuphoria",
