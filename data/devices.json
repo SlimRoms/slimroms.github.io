@@ -85,6 +85,12 @@
     },
     {
         "manufacturer":"Motorola",
+        "devicename":"potter",
+        "description":"Moto G fifth gen Plus",
+        "img":"images/phone/potter.png"
+    },
+    {
+        "manufacturer":"Motorola",
         "devicename":"shamu",
         "description":"Nexus 6",
         "img":"images/phone/shamu.png"
