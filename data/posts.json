@@ -1,5 +1,41 @@
 [
     {
+        "tittle": "Slim7 BETA 0.24",
+        "date": "Friday, 19 May 2017",
+        "content": [
+            "This weekly brings a great deal of device updates and some minor fixes for rom. We are removing osprey from roster as DM no longer owns the device.",
+            "",
+            "### Changes and fixes",
+            "* art: runtime: support kryo for 32bit",
+            "* bionic: Add support for kryo",
+            "* fw/av: Revert AudioSessionInfo API [Bug #164](https://bugs.slimroms.org/issues/164)",
+            "* fw/base: Translation update, Add support for pause & resume Download manager",
+            "* fw/native: sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor",
+            "* apps/Dialer: Translation update",
+            "* apps/Settings: Translation update",
+            "* apps/SlimLauncher: Translation update",
+            "* apps/Snap: Fix crash switching from back to front cam in video mode",
+            "* providers/DownloadProvider: Display download speed, Add support for pause and resume",
+            "* services/Telephony: Translation update",
+            "* system/bt: Do not include the trailing NULL from C-String in the SDP service name",
+            "",
+            "### Device changes",
+            "* lettuce & tomato: Fix wireless display",
+            "* clark: Fix developer settings",
+            "* oneplus2: Remove none existing files for ipv6 sched uevent, Fix bluetooth_loader denial, Don't start service if not present",
+            "* oneplus3: Use kryo 32bit routines, Unpin fpc hal, Remove QVOP service, Enforce vendor tree presence",
+            "* gemini: Fix fp sensor location, Match mixer path with MIUI 7.3.2 China dev, Import QDCM configs, Pin modified camera config, Build OSS consumerir HAL, Use new kernel config",
+            "* xiaomi-msm8996-common: Updates to lights, sepolicy, camera, GPS, Snap, Doze, fingerprint, etc (full log look at [git](https://github.com/SlimRoms/device_xiaomi_msm8996-common/commits/ng7.1))",
+            "* kernel/mako: Upstream from LineageOS (mainly CVE fixes)",
+            "* kernel/oneplus2: Big update [full log](https://github.com/SlimRoms/kernel_oneplus_msm8994/commits/ng7.1)",
+            "* kernel/oneplus3: PM/devfreq: Add interface to boost device when screen is awoken AND Boost 624000.ufshc and soc:qcom,cpubw on screen wake, power: Compile out temperature polling, Ufs: Fix crashes caused by unintialized completion usage",
+            "* kernel/cancro: Upstream from LineageOS",
+            "* kernel/gemini: Upstream from LineageOS, mostly CVE fixes",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "tittle": "Slim7 BETA 0.23",
         "date": "Friday, 12 May 2017",
         "content": [
