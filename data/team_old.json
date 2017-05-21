@@ -56,6 +56,13 @@
         "position": "Public Relations"
     },
     {
+        "name": "Ethan Johnson",
+        "img": "https://github.com/ejjohnson1999.png",
+        "username": "ejjohnson1999",
+        "location": "USA",
+        "position": "LG G2 Maintainer"
+    },
+    {
         "name": "Karan Srivastava",
         "img": "https://github.com/rebelos.png",
         "username": "rebelos",
