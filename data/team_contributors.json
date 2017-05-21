@@ -109,12 +109,5 @@
         "img": "https://github.com/vatsal.png",
         "location": "India",
         "position": "Xiaomi Mi Max Maintainer"
-    },
-    {
-        "name": "Victor Lapin",
-        "img": "https://github.com/victorlapin.png",
-        "username": "victorlapin",
-        "location": "Russia",
-        "position": "Nexus 5X (bullhead) Maintainer"
     }
 ]

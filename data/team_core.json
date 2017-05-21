@@ -47,5 +47,12 @@
         "username":"Flinny",
         "location":"United Kingdom",
         "position":"System Administrator and HTC One Family Maintainer"
+    },
+    {
+        "name": "Victor Lapin",
+        "img": "https://github.com/victorlapin.png",
+        "username": "victorlapin",
+        "location": "Russia",
+        "position": "Nexus 5X (bullhead) Maintainer"
     }
 ]
