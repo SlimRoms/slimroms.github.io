@@ -6,6 +6,18 @@
         "img":"images/phone/flo.png"
     },
     {
+        "manufacturer":"Asus",
+        "devicename":"Z00A",
+        "description":"Zenfone 2 ZE551ML Z00A",
+        "img":"images/phone/z00a_z008.png"
+    },
+    {
+        "manufacturer":"Asus",
+        "devicename":"Z008",
+        "description":"Zenfone 2 ZE550ML Z008",
+        "img":"images/phone/z00a_z008.png"
+    },
+    {
         "manufacturer":"HTC",
         "devicename":"flounder",
         "description":"Nexus 9",
