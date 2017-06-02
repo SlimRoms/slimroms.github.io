@@ -1,5 +1,41 @@
 [
     {
+        "tittle": "Slim7 BETA 0.26",
+        "date": "Friday 2 June 2017",
+        "content": [
+            " This weekly brings updates to existing features, some other additions, massive device updates and two new devices.",
+            "",
+            "### New Device",
+            "* mido (Redmi Note 4)",
+            "* potter ( Moto G 5th gen Plus)",
+            "",
+            "### Changes and fixes",
+            "* SlimDoze: Add handwave, pocket mode and tilt gesture (device dependant)",
+            "* Hide sensitive phone numbers from dialers - from LineageOS",
+            "* fw/slim: Fix screen off gesture action",
+            "* hw/samsung: Upstream from LineageOS",
+            "* stagefright-plugins: FFmpegExtractor: Don't use our extractor when we agree with StageFright",
+            "* apps/Snap: Upstream from LineageOS",
+            "* vendor/slim: Show full alarm info, Use aosp wallpaper croper, Enable Wi-Fi by default (fixes setupwizard fc)",
+            "",
+            "### Device changes",
+            "* angler: SlimDoze: Enable handwave & pocketmode triggers",
+            "* bullhead: SlimDoze: Enable handwave & pocketmode gesture triggers",
+            "* hammerhead: SlimDoze: Enable handwave & pocketmode gesture triggers",
+            "* mako: Enable SlimDoze with handwave & pocketmode gesture trigger, Disable SIM batch operations",
+            "* device/moto_msm8916: Disable sim batch operations, SlimDoze: Enable handwave & pocketmode gesture triggers",
+            "* bacon oneplus2 oneplus3 onyx: Switch to SlimDoze",
+            "* qcom/common: power: use 8937 hal for 8953",
+            "* kernel/moorfield: Updates to sdcardfs, keys and mm",
+            "* kernel/lettuce/tomato: Upstream from LineageOS",
+            "* kernel/mako: Massive upstream from LineageOS mostly security (cve) updates",
+            "* kernel/bacon: Upstrem from kernel.org (3.4.113)",
+            "* kernel/oneplus3: Upstream from LineageOS (mostly updates to f2fs, fscrypt, net, sched, kernel, ion, etc",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "tittle": "Slim7 BETA 0.25",
         "date": "Friday 26 May 2017",
         "content": [
