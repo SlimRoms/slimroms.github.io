@@ -1,5 +1,40 @@
 [
     {
+        "title": "Slim7 BETA 0.27",
+        "date": "Friday 9 June 2017",
+        "content": [
+            " This weekly brings June security updates, translation updates and many device updates",
+            "",
+            "### Changes and fixes",
+            "* Merge June security update (android-7.1.2_r17)",
+            "* Translation updates",
+            "* Updates to battery stats counter reset",
+            "* hw/qcom/audio-caf (msm8916 & msm8996): Upstream from LineageOS",
+            "* hw/qcom/media-caf (msm8916 & msm8996): Upstream from LineageOS",
+            "* hw/samsung: Upstream from LineageOS",
+            "* system/core: Updates to sched_policy",
+            "* Updates to sensitive phone numbers",
+            "",
+            "### Device changes",
+            "* flounder & flounder_lte: Upstream aosp June security commits for kernel",
+            "* flounder: Updated build fingerprint to N9F27C",
+            "* flounder_lte: Update build fingerpring to N4F27E",
+            "* angler: Rebase device tree to latest aosp (N2G47W), Update kernel with latest aosp June security commits",
+            "* bullhead: Update build fingerprint to N2G47W, Upstream aosp June security update for kernel",
+            "* mako: kernel upstream from LineageOS (more cve updates)",
+            "* kernel/moto/msm8916: Upstream from LineageOS",
+            "* potter: Update fingerprint, opengles version, Update nfc camera ZAF configs from NPN25.137-67/75, kernel update and others",
+            "* shamu: Update build fingerprint to N6F27E, Upstream from latest security update for kernel",
+            "* bacon: Update overlays for SlimDoze",
+            "* op3/t: Upstream from LineageOS",
+            "* armani: power: Minor code optimization",
+            "* mido: SlimDoze: Enable more gesture triggers",
+            "* tomato: SlimDoze: Enable more gesture triggers",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 BETA 0.26",
         "date": "Friday 2 June 2017",
         "content": [
