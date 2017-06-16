@@ -91,6 +91,12 @@
     },
     {
         "manufacturer":"Motorola",
+        "devicename":"falcon",
+        "description":"Moto G",
+        "img":"images/phone/falcon.png"
+    },
+    {
+        "manufacturer":"Motorola",
         "devicename":"osprey",
         "description":"Moto G third gen",
         "img":"images/phone/osprey.png"
