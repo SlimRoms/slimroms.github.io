@@ -1,5 +1,32 @@
 [
     {
+        "title": "Slim7 BETA 0.28",
+        "date": "Friday 16 June 2017",
+        "content": [
+            "This Week brings minor changes and updates and a new device.",
+            "",
+            "### New devices",
+            "* falcon",
+            "",
+            "### Changes and fixes",
+            "* Fix SlimDoze triggers not following Ambient Display",
+            "* Expose more resources for OMS",
+            "* fw/base: Minor fixes and optimizations",
+            "* Snap: Simulate back button when menu button is pressed, Add orientation correction for landscape devices, Sign with platform keys",
+            "* system/bt: Disable AVRCP 1.6",
+            "* Add sensitive phone # for Israel",
+            "",
+            "### Device changes",
+            "* device/mido: Update sepolicy, Update widevine, redoo symlink creation, move to audio built hal",
+            "* kernel/xiaomi/msm8953: Updates to ASoC: wcd-mbhc",
+            "* kernel/flounder: Update defconfig based on aosp",
+            "* kernel/mako: Upstream from LineageOS (CVE updates)",
+            "* kernel/oneplus/msm8996: Updates to ext4, ipv6, ipv5, sctp, bpf, net, sysctl, video",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 BETA 0.27",
         "date": "Friday 9 June 2017",
         "content": [
