@@ -1,5 +1,12 @@
 [
     {
+        "name":"Aayushya Aankul",
+        "img":"https://github.com/aayushya.png",
+        "username":"aayushya",
+        "location":"India",
+        "position":"Moto G Maintainer"
+    },
+    {
         "name": "Andreas B.",
         "img": "https://github.com/andi34.png",
         "username": "Android-Andi",
