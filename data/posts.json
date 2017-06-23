@@ -1,5 +1,41 @@
 [
     {
+        "title": "Slim7 BETA 0.29",
+        "date": "Friday 23 June 2017",
+        "content": [
+        "This week brings minor fixes and updates to rom and some device changes",
+        "",
+        "### Changes and fixes",
+        "* device/qcom/common: Use correct opcode for STOE_CLK_SCALE_DIS",
+        "* fw/base: Upstream fixes from master, Add null check for action bar",
+        "* hw/qcom/display-caf/msm8916 msm8974: hwcomposer: Fix regression in hwc_sync",
+        "* hw/qcom/display-caf/msm8994: hwcomposer: Fix regression in hwc_sync, libmemtrack: Fix integer overflow in kgsl function, Fix duplicate copy file rules",
+        "* hw/qcom/media-caf/msm8994: vdec:Do not call stream_off on input port if all EBD's are not flushed.",
+        "* hw/ril ril-caf: fix a memory leak.",
+        "* hw/samsung: Add BLN support, Fix fast blinking notification LEDs, exynos: multimedia: add support for OMX_IndexParamVideoIntraRefresh parameter",
+        "* apps/Nfc: make T3T/Nfc-F HCE options",
+        "* apps/Snap: Upstream from LineageOS",
+        "* providers/MediaProvider: New material icon, Fix where condition of delete queries",
+        "* system/core: fix healthd include paths, Init: Run restorecon_recursive asynchronously",
+        "* Update sensitive phone # for BR, PT, GB and FR. Add Virgin Media Ireland to APN's",
+        "",
+        "### Device changes",
+        "* device/cyanogen/msm8916-common: Hide sRGB toggle in developer options, Enable automatic brightness by default",
+        "* device/potter: Disable ZSL. Updates to selinux, audio, FM and other cleanup",
+        "* device/oneplus2: Update f2fs mount flags. Update ramdisk from stock",
+        "* device/oneplus3: Update ril header for 7.1.2. Merge updates from OxygenOS 4.1.5",
+        "* device/mido: Use HAL3 for camera, updated vendor blobs from miui 7.5.25",
+        "* kernel/mako: Upstream from LineageOS",
+        "* kernel/motorola/msm8953: Updates to ext, bpf, msm camera, qseecom, msm sensor, ipv6, sctp",
+        "* kernel/xiaomi/msm8956: Upstream from LineageOS",
+        "",
+        "### Notes",
+        "* Mido will not be released this week",
+        "",
+        "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 BETA 0.28",
         "date": "Friday 16 June 2017",
         "content": [
