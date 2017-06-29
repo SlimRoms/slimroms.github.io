@@ -94,11 +94,11 @@
         }
     </style>
     <paper-card class="heading">
-        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Alpha 7.x Builds - <span>{{deviceName}}</span></p></h1>
+        <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Stable 7.x Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-            <iron-ajax auto url="data/{{deviceName}}_alpha.json" last-response="{{Alphadata}}"></iron-ajax>
-            <template is="dom-repeat" items="{{Alphadata}}">
+            <iron-ajax auto url="data/{{deviceName}}_7_stable.json" last-response="{{Stabledata}}"></iron-ajax>
+            <template is="dom-repeat" items="{{Stabledata}}">
                 <paper-card>
                     <div class="device-container">
                         <div class="text-container">
@@ -123,7 +123,7 @@
         <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Beta 7.x Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-            <iron-ajax auto url="data/{{deviceName}}_beta.json" last-response="{{Betadata}}"></iron-ajax>
+            <iron-ajax auto url="data/{{deviceName}}_7_beta.json" last-response="{{Betadata}}"></iron-ajax>
             <template is="dom-repeat" items="{{Betadata}}">
                 <paper-card>
                     <div class="device-container">
@@ -149,7 +149,7 @@
         <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Stable 6.x Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-            <iron-ajax auto url="data/{{deviceName}}_stable.json" last-response="{{data}}"></iron-ajax>
+            <iron-ajax auto url="data/{{deviceName}}_6_stable.json" last-response="{{data}}"></iron-ajax>
             <template is="dom-repeat" items="{{data}}">
                 <paper-card>
                     <div class="device-container">
@@ -175,7 +175,7 @@
         <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Weekly 6.x Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-            <iron-ajax auto url="data/{{deviceName}}_weekly.json" last-response="{{weeklyData}}"></iron-ajax>
+            <iron-ajax auto url="data/{{deviceName}}_6_weekly.json" last-response="{{weeklyData}}"></iron-ajax>
             <template is="dom-repeat" items="{{weeklyData}}">
                 <paper-card class="heading">
                     <div class="device-container">
