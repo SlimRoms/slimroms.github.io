@@ -1,5 +1,42 @@
 [
     {
+        "title": "Slim7 STABLE 1.0",
+        "date": "Friday 30 June 2017",
+        "content": [
+            "This week brings our first stable build for nougat. This means minor updates and fixes for this weekly.",
+            "",
+            "### Notice",
+            "We added  a correct signiture to our zip and apk's as such you will need clean wipe to flash this and any new builds",
+            "",
+            "### Changes and fixes",
+            "* Update translations",
+            "* Fix brightness bar not always registering touches",
+            "* ffmpeg: Rebase to latest LineageOS",
+            "* stagefright-plugins: Revert 'FFmpegExtractor: Don't use our extractor when we agree with StageFright'. Add support for opus files",
+            "* frameworks/base: Binder: be forceful about a forceful exit. Add support for Opus format.",
+            "* contactsprovider: Fix merge error, Should fix Visual Voice Mail",
+            "* mediaprovider: Revert 'MediaProvider: Fix where condition of delete queries and Fix check for existence of parent'. Fix SQLiteDiskIOException. Fix force closed when plug out the SD card while music is playing. Fix thumbnails of new edit photos display wrongly in Documents. Fix failure in android.provider.cts.MediaStore_FilesTest",
+            "* Add sensitive numbers for Ukrain, Greece, Taiwanese.",
+            "* Fix sensitive number for Czech Republic",
+            "* Add apn for Japan Umobile APNs",
+            "",
+            "### Device changes",
+            "* cyanogen/msm8916-common: Use cpusets for all services. Give additional cores to background cpuset. Fix foreground/boost cpuset. Remove deprecated BT props",
+            "* angler: Build nfc from source (Fixes NFC problems",
+            "* bacon: Fix panorama camera",
+            "* oneplus3: Updates from OpenBeta 18. Other updates",
+            "* mido: Fix roaming phone FC. Clean up audio configs and misc changes",
+            "* kernel/cyanogen/msm8916: Upstream from LineageOS (Mostly sdcardfs changes)",
+            "* kernel/angler: Revert 'proc: Remove verifiedbootstate flag from /proc/cmdline'. defconfig: bump NG 7.1.2 kernel version to 1.0c",
+            "* kernel/bullhead: Revert 'proc: Remove verifiedbootstate flag from /proc/cmdline'",
+            "* kernel/mako: Upstream from LineageOS (cve security updates)",
+            "* kernel/moto/msm8916: Upstream from LineageOS",
+            "* kernel/oneplus/msm8996: Merge LA.UM.5.5.r1-04900-8x96.0. Makefile: Silence x.509 warning. ARM: dts: 15801: Disable core hotplugging, up the mitigation freq. msm: sps: Fix race condition in SPS debugfs APIs",
+            "",
+            "#### keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 BETA 0.29",
         "date": "Friday 23 June 2017",
         "content": [
