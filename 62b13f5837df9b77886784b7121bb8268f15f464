@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fea4c6a1_dc35b564",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000043
+      },
+      "writtenOn": "2017-06-29T02:13:42Z",
+      "side": 1,
+      "message": "/n \"* bacon: Fix camera panorama\",",
+      "revId": "62b13f5837df9b77886784b7121bb8268f15f464",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
