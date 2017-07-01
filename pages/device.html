@@ -123,7 +123,7 @@
         <h1 class="title"><img src="images/phone/{{deviceName}}.png"> <p>Weekly 7.x Builds - <span>{{deviceName}}</span></p></h1>
     </paper-card>
     <div class="flex-container">
-            <iron-ajax auto url="data/{{deviceName}}_7_weekly.json" last-response="{{weeklyData}}"></iron-ajax>
+            <iron-ajax auto url="data/{{deviceName}}_7_weekly.json" last-response="{{weekly7Data}}"></iron-ajax>
             <template is="dom-repeat" items="{{weeklyData}}">
                 <paper-card class="heading">
                     <div class="device-container">
