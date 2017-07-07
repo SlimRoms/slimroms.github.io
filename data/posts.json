@@ -1,5 +1,39 @@
 [
     {
+        "title": "Slim7 Weekly 1.1",
+        "date": "Friday 7 July 2017",
+        "content": [
+            "This week brings a few additions and fixes",
+            "",
+            "### Reminder",
+            "If comming from BETA build you will require a full wipe",
+            "",
+            "### Changes and fixes",
+            "* MusicFX: Updates and changes from CAF, Omni, DU and AospExtended",
+            "* Add Ambient Display QS tile",
+            "* Sensitive numbers: Update MCC codes"
+            "* stagefright-plugins: Fix 'supported' typo in log",
+            "* fw/av: CameraService: fix cameraId type of onDeviceStatusChanged",
+            "* hw/qcom/audio-caf/msm8916: Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD",
+            "* hw/qcom/bt-caf: Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD",
+            "* hw/qcom/fm: Update translations",
+            "* hw/qcom/keymaster: Add msm8996 and msm8998 into support list",
+            "* apps/Snap: Update translations",
+            "* services/Telecomm: SensitivePhoneNumbers: Handle lists of MCC codes",
+            "* Update APN's for China Telecom Macau",
+            "* misc build changes",
+            "",
+            "### Device changes",
+            "* angler & bullhead: Swap left with right fingerprint gestures",
+            "* moto/msm8916-common: Abandon TARGET_UNIFIED_DEVICE flag. Upstream kernel updates from LineageOS",
+            "* surnia: Allow vendor init to override props. Abandon TARGET_UNIFIED_DEVICE flag",
+            "* kernel/lge/mako: Upstream from LineageOS (CVE fixes)",
+            "* kernel/oneplus/msm8974: Upstream from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 STABLE 1.0",
         "date": "Friday 30 June 2017",
         "content": [
