@@ -1,5 +1,38 @@
 [
     {
+        "title": "Slim7 Weekly 1.2",
+        "date": "Friday 14 July 2017",
+        "content": [
+            "This week brings aosp security update and some other minor changes and fixes",
+            "",
+            "### Changes and fixes",
+            "* Merge android-7.1.2_r23",
+            "* hw/qcom/audio: hal: add missing incall recording usecases and check",
+            "* system/core: fs_mgr healthd: check console-ramoops-0. init.rc: setup console-ramoops-0. logcat: Add missing newline to read failure",
+            "",
+            "### Device changes",
+            "* device/cyangeon/msm8916: Set OpenGLES version to 3.2. Update sysfs paths after device tree changes. Add power HAL extension to disable big cluster. Add core_ctl props. Disable adaptative LMK",
+            "* device/angler: Update fingerprint to N2G47W",
+            "* device/bullhead: Update build fingerprint to N2G47Z",
+            "* device/flounder: Update build fingerprint to N9F27F",
+            "* device/flounder_lte: Update build fingerprint to N4F27I",
+            "* device/moto/msm8916: Upstream from LineageOS",
+            "* device/shamu: Update fingerprint to N6F27H",
+            "* device/armani: Upstream from LineageOS",
+            "* device/cancro: Upstream from LineageOS",
+            "* device/tomato: Upstream from LineageOS",
+            "* kernel/cyanogen/msm8916: Upstream from LineageOS",
+            "* kernel/angler: Upstream from July aosp security update",
+            "* kernel/bullhead: Upstream from July aosp security update",
+            "* kernel/flounder: Upstream from July aosp security update",
+            "* kernel/mako: Upstream from LineageOS",
+            "* kernel/moto/msm8916: Upstream from LineageOS",
+            "* kernel/shamu: Upstream from July aosp security update",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.1",
         "date": "Friday 7 July 2017",
         "content": [
