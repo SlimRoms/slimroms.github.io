@@ -140,8 +140,14 @@
     {
         "manufacturer":"OnePlus",
         "devicename":"oneplus3",
-        "description":"OnePlus 3",
+        "description":"OnePlus 3/3t",
         "img":"images/phone/oneplus3.png"
+    },
+    {
+        "manufacturer":"OnePlus",
+        "devicename":"cheeseburger",
+        "description":"OnePlus 5",
+        "img":"images/phone/cheeseburger.png"
     },
     {
         "manufacturer":"OnePlus",
