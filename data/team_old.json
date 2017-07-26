@@ -56,6 +56,13 @@
         "position": "Public Relations"
     },
     {
+        "name":"Daniel Koman",
+        "img":"images/team/dankoman.png",
+        "username":"dankoman",
+        "location":"USA",
+        "position":"Developer & Themer"
+    },
+    {
         "name": "Ethan Johnson",
         "img": "https://github.com/ejjohnson1999.png",
         "username": "ejjohnson1999",
