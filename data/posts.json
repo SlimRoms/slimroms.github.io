@@ -1,5 +1,33 @@
 [
     {
+        "title": "Slim7 Weekly 1.4",
+        "date": "Friday 28 July 2017",
+        "content": [
+            "This week brings minor fixes, updates and a new device",
+            "",
+            "### New devices",
+            "* w7",
+            "",
+            "### Changes and fixes",
+            "* fw/base: PowerProfile: allow overriding default power profile",
+            "* hw/qcom/fm: Update colors and translations (LineageOS)",
+            "* apps/Bluetooth: Translation updates (LineageOS)",
+            "* apps/Settings: MSIM: Fix user set DDS sub in hotswap cases.",
+            "* apps/Snap: Translation updates (LineageOS)",
+            "* resources/devicesettings: Translations update (LineageOS)",
+            "* vendor/qcom/opensource/dataservice : datatop: Fix out_dir array empty content verification. datatop: Remove unused variables from datatop_ip_table_poll.c",
+            "* vendor/slim: Updates to APNs, sensitive phone numbers, offline charging graphics and build configs",
+            "",
+            "### Device specific",
+            "* flounder: Properly separate flounder and flounder_lte (BUG:324)",
+            "* motorola/msm8916-common: Upstream LineageOS",
+            "* cheeseburger: Sync nfc with upstream. Encryption. Fix hwnav overlays",
+            "* mido: Updates to camera",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.3",
         "date": "Friday 21 July 2017",
         "content": [
