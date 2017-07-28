@@ -78,6 +78,12 @@
         "img":"images/phone/mako.png"
     },
     {
+        "manufacturer":"LG",
+        "devicename":"w7",
+        "description":"L90",
+        "img":"images/phone/w7.png"
+    },
+    {
         "manufacturer":"Motorola",
         "devicename":"athene",
         "description":"Moto G 4th Generation",
