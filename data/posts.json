@@ -1,5 +1,32 @@
 [
     {
+        "title": "Slim7 Weekly 1.5",
+        "date": "Friday 3 August 2017",
+        "content": [
+            "This week brings minor fixes and updates",
+            "",
+            "### Changes & fixes",
+            "* hw/samsung: Updates to power, secril and macloaders",
+            "* apps/Dialer: Fix compilation warnings",
+            "* apps/Snap: Fix low resolution front camera icon",
+            "* Updates to sensitive phone numbers",
+            "",
+            "### Device specific",
+            "* device/cyangeon/msm8916-common: Remove QCPATH support",
+            "* device/lge/mako: Updates to extract scripts",
+            "* device/oneplus/bacon: Updates to Adreno, BT, GPS and widevine",
+            "* device/xiaomi/cancro: Fix bt streaming issues",
+            "* device/xiaomi/mido: Upstream from LineageOS",
+            "* device/yu/tomato: Upstream from LineageOS",
+            "* kernel/cyanogen/msm8916: Upstream from LineageOS",
+            "* kernel/lge/mako: Upstream from LineageOS",
+            "* kernel/oneplus/msm8974: Updates to fastcharge, Alsa, net, USB, fs, hid, proc, arm oabi compat",
+            "* kernel/xiaomi/msm8953: Upstream from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.4",
         "date": "Friday 28 July 2017",
         "content": [
