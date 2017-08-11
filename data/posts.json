@@ -1,5 +1,39 @@
 [
     {
+        "title": "Slim7 Weekly 1.6",
+        "date": "Friday 3 August 2017",
+        "content": [
+            "This week includes AOSP August security update, with some adittional rom and device fixes",
+            "",
+            "### Changes & fixes",
+            "* Merge android-7.1.2_r29",
+            "* hw/qcom/fm: Upstream LineageOS",
+            "* hw/samsung: Upstreamfrom LineageOS",
+            "* apps/Bluetooth: Translation updates",
+            "* resources/devicesettings: Translation updates",
+            "* Add WOM internet/mms APN",
+            "",
+            "### Device specific",
+            "* flounder: Properly separate flounder and flounder_lte part deux (Fixes sms warnings on flounder). Update fingerprint to N9F27H",
+            "* flounder_lte: Properly separate flounder and flounder_lte part deux (Fixes sms warnings on flounder). Update fingerprint to N4F27K",
+            "* angler: Update fingerprint to N2G48C",
+            "* bullhead: Update fingerprint to N2G48C",
+            "* mako: Update sepolicy for cpu temp sensor",
+            "* moto/msm8916-common: Hide sRGB toggle. Update gps.conf. rootdir: usb: remove leading '0x' frin idProduct",
+            "* cheeseburger: Revert: 'fix incall audio routing, make mixer paths more sensible, fix speakers'. Raise earpiece volume. Init: create oemnvitems for RIL. Include ffmpeg codecs, Fix acdb id for handset",
+            "* oneplus2: Disable snap. Update acdb id's",
+            "* qcom/sepolicy: Upstream from LineageOS",
+            "* kernel/flounder: Update android-tegra-flounder-3.10-nougat-mr1.1",
+            "* kernel/angler: Update kernel to android-msm-angler-3.10-nougat-mr2/android-7.1.2_r0.26",
+            "* kernel/bullhead: Update kernel to android-msm-bullhead-3.10-nougat-mr2",
+            "* kernel/moto/msm8916: Upstream from LineageOS",
+            "* kernel/shamu: Update kernel to android-msm-shamu-3.10-nougat-mr1.5/android-7.1.1_r0.73",
+            "* kernel/oneplus/msm8998: Updates to mdss, qpnp-haptic, fpc1020 and misc",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.5",
         "date": "Friday 3 August 2017",
         "content": [
