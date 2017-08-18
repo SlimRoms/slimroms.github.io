@@ -1,5 +1,35 @@
 [
     {
+        "title": "Slim7 Weekly 1.7",
+        "date": "Friday 18 August 2017",
+        "content": [
+            "This week brings minor rom updates and good amount of device updates",
+            "",
+            "### Changes & fixes",
+            "* frameworks/av: Camera: Add null checks on mdevice to avoid crash",
+            "* frameworks/base: SEEMP: Add auth framework for outgoing sms messages. Audioservice: Set BT_SCO status. Camera: ignore torch status updates for aux or composite camra. Camera2: Fix error callback if buffer lost.",
+            "* frameworks/native: SF: Improve hwrotation handling. Native: Increase art heap limit to 192MB for 1024MB ram devices",
+            "* hardware/broadcom/wlan: Merge tag android-7.1.2_r28",
+            "* hardware/qcom/bt-caf: libbt-qcom: Allow reading BT address from property. Revert 'Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD'",
+            "* hardware/samsung: wifiloader: load kernel module if present",
+            "* apps/Settings: Revert 'Settings[Wifi]: fix the input invalid length for WEP encryption.'",
+            "* apps/Snap: Add missing null check on isCamera2Supported",
+            "* Updates to Correios Celular (BR) APN",
+            "* Updates to build environment",
+            "",
+            "### Device specific",
+            "* device/moto/msm8916-common: Disable non-aosp BT features. Read BT address from property",
+            "* device/cheeseburger: Update for 4.5.8 release. Fix USB OTG. Set perms for led nodes. Remove color mode in dev settings. Update fingerprint. Use VSync offsets from op3. Pin default camera app in memory",
+            "* device/onyx: Fix bluetooth mac generation. Add 'misc' entry in fstab.qcom",
+            "* device/oppo/common: Slider: Fix all notifiation settings. Slider: priority should have ringer on",
+            "* kernel/mako: Upstream from LineageOS",
+            "* kernel/oneplus/msm8998: Updates to mdss, tri_state_key, pwm. leds, asm-generic, icnss. Merge LA.UM.5.7.r1-10400-8x98.0 wifi stack. Enable kcal.",
+            "* kernel/onyx: Massive kernel update.",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.6",
         "date": "Friday 11 August 2017",
         "content": [
