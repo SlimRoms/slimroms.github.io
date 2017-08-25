@@ -1,5 +1,33 @@
 [
     {
+        "title": "Slim7 Weekly 1.8",
+        "date": "Friday 25 August 2017",
+        "content": [
+            "This week brings minor rom and device updates",
+            "",
+            "Notice: Falcon will be dropped from supported devices as we no longer have a DM for the device",
+            "",
+            "### Changes and fixes",
+            "* fw/base: Audioservice set BT_SCO status. Camera: Ignore torch status update for aux or composite camera. Camera2: Fix error callback if buffer is lost",
+            "* hw/qcom/bt-caf: Revert `Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD`",
+            "* apps/Bluetooth: Directly inform Audio HAL regarding SCO state change",
+            "* apps/Dialer: IMS-VT: Transmit static image when multitasking",
+            "* apps/Snap: Automatic translation import",
+            "* codeaurora/telephony: IMS-VT: Add config that controls visibility of static Image UI",
+            "* vendor/slim: Updates to Tmo US APN, other misc build environment changes",
+            "",
+            "### Device specific",
+            "* device/flounder_lte: Add extract-files and setup-makefiles scripts",
+            "* device/w7: Fix incorrect overlays. Enable Doze and add pocketmode feature",
+            "* device/qcom/sepolicy: Use set_prop() macro for property sets",
+            "* kernel/mako: Upstream from LineageOS",
+            "* kernel/oneplus/msm8998: Sound: properly configure wsa properties. dt: introduce a common file for panel setup",
+            "* kernel/cancro: Upstream from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.7",
         "date": "Friday 18 August 2017",
         "content": [
