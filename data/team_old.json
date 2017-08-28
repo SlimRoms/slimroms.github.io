@@ -1,5 +1,12 @@
 [
     {
+        "name":"Aayushya Aankul",
+        "img":"https://github.com/aayushya.png",
+        "username":"aayushya",
+        "location":"India",
+        "position":"Moto G Maintainer"
+    },
+    {
         "name": "Abhinav Jhanwar",
         "img": "https://github.com/abhinav1997.png",
         "username": "Abhinav2",
@@ -47,6 +54,13 @@
         "username":"cordell12",
         "location":"USA",
         "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
+    },
+    {
+        "name": "Dalton Wilson",
+        "img": "https://github.com/dwxvi.png",
+        "username": "daltango",
+        "location": "USA",
+        "position": "Public Relations"
     },
     {
         "name": "Daniel Citrin",
@@ -133,6 +147,13 @@
         "position":"Public relations"
     },
     {
+        "name": "Perseus71",
+        "img": "https://github.com/Perseus71.png",
+        "username": "Perseus71",
+        "location": "USA",
+        "position": "Nexus 6 Maintainer"
+    },
+    {
         "name": "Rawad Zahreddine",
         "img": "images/team/rirozizo.png",
         "username": "rirozizo",
@@ -145,6 +166,13 @@
         "username": "RobbieL811",
         "location": "USA",
         "position": "OnePlus One and Google Nexus 7 (deb/flo) Maintainer"
+    },
+    {
+        "name": "Sayeed Afridi",
+        "img": "https://github.com/sayeed99.png",
+        "username": "sayeed99",
+        "location": "India",
+        "position": "Zenfone 2 (Z00A & Z008) Maintainer"
     },
     {
         "name": "Sean Hoyt",
@@ -168,6 +196,13 @@
         "position": "Samsung Galaxy S2 (I9100G) Maintainer"
     },
     {
+        "name": "Shivam Desai",
+        "img": "https://github.com/desaishivam26.png",
+        "username": "desaishivam26",
+        "location": "India",
+        "position": "Moto G 5th Gen Plus (potter) Maintainer"
+    },
+    {
         "name": "Stuart Waller",
         "img": "images/team/knightwolf.png",
         "username": "KnightWolf",
@@ -182,11 +217,24 @@
         "position": "kona Family Maintainer"
     },
     {
+        "name": "Thomas Patry",
+        "img": "https://github.com/thompatry.png",
+        "username": "thompatry",
+        "location": "USA",
+        "position": "Moto X Pure/Style Maintainer"
+    },
+    {
         "name":"Tylog",
         "img":"images/team/tylog.png",
         "username":"tylog",
         "location":"Germany",
         "position":"XDA Maintainer"
+    },
+    {
+        "name": "Vatsal Koradia",
+        "img": "https://github.com/vatsal.png",
+        "location": "India",
+        "position": "Xiaomi Mi Max Maintainer"
     },
     {
         "name": "Xiao-Long Chen",
