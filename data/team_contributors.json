@@ -1,12 +1,5 @@
 [
     {
-        "name":"Aayushya Aankul",
-        "img":"https://github.com/aayushya.png",
-        "username":"aayushya",
-        "location":"India",
-        "position":"Moto G Maintainer"
-    },
-    {
         "name": "Andreas B.",
         "img": "https://github.com/andi34.png",
         "username": "Android-Andi",
@@ -26,13 +19,6 @@
         "username": "steel89",
         "location": "Italy",
         "position": "Designer"
-    },
-    {
-        "name": "Dalton Wilson",
-        "img": "https://github.com/dwxvi.png",
-        "username": "daltango",
-        "location": "USA",
-        "position": "Public Relations"
     },
     {
         "name": "Dan Cartier",
@@ -61,13 +47,6 @@
         "username": "Martinusbe",
         "location": "Belgium",
         "position": "OnePlus X, and OnePlus 2, OnePlus 3 and Oneplus 5 Maintainer"
-    },
-    {
-        "name": "Perseus71",
-        "img": "https://github.com/Perseus71.png",
-        "username": "Perseus71",
-        "location": "USA",
-        "position": "Nexus 6 Maintainer"
     },
     {
         "name": "Rahul Patel",
@@ -105,23 +84,10 @@
         "position": "YU-Yureka (tomato) and Xiaomi Redmi Note 4 (mido) Maintainer"
     },
     {
-        "name": "Thomas Patry",
-        "img": "https://github.com/thompatry.png",
-        "username": "thompatry",
-        "location": "USA",
-        "position": "Moto X Pure/Style Maintainer"
-    },
-    {
         "name": "Umang Leekha",
         "img": "https://github.com/umang96.png",
         "username": "umang96",
         "location": "India",
         "position": "Xiaomi Note 3 Maintainer"
-    },
-    {
-        "name": "Vatsal Koradia",
-        "img": "https://github.com/vatsal.png",
-        "location": "India",
-        "position": "Xiaomi Mi Max Maintainer"
     }
 ]

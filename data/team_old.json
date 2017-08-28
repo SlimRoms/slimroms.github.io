@@ -1,5 +1,12 @@
 [
     {
+        "name":"Aayushya Aankul",
+        "img":"https://github.com/aayushya.png",
+        "username":"aayushya",
+        "location":"India",
+        "position":"Moto G Maintainer"
+    },
+    {
         "name": "Abhinav Jhanwar",
         "img": "https://github.com/abhinav1997.png",
         "username": "Abhinav2",
@@ -47,6 +54,13 @@
         "username":"cordell12",
         "location":"USA",
         "position":"Samsung Galaxy Note 3 and Google Nexus 6 Maintainer"
+    },
+    {
+        "name": "Dalton Wilson",
+        "img": "https://github.com/dwxvi.png",
+        "username": "daltango",
+        "location": "USA",
+        "position": "Public Relations"
     },
     {
         "name": "Daniel Citrin",
@@ -133,6 +147,13 @@
         "position":"Public relations"
     },
     {
+        "name": "Perseus71",
+        "img": "https://github.com/Perseus71.png",
+        "username": "Perseus71",
+        "location": "USA",
+        "position": "Nexus 6 Maintainer"
+    },
+    {
         "name": "Rawad Zahreddine",
         "img": "images/team/rirozizo.png",
         "username": "rirozizo",
@@ -182,11 +203,24 @@
         "position": "kona Family Maintainer"
     },
     {
+        "name": "Thomas Patry",
+        "img": "https://github.com/thompatry.png",
+        "username": "thompatry",
+        "location": "USA",
+        "position": "Moto X Pure/Style Maintainer"
+    },
+    {
         "name":"Tylog",
         "img":"images/team/tylog.png",
         "username":"tylog",
         "location":"Germany",
         "position":"XDA Maintainer"
+    },
+    {
+        "name": "Vatsal Koradia",
+        "img": "https://github.com/vatsal.png",
+        "location": "India",
+        "position": "Xiaomi Mi Max Maintainer"
     },
     {
         "name": "Xiao-Long Chen",
