@@ -1,5 +1,20 @@
 [
     {
+        "title": "Slim7 Weekly 1.9",
+        "date": "Friday 1 September 2017",
+        "content": [
+            "This week brings a few rom updates and fixes",
+            "",
+            "### Changes and fixes",
+            "* fw/base: Use systemClock.elapsedRealtime() to calculate TTFF",
+            "* fw/base: Keyguard: Change fingerprint listening behavior",
+            "* hw/qcom/audio-caf/msm8998: Extend platform parser to allow device name aliasing",
+            "* apps/CellBroadcastReceiver:General updates and fixes from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.8",
         "date": "Friday 25 August 2017",
         "content": [
