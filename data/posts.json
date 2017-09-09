@@ -1,5 +1,31 @@
 [
     {
+        "title": "Slim7 Weekly 1.10",
+        "date": "Friday 8 September 2017",
+        "content": [
+            "This week brings a few rom updates and fixes",
+            "",
+            "### Changes and fixes",
+            "* kernel/oneplus/msm8974 Upstream kernel updates",
+            "* device/opeplus/oneplus3: Fix 3T front camera crash with Snap",
+            "* device/xiaomi/kenzo: Kernel updates",
+            "* device/xiaomi/kenzo: Add time service blobs",
+            "* device/xiaomi/kenzo: Remove modem assert",
+            "* device/xiaomi/mido: increase speaker volume",
+            "* device/xiaomi/mido: init: fix typo in vendor_load_properties()",
+            "* device/yu/tomato: QCamera2: Adding missed media extenisons changes",
+            "* device/yu/tomato: selinux policy for enabling scheduler boost",
+            "* framework/av: omx: Skip the whole dataspace signaling on legacy QCOM",
+            "* packages/apps/Snap: fix highspeed and high-framerate video recording",
+            "* packages/apps/Snap: fix ArrayIndexOutOfBoundsException on setUpCameraOutputs",
+            "* device/lge/msm8226-common: Grant netmgrd proper unix perms",
+            "* device/lge/msm8226-common: overlay: Enable data for MMS",
+            "* Additional translations: fw_base fw_slim Settings SlimLauncher Dialer Telephony",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.9",
         "date": "Friday 1 September 2017",
         "content": [
