@@ -1,5 +1,28 @@
 [
     {
+        "title": "Slim7 Weekly 1.11",
+        "date": "Friday 15 September 2017",
+        "content": [
+            "This week brings minor rom and device changes. We've dropped Mako, Potter and Zenfone2 family",
+            "",
+            "### Changes and fixes",
+            "* fw/base: Don't disable GPS prematurely",
+            "* fw/base: PrivateStorageInfo: Exclude primary physical volume total space",
+            "* hw/qcom/audio-caf/msm8916: Merge caf/LA.BR.1.2.9_rb1.24",
+            "* hw/qcom/audio-caf/msm8974: aenc-aac: bounds checking",
+            "* hw/qcom/media-caf/msm8916: Merge caf/LA.BR.1.2.9_rb1.23",
+            "* hw/qcom/media-caf/msm8974: mm-video-v4l2: venc: Protect buffer from being freed while accessing",
+            "* apps/Snap: WideAnglePanoramaUI: Show switcher on Stop Capture",
+            "",
+            "### Device specific",
+            "* device/moto/msm8916: Upstream from LineageOS",
+            "* kernel/lge/msm8226: Upstream from LineageOS",
+            "* kernel/moto/msm8916: Upstream from LineageOS",
+            "",
+            " #### Keep it Slim!",
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.10",
         "date": "Friday 8 September 2017",
         "content": [
