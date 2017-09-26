@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e23b1316_de463ce3",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2017-09-26T09:19:58Z",
+      "side": 1,
+      "message": "maybe add \"hurricane\"?",
+      "range": {
+        "startLine": 6,
+        "startChar": 37,
+        "endLine": 6,
+        "endChar": 41
+      },
+      "revId": "9949b1ffc88c86bd916ba266c636cb7d18eb4a7b",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b0251b5_60e6e7e3",
+        "filename": "data/posts.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2017-09-26T09:19:58Z",
+      "side": 1,
+      "message": "errrr",
+      "revId": "9949b1ffc88c86bd916ba266c636cb7d18eb4a7b",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
