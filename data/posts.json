@@ -1,9 +1,22 @@
 [
     {
+        "title": "Further update",
+        "date": "Tuesday 26 September 2017",
+        "content": [
+            "A Further update. After Irma parts of our Team were hit by Maria and we have still not heard from them."
+            "The rest of the team hope everything is ok and will provide updates as soon as we hear more.",
+            "",
+            "We'll try to release a Slim7 weekly with the Blueborne fix and other September bulletin patches this coming week.",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "No Slim7 Weekly this week",
         "date": "Saturday 23 September 2017",
         "content": [
             "Due to the effects of Hurricane Maria on Puerto Rico, and others members of the team being away we aren't in a position to release a weekly this week",
+            "",
             "We hope to resume normal service next week",
             "",
             "#### Keep it Slim!"
