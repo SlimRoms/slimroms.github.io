@@ -16,6 +16,33 @@
         ]
     },
     {
+        "title": "Slim7 Weekly 1.12",
+        "date": "Saturday 30 September 2017",
+        "content": [
+            "This week brings the September security update including blueborne patches.",
+            "",
+            "### Changes and fixes",
+            "* Apart from the september updates",
+            "* Additional translations",
+            "* camera: Only turn torch on/off for one back-facing camera",
+            "* ril: Allow targets to disable Clang",
+            "",
+            "### Device specific",
+            "* Flounder - update build fingerprints, upstream kernel updates.",
+            "* m7 - update some Adreno libraries, kernel updates from Lineage.",
+            "* m8 - Switch to source build ril, gps, kernel and device update from Lineage.",
+            "* m9 - kernel updates.",
+            "* shamu - update build fingerprint",
+            "* cancro - Grant rmt_storage proper unix perms",
+            "* angler - kernel updates",
+            "* bullhead - kernel updates",
+            "* shamu - Update kernel to android-msm-shamu-3.10-nougat-mr1.7/android-7.1.1_r0.65",
+            "* many other kernels updated with blueborne kernel patch.",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Further update",
         "date": "Tuesday 26 September 2017",
         "content": [
