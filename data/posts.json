@@ -9,8 +9,28 @@
             "",
             "For those who would like to offer some support to Josue and his Family - Donations may be made to Josue's PayPal Account [here](https://forum.xda-developers.com/donatetome.php?u=3877985)",
             "",
-            "Josue is unaware of this at the moment since he has no access to the internet or other communications at this time - In fact we don't know when he will have any access to communications - But this show of support will hopefully ease the challenges in the coming weeks.",
+            "UPDATE: We have had contact from Josue, he and his family are ok, they are without main's power or internet connectivity currently (as is the majority of Puerto Richo) so may be away fo r all things Slim for some time still",
             "Thank You!",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
+        "title": "Slim7 Weekly 1.13",
+        "date": "Monday 9 October 2017",
+        "content": [
+            "Sorry for the delay in this weekly the team has been spread a little thin as of late.",
+            "Hopefully things will get back to normal soon!",
+            "This week brings a few device updates.",
+            "",
+            "### Changes and fixes",
+            "* All fixes are on the device side this week, feel free to skip it if unaffected",
+            "",
+            "### Device specific",
+            "* device/xiaomi/mido - misc update from Lineage * add back qti HAl/fixes VoLTE",
+            "* device/xiaomi/msm8956-common - msm8956: Update extractors to match the latest templates",
+            "* kernel/oneplus/msm9994  - op2: Bluetooth: Properly check L2CAP config option output buffer length",
+            "* vendor/xiaomi - mido: add back new qti blobs *fixes VoLTE",
             "",
             "#### Keep it Slim!"
         ]
