@@ -48,6 +48,12 @@
         "img":"images/phone/m8.png"
     },
     {
+        "manufacturer":"HTC",
+        "devicename":"ocn",
+        "description":"u11(UHL/WHL)",
+        "img":"images/phone/u11.png"
+    },
+    {
         "manufacturer":"Huawei",
         "devicename":"angler",
         "description":"Nexus 6P",
