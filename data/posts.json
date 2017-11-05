@@ -6,9 +6,9 @@
       "Work continues behind the scenes on bringing up Oreo, rom wise there have been no changes.",
       "Unless your device is listed below for a device specific change feel free to skip this weekly.",
       "",
-      "This week see's a new device added htc u11."
+      "This week see's a new device added htc u11.",
       "NOTE: whilst this should flash on all variants only the HTC u11 uhl variant is supported at the moment",
-      "If anyone would like to work on the issues with other variants, please submit patches to gerrit!"
+      "If anyone would like to work on the issues with other variants, please submit patches to gerrit!",
       "",
       "### Device specific",
       "#### kernel/xiaomi/armani",
