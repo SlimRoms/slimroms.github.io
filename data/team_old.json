@@ -63,6 +63,13 @@
         "position": "LG G2 Maintainer"
     },
     {
+        "name": "Fernando Von Arx",
+        "img": "https://github.com/fevax.png",
+        "username": "fevax",
+        "location": "Argentina",
+        "position": "Exynos Galaxy S7 Co-Maintainer"
+    },
+    {
         "name": "Karan Srivastava",
         "img": "https://github.com/rebelos.png",
         "username": "rebelos",
