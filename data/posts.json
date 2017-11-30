@@ -1,31 +1,50 @@
 [
-     {
-      "title": "Slim7 Weekly 1.16",
-      "date": "Sunday 5 November 2017",
-      "content":[
-      "Work continues behind the scenes on bringing up Oreo, rom wise there have been no changes.",
-      "Unless your device is listed below for a device specific change feel free to skip this weekly.",
-      "",
-      "This week see's a new device added htc u11.",
-      "NOTE: whilst this should flash on all variants only the HTC u11 uhl variant is supported at the moment",
-      "If anyone would like to work on the issues with other variants, please submit patches to gerrit!",
-      "",
-      "### Device specific",
-      "#### kernel/xiaomi/armani",
-      "* Bluetooth: Properly check L2CAP config option output buffer length",
-      "",
-      "### Keep it Slim!"
-      ]
-     },
-     {
-      "title": "No Slim7 Weekly this week",
-      "date": "Saturday 28 October 2017",
-      "content":[
-      "Due to preparations for the move to Oreo, we are sorry to announce that there won't be a release this week.",
-      "There have been no urgent patches for any devices, so don't worry about being out of date. We expect to resume normal service on next weekly",
-      "",
-      "#### Keep it Slim!"
-      ]
+    {
+        "title": "Slim7 Weekly 1.17",
+        "date": "Thursday 30 November 2017",
+        "content": [
+            "This weekly brings november security update, translation updates and some device changes",
+            "",
+            "### Changes and Fixes",
+            "* Rom source: Update security string to 2017-11-05",
+            "* Translation update",
+            "",
+            "### Device Changes",
+            "* flounder: update build fingerprint & description to N9F27M",
+            "* flounder_lte: update build fingerprint & description to N4F27P",
+            "* flounder/flounder_lte kernel: AOSP upstream",
+            "* mido:Update fingerprint, Update proprietary blobs to miui 7.5.4, Update thermal_engine.conf to stock MIUI 7.10.19",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
+        "title": "Slim7 Weekly 1.16",
+        "date": "Sunday 5 November 2017",
+        "content": [
+            "Work continues behind the scenes on bringing up Oreo, rom wise there have been no changes.",
+            "Unless your device is listed below for a device specific change feel free to skip this weekly.",
+            "",
+            "This week see's a new device added htc u11.",
+            "NOTE: whilst this should flash on all variants only the HTC u11 uhl variant is supported at the moment",
+            "If anyone would like to work on the issues with other variants, please submit patches to gerrit!",
+            "",
+            "### Device specific",
+            "#### kernel/xiaomi/armani",
+            "* Bluetooth: Properly check L2CAP config option output buffer length",
+            "",
+            "### Keep it Slim!"
+        ]
+    },
+    {
+        "title": "No Slim7 Weekly this week",
+        "date": "Saturday 28 October 2017",
+        "content":[
+            "Due to preparations for the move to Oreo, we are sorry to announce that there won't be a release this week.",
+            "There have been no urgent patches for any devices, so don't worry about being out of date. We expect to resume normal service on next weekly",
+            "",
+            "#### Keep it Slim!"
+        ]
     },
     {
         "title": "Slim7 Weekly 1.15",
