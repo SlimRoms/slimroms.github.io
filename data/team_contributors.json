@@ -1,12 +1,5 @@
 [
     {
-        "name":"Aayushya Aankul",
-        "img":"https://github.com/aayushya.png",
-        "username":"aayushya",
-        "location":"India",
-        "position":"Moto G Maintainer"
-    },
-    {
         "name": "Andreas B.",
         "img": "https://github.com/andi34.png",
         "username": "Android-Andi",
@@ -26,13 +19,6 @@
         "username": "steel89",
         "location": "Italy",
         "position": "Designer"
-    },
-    {
-        "name": "Dalton Wilson",
-        "img": "https://github.com/dwxvi.png",
-        "username": "daltango",
-        "location": "USA",
-        "position": "Public Relations"
     },
     {
         "name": "Dan Cartier",
@@ -56,32 +42,11 @@
         "position": "OnePlus X, and OnePlus 2, OnePlus 3 and Oneplus 5 Maintainer"
     },
     {
-        "name": "Perseus71",
-        "img": "https://github.com/Perseus71.png",
-        "username": "Perseus71",
-        "location": "USA",
-        "position": "Nexus 6 Maintainer"
-    },
-    {
         "name": "Rahul Patel",
         "img": "https://github.com/whyorean.png",
         "username": "whyorean",
         "location": "India",
         "position": "Xiaomi Mi5 Maintainer"
-    },
-    {
-        "name": "Sayeed Afridi",
-        "img": "https://github.com/sayeed99.png",
-        "username": "sayeed99",
-        "location": "India",
-        "position": "Zenfone 2 (Z00A & Z008) Maintainer"
-    },
-    {
-        "name": "Shivam Desai",
-        "img": "https://github.com/desaishivam26.png",
-        "username": "desaishivam26",
-        "location": "India",
-        "position": "Moto G 5th Gen Plus (potter) Maintainer"
     },
     {
         "name": "Sooraj Sizon",
@@ -98,23 +63,10 @@
         "position": "YU-Yureka (tomato) and Xiaomi Redmi Note 4 (mido) Maintainer"
     },
     {
-        "name": "Thomas Patry",
-        "img": "https://github.com/thompatry.png",
-        "username": "thompatry",
-        "location": "USA",
-        "position": "Moto X Pure/Style Maintainer"
-    },
-    {
         "name": "Umang Leekha",
         "img": "https://github.com/umang96.png",
         "username": "umang96",
         "location": "India",
         "position": "Xiaomi Note 3 Maintainer"
-    },
-    {
-        "name": "Vatsal Koradia",
-        "img": "https://github.com/vatsal.png",
-        "location": "India",
-        "position": "Xiaomi Mi Max Maintainer"
     }
 ]
