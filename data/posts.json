@@ -1,5 +1,34 @@
 [
     {
+        "title": "Slim7 Stable 2.0",
+        "date": "Saturday 3 February 2018",
+        "content": [
+            "Today we release 2.0 stable. This brings up to January security update, and device updates.",
+            "",
+            "### Changes and Fixes",
+            "* AOSP security update to 2018-01-05",
+            "* Translation update",
+            "* Updates to hw/qcom/audio-caf/msm8916: Update to LineageOS latest",
+            "* Snap: Updates and fixes from LineageOS",
+            "* Update SensitivePhoneNumbers",
+            "* APN updates",
+            "* Misc build changes",
+            "",
+            "### Device Changes",
+            "* device flounder/flounder_lte: Redo Wifi/LTE variant split based on LineageOS",
+            "* device/lge/msm8226-common: Updates to LineageOS latest",
+            "* device/moto/msm8916-common: Update to LineageOS latest (import addison IMS, updates to gps, Enable qcom OMX encoding extensions, Add ANT+)",
+            "* device/cancro: remove TARGET_KEYMASTER_WAIT_FOR_QSEE",
+            "* device/mido: Update camera blobs miui 7.5.4, Update thermal engine MIUI 7.10.19, Update build fingerprint, switch to aw2013 cyanogen hal, add missing keylayouts,  misc build updates",
+            "* kernel/flounder: Update to 3.10.108",
+            "* kernel/lge/msm8226: Update to LineageOS latest",
+            "* kernel/moto/msm8916: Update to LineageOS latest, Also added a patch to mitigate Specter",
+            "* kernel/xiaomi/msm8953: Massive update from LineageOS",
+            "",
+            "#### Keep it Slim!"
+        ]
+    },
+    {
         "title": "Slim7 Weekly 1.17",
         "date": "Thursday 30 November 2017",
         "content": [
